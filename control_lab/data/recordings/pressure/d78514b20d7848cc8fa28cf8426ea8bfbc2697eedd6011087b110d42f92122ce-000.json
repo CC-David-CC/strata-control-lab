@@ -1,0 +1,370 @@
+{
+  "provenance": "native-strata",
+  "request": {
+    "model": "x",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What color is the clear daytime sky? Answer with one short color word."
+      }
+    ],
+    "reasoning_effort": "none",
+    "seed": 675,
+    "max_tokens": 12,
+    "logprobs": true,
+    "top_logprobs": 20,
+    "grammar": "root ::= \"Blue\" | \"Red\"",
+    "strata_sampler": {
+      "chain": [
+        "temperature"
+      ],
+      "temperature": 1.0,
+      "inspect": true
+    }
+  },
+  "response": {
+    "id": "chatcmpl-215e1dc6c60a4981bb78100e",
+    "object": "chat.completion",
+    "created": 1791086862,
+    "model": "qwen3.8-flash-next",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Blue"
+        },
+        "finish_reason": "stop",
+        "logprobs": {
+          "content": [
+            {
+              "token": "Blue",
+              "logprob": -0.26480405330678014,
+              "bytes": [
+                66,
+                108,
+                117,
+                101
+              ],
+              "top_logprobs": [
+                {
+                  "token": "Blue",
+                  "logprob": -0.26480405330678014,
+                  "bytes": [
+                    66,
+                    108,
+                    117,
+                    101
+                  ]
+                },
+                {
+                  "token": " Blue",
+                  "logprob": -2.1504089117052176,
+                  "bytes": [
+                    32,
+                    66,
+                    108,
+                    117,
+                    101
+                  ]
+                },
+                {
+                  "token": "blue",
+                  "logprob": -2.5715915441515067,
+                  "bytes": [
+                    98,
+                    108,
+                    117,
+                    101
+                  ]
+                },
+                {
+                  "token": " blue",
+                  "logprob": -3.4412671804430106,
+                  "bytes": [
+                    32,
+                    98,
+                    108,
+                    117,
+                    101
+                  ]
+                },
+                {
+                  "token": "BLUE",
+                  "logprob": -6.359688925743304,
+                  "bytes": [
+                    66,
+                    76,
+                    85,
+                    69
+                  ]
+                },
+                {
+                  "token": " ",
+                  "logprob": -7.140406775474749,
+                  "bytes": [
+                    32
+                  ]
+                },
+                {
+                  "token": "蓝",
+                  "logprob": -7.701749014854632,
+                  "bytes": [
+                    232,
+                    147,
+                    157
+                  ]
+                },
+                {
+                  "token": "Azure",
+                  "logprob": -7.721324133873186,
+                  "bytes": [
+                    65,
+                    122,
+                    117,
+                    114,
+                    101
+                  ]
+                },
+                {
+                  "token": " BLUE",
+                  "logprob": -7.732056784630022,
+                  "bytes": [
+                    32,
+                    66,
+                    76,
+                    85,
+                    69
+                  ]
+                },
+                {
+                  "token": "蓝色",
+                  "logprob": -7.955747771263323,
+                  "bytes": [
+                    232,
+                    147,
+                    157,
+                    232,
+                    137,
+                    178
+                  ]
+                },
+                {
+                  "token": "-blue",
+                  "logprob": -8.806962180137834,
+                  "bytes": [
+                    45,
+                    98,
+                    108,
+                    117,
+                    101
+                  ]
+                },
+                {
+                  "token": " Azure",
+                  "logprob": -8.976010489464006,
+                  "bytes": [
+                    32,
+                    65,
+                    122,
+                    117,
+                    114,
+                    101
+                  ]
+                },
+                {
+                  "token": "Bl",
+                  "logprob": -9.048140692711076,
+                  "bytes": [
+                    66,
+                    108
+                  ]
+                },
+                {
+                  "token": " azure",
+                  "logprob": -9.200057196617326,
+                  "bytes": [
+                    32,
+                    97,
+                    122,
+                    117,
+                    114,
+                    101
+                  ]
+                },
+                {
+                  "token": "White",
+                  "logprob": -9.333520102501115,
+                  "bytes": [
+                    87,
+                    104,
+                    105,
+                    116,
+                    101
+                  ]
+                },
+                {
+                  "token": " **",
+                  "logprob": -9.337713408470353,
+                  "bytes": [
+                    32,
+                    42,
+                    42
+                  ]
+                },
+                {
+                  "token": "Red",
+                  "logprob": -9.554703879356584,
+                  "bytes": [
+                    82,
+                    101,
+                    100
+                  ]
+                },
+                {
+                  "token": "Sky",
+                  "logprob": -9.581568884849748,
+                  "bytes": [
+                    83,
+                    107,
+                    121
+                  ]
+                },
+                {
+                  "token": "_blue",
+                  "logprob": -9.607602286339006,
+                  "bytes": [
+                    95,
+                    98,
+                    108,
+                    117,
+                    101
+                  ]
+                },
+                {
+                  "token": "C",
+                  "logprob": -9.678302931785783,
+                  "bytes": [
+                    67
+                  ]
+                }
+              ],
+              "strata_sampling": {
+                "index": 0,
+                "id": 10025,
+                "probability": 0.9996909835415454,
+                "support": 7,
+                "entropy": 0.00318459772817207,
+                "selection_ms": 0.114263,
+                "stages": [
+                  {
+                    "operator": "grammar",
+                    "support": 7,
+                    "entropy": 0.00318459772817207
+                  },
+                  {
+                    "operator": "temperature",
+                    "support": 7,
+                    "entropy": 0.00318459772817207
+                  }
+                ],
+                "top": [
+                  {
+                    "id": 10025,
+                    "probability": 0.9996909835415454,
+                    "bytes": [
+                      66,
+                      108,
+                      117,
+                      101
+                    ],
+                    "token": "Blue"
+                  },
+                  {
+                    "id": 4764,
+                    "probability": 0.00015321847658055594,
+                    "bytes": [
+                      66,
+                      108
+                    ],
+                    "token": "Bl"
+                  },
+                  {
+                    "id": 5844,
+                    "probability": 9.232377272842041e-05,
+                    "bytes": [
+                      82,
+                      101,
+                      100
+                    ],
+                    "token": "Red"
+                  },
+                  {
+                    "id": 33,
+                    "probability": 3.631055465717789e-05,
+                    "bytes": [
+                      66
+                    ],
+                    "token": "B"
+                  },
+                  {
+                    "id": 202028,
+                    "probability": 2.221474771071555e-05,
+                    "bytes": [
+                      66,
+                      108,
+                      117
+                    ],
+                    "token": "Blu"
+                  },
+                  {
+                    "id": 49,
+                    "probability": 4.009791802074686e-06,
+                    "bytes": [
+                      82
+                    ],
+                    "token": "R"
+                  },
+                  {
+                    "id": 674,
+                    "probability": 9.391149758282002e-07,
+                    "bytes": [
+                      82,
+                      101
+                    ],
+                    "token": "Re"
+                  }
+                ]
+              }
+            }
+          ],
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 27,
+      "completion_tokens": 2,
+      "total_tokens": 29,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 27,
+      "prompt_ms": 1125.9,
+      "prompt_per_token_ms": 41.7,
+      "prompt_per_second": 24.0,
+      "predicted_n": 2,
+      "predicted_ms": 108.8,
+      "predicted_per_token_ms": 54.4,
+      "predicted_per_second": 18.4,
+      "draft_n": 0,
+      "draft_n_accepted": 0
+    }
+  },
+  "chunks": [],
+  "wall_ms": 1458.5812999866903,
+  "captured_at": "2026-10-04T04:07:44Z"
+}

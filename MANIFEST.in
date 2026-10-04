@@ -1,0 +1,3 @@
+recursive-include control_lab/static *
+recursive-include control_lab/data *
+global-exclude __pycache__ *.py[cod]

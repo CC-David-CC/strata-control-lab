@@ -1,0 +1,246 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "network_blocked": true,
+  "archive_sha256": "e4129cd4cbc2f75273de30fcc01f7f1420a0f1d2360094a7dd75c185a2315c1d",
+  "calculation_tolerance": {
+    "relative": 1e-12,
+    "absolute": 1e-12
+  },
+  "pages": [
+    {
+      "page": "choice",
+      "mock_calls": 3,
+      "calculations": 2,
+      "sha256": "ad5a570870b7706cae5de5ff960dca9880fd4c79488e2eb00684ba4913c9eaf6"
+    },
+    {
+      "page": "boolean",
+      "mock_calls": 2,
+      "calculations": 2,
+      "sha256": "8e0062e564d66449803ecc161852d32fc471cd93259159174144fe81cf53d99b"
+    },
+    {
+      "page": "score",
+      "mock_calls": 3,
+      "calculations": 2,
+      "sha256": "ab6aa9a79cb469aa113640ed1fd0084e21b1d7db5fa54a937b77a3b554dedf98"
+    },
+    {
+      "page": "candidates",
+      "mock_calls": 5,
+      "calculations": 2,
+      "sha256": "edbe865b0c4a7ee8b09b764bca39dc5ec1fd487b5f171a16dc3aef8c9e304fec"
+    },
+    {
+      "page": "controller",
+      "mock_calls": 6,
+      "calculations": 2,
+      "sha256": "d26d2b067afdda55c28b46e0eb6182ece2c475597b0be35d40c1427c62496a0c"
+    },
+    {
+      "page": "rerank",
+      "mock_calls": 9,
+      "calculations": 2,
+      "sha256": "cc0d964da6eeebee96c6e9aef6537a5d5ac26a051c8bb410e6d731b86903f328"
+    },
+    {
+      "page": "graph",
+      "mock_calls": 10,
+      "calculations": 2,
+      "sha256": "abb42163be1063f4c35be0d58c9276510a2e39a9c00ad25a1d426c2eaed77ff2"
+    },
+    {
+      "page": "scene",
+      "mock_calls": 13,
+      "calculations": 2,
+      "sha256": "10379aea6b16c4f5c4f821dec70066a7d43cdf2fefbbcf0a602d7194eb51e6b1"
+    },
+    {
+      "page": "wire",
+      "mock_calls": 1,
+      "calculations": 2,
+      "sha256": "3433fed4c694ec591aa2f129edd15b5098a8cf53ef452f4b896dbb6fcccf7824"
+    },
+    {
+      "page": "speculation",
+      "mock_calls": 0,
+      "calculations": 2,
+      "sha256": "f7a26938acec167c8b2ffb391c66f1906479e7b93419a0e0cc62017598a0d564"
+    },
+    {
+      "page": "performance",
+      "mock_calls": 19,
+      "calculations": 2,
+      "sha256": "e6a370fe8547fdd296110b939b25c93124b0a64c546a7762cab70eeede56f4e7"
+    },
+    {
+      "page": "samplers",
+      "mock_calls": 9,
+      "calculations": 2,
+      "sha256": "ed5d1a28203e57a18efe8f772e70d7d0d9f46fb9d9688925bc342a3773e4c832"
+    },
+    {
+      "page": "sampler-sandbox",
+      "mock_calls": 0,
+      "calculations": 2,
+      "sha256": "dd71b84422470718071b71efbcdffe2adc2f08681932915ea1c5ffb5ef5764de"
+    },
+    {
+      "page": "tictactoe",
+      "mock_calls": 14,
+      "calculations": 2,
+      "sha256": "d9f5ae9fa1853fb1eb16df85d92d9cadf18ef7392cb5a12dcfee15d7ced4f147"
+    },
+    {
+      "page": "chess",
+      "mock_calls": 7,
+      "calculations": 2,
+      "sha256": "b915cf594eb0ae38fcfd17454f3c1ade5d495d9168f8d5a967e944d77a3697f2"
+    },
+    {
+      "page": "poker",
+      "mock_calls": 9,
+      "calculations": 2,
+      "sha256": "600608b1f82996094f3d1f7b0798586bb0476f043a6d7ffd78cde4c843e1fe3c"
+    },
+    {
+      "page": "thermal",
+      "mock_calls": 24,
+      "calculations": 2,
+      "sha256": "b0840e3a0f396ab887d9017273d197792fc54070c53303b0713656494d9b45d9"
+    },
+    {
+      "page": "scheduler",
+      "mock_calls": 12,
+      "calculations": 2,
+      "sha256": "237a996d416cf83d92ebf8a87f9f5c90606663e487f0f3c7fa5586259158ef8f"
+    },
+    {
+      "page": "context",
+      "mock_calls": 8,
+      "calculations": 2,
+      "sha256": "ee228a31aed297a9146b68958b8553acd01a113320422a78126c0586b38bccad"
+    },
+    {
+      "page": "observer",
+      "mock_calls": 18,
+      "calculations": 2,
+      "sha256": "19836cf9e057e462edb42a91755f0a64586098aa771d0cc6b99a124bf547fac2"
+    },
+    {
+      "page": "calibration",
+      "mock_calls": 14,
+      "calculations": 2,
+      "sha256": "fd81f085bc13e26c8e9e74b8c7d2bb93d21a738aab0926cec13e5e539b9736e8"
+    },
+    {
+      "page": "information",
+      "mock_calls": 4,
+      "calculations": 2,
+      "sha256": "3867327b4a9c79bac2f2e61bcb69234379cf174dd2b0a9dbd914f37f29aae2f7"
+    },
+    {
+      "page": "search",
+      "mock_calls": 10,
+      "calculations": 2,
+      "sha256": "dfde1d576249e8d33212d82d633bfb8292c0909ead7311f99b900e7fdda84144"
+    },
+    {
+      "page": "frontier",
+      "mock_calls": 0,
+      "calculations": 2,
+      "sha256": "6ce13231fb7d5c07c666cf00a2ed173022bd911f0f72ea988e840f082c4a3763"
+    },
+    {
+      "page": "research-map",
+      "mock_calls": 0,
+      "calculations": 2,
+      "sha256": "052ac8e5e12a09bd996a671aa18cc11f0e2a228095f7f6d67c623186627a959b"
+    },
+    {
+      "page": "circuit",
+      "mock_calls": 7,
+      "calculations": 2,
+      "sha256": "784a302221111d0b7aadf7ee11f88591c21e3a5247607cb7e456242d2a44126a"
+    },
+    {
+      "page": "control",
+      "mock_calls": 6,
+      "calculations": 2,
+      "sha256": "fec7e6cfd04cb651593e95ffca0d57a105895f83cc73ac22d843d4af1439dab1"
+    },
+    {
+      "page": "counterexamples",
+      "mock_calls": 25,
+      "calculations": 2,
+      "sha256": "4c2c13adcbcf38a8eccf0a37a1e96ea3eec236b1285ee94baf6fa4947c3ffae0"
+    },
+    {
+      "page": "future",
+      "mock_calls": 7,
+      "calculations": 2,
+      "sha256": "bc27498a2a8f6c04b0454b3ec7cbf51ef41ee9d45e4138e42e2496d390af9289"
+    },
+    {
+      "page": "pressure",
+      "mock_calls": 4,
+      "calculations": 2,
+      "sha256": "d174ec1c7c7b0a208d7313994b0687b2dafba62cb5533377500b04cabf93a6f1"
+    },
+    {
+      "page": "sensitivity",
+      "mock_calls": 21,
+      "calculations": 2,
+      "sha256": "6c70ccf682c4720e133e6ad2d2d4c6b4f43a6ae76f363cb06302c919a4f383fe"
+    },
+    {
+      "page": "adversary",
+      "mock_calls": 6,
+      "calculations": 2,
+      "sha256": "9c5a32cdff203717ef71227b3be972c36df3de9a9dad2c1117d377ae0ac1bd7d"
+    },
+    {
+      "page": "budget",
+      "mock_calls": 6,
+      "calculations": 2,
+      "sha256": "5a9c2bb73ead6033621bce7103d17802c9da50f9e76268ca7622f3cb21a5d6c4"
+    },
+    {
+      "page": "camouflage",
+      "mock_calls": 6,
+      "calculations": 2,
+      "sha256": "48d43ed386a7eeae21d4da2c13d3d99f0b08919375057bc39af4216c38560fa5"
+    },
+    {
+      "page": "compiler",
+      "mock_calls": 4,
+      "calculations": 2,
+      "sha256": "6131ab3992f77c572bcf1945da0b428f3f0b2861bfca672780f11afb1e458ea0"
+    },
+    {
+      "page": "divider",
+      "mock_calls": 6,
+      "calculations": 2,
+      "sha256": "d63539b0230cf9bdaf09bbe895e4423281ac952f8676c5908c16274afeeef4cd"
+    },
+    {
+      "page": "music",
+      "mock_calls": 4,
+      "calculations": 2,
+      "sha256": "bb636dde2f0830448149f22c8ba2fb919ef4ea7c71d2544b748df536c8509a47"
+    },
+    {
+      "page": "proof",
+      "mock_calls": 6,
+      "calculations": 2,
+      "sha256": "9b2d2c1cf6c8dc5c01aae15ff7936fe3e95ffb3aad201878927632eee6ccfd34"
+    },
+    {
+      "page": "transaction",
+      "mock_calls": 4,
+      "calculations": 2,
+      "sha256": "d7cba29e23edf50383d00672660f5d3d537970193c04be03a3da0613a7b6427d"
+    }
+  ]
+}

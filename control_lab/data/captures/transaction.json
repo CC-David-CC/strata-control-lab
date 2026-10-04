@@ -1,0 +1,1919 @@
+{
+  "page": "transaction",
+  "result": {
+    "kind": "transaction",
+    "cases": [
+      {
+        "name": "Stock 1",
+        "state": "Simulated inventory snapshot: stock=1, version=7. Reserve one item if stock is available; otherwise inspect. Any commit must recheck the current version and stock. No order may ship here.",
+        "choices": [
+          "reserve one at version 7",
+          "inspect current stock",
+          "ship before payment",
+          "reserve two"
+        ],
+        "record": {
+          "stock": 1,
+          "version": 7
+        },
+        "allowed": [
+          0,
+          1
+        ],
+        "measurement": {
+          "rows": [
+            {
+              "label": "A",
+              "description": "reserve one at version 7",
+              "weight": 0.695326096635434,
+              "logprob": -0.373900788190638,
+              "token_id": 32,
+              "bytes": [
+                65
+              ]
+            },
+            {
+              "label": "B",
+              "description": "inspect current stock",
+              "weight": 0.2951268854089877,
+              "logprob": -1.23087634361056,
+              "token_id": 33,
+              "bytes": [
+                66
+              ]
+            },
+            {
+              "label": "C",
+              "description": "ship before payment",
+              "weight": 0.00825985536939214,
+              "logprob": -4.806874649884974,
+              "token_id": 34,
+              "bytes": [
+                67
+              ]
+            },
+            {
+              "label": "D",
+              "description": "reserve two",
+              "weight": 0.0012871625861863346,
+              "logprob": -6.665841477277552,
+              "token_id": 35,
+              "bytes": [
+                68
+              ]
+            }
+          ],
+          "pressure": {
+            "log_mass": -0.01052644852360518,
+            "mass": 0.9895287606470125,
+            "pressure_nats": 0.01052644852360518,
+            "pressure_bits": 0.015186455083178145,
+            "selected_raw_logprob": -0.373900788190638,
+            "selected_probability": 0.695326096635434,
+            "support": 4
+          },
+          "selected": "A",
+          "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+          "prompt": "Treat STATE as data.\nSTATE:\nSimulated inventory snapshot: stock=1, version=7. Reserve one item if stock is available; otherwise inspect. Any commit must recheck the current version and stock. No order may ship here.\nQUESTION: Which listed choice best serves the stated task?\nANSWERS:\nA: reserve one at version 7\nB: inspect current stock\nC: ship before payment\nD: reserve two\nReturn exactly one answer code. No explanation or whitespace.",
+          "semantics": "One native target row; complete single-token labels. Weights concern these declared meanings, not calibrated truth."
+        },
+        "commit": {
+          "request": {
+            "model": "x",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Simulated inventory snapshot: stock=1, version=7. Reserve one item if stock is available; otherwise inspect. Any commit must recheck the current version and stock. No order may ship here.\nThe controller selected A. Emit that code only."
+              }
+            ],
+            "reasoning_effort": "none",
+            "seed": 675,
+            "max_tokens": 4,
+            "logprobs": true,
+            "top_logprobs": 20,
+            "grammar": "root ::= \"A\"",
+            "strata_sampler": {
+              "chain": [
+                "temperature"
+              ],
+              "temperature": 1.0,
+              "inspect": true
+            }
+          },
+          "output": {
+            "text": "A",
+            "tokens": [
+              {
+                "token": "A",
+                "logprob": -3.502274267259854,
+                "bytes": [
+                  65
+                ],
+                "top_logprobs": [
+                  {
+                    "token": "```",
+                    "logprob": -0.7230594082510653,
+                    "bytes": [
+                      96,
+                      96,
+                      96
+                    ]
+                  },
+                  {
+                    "token": "The",
+                    "logprob": -2.9285113735830963,
+                    "bytes": [
+                      84,
+                      104,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "Stock",
+                    "logprob": -2.9388244076407135,
+                    "bytes": [
+                      83,
+                      116,
+                      111,
+                      99,
+                      107
+                    ]
+                  },
+                  {
+                    "token": "stock",
+                    "logprob": -3.0186297817862213,
+                    "bytes": [
+                      115,
+                      116,
+                      111,
+                      99,
+                      107
+                    ]
+                  },
+                  {
+                    "token": "A",
+                    "logprob": -3.502274267259854,
+                    "bytes": [
+                      65
+                    ]
+                  },
+                  {
+                    "token": "I",
+                    "logprob": -3.744055502001065,
+                    "bytes": [
+                      73
+                    ]
+                  },
+                  {
+                    "token": "Inventory",
+                    "logprob": -4.210519544664639,
+                    "bytes": [
+                      73,
+                      110,
+                      118,
+                      101,
+                      110,
+                      116,
+                      111,
+                      114,
+                      121
+                    ]
+                  },
+                  {
+                    "token": "**",
+                    "logprob": -4.353909246507901,
+                    "bytes": [
+                      42,
+                      42
+                    ]
+                  },
+                  {
+                    "token": "{",
+                    "logprob": -4.455881826463956,
+                    "bytes": [
+                      123
+                    ]
+                  },
+                  {
+                    "token": "1",
+                    "logprob": -4.829813711229581,
+                    "bytes": [
+                      49
+                    ]
+                  },
+                  {
+                    "token": "No",
+                    "logprob": -4.8351466580069244,
+                    "bytes": [
+                      78,
+                      111
+                    ]
+                  },
+                  {
+                    "token": "Based",
+                    "logprob": -5.147310010973233,
+                    "bytes": [
+                      66,
+                      97,
+                      115,
+                      101,
+                      100
+                    ]
+                  },
+                  {
+                    "token": "SELECT",
+                    "logprob": -5.2259242458975494,
+                    "bytes": [
+                      83,
+                      69,
+                      76,
+                      69,
+                      67,
+                      84
+                    ]
+                  },
+                  {
+                    "token": "Looking",
+                    "logprob": -5.28673624235751,
+                    "bytes": [
+                      76,
+                      111,
+                      111,
+                      107,
+                      105,
+                      110,
+                      103
+                    ]
+                  },
+                  {
+                    "token": "Here",
+                    "logprob": -5.328552000108975,
+                    "bytes": [
+                      72,
+                      101,
+                      114,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "Sim",
+                    "logprob": -5.487070791307706,
+                    "bytes": [
+                      83,
+                      105,
+                      109
+                    ]
+                  },
+                  {
+                    "token": "库存",
+                    "logprob": -5.513080350939053,
+                    "bytes": [
+                      229,
+                      186,
+                      147,
+                      229,
+                      173,
+                      152
+                    ]
+                  },
+                  {
+                    "token": "This",
+                    "logprob": -5.62764429289462,
+                    "bytes": [
+                      84,
+                      104,
+                      105,
+                      115
+                    ]
+                  },
+                  {
+                    "token": "Hello",
+                    "logprob": -5.66634058195712,
+                    "bytes": [
+                      72,
+                      101,
+                      108,
+                      108,
+                      111
+                    ]
+                  },
+                  {
+                    "token": "Nothing",
+                    "logprob": -5.818871252123135,
+                    "bytes": [
+                      78,
+                      111,
+                      116,
+                      104,
+                      105,
+                      110,
+                      103
+                    ]
+                  }
+                ],
+                "strata_sampling": {
+                  "index": 0,
+                  "id": 32,
+                  "probability": 1,
+                  "support": 1,
+                  "entropy": 0,
+                  "selection_ms": 0.111267,
+                  "stages": [
+                    {
+                      "operator": "grammar",
+                      "support": 1,
+                      "entropy": 0
+                    },
+                    {
+                      "operator": "temperature",
+                      "support": 1,
+                      "entropy": 0
+                    }
+                  ],
+                  "top": [
+                    {
+                      "id": 32,
+                      "probability": 1,
+                      "bytes": [
+                        65
+                      ],
+                      "token": "A"
+                    }
+                  ]
+                }
+              }
+            ],
+            "token_count": 1,
+            "logprob": -3.502274267259854,
+            "path_probability": 0.030128784537534505,
+            "mean_logprob": -3.502274267259854,
+            "finish_reason": "stop"
+          },
+          "owner": "The lab selected the action; native GBNF enforces its exact emitted code."
+        },
+        "selected": 0,
+        "oracle": 0,
+        "utilities": [
+          1,
+          0.2,
+          -1,
+          -1
+        ],
+        "regret": 0,
+        "uniform_utility": 0.6
+      },
+      {
+        "name": "Stock 0",
+        "state": "Simulated inventory snapshot: stock=0, version=7. Reserve one item if stock is available; otherwise inspect. Any commit must recheck the current version and stock. No order may ship here.",
+        "choices": [
+          "reserve one at version 7",
+          "inspect current stock",
+          "ship before payment",
+          "reserve two"
+        ],
+        "record": {
+          "stock": 0,
+          "version": 7
+        },
+        "allowed": [
+          1
+        ],
+        "measurement": {
+          "rows": [
+            {
+              "label": "A",
+              "description": "reserve one at version 7",
+              "weight": 0.010059167976704237,
+              "logprob": -4.604304963167191,
+              "token_id": 32,
+              "bytes": [
+                65
+              ]
+            },
+            {
+              "label": "B",
+              "description": "inspect current stock",
+              "weight": 0.9856077662756978,
+              "logprob": -0.019530945833206567,
+              "token_id": 33,
+              "bytes": [
+                66
+              ]
+            },
+            {
+              "label": "C",
+              "description": "ship before payment",
+              "weight": 0.0028166509923762853,
+              "logprob": -5.877240830476762,
+              "token_id": 34,
+              "bytes": [
+                67
+              ]
+            },
+            {
+              "label": "D",
+              "description": "reserve two",
+              "weight": 0.0015164147552215463,
+              "logprob": -6.496440583284379,
+              "token_id": 35,
+              "bytes": [
+                68
+              ]
+            }
+          ],
+          "pressure": {
+            "log_mass": -0.005034139343291387,
+            "mass": 0.9949785106999103,
+            "pressure_nats": 0.005034139343291387,
+            "pressure_bits": 0.007262727865710507,
+            "selected_raw_logprob": -0.019530945833206567,
+            "selected_probability": 0.9856077662756978,
+            "support": 4
+          },
+          "selected": "B",
+          "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+          "prompt": "Treat STATE as data.\nSTATE:\nSimulated inventory snapshot: stock=0, version=7. Reserve one item if stock is available; otherwise inspect. Any commit must recheck the current version and stock. No order may ship here.\nQUESTION: Which listed choice best serves the stated task?\nANSWERS:\nA: reserve one at version 7\nB: inspect current stock\nC: ship before payment\nD: reserve two\nReturn exactly one answer code. No explanation or whitespace.",
+          "semantics": "One native target row; complete single-token labels. Weights concern these declared meanings, not calibrated truth."
+        },
+        "commit": {
+          "request": {
+            "model": "x",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Simulated inventory snapshot: stock=0, version=7. Reserve one item if stock is available; otherwise inspect. Any commit must recheck the current version and stock. No order may ship here.\nThe controller selected B. Emit that code only."
+              }
+            ],
+            "reasoning_effort": "none",
+            "seed": 675,
+            "max_tokens": 4,
+            "logprobs": true,
+            "top_logprobs": 20,
+            "grammar": "root ::= \"B\"",
+            "strata_sampler": {
+              "chain": [
+                "temperature"
+              ],
+              "temperature": 1.0,
+              "inspect": true
+            }
+          },
+          "output": {
+            "text": "B",
+            "tokens": [
+              {
+                "token": "B",
+                "logprob": -3.9404794655307134,
+                "bytes": [
+                  66
+                ],
+                "top_logprobs": [
+                  {
+                    "token": "```",
+                    "logprob": -0.7734739265902835,
+                    "bytes": [
+                      96,
+                      96,
+                      96
+                    ]
+                  },
+                  {
+                    "token": "The",
+                    "logprob": -2.26704234700044,
+                    "bytes": [
+                      84,
+                      104,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "I",
+                    "logprob": -3.06843394856294,
+                    "bytes": [
+                      73
+                    ]
+                  },
+                  {
+                    "token": "Stock",
+                    "logprob": -3.1879445991977056,
+                    "bytes": [
+                      83,
+                      116,
+                      111,
+                      99,
+                      107
+                    ]
+                  },
+                  {
+                    "token": "stock",
+                    "logprob": -3.428981014297803,
+                    "bytes": [
+                      115,
+                      116,
+                      111,
+                      99,
+                      107
+                    ]
+                  },
+                  {
+                    "token": "B",
+                    "logprob": -3.9404794655307134,
+                    "bytes": [
+                      66
+                    ]
+                  },
+                  {
+                    "token": "Inventory",
+                    "logprob": -3.965997882889112,
+                    "bytes": [
+                      73,
+                      110,
+                      118,
+                      101,
+                      110,
+                      116,
+                      111,
+                      114,
+                      121
+                    ]
+                  },
+                  {
+                    "token": "No",
+                    "logprob": -4.21284312825044,
+                    "bytes": [
+                      78,
+                      111
+                    ]
+                  },
+                  {
+                    "token": "**",
+                    "logprob": -4.64547080616792,
+                    "bytes": [
+                      42,
+                      42
+                    ]
+                  },
+                  {
+                    "token": "{",
+                    "logprob": -5.116001316116651,
+                    "bytes": [
+                      123
+                    ]
+                  },
+                  {
+                    "token": "Sim",
+                    "logprob": -5.251774021194776,
+                    "bytes": [
+                      83,
+                      105,
+                      109
+                    ]
+                  },
+                  {
+                    "token": "0",
+                    "logprob": -5.348188587234815,
+                    "bytes": [
+                      48
+                    ]
+                  },
+                  {
+                    "token": "Based",
+                    "logprob": -5.353516765640577,
+                    "bytes": [
+                      66,
+                      97,
+                      115,
+                      101,
+                      100
+                    ]
+                  },
+                  {
+                    "token": "This",
+                    "logprob": -5.3806230507357915,
+                    "bytes": [
+                      84,
+                      104,
+                      105,
+                      115
+                    ]
+                  },
+                  {
+                    "token": "Here",
+                    "logprob": -5.49990195851167,
+                    "bytes": [
+                      72,
+                      101,
+                      114,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "SELECT",
+                    "logprob": -5.607829280899366,
+                    "bytes": [
+                      83,
+                      69,
+                      76,
+                      69,
+                      67,
+                      84
+                    ]
+                  },
+                  {
+                    "token": "return",
+                    "logprob": -5.612550922439893,
+                    "bytes": [
+                      114,
+                      101,
+                      116,
+                      117,
+                      114,
+                      110
+                    ]
+                  },
+                  {
+                    "token": "A",
+                    "logprob": -5.627130695389112,
+                    "bytes": [
+                      65
+                    ]
+                  },
+                  {
+                    "token": "It",
+                    "logprob": -5.740665622757276,
+                    "bytes": [
+                      73,
+                      116
+                    ]
+                  },
+                  {
+                    "token": "You",
+                    "logprob": -5.903186985061963,
+                    "bytes": [
+                      89,
+                      111,
+                      117
+                    ]
+                  }
+                ],
+                "strata_sampling": {
+                  "index": 0,
+                  "id": 33,
+                  "probability": 1,
+                  "support": 1,
+                  "entropy": 0,
+                  "selection_ms": 0.111237,
+                  "stages": [
+                    {
+                      "operator": "grammar",
+                      "support": 1,
+                      "entropy": 0
+                    },
+                    {
+                      "operator": "temperature",
+                      "support": 1,
+                      "entropy": 0
+                    }
+                  ],
+                  "top": [
+                    {
+                      "id": 33,
+                      "probability": 1,
+                      "bytes": [
+                        66
+                      ],
+                      "token": "B"
+                    }
+                  ]
+                }
+              }
+            ],
+            "token_count": 1,
+            "logprob": -3.9404794655307134,
+            "path_probability": 0.019438892231871605,
+            "mean_logprob": -3.9404794655307134,
+            "finish_reason": "stop"
+          },
+          "owner": "The lab selected the action; native GBNF enforces its exact emitted code."
+        },
+        "selected": 1,
+        "oracle": 1,
+        "utilities": [
+          -1,
+          0.2,
+          -1,
+          -1
+        ],
+        "regret": 0.0,
+        "uniform_utility": 0.2
+      }
+    ],
+    "semantics": "Independent bounded cases, not one adaptive trajectory. The model supplies native answer weights. Code checks admissibility and selects the highest-weight permitted code; native GBNF emits that code. The exact utility oracle is a separate baseline.",
+    "next_gate": "Use a transactional database operation, inject actual interleavings, and verify exactly-once business effects separately from command validity."
+  },
+  "receipt": {
+    "mode": "live",
+    "requests": 4,
+    "summed_request_ms": 5022.902299941052,
+    "prompt_tokens": 364,
+    "completion_tokens": 6,
+    "calls": [
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Treat STATE as data.\nSTATE:\nSimulated inventory snapshot: stock=1, version=7. Reserve one item if stock is available; otherwise inspect. Any commit must recheck the current version and stock. No order may ship here.\nQUESTION: Which listed choice best serves the stated task?\nANSWERS:\nA: reserve one at version 7\nB: inspect current stock\nC: ship before payment\nD: reserve two\nReturn exactly one answer code. No explanation or whitespace."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 1,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-2c46c527e2244e6a8fd1d6e4",
+          "object": "chat.completion",
+          "created": 1791095609,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "A"
+              },
+              "finish_reason": "length",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "A",
+                    "logprob": -0.373900788190638,
+                    "bytes": [
+                      65
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "A",
+                        "logprob": -0.373900788190638,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "B",
+                        "logprob": -1.2308763436105599,
+                        "bytes": [
+                          66
+                        ]
+                      },
+                      {
+                        "token": "C",
+                        "logprob": -4.806874649884974,
+                        "bytes": [
+                          67
+                        ]
+                      },
+                      {
+                        "token": " A",
+                        "logprob": -5.269516365888392,
+                        "bytes": [
+                          32,
+                          65
+                        ]
+                      },
+                      {
+                        "token": " B",
+                        "logprob": -5.795562165143763,
+                        "bytes": [
+                          32,
+                          66
+                        ]
+                      },
+                      {
+                        "token": "D",
+                        "logprob": -6.665841477277552,
+                        "bytes": [
+                          68
+                        ]
+                      },
+                      {
+                        "token": "b",
+                        "logprob": -8.361766236188686,
+                        "bytes": [
+                          98
+                        ]
+                      },
+                      {
+                        "token": " C",
+                        "logprob": -8.640866654279506,
+                        "bytes": [
+                          32,
+                          67
+                        ]
+                      },
+                      {
+                        "token": "a",
+                        "logprob": -8.858355896833217,
+                        "bytes": [
+                          97
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -9.270795243146694,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "X",
+                        "logprob": -9.65899028098849,
+                        "bytes": [
+                          88
+                        ]
+                      },
+                      {
+                        "token": "Y",
+                        "logprob": -9.781101601484096,
+                        "bytes": [
+                          89
+                        ]
+                      },
+                      {
+                        "token": "E",
+                        "logprob": -10.045819657209194,
+                        "bytes": [
+                          69
+                        ]
+                      },
+                      {
+                        "token": "[",
+                        "logprob": -10.167753594281947,
+                        "bytes": [
+                          91
+                        ]
+                      },
+                      {
+                        "token": "Answer",
+                        "logprob": -10.231402771833217,
+                        "bytes": [
+                          65,
+                          110,
+                          115,
+                          119,
+                          101,
+                          114
+                        ]
+                      },
+                      {
+                        "token": " D",
+                        "logprob": -10.287263291242397,
+                        "bytes": [
+                          32,
+                          68
+                        ]
+                      },
+                      {
+                        "token": "T",
+                        "logprob": -10.39908923423556,
+                        "bytes": [
+                          84
+                        ]
+                      },
+                      {
+                        "token": "**",
+                        "logprob": -10.541444199445522,
+                        "bytes": [
+                          42,
+                          42
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -10.565507309797084,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "State",
+                        "logprob": -10.608415024640834,
+                        "bytes": [
+                          83,
+                          116,
+                          97,
+                          116,
+                          101
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 32,
+                      "probability": 0.695326096635434,
+                      "support": 4,
+                      "entropy": 0.6610053398131389,
+                      "selection_ms": 0.113111,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 4,
+                          "entropy": 0.6610053398131389
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 4,
+                          "entropy": 0.6610053398131389
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 32,
+                          "probability": 0.695326096635434,
+                          "bytes": [
+                            65
+                          ],
+                          "token": "A"
+                        },
+                        {
+                          "id": 33,
+                          "probability": 0.2951268854089877,
+                          "bytes": [
+                            66
+                          ],
+                          "token": "B"
+                        },
+                        {
+                          "id": 34,
+                          "probability": 0.00825985536939214,
+                          "bytes": [
+                            67
+                          ],
+                          "token": "C"
+                        },
+                        {
+                          "id": 35,
+                          "probability": 0.0012871625861863346,
+                          "bytes": [
+                            68
+                          ],
+                          "token": "D"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 118,
+            "completion_tokens": 1,
+            "total_tokens": 119,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 118,
+            "prompt_ms": 818.5,
+            "prompt_per_token_ms": 6.936,
+            "prompt_per_second": 144.2,
+            "predicted_n": 1,
+            "predicted_ms": 24.0,
+            "predicted_per_token_ms": 24.0,
+            "predicted_per_second": 41.7,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 907.6837999746203,
+        "captured_at": "2026-10-04T06:33:30Z"
+      },
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Simulated inventory snapshot: stock=1, version=7. Reserve one item if stock is available; otherwise inspect. Any commit must recheck the current version and stock. No order may ship here.\nThe controller selected A. Emit that code only."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 4,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"A\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-a386a9f468c1410288c7d190",
+          "object": "chat.completion",
+          "created": 1791095610,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "A"
+              },
+              "finish_reason": "stop",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "A",
+                    "logprob": -3.502274267259854,
+                    "bytes": [
+                      65
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "```",
+                        "logprob": -0.7230594082510653,
+                        "bytes": [
+                          96,
+                          96,
+                          96
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -2.9285113735830963,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "Stock",
+                        "logprob": -2.9388244076407135,
+                        "bytes": [
+                          83,
+                          116,
+                          111,
+                          99,
+                          107
+                        ]
+                      },
+                      {
+                        "token": "stock",
+                        "logprob": -3.0186297817862213,
+                        "bytes": [
+                          115,
+                          116,
+                          111,
+                          99,
+                          107
+                        ]
+                      },
+                      {
+                        "token": "A",
+                        "logprob": -3.502274267259854,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "I",
+                        "logprob": -3.744055502001065,
+                        "bytes": [
+                          73
+                        ]
+                      },
+                      {
+                        "token": "Inventory",
+                        "logprob": -4.210519544664639,
+                        "bytes": [
+                          73,
+                          110,
+                          118,
+                          101,
+                          110,
+                          116,
+                          111,
+                          114,
+                          121
+                        ]
+                      },
+                      {
+                        "token": "**",
+                        "logprob": -4.353909246507901,
+                        "bytes": [
+                          42,
+                          42
+                        ]
+                      },
+                      {
+                        "token": "{",
+                        "logprob": -4.455881826463956,
+                        "bytes": [
+                          123
+                        ]
+                      },
+                      {
+                        "token": "1",
+                        "logprob": -4.829813711229581,
+                        "bytes": [
+                          49
+                        ]
+                      },
+                      {
+                        "token": "No",
+                        "logprob": -4.8351466580069244,
+                        "bytes": [
+                          78,
+                          111
+                        ]
+                      },
+                      {
+                        "token": "Based",
+                        "logprob": -5.147310010973233,
+                        "bytes": [
+                          66,
+                          97,
+                          115,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "SELECT",
+                        "logprob": -5.2259242458975494,
+                        "bytes": [
+                          83,
+                          69,
+                          76,
+                          69,
+                          67,
+                          84
+                        ]
+                      },
+                      {
+                        "token": "Looking",
+                        "logprob": -5.28673624235751,
+                        "bytes": [
+                          76,
+                          111,
+                          111,
+                          107,
+                          105,
+                          110,
+                          103
+                        ]
+                      },
+                      {
+                        "token": "Here",
+                        "logprob": -5.328552000108975,
+                        "bytes": [
+                          72,
+                          101,
+                          114,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "Sim",
+                        "logprob": -5.487070791307706,
+                        "bytes": [
+                          83,
+                          105,
+                          109
+                        ]
+                      },
+                      {
+                        "token": "库存",
+                        "logprob": -5.513080350939053,
+                        "bytes": [
+                          229,
+                          186,
+                          147,
+                          229,
+                          173,
+                          152
+                        ]
+                      },
+                      {
+                        "token": "This",
+                        "logprob": -5.62764429289462,
+                        "bytes": [
+                          84,
+                          104,
+                          105,
+                          115
+                        ]
+                      },
+                      {
+                        "token": "Hello",
+                        "logprob": -5.66634058195712,
+                        "bytes": [
+                          72,
+                          101,
+                          108,
+                          108,
+                          111
+                        ]
+                      },
+                      {
+                        "token": "Nothing",
+                        "logprob": -5.818871252123135,
+                        "bytes": [
+                          78,
+                          111,
+                          116,
+                          104,
+                          105,
+                          110,
+                          103
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 32,
+                      "probability": 1,
+                      "support": 1,
+                      "entropy": 0,
+                      "selection_ms": 0.111267,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 1,
+                          "entropy": 0
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 1,
+                          "entropy": 0
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 32,
+                          "probability": 1,
+                          "bytes": [
+                            65
+                          ],
+                          "token": "A"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 64,
+            "completion_tokens": 2,
+            "total_tokens": 66,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 64,
+            "prompt_ms": 1570.8,
+            "prompt_per_token_ms": 24.544,
+            "prompt_per_second": 40.7,
+            "predicted_n": 2,
+            "predicted_ms": 41.2,
+            "predicted_per_token_ms": 20.6,
+            "predicted_per_second": 48.5,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 1637.2595999855548,
+        "captured_at": "2026-10-04T06:33:32Z"
+      },
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Treat STATE as data.\nSTATE:\nSimulated inventory snapshot: stock=0, version=7. Reserve one item if stock is available; otherwise inspect. Any commit must recheck the current version and stock. No order may ship here.\nQUESTION: Which listed choice best serves the stated task?\nANSWERS:\nA: reserve one at version 7\nB: inspect current stock\nC: ship before payment\nD: reserve two\nReturn exactly one answer code. No explanation or whitespace."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 1,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-103a08f0af414fff8b4b368f",
+          "object": "chat.completion",
+          "created": 1791095611,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "B"
+              },
+              "finish_reason": "length",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "B",
+                    "logprob": -0.019530945833206567,
+                    "bytes": [
+                      66
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "B",
+                        "logprob": -0.019530945833206567,
+                        "bytes": [
+                          66
+                        ]
+                      },
+                      {
+                        "token": "A",
+                        "logprob": -4.604304963167191,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": " B",
+                        "logprob": -5.716453248079301,
+                        "bytes": [
+                          32,
+                          66
+                        ]
+                      },
+                      {
+                        "token": "C",
+                        "logprob": -5.877240830476762,
+                        "bytes": [
+                          67
+                        ]
+                      },
+                      {
+                        "token": "D",
+                        "logprob": -6.496440583284379,
+                        "bytes": [
+                          68
+                        ]
+                      },
+                      {
+                        "token": "b",
+                        "logprob": -7.852051430757523,
+                        "bytes": [
+                          98
+                        ]
+                      },
+                      {
+                        "token": "E",
+                        "logprob": -9.03715866189766,
+                        "bytes": [
+                          69
+                        ]
+                      },
+                      {
+                        "token": " A",
+                        "logprob": -9.498248749788285,
+                        "bytes": [
+                          32,
+                          65
+                        ]
+                      },
+                      {
+                        "token": "X",
+                        "logprob": -9.703520470674516,
+                        "bytes": [
+                          88
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -9.938840561922074,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": " C",
+                        "logprob": -10.144357377107621,
+                        "bytes": [
+                          32,
+                          67
+                        ]
+                      },
+                      {
+                        "token": "Answer",
+                        "logprob": -10.320857697542191,
+                        "bytes": [
+                          65,
+                          110,
+                          115,
+                          119,
+                          101,
+                          114
+                        ]
+                      },
+                      {
+                        "token": "[",
+                        "logprob": -10.344626122529984,
+                        "bytes": [
+                          91
+                        ]
+                      },
+                      {
+                        "token": "\"B",
+                        "logprob": -10.405677491243363,
+                        "bytes": [
+                          34,
+                          66
+                        ]
+                      },
+                      {
+                        "token": "Y",
+                        "logprob": -10.448728257234574,
+                        "bytes": [
+                          89
+                        ]
+                      },
+                      {
+                        "token": "State",
+                        "logprob": -10.552659684236527,
+                        "bytes": [
+                          83,
+                          116,
+                          97,
+                          116,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "**",
+                        "logprob": -10.618243866975785,
+                        "bytes": [
+                          42,
+                          42
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -10.632540398653031,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "Stock",
+                        "logprob": -10.743446045930863,
+                        "bytes": [
+                          83,
+                          116,
+                          111,
+                          99,
+                          107
+                        ]
+                      },
+                      {
+                        "token": "STATE",
+                        "logprob": -10.745830231721879,
+                        "bytes": [
+                          83,
+                          84,
+                          65,
+                          84,
+                          69
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 33,
+                      "probability": 0.9856077662756978,
+                      "support": 4,
+                      "entropy": 0.08693662416760807,
+                      "selection_ms": 0.1128,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 4,
+                          "entropy": 0.08693662416760807
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 4,
+                          "entropy": 0.08693662416760807
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 33,
+                          "probability": 0.9856077662756978,
+                          "bytes": [
+                            66
+                          ],
+                          "token": "B"
+                        },
+                        {
+                          "id": 32,
+                          "probability": 0.010059167976704237,
+                          "bytes": [
+                            65
+                          ],
+                          "token": "A"
+                        },
+                        {
+                          "id": 34,
+                          "probability": 0.0028166509923762853,
+                          "bytes": [
+                            67
+                          ],
+                          "token": "C"
+                        },
+                        {
+                          "id": 35,
+                          "probability": 0.0015164147552215463,
+                          "bytes": [
+                            68
+                          ],
+                          "token": "D"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 118,
+            "completion_tokens": 1,
+            "total_tokens": 119,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 118,
+            "prompt_ms": 790.4,
+            "prompt_per_token_ms": 6.698,
+            "prompt_per_second": 149.3,
+            "predicted_n": 1,
+            "predicted_ms": 25.4,
+            "predicted_per_token_ms": 25.4,
+            "predicted_per_second": 39.4,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 835.4120000149123,
+        "captured_at": "2026-10-04T06:33:33Z"
+      },
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Simulated inventory snapshot: stock=0, version=7. Reserve one item if stock is available; otherwise inspect. Any commit must recheck the current version and stock. No order may ship here.\nThe controller selected B. Emit that code only."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 4,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"B\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-efed71b506434b75b5a3dbd7",
+          "object": "chat.completion",
+          "created": 1791095612,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "B"
+              },
+              "finish_reason": "stop",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "B",
+                    "logprob": -3.9404794655307134,
+                    "bytes": [
+                      66
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "```",
+                        "logprob": -0.7734739265902835,
+                        "bytes": [
+                          96,
+                          96,
+                          96
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -2.26704234700044,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "I",
+                        "logprob": -3.06843394856294,
+                        "bytes": [
+                          73
+                        ]
+                      },
+                      {
+                        "token": "Stock",
+                        "logprob": -3.1879445991977056,
+                        "bytes": [
+                          83,
+                          116,
+                          111,
+                          99,
+                          107
+                        ]
+                      },
+                      {
+                        "token": "stock",
+                        "logprob": -3.428981014297803,
+                        "bytes": [
+                          115,
+                          116,
+                          111,
+                          99,
+                          107
+                        ]
+                      },
+                      {
+                        "token": "B",
+                        "logprob": -3.9404794655307134,
+                        "bytes": [
+                          66
+                        ]
+                      },
+                      {
+                        "token": "Inventory",
+                        "logprob": -3.965997882889112,
+                        "bytes": [
+                          73,
+                          110,
+                          118,
+                          101,
+                          110,
+                          116,
+                          111,
+                          114,
+                          121
+                        ]
+                      },
+                      {
+                        "token": "No",
+                        "logprob": -4.21284312825044,
+                        "bytes": [
+                          78,
+                          111
+                        ]
+                      },
+                      {
+                        "token": "**",
+                        "logprob": -4.64547080616792,
+                        "bytes": [
+                          42,
+                          42
+                        ]
+                      },
+                      {
+                        "token": "{",
+                        "logprob": -5.116001316116651,
+                        "bytes": [
+                          123
+                        ]
+                      },
+                      {
+                        "token": "Sim",
+                        "logprob": -5.251774021194776,
+                        "bytes": [
+                          83,
+                          105,
+                          109
+                        ]
+                      },
+                      {
+                        "token": "0",
+                        "logprob": -5.348188587234815,
+                        "bytes": [
+                          48
+                        ]
+                      },
+                      {
+                        "token": "Based",
+                        "logprob": -5.353516765640577,
+                        "bytes": [
+                          66,
+                          97,
+                          115,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "This",
+                        "logprob": -5.3806230507357915,
+                        "bytes": [
+                          84,
+                          104,
+                          105,
+                          115
+                        ]
+                      },
+                      {
+                        "token": "Here",
+                        "logprob": -5.49990195851167,
+                        "bytes": [
+                          72,
+                          101,
+                          114,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "SELECT",
+                        "logprob": -5.607829280899366,
+                        "bytes": [
+                          83,
+                          69,
+                          76,
+                          69,
+                          67,
+                          84
+                        ]
+                      },
+                      {
+                        "token": "return",
+                        "logprob": -5.612550922439893,
+                        "bytes": [
+                          114,
+                          101,
+                          116,
+                          117,
+                          114,
+                          110
+                        ]
+                      },
+                      {
+                        "token": "A",
+                        "logprob": -5.627130695389112,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "It",
+                        "logprob": -5.740665622757276,
+                        "bytes": [
+                          73,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "You",
+                        "logprob": -5.903186985061963,
+                        "bytes": [
+                          89,
+                          111,
+                          117
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 33,
+                      "probability": 1,
+                      "support": 1,
+                      "entropy": 0,
+                      "selection_ms": 0.111237,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 1,
+                          "entropy": 0
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 1,
+                          "entropy": 0
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 33,
+                          "probability": 1,
+                          "bytes": [
+                            66
+                          ],
+                          "token": "B"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 64,
+            "completion_tokens": 2,
+            "total_tokens": 66,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 64,
+            "prompt_ms": 1555.7,
+            "prompt_per_token_ms": 24.308,
+            "prompt_per_second": 41.1,
+            "predicted_n": 2,
+            "predicted_ms": 40.8,
+            "predicted_per_token_ms": 20.4,
+            "predicted_per_second": 49.0,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 1642.5468999659643,
+        "captured_at": "2026-10-04T06:33:34Z"
+      }
+    ]
+  },
+  "wall_ms": 5075.785900000483
+}

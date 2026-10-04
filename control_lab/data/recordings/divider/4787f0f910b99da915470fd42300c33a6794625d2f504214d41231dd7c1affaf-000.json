@@ -1,0 +1,299 @@
+{
+  "provenance": "native-strata",
+  "request": {
+    "model": "x",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Simulated voltage divider: output = input * R_bottom/(R_top + R_bottom). Input=12 V, target=5 V. Each resistor can vary independently by 5 percent. Pick the pair with minimum worst-case absolute voltage error.\nThe controller selected A. Emit that code only."
+      }
+    ],
+    "reasoning_effort": "none",
+    "seed": 675,
+    "max_tokens": 4,
+    "logprobs": true,
+    "top_logprobs": 20,
+    "grammar": "root ::= \"A\"",
+    "strata_sampler": {
+      "chain": [
+        "temperature"
+      ],
+      "temperature": 1.0,
+      "inspect": true
+    }
+  },
+  "response": {
+    "id": "chatcmpl-9835f90ba4f8461c9dc79b42",
+    "object": "chat.completion",
+    "created": 1791095605,
+    "model": "qwen3.8-flash-next",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "A"
+        },
+        "finish_reason": "stop",
+        "logprobs": {
+          "content": [
+            {
+              "token": "A",
+              "logprob": -9.736108853174262,
+              "bytes": [
+                65
+              ],
+              "top_logprobs": [
+                {
+                  "token": "Looking",
+                  "logprob": -0.22056205446820673,
+                  "bytes": [
+                    76,
+                    111,
+                    111,
+                    107,
+                    105,
+                    110,
+                    103
+                  ]
+                },
+                {
+                  "token": "```",
+                  "logprob": -1.784189297510199,
+                  "bytes": [
+                    96,
+                    96,
+                    96
+                  ]
+                },
+                {
+                  "token": "Let",
+                  "logprob": -5.267832829309516,
+                  "bytes": [
+                    76,
+                    101,
+                    116
+                  ]
+                },
+                {
+                  "token": "**",
+                  "logprob": -5.580675198389105,
+                  "bytes": [
+                    42,
+                    42
+                  ]
+                },
+                {
+                  "token": "To",
+                  "logprob": -6.108260227991156,
+                  "bytes": [
+                    84,
+                    111
+                  ]
+                },
+                {
+                  "token": " Looking",
+                  "logprob": -6.407011105371527,
+                  "bytes": [
+                    32,
+                    76,
+                    111,
+                    111,
+                    107,
+                    105,
+                    110,
+                    103
+                  ]
+                },
+                {
+                  "token": "import",
+                  "logprob": -6.791536404443793,
+                  "bytes": [
+                    105,
+                    109,
+                    112,
+                    111,
+                    114,
+                    116
+                  ]
+                },
+                {
+                  "token": "I",
+                  "logprob": -6.88319881136518,
+                  "bytes": [
+                    73
+                  ]
+                },
+                {
+                  "token": "looking",
+                  "logprob": -6.919064595056586,
+                  "bytes": [
+                    108,
+                    111,
+                    111,
+                    107,
+                    105,
+                    110,
+                    103
+                  ]
+                },
+                {
+                  "token": "<tool_call>",
+                  "logprob": -7.180703236414008,
+                  "bytes": null
+                },
+                {
+                  "token": "<|im_end|>",
+                  "logprob": -7.2574826019535585,
+                  "bytes": null
+                },
+                {
+                  "token": "Based",
+                  "logprob": -7.4534521835575624,
+                  "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                  ]
+                },
+                {
+                  "token": "Look",
+                  "logprob": -7.5107785003910585,
+                  "bytes": [
+                    76,
+                    111,
+                    111,
+                    107
+                  ]
+                },
+                {
+                  "token": "The",
+                  "logprob": -7.544747425867133,
+                  "bytes": [
+                    84,
+                    104,
+                    101
+                  ]
+                },
+                {
+                  "token": " looking",
+                  "logprob": -7.613468243433051,
+                  "bytes": [
+                    32,
+                    108,
+                    111,
+                    111,
+                    107,
+                    105,
+                    110,
+                    103
+                  ]
+                },
+                {
+                  "token": "看",
+                  "logprob": -7.760246350122504,
+                  "bytes": [
+                    231,
+                    156,
+                    139
+                  ]
+                },
+                {
+                  "token": "def",
+                  "logprob": -7.909719540430121,
+                  "bytes": [
+                    100,
+                    101,
+                    102
+                  ]
+                },
+                {
+                  "token": "Here",
+                  "logprob": -7.934567524744086,
+                  "bytes": [
+                    72,
+                    101,
+                    114,
+                    101
+                  ]
+                },
+                {
+                  "token": "-",
+                  "logprob": -8.104561878992133,
+                  "bytes": [
+                    45
+                  ]
+                },
+                {
+                  "token": "##",
+                  "logprob": -8.293520047021918,
+                  "bytes": [
+                    35,
+                    35
+                  ]
+                }
+              ],
+              "strata_sampling": {
+                "index": 0,
+                "id": 32,
+                "probability": 1,
+                "support": 1,
+                "entropy": 0,
+                "selection_ms": 0.11274,
+                "stages": [
+                  {
+                    "operator": "grammar",
+                    "support": 1,
+                    "entropy": 0
+                  },
+                  {
+                    "operator": "temperature",
+                    "support": 1,
+                    "entropy": 0
+                  }
+                ],
+                "top": [
+                  {
+                    "id": 32,
+                    "probability": 1,
+                    "bytes": [
+                      65
+                    ],
+                    "token": "A"
+                  }
+                ]
+              }
+            }
+          ],
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 73,
+      "completion_tokens": 2,
+      "total_tokens": 75,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 73,
+      "prompt_ms": 827.2,
+      "prompt_per_token_ms": 11.332,
+      "prompt_per_second": 88.2,
+      "predicted_n": 2,
+      "predicted_ms": 40.1,
+      "predicted_per_token_ms": 20.05,
+      "predicted_per_second": 49.9,
+      "draft_n": 0,
+      "draft_n_accepted": 0
+    }
+  },
+  "chunks": [],
+  "wall_ms": 891.1264999769628,
+  "captured_at": "2026-10-04T06:33:26Z"
+}

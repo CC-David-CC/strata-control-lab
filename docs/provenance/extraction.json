@@ -1,0 +1,2414 @@
+{
+  "source_repository": "CC-David-CC/Strata-a5500",
+  "source_commit": "8c99143e05234c02f2ccf41cc3361746b09773cd",
+  "source_branch": "work/lab-applied-experiments",
+  "source_commit_public": false,
+  "note": "Fresh repository. Original license and native data retained; no source Git history copied. Source hashes identify extraction input, before standalone path edits.",
+  "files": {
+    "control_lab/data/recordings/builtin/024670810a97f91d84ec259a7ff9003f491e5d397328cc1d6990bbb2ffd515cc-000.json": {
+      "source": "docs/control-lab-evidence/recordings/024670810a97f91d84ec259a7ff9003f491e5d397328cc1d6990bbb2ffd515cc-000.json",
+      "git_blob": "e24fe969da66e9dfd5c305be3ae348488ee27206",
+      "source_sha256": "d83378987fcd059ab111ed911997a2dbd98711f74fcac9cee6f92b2205477183"
+    },
+    "control_lab/data/recordings/builtin/037a546d1b2b5b2d4b02ad036ada62f41eb3fbb8d6d0aa7ed581fbd3a8b5a9c9-000.json": {
+      "source": "docs/control-lab-evidence/recordings/037a546d1b2b5b2d4b02ad036ada62f41eb3fbb8d6d0aa7ed581fbd3a8b5a9c9-000.json",
+      "git_blob": "317c8d069cf3c2990762860b911a8384e6415fd5",
+      "source_sha256": "d2c85f6f6303622395865e356d3880bf62afae6b74bab8a06cdbd37b00387ed2"
+    },
+    "control_lab/data/recordings/builtin/077ad8fdcb8510a3d7dc2d416f250d32e81f9b1e774535c23d09691f62a6634f-000.json": {
+      "source": "docs/control-lab-evidence/recordings/077ad8fdcb8510a3d7dc2d416f250d32e81f9b1e774535c23d09691f62a6634f-000.json",
+      "git_blob": "602fd7626d55fce11814b2e62308bc309d2c969e",
+      "source_sha256": "0e00c8ce0cfd05819d22faa5eb7510753d9caebfae4993c4a88216c06098a537"
+    },
+    "control_lab/data/recordings/builtin/07adf61dc244dfa04b923c533a784ed8b573fe1227d6106d45559ed17bec5a7d-000.json": {
+      "source": "docs/control-lab-evidence/recordings/07adf61dc244dfa04b923c533a784ed8b573fe1227d6106d45559ed17bec5a7d-000.json",
+      "git_blob": "cdcfa35fd63e4544d6e392bb28788ca7bb1b7c4b",
+      "source_sha256": "88a9f7fa44676a07c6615a406fa1c59e3bf03942259d42dc13842ce275fc6949"
+    },
+    "control_lab/data/recordings/builtin/07bddcdb15ee4ca7e4fcce6d22ae552abd40a9b0a20725a29932ec1184dbb212-000.json": {
+      "source": "docs/control-lab-evidence/recordings/07bddcdb15ee4ca7e4fcce6d22ae552abd40a9b0a20725a29932ec1184dbb212-000.json",
+      "git_blob": "bc998ff0e4c12d3240935f9caa86c5f2d6e2c89d",
+      "source_sha256": "8504b247d0b8d3bd743dc52f845bdd988b52ec29f27681b6c53c3d80a1b18db7"
+    },
+    "control_lab/data/recordings/builtin/082759a08a287cebc9e0a6fd55cbc2b9c5e15dcced81945cb8c83ecd73660a9f-000.json": {
+      "source": "docs/control-lab-evidence/recordings/082759a08a287cebc9e0a6fd55cbc2b9c5e15dcced81945cb8c83ecd73660a9f-000.json",
+      "git_blob": "f238e3f52f0ad9154348962e6cf60b9e45f19669",
+      "source_sha256": "e2222e59c06a0a0779ec88045bfd8945119c5627ed4a2e4e80aa5f750eb39e6f"
+    },
+    "control_lab/data/recordings/builtin/0854ca713b119f698995db9e803e7c41d53f5caad63d65b4930f6579e1ca9210-000.json": {
+      "source": "docs/control-lab-evidence/recordings/0854ca713b119f698995db9e803e7c41d53f5caad63d65b4930f6579e1ca9210-000.json",
+      "git_blob": "67bd7012f444ea1a216805e6f144c1f18bf6dbd3",
+      "source_sha256": "3c5c30db600735f1aa02ebf2cd60d0cbb993ca6790b3d668f663802505603d08"
+    },
+    "control_lab/data/recordings/builtin/0b0d444c09141c29ea8a3cd6f67ef7e731bfa1740d0d16950825998ed6db66f4-000.json": {
+      "source": "docs/control-lab-evidence/recordings/0b0d444c09141c29ea8a3cd6f67ef7e731bfa1740d0d16950825998ed6db66f4-000.json",
+      "git_blob": "488cac4a2732fa401458f87bdad3ed3939a8b3f0",
+      "source_sha256": "7250bc096aa7f109e6effcb6419c1153fc4e717cd0a6eb9dcb10b0f2c3467e15"
+    },
+    "control_lab/data/recordings/builtin/0c168041186372b267f1065f68fdb78e3c75ee7a6d7eba814cdf0584fbf9661d-000.json": {
+      "source": "docs/control-lab-evidence/recordings/0c168041186372b267f1065f68fdb78e3c75ee7a6d7eba814cdf0584fbf9661d-000.json",
+      "git_blob": "0296745d2f11908c6f1e9a0c2b3b3281d4b88585",
+      "source_sha256": "1a16ee66874e4c22bd72e91405c7fbe90d4e731c301fd54e47e65f59233d1596"
+    },
+    "control_lab/data/recordings/builtin/0e257c42968c52076907a2344169033801dab1a2b6b221e47164f5ef377f5486-000.json": {
+      "source": "docs/control-lab-evidence/recordings/0e257c42968c52076907a2344169033801dab1a2b6b221e47164f5ef377f5486-000.json",
+      "git_blob": "225d9ffa595e566bd9bfaa35b3dae7370f8638a6",
+      "source_sha256": "7b84fcab3cc899ad9e61e91c0e19d3cd8884243d3b66767fd098693db952a89a"
+    },
+    "control_lab/data/recordings/builtin/0f955ff070b8d26ca71befc9b01eebe8e16d6815f27a2600244086414809c3e6-000.json": {
+      "source": "docs/control-lab-evidence/recordings/0f955ff070b8d26ca71befc9b01eebe8e16d6815f27a2600244086414809c3e6-000.json",
+      "git_blob": "6926a7938ff01d307167196a924e07a7a4771863",
+      "source_sha256": "88582f7f1d08421ffd5fcaf74936b62a007d3f52864840b17fbd564c77f85704"
+    },
+    "control_lab/data/recordings/builtin/0faa4bebf9e7de8a87968a7e3a6a4b38c8cb2bb4bbd4d09a2231752251e4b9f1-000.json": {
+      "source": "docs/control-lab-evidence/recordings/0faa4bebf9e7de8a87968a7e3a6a4b38c8cb2bb4bbd4d09a2231752251e4b9f1-000.json",
+      "git_blob": "2c8583fc5b48554653577a9797d763ba387bcac4",
+      "source_sha256": "d79e9530e82e08fe24697cd56a7178ca426860da78ee14969b8d4d1415631ff3"
+    },
+    "control_lab/data/recordings/builtin/10e817ece3ce44e4a652d5c094e0946ec58f8adfa13545e83ae97b81629335a4-000.json": {
+      "source": "docs/control-lab-evidence/recordings/10e817ece3ce44e4a652d5c094e0946ec58f8adfa13545e83ae97b81629335a4-000.json",
+      "git_blob": "ebecd2cded90daf0adfcd6bf3f6688cd5ba19baa",
+      "source_sha256": "11185c920583b005a79bfaab908f6ee594080b0b85028859a7b40e78a8e7f90e"
+    },
+    "control_lab/data/recordings/builtin/12bc7a10acd38c3eabe05a92a35643d52d0cca113405da361f39631404e2c2e2-000.json": {
+      "source": "docs/control-lab-evidence/recordings/12bc7a10acd38c3eabe05a92a35643d52d0cca113405da361f39631404e2c2e2-000.json",
+      "git_blob": "40f4312d67736bf962bb873579bdd1c788ca834f",
+      "source_sha256": "c5ec61ac78f713ae4d6216f45ee4d2c672c0539c5064ef15c768640c6ef7c049"
+    },
+    "control_lab/data/recordings/builtin/12d32454065ff6a50b72cf8ee6df9ed2d8cb577dfecbc57243b7ad01a1fa8378-000.json": {
+      "source": "docs/control-lab-evidence/recordings/12d32454065ff6a50b72cf8ee6df9ed2d8cb577dfecbc57243b7ad01a1fa8378-000.json",
+      "git_blob": "9a966a9e6f1c89e953d9bcce6397891bf4ea5ba5",
+      "source_sha256": "e2037d957172a8bf838054b82a2a24b331b4b5ad0011a3dbf8660caf0ea8e8de"
+    },
+    "control_lab/data/recordings/builtin/15cbebc7f0e55472e09938b09b91f6b93084f6a6cc4d135642e59cbea4568fa4-000.json": {
+      "source": "docs/control-lab-evidence/recordings/15cbebc7f0e55472e09938b09b91f6b93084f6a6cc4d135642e59cbea4568fa4-000.json",
+      "git_blob": "c4e5f656284d7664b36f10b8ea94a31075b4458c",
+      "source_sha256": "c0e98bb8b50983af3cba35673eda2f5beae30c1c1650e0ce536d15ac8a0b7256"
+    },
+    "control_lab/data/recordings/builtin/166803aaec741f0750ed967005e6564111210a6c0c594be3c07981a474720ce3-000.json": {
+      "source": "docs/control-lab-evidence/recordings/166803aaec741f0750ed967005e6564111210a6c0c594be3c07981a474720ce3-000.json",
+      "git_blob": "471764f2c4f450b5f3fbaf8c759c639927d40912",
+      "source_sha256": "ff71d354a6828eeff0ff8b3c6d9883efb37050977db32fd1962d284d1e0003d0"
+    },
+    "control_lab/data/recordings/builtin/175aa456043d532db082785320256ee2c8e693e14fa3aa9c84f2d5e04a9a7df7-000.json": {
+      "source": "docs/control-lab-evidence/recordings/175aa456043d532db082785320256ee2c8e693e14fa3aa9c84f2d5e04a9a7df7-000.json",
+      "git_blob": "b8bd9a613adc0e9f8282a803716576bb9e1ac1b6",
+      "source_sha256": "337a47b6cfa2c524a04b2459c4c6625ea0daf4f89e981aad6e00b2a2ef7e537e"
+    },
+    "control_lab/data/recordings/builtin/187ea0dd56a403e5a88e08f2d3521b63a9f926388124f641e3ef0087870733e7-000.json": {
+      "source": "docs/control-lab-evidence/recordings/187ea0dd56a403e5a88e08f2d3521b63a9f926388124f641e3ef0087870733e7-000.json",
+      "git_blob": "6e68388a6d6f54cc1180f5fda13c2d70e1da2891",
+      "source_sha256": "f4e98a9c6a053c6f34dc10b2bfc64d1f1fb59e7922eb9e8f18db75472d4d6f16"
+    },
+    "control_lab/data/recordings/builtin/19b5eabeeaff68f7391b78978f1465addd387c733e0358c5909b044abf2722ce-000.json": {
+      "source": "docs/control-lab-evidence/recordings/19b5eabeeaff68f7391b78978f1465addd387c733e0358c5909b044abf2722ce-000.json",
+      "git_blob": "bf4866ad37ec9a36a911e9f53ff80955fd42da2a",
+      "source_sha256": "7e703f4c89d046f3ffa312cb93e04c974f9437904dd460269c85207e41f5442b"
+    },
+    "control_lab/data/recordings/builtin/19fa05301aef520ffd9cb22bb744dd0d462e33e84ac587cc6547bc8d08e461d4-000.json": {
+      "source": "docs/control-lab-evidence/recordings/19fa05301aef520ffd9cb22bb744dd0d462e33e84ac587cc6547bc8d08e461d4-000.json",
+      "git_blob": "8baf4cfea4b30c29a6c0c61fedf992e040a74917",
+      "source_sha256": "dae6aec979447d8a6a3d5c182b9a729d11d7a6297d897613d18ee4ced60f9b95"
+    },
+    "control_lab/data/recordings/builtin/1ba68aaca0936490a7394d9f7ec966eaac230c1ff99aeefbe3a3bff9a695a483-000.json": {
+      "source": "docs/control-lab-evidence/recordings/1ba68aaca0936490a7394d9f7ec966eaac230c1ff99aeefbe3a3bff9a695a483-000.json",
+      "git_blob": "d7fb5166ad5449ecac7c896003e4375d88224031",
+      "source_sha256": "be8f23c405754bfae80313639b3d2472ef5cf645e1f7ff220f1758b61aef536e"
+    },
+    "control_lab/data/recordings/builtin/1bdc36e5096198b8dd644c7665c9dd943465696fb9ce2d7e6a11afa256ea46b8-000.json": {
+      "source": "docs/control-lab-evidence/recordings/1bdc36e5096198b8dd644c7665c9dd943465696fb9ce2d7e6a11afa256ea46b8-000.json",
+      "git_blob": "165b8a2df867cd571d1a9b87237b2fff3b3cd43a",
+      "source_sha256": "25f107d52745466398ee54de08d477f40a94b3552c0899e30869574851162fed"
+    },
+    "control_lab/data/recordings/builtin/1d7e5a1684c43ba17d2562da254ece3f97b39f22ac710f7cb55d6e349b825aa1-000.json": {
+      "source": "docs/control-lab-evidence/recordings/1d7e5a1684c43ba17d2562da254ece3f97b39f22ac710f7cb55d6e349b825aa1-000.json",
+      "git_blob": "8cfb45047585fc741e5da9495826dd1f3100fa93",
+      "source_sha256": "c42b7e1f3bbc5689150584cf72338faf1fef88900690dbe4207f77468d675a6b"
+    },
+    "control_lab/data/recordings/builtin/235ab11a8edd6c17524c4b1d8fb00d5261ef570405df194f3cfb5b717236d108-000.json": {
+      "source": "docs/control-lab-evidence/recordings/235ab11a8edd6c17524c4b1d8fb00d5261ef570405df194f3cfb5b717236d108-000.json",
+      "git_blob": "588e123fa2d6ca64e2e1ed40da1a2a682be74fa9",
+      "source_sha256": "277c741dd70b53b50a05f8bfce046a62c257abcd9329f5c91724c151dd6f62f1"
+    },
+    "control_lab/data/recordings/builtin/24138c9b9045900cd691cb77582a5c70864170eab8decc45f1187d995aed1e26-000.json": {
+      "source": "docs/control-lab-evidence/recordings/24138c9b9045900cd691cb77582a5c70864170eab8decc45f1187d995aed1e26-000.json",
+      "git_blob": "0799abe74a7533e4dd640c7db5ee4dac7f88d0e5",
+      "source_sha256": "3a1c3ee60e413eda1f0f2dfcb03e8e6eeb0688b7ac9208af92a4399613cb75e3"
+    },
+    "control_lab/data/recordings/builtin/24462ee0699f42081407889d24de85b4c66699521728b891fd82cd1dea3d07e4-000.json": {
+      "source": "docs/control-lab-evidence/recordings/24462ee0699f42081407889d24de85b4c66699521728b891fd82cd1dea3d07e4-000.json",
+      "git_blob": "de7430d605308d3638ad3d82f3f66b4088a840fc",
+      "source_sha256": "957a9f5fcc349ad52926b89aabda6ed527125e864fdd8d503af02494403415ae"
+    },
+    "control_lab/data/recordings/builtin/2512278043c30b64192a522a47f0174241025e266338eb4c85a980bad765d22f-000.json": {
+      "source": "docs/control-lab-evidence/recordings/2512278043c30b64192a522a47f0174241025e266338eb4c85a980bad765d22f-000.json",
+      "git_blob": "4e2927726c224487b6d17a1c8b089d57f77302d4",
+      "source_sha256": "c8e7b60a723fa1ca75220a7447bc70a4acd99376e485449a21e168f2a426144f"
+    },
+    "control_lab/data/recordings/builtin/2ac91791bd0b18fcc59adbc4786a779709c82baf49ab42d7fb5eca247d846653-000.json": {
+      "source": "docs/control-lab-evidence/recordings/2ac91791bd0b18fcc59adbc4786a779709c82baf49ab42d7fb5eca247d846653-000.json",
+      "git_blob": "10c0c31b53adca0dd2d9c5112c573d431470ad26",
+      "source_sha256": "9b00a88d4cca1539f8fdcccaff19438f3fe16b286c78dd12442a9a6c365dbe43"
+    },
+    "control_lab/data/recordings/builtin/2ade0d686f18e1006aea0a6e9235126be14224b3f78c94e4f42bd08366f20696-000.json": {
+      "source": "docs/control-lab-evidence/recordings/2ade0d686f18e1006aea0a6e9235126be14224b3f78c94e4f42bd08366f20696-000.json",
+      "git_blob": "a4ffa7874d35468cb7d5438d977e4b81ae84fc56",
+      "source_sha256": "58272362a2af39244bece2e3fd0d5688be3298f448bf569de38b28ef0402dddd"
+    },
+    "control_lab/data/recordings/builtin/2dbaa633908136aff8f3134ba068fdd21c596c43840cc32d5bb47d402443160b-000.json": {
+      "source": "docs/control-lab-evidence/recordings/2dbaa633908136aff8f3134ba068fdd21c596c43840cc32d5bb47d402443160b-000.json",
+      "git_blob": "ac5365cc394b1dc2726cb520809ce48f7be0acd2",
+      "source_sha256": "69494a5e9aef7b0d540f07e86727c59ab108768736febaaa5e28246560bdb7bd"
+    },
+    "control_lab/data/recordings/builtin/2f30f145f42b4c4c45d845050e10c7df47a202bfc957ce32b340723b2585264e-000.json": {
+      "source": "docs/control-lab-evidence/recordings/2f30f145f42b4c4c45d845050e10c7df47a202bfc957ce32b340723b2585264e-000.json",
+      "git_blob": "4d745576ace002340759e69de509c1b5970df391",
+      "source_sha256": "7d4e710a2cfb074425b431ccdf6191355fd8da87f31224c3879cc595d9e3bf0a"
+    },
+    "control_lab/data/recordings/builtin/316132e858c7a359ea86aa2f21bbf6771aaa991ce23dc5a17cf1057cb45e70d6-000.json": {
+      "source": "docs/control-lab-evidence/recordings/316132e858c7a359ea86aa2f21bbf6771aaa991ce23dc5a17cf1057cb45e70d6-000.json",
+      "git_blob": "917f24c90d3328d8feae2dd788b79ab6e718e50b",
+      "source_sha256": "308f358c9f28b2345236444a68ba094207ddd9486ed83a746a6011a70460b37e"
+    },
+    "control_lab/data/recordings/builtin/3248773c7514233398325752cbe52e328a4868d4138f2a09aa74a34f7455a9f1-000.json": {
+      "source": "docs/control-lab-evidence/recordings/3248773c7514233398325752cbe52e328a4868d4138f2a09aa74a34f7455a9f1-000.json",
+      "git_blob": "809abaf47976885b2fb8e8055eb6dece43465a71",
+      "source_sha256": "2e5ca55c056f37003443bace747fbe9889937e59539ae3dcf3d4dfb868d55248"
+    },
+    "control_lab/data/recordings/builtin/3248773c7514233398325752cbe52e328a4868d4138f2a09aa74a34f7455a9f1-001.json": {
+      "source": "docs/control-lab-evidence/recordings/3248773c7514233398325752cbe52e328a4868d4138f2a09aa74a34f7455a9f1-001.json",
+      "git_blob": "cd61d6468c4aec07a2f8ce8b11d8b3f994aafce9",
+      "source_sha256": "36f616bcc0e75cd0b6eb0a8774859219962425f3c2d803c385b6c45fbd025d59"
+    },
+    "control_lab/data/recordings/builtin/3248773c7514233398325752cbe52e328a4868d4138f2a09aa74a34f7455a9f1-002.json": {
+      "source": "docs/control-lab-evidence/recordings/3248773c7514233398325752cbe52e328a4868d4138f2a09aa74a34f7455a9f1-002.json",
+      "git_blob": "d0e7e18a698edd2f2b5e68e9513631db70d08068",
+      "source_sha256": "0e6e8c97da9a94b77888bd42b1881313d525a2c6d75cc8aa83f490c955b2d729"
+    },
+    "control_lab/data/recordings/builtin/32ae14197f1dd21bd5aee873d9a1debbfa37fc00ecc1e6e4f74bdf18fee463b0-000.json": {
+      "source": "docs/control-lab-evidence/recordings/32ae14197f1dd21bd5aee873d9a1debbfa37fc00ecc1e6e4f74bdf18fee463b0-000.json",
+      "git_blob": "aa268c2eaeb9a4785469a8b568fccada27de6981",
+      "source_sha256": "a4c8e4f736d2d1c7eb234d4adb22e569f26362bd9c044f6d2eda8f1f11ee3a78"
+    },
+    "control_lab/data/recordings/builtin/35e285794a26a739de89a6676cbb94e4c4fcb653a50e66c46ffa852982a5a802-000.json": {
+      "source": "docs/control-lab-evidence/recordings/35e285794a26a739de89a6676cbb94e4c4fcb653a50e66c46ffa852982a5a802-000.json",
+      "git_blob": "c2581135c65118e93c609e4a82249cbe0cf84631",
+      "source_sha256": "e21af6114d9e6936dd7088beafcfee6391736632c4c48c66a49b1399c9e89269"
+    },
+    "control_lab/data/recordings/builtin/362bdb5e5f002ac5e9eade4c80a881fee87a7a19dd753a88985244ee81ad0efb-000.json": {
+      "source": "docs/control-lab-evidence/recordings/362bdb5e5f002ac5e9eade4c80a881fee87a7a19dd753a88985244ee81ad0efb-000.json",
+      "git_blob": "6b025d6016661d7ce68a699dd59da192c1fe4665",
+      "source_sha256": "974f54721dcf8943cc890e873fab0da9e7cf3b9197ba4499a8cc8a74ffc19fa1"
+    },
+    "control_lab/data/recordings/builtin/383a6da572c9e9eca53c2d44dc6bb58987a038ed9bf0d642f28100acca2302ca-000.json": {
+      "source": "docs/control-lab-evidence/recordings/383a6da572c9e9eca53c2d44dc6bb58987a038ed9bf0d642f28100acca2302ca-000.json",
+      "git_blob": "15263fbf077d47d4e05849addccaaa56648f4736",
+      "source_sha256": "ff6ce7dad6b00b7e3d0954e7c5c9ee60de7f867273cc652a52abf1c651a22253"
+    },
+    "control_lab/data/recordings/builtin/3854a3d1f44b23746d931bb933952b3749e45ce5854fee0dc3f6d3153077383d-000.json": {
+      "source": "docs/control-lab-evidence/recordings/3854a3d1f44b23746d931bb933952b3749e45ce5854fee0dc3f6d3153077383d-000.json",
+      "git_blob": "df8568866e103cd0272a1d3ede12b29c218446dd",
+      "source_sha256": "e77a4e09b112e5f0444bfbb256395272461208f023c0a340f986cc3c11f44177"
+    },
+    "control_lab/data/recordings/builtin/39a23c222eda7b137bc1116f52ce5291038d9a0fd944f96528b4a7a4a3f2d3cf-000.json": {
+      "source": "docs/control-lab-evidence/recordings/39a23c222eda7b137bc1116f52ce5291038d9a0fd944f96528b4a7a4a3f2d3cf-000.json",
+      "git_blob": "fb715bc6d2f7d9885b562fce9dbc73cb2f5f09da",
+      "source_sha256": "b2c630736117e20934ed00c6823daa3767f29e9a2a4dff051fd9f15fd2ed868a"
+    },
+    "control_lab/data/recordings/builtin/3a12d6f804d683f90ba1a9c24dd65b53257008955acdac4e7452a4d5d16b01fb-000.json": {
+      "source": "docs/control-lab-evidence/recordings/3a12d6f804d683f90ba1a9c24dd65b53257008955acdac4e7452a4d5d16b01fb-000.json",
+      "git_blob": "734fc11a7a5d02bed52ddf91e37b443018b9949c",
+      "source_sha256": "1cb72fa12ab65df38fe6bef5140f03bdec7132e53f5ae8e2a9068faee56103b5"
+    },
+    "control_lab/data/recordings/builtin/3a7b648a88aac5708b57959c4736bfbf9a5a90d8c632dfb2a4a568dbf9b447de-000.json": {
+      "source": "docs/control-lab-evidence/recordings/3a7b648a88aac5708b57959c4736bfbf9a5a90d8c632dfb2a4a568dbf9b447de-000.json",
+      "git_blob": "db249c8e31f89a2fcaf428e4528832ee20478214",
+      "source_sha256": "e3f767edf21e19cad9564034c381240a88febd1ad95ee24e27982bacc93fd197"
+    },
+    "control_lab/data/recordings/builtin/3a9061551a4b1e655db2efd62b1d61173daab75f4faca6c178f04f679b035f90-000.json": {
+      "source": "docs/control-lab-evidence/recordings/3a9061551a4b1e655db2efd62b1d61173daab75f4faca6c178f04f679b035f90-000.json",
+      "git_blob": "b011281c75d4b8047dc6b600b503206014806c13",
+      "source_sha256": "51840544d5b2dc99916d2b6922b44b36bab5a193d50b5f5c8846a6e64f0dcab6"
+    },
+    "control_lab/data/recordings/builtin/3b754eb6ff38f02722ab812e02acc0ab2aa81ef2a4452f0575d184ba80288324-000.json": {
+      "source": "docs/control-lab-evidence/recordings/3b754eb6ff38f02722ab812e02acc0ab2aa81ef2a4452f0575d184ba80288324-000.json",
+      "git_blob": "7fa10bdf20aab30eb976308215cdce32d69d20b3",
+      "source_sha256": "43b4b4fa0d3a064a7e308f311a5c867a286a50222e17b7b4a0b0341a54d6380a"
+    },
+    "control_lab/data/recordings/builtin/3c1aaa5f880866f8dea45eaabdbbafbe7aef2c187e646832c38d7c161a21a520-000.json": {
+      "source": "docs/control-lab-evidence/recordings/3c1aaa5f880866f8dea45eaabdbbafbe7aef2c187e646832c38d7c161a21a520-000.json",
+      "git_blob": "97f30f1824d29dcf46eefe68349b7d82a3ee3ea7",
+      "source_sha256": "be65d784f04cd1e0bf7b5ed7fe7d76661ce58c47dc7862602da99729e4387ab5"
+    },
+    "control_lab/data/recordings/builtin/3c204a5e7bffeb0cdfa4970fb49947f52b25016492a2794dc5ecb1c0c03ed8b8-000.json": {
+      "source": "docs/control-lab-evidence/recordings/3c204a5e7bffeb0cdfa4970fb49947f52b25016492a2794dc5ecb1c0c03ed8b8-000.json",
+      "git_blob": "89443cd5f41a34954eaa41d9fb01650a7c3a2c75",
+      "source_sha256": "1b1c89d5a64783247bc2f2c9eb8b41969ec5c0d51ba266b1afa3a90d8b031890"
+    },
+    "control_lab/data/recordings/builtin/3c835bd1fd8bbf1d2dd2f29dce28aa54960853d6fac9be6d70d89aafe9535ac1-000.json": {
+      "source": "docs/control-lab-evidence/recordings/3c835bd1fd8bbf1d2dd2f29dce28aa54960853d6fac9be6d70d89aafe9535ac1-000.json",
+      "git_blob": "2b8666943fa621292526889582eed0f4cfbd343f",
+      "source_sha256": "dfe58d9be9aa3628b4c2713bb619a95a00319daf362954e43f3d34e4dc5ffc46"
+    },
+    "control_lab/data/recordings/builtin/3f5173cbf30adb20a55f68f435ccd5428c32dbd7a64291b6a13ef80820994613-000.json": {
+      "source": "docs/control-lab-evidence/recordings/3f5173cbf30adb20a55f68f435ccd5428c32dbd7a64291b6a13ef80820994613-000.json",
+      "git_blob": "d4de9041423f27f323b49d56ed697e1415196385",
+      "source_sha256": "d9d496fcbb941d8625a9534ae795b5b2fed9bbf2a05992ccfb0e05fba28cb01e"
+    },
+    "control_lab/data/recordings/builtin/3fa60c16fe86368def2f3ec390896369ad406d4d62ad18335db36d840a1af5cd-000.json": {
+      "source": "docs/control-lab-evidence/recordings/3fa60c16fe86368def2f3ec390896369ad406d4d62ad18335db36d840a1af5cd-000.json",
+      "git_blob": "268baf8efec98d21d3a86966016bc529302e99d7",
+      "source_sha256": "7fec20c7c8cc9c14cc787df3608f93c3b5fad1402cde5099f0b3eed9929d0825"
+    },
+    "control_lab/data/recordings/builtin/419be867009106f01010479b90ea554369050e671120538f8b8eaef0f98b502a-000.json": {
+      "source": "docs/control-lab-evidence/recordings/419be867009106f01010479b90ea554369050e671120538f8b8eaef0f98b502a-000.json",
+      "git_blob": "d7c19cce7d89f8636b4e64d7c3da63f5c845736a",
+      "source_sha256": "47b475ee349d4ab4e55f0a8313c3aad110cdd137c43ddfc13a73cf3b5a9acfee"
+    },
+    "control_lab/data/recordings/builtin/42fc38ace1c8447e2872e605a49c560d0cd78db76159b8f1a173292e67676bac-000.json": {
+      "source": "docs/control-lab-evidence/recordings/42fc38ace1c8447e2872e605a49c560d0cd78db76159b8f1a173292e67676bac-000.json",
+      "git_blob": "4888fff9a76192a1a561a229efd561a21a78c0e8",
+      "source_sha256": "89883b1097e3588ff4b6ac2ff266dcf70f96df3ca1d80aaf364631aff1ca2903"
+    },
+    "control_lab/data/recordings/builtin/444c90bf8904d95a138e5554ba423949d20aaeeb666bea9fd4e421fe0e8075d3-000.json": {
+      "source": "docs/control-lab-evidence/recordings/444c90bf8904d95a138e5554ba423949d20aaeeb666bea9fd4e421fe0e8075d3-000.json",
+      "git_blob": "c145a803252fbb0315e4ce5c994b2176a6659368",
+      "source_sha256": "c7513680e8c6a50957bce7cd729c5fe9101416de699b4d593be6f97dd5b9f7ac"
+    },
+    "control_lab/data/recordings/builtin/45b816940e16409ecb44538a2dd42352679d476172b72159acbce69a0cf4ad09-000.json": {
+      "source": "docs/control-lab-evidence/recordings/45b816940e16409ecb44538a2dd42352679d476172b72159acbce69a0cf4ad09-000.json",
+      "git_blob": "5e7cfc6517974c2179f0517a7d462546f4e0aee8",
+      "source_sha256": "ac00ddad3f47f90e67f5aed9bc282144aeb48848cb82019fa05ac613e9e31018"
+    },
+    "control_lab/data/recordings/builtin/468306584d44cba5b9c3223c86cf7b29af4e848826086c35faa7caa59ae0bc3b-000.json": {
+      "source": "docs/control-lab-evidence/recordings/468306584d44cba5b9c3223c86cf7b29af4e848826086c35faa7caa59ae0bc3b-000.json",
+      "git_blob": "d14260e8c11247da6c9fc146262a22e058c078ab",
+      "source_sha256": "6a968d1d608aca97184f92e394a0160524f6a347f5ec01ed0e4010d4fe4bc8d9"
+    },
+    "control_lab/data/recordings/builtin/4687a885c43e797893156ca5eb99f6490c441967cebf3532cf71d4630fa63ad2-000.json": {
+      "source": "docs/control-lab-evidence/recordings/4687a885c43e797893156ca5eb99f6490c441967cebf3532cf71d4630fa63ad2-000.json",
+      "git_blob": "9c44b99500992277b8a098589e330d7f3c14afba",
+      "source_sha256": "db2d4ea7b637aa2232afa598f6d73322262bb8312a9118bfdcbd0c823ddabb88"
+    },
+    "control_lab/data/recordings/builtin/46983bd57f2050f2dcfe40c274bbace412967fac9b4fc83420cd461627b195e0-000.json": {
+      "source": "docs/control-lab-evidence/recordings/46983bd57f2050f2dcfe40c274bbace412967fac9b4fc83420cd461627b195e0-000.json",
+      "git_blob": "014d0143b283da2cab340710eb9f4c95b3cff293",
+      "source_sha256": "76252cd349114c68a9564c46efa8525277f8552dcabbccb1ef4b8b80f6051c0b"
+    },
+    "control_lab/data/recordings/builtin/4812f9656571e02de1556c1abc0a1ec5dca1706ac9c52169616276bce7bafa45-000.json": {
+      "source": "docs/control-lab-evidence/recordings/4812f9656571e02de1556c1abc0a1ec5dca1706ac9c52169616276bce7bafa45-000.json",
+      "git_blob": "0571b7e3d8a501c075fde014eb27907ec0b804db",
+      "source_sha256": "ca677dfcb00362edc784ac2dd83c326cc662cf3a282aa3936a8d6a86ec362770"
+    },
+    "control_lab/data/recordings/builtin/4b5e592124a080435ba52bdf259f1f5ff429df39b6ed9c164b5647ce6808add0-000.json": {
+      "source": "docs/control-lab-evidence/recordings/4b5e592124a080435ba52bdf259f1f5ff429df39b6ed9c164b5647ce6808add0-000.json",
+      "git_blob": "60535891337ada52dc902d97ef529e754337874e",
+      "source_sha256": "f764b38103deee62552c15858c0056dd3d98960aad9b8f26cd8e94ee6a26e486"
+    },
+    "control_lab/data/recordings/builtin/4c930e80300881e1155821fbeba0cfce2001b9b66347350141ff9be09dc0dd12-000.json": {
+      "source": "docs/control-lab-evidence/recordings/4c930e80300881e1155821fbeba0cfce2001b9b66347350141ff9be09dc0dd12-000.json",
+      "git_blob": "005d36a460333432f6e433e3b1d92d6e584e7cac",
+      "source_sha256": "d9434cb99315decddd1108fcd99e6c480261ad850e56ff25930336c51b7fe8c6"
+    },
+    "control_lab/data/recordings/builtin/4e5ef32e129fa55cf8feaa33d6d8f46cb40c212c13a03d7164c435c21c8ff4ff-000.json": {
+      "source": "docs/control-lab-evidence/recordings/4e5ef32e129fa55cf8feaa33d6d8f46cb40c212c13a03d7164c435c21c8ff4ff-000.json",
+      "git_blob": "0974565828533692c6d121f4dba9c9c784c7911d",
+      "source_sha256": "6d16229eb93919efa3dde9095d8fd0bb98dbe71757cf57254091b0c3583d00fd"
+    },
+    "control_lab/data/recordings/builtin/4e652216208922a0cf7c87f16e37c457204c6d5726df7217edaf7d06a1892bcc-000.json": {
+      "source": "docs/control-lab-evidence/recordings/4e652216208922a0cf7c87f16e37c457204c6d5726df7217edaf7d06a1892bcc-000.json",
+      "git_blob": "782ccbf3889e4cd94e35bec2fdc77d92a6651249",
+      "source_sha256": "ebbb3b447e63a3225956820ca023a2651939677d0bb2a1e4c58068093356ca42"
+    },
+    "control_lab/data/recordings/builtin/508dfb19e6f6b3d9748f2a8bc90e1d251a9b7b561664e1e5b2d7d0610696dd0c-000.json": {
+      "source": "docs/control-lab-evidence/recordings/508dfb19e6f6b3d9748f2a8bc90e1d251a9b7b561664e1e5b2d7d0610696dd0c-000.json",
+      "git_blob": "5d4d05910af09c195d0d3739c82ae5cc01fadb6e",
+      "source_sha256": "569ee563c5c5fbba839fb3eb535fb8e8ade539e50005928da096cd80dea646f1"
+    },
+    "control_lab/data/recordings/builtin/509deb5ccb33d7bee85b0e61a50c5e2b1627932c512be56622e9bff8cf1736ee-000.json": {
+      "source": "docs/control-lab-evidence/recordings/509deb5ccb33d7bee85b0e61a50c5e2b1627932c512be56622e9bff8cf1736ee-000.json",
+      "git_blob": "8604ab173cdeb32eb36db2413cfd75423c911521",
+      "source_sha256": "97df0be413d562c983bac9330c3a7fda62e0a04a9d0f551b059dc1be347e1596"
+    },
+    "control_lab/data/recordings/builtin/50ec9c906ea81948412cbe831164f92ff9b2e9802b9210c1279eabadf546e0e7-000.json": {
+      "source": "docs/control-lab-evidence/recordings/50ec9c906ea81948412cbe831164f92ff9b2e9802b9210c1279eabadf546e0e7-000.json",
+      "git_blob": "2dcc64388d6344f8a1b5381b57f1a25a53876c84",
+      "source_sha256": "c56c9a4bdc909d4623644363c4d3eb27b6a058402c0fbbb32933cf8ceb43ced3"
+    },
+    "control_lab/data/recordings/builtin/51507eba3ba821f8b944b4e44958fda7c617077f370f57a2c0ef76433326d910-000.json": {
+      "source": "docs/control-lab-evidence/recordings/51507eba3ba821f8b944b4e44958fda7c617077f370f57a2c0ef76433326d910-000.json",
+      "git_blob": "722ed4e898a2ef6b4a943a551dc9c1ea4c6081ef",
+      "source_sha256": "ea33086d415eccb7526671555ccde8ed0cdaefb56896f1e8f73a54d976302fd7"
+    },
+    "control_lab/data/recordings/builtin/521df0b2bac1eb3bb13dbee4d0ea0083140d2edecead9eacf1fca232d7c6804c-000.json": {
+      "source": "docs/control-lab-evidence/recordings/521df0b2bac1eb3bb13dbee4d0ea0083140d2edecead9eacf1fca232d7c6804c-000.json",
+      "git_blob": "f4873c8e49fbbaeb99d7989f85d9aacf0aed16a5",
+      "source_sha256": "273c38d55b40ae60097d4c0d85b2b503557fff5a1e567d70df72a58b88876811"
+    },
+    "control_lab/data/recordings/builtin/5275f734943cf12e887ab4d7ffc3521457fab0bacd872d1cff7fd15f06308a33-000.json": {
+      "source": "docs/control-lab-evidence/recordings/5275f734943cf12e887ab4d7ffc3521457fab0bacd872d1cff7fd15f06308a33-000.json",
+      "git_blob": "a4ac554cfb1b4313a0e91c2dc6777311f534770e",
+      "source_sha256": "8f8bf6841cae4f325ae58eb99f06e6dca10a481c8aa765774394b640a9c8b2c2"
+    },
+    "control_lab/data/recordings/builtin/57b3ee26fbfc3e7d7521992b5a3ffbcac23a7e1934f0ec610c8133a312b025c1-000.json": {
+      "source": "docs/control-lab-evidence/recordings/57b3ee26fbfc3e7d7521992b5a3ffbcac23a7e1934f0ec610c8133a312b025c1-000.json",
+      "git_blob": "1c7fd0fb3c2d0d2bcc5cd2ca098a99b711c493c2",
+      "source_sha256": "21fa28f68e19da8bef83c3cf9c5647bdcba4a9650f76798c817cca9f5c206021"
+    },
+    "control_lab/data/recordings/builtin/585d392567e6d3c6f898f7eb6b2d74220af51cb8e568c6414de2158fd235e11e-000.json": {
+      "source": "docs/control-lab-evidence/recordings/585d392567e6d3c6f898f7eb6b2d74220af51cb8e568c6414de2158fd235e11e-000.json",
+      "git_blob": "038b5750a7687028a09efb8b876925706809be82",
+      "source_sha256": "29033f9effcafb16e89d8ba0632c2a58e7806a32d02a70339a497ea6583f5064"
+    },
+    "control_lab/data/recordings/builtin/586486dabc5819ff2cb695eb4a67df7d87b891f4c58fb15ce7d43ec911c305eb-000.json": {
+      "source": "docs/control-lab-evidence/recordings/586486dabc5819ff2cb695eb4a67df7d87b891f4c58fb15ce7d43ec911c305eb-000.json",
+      "git_blob": "da2409e95a2552705af20977a3a153cf6090b522",
+      "source_sha256": "2b7e12d78fe602c14cb9a82a5e9f1097de294b7495e2900b9cf32e845bddc8ac"
+    },
+    "control_lab/data/recordings/builtin/58b6ca744c48b9e645d8e8502aac9826cbd6f5668af90923e5ce15f4bf79fb60-000.json": {
+      "source": "docs/control-lab-evidence/recordings/58b6ca744c48b9e645d8e8502aac9826cbd6f5668af90923e5ce15f4bf79fb60-000.json",
+      "git_blob": "7de61b626c0d155634b577641ec8aacab0979cd3",
+      "source_sha256": "019d33a079b9d7eb86c7144ddb1ed8be84d9a322d52c07f0242344f562c46de1"
+    },
+    "control_lab/data/recordings/builtin/59ef0e54ae553ece26e2b32824c0dcd419e62c8edf4cb413d31d6a15599fe2b5-000.json": {
+      "source": "docs/control-lab-evidence/recordings/59ef0e54ae553ece26e2b32824c0dcd419e62c8edf4cb413d31d6a15599fe2b5-000.json",
+      "git_blob": "f3711a5572789a954f2ae7bd14a44ce907bf153e",
+      "source_sha256": "a9ef1b16aefbdf313834ed684f038013aff49e02fed8168d3ec34e7d1b2723e8"
+    },
+    "control_lab/data/recordings/builtin/5a0671cc93ac2b9a67dd35144d68f0b465b52729e716ba342115ebcd128d43c9-000.json": {
+      "source": "docs/control-lab-evidence/recordings/5a0671cc93ac2b9a67dd35144d68f0b465b52729e716ba342115ebcd128d43c9-000.json",
+      "git_blob": "6048675bdf8751c7eb986ba5cbd440679c115cf5",
+      "source_sha256": "02fd3b104b90aba07d8c8e37c3bb90fea7b8915f501d940882d86bf68ce2f427"
+    },
+    "control_lab/data/recordings/builtin/5abcd37bc32dd3d0864b8ab52e21ea3d80f2989e6de5ebc1061cb99355bd0f1a-000.json": {
+      "source": "docs/control-lab-evidence/recordings/5abcd37bc32dd3d0864b8ab52e21ea3d80f2989e6de5ebc1061cb99355bd0f1a-000.json",
+      "git_blob": "be77a328adf5ca5408e5c2e4ee94704fe31698bc",
+      "source_sha256": "1e9d74cb0377200cd5d268c929704b7db17b90a54b76105401e67290b83fb41d"
+    },
+    "control_lab/data/recordings/builtin/5b9b28b3a1e8711785708541b0d276e0b84a2745fe3e8cc144919aeeae18bc97-000.json": {
+      "source": "docs/control-lab-evidence/recordings/5b9b28b3a1e8711785708541b0d276e0b84a2745fe3e8cc144919aeeae18bc97-000.json",
+      "git_blob": "53748e3bd8b3b01c4e398beadf68f0075569072f",
+      "source_sha256": "74b2bce8db8ee830a95a453c6e123b21d92661f2ce93ef75ef1ebec3d56e9405"
+    },
+    "control_lab/data/recordings/builtin/5c215c181a3e7da6b723805da6d2f41750517b9c9504abda01199419cfd821ac-000.json": {
+      "source": "docs/control-lab-evidence/recordings/5c215c181a3e7da6b723805da6d2f41750517b9c9504abda01199419cfd821ac-000.json",
+      "git_blob": "6d69a581d868bb959fcdf759919f1a9e811296b7",
+      "source_sha256": "6f4e925a8e112e5378ba995ebb7bf92463979ee8315861c10b5f8ab28e8b6a27"
+    },
+    "control_lab/data/recordings/builtin/5c46ef39891a037ff33a3f5e92dc34ea2370474f6ce49f7129f60e7d55cac5d3-000.json": {
+      "source": "docs/control-lab-evidence/recordings/5c46ef39891a037ff33a3f5e92dc34ea2370474f6ce49f7129f60e7d55cac5d3-000.json",
+      "git_blob": "acb3af8d288fb583298429c3a850c932a177dace",
+      "source_sha256": "5cdc7d222aaddc03e2f558b1bd1092ba0049287107c39e835277585c2ed85a1a"
+    },
+    "control_lab/data/recordings/builtin/5d8ce4e302b44f70e46c4c6ea9b4999c95cb119cae201769b466cff163b41e70-000.json": {
+      "source": "docs/control-lab-evidence/recordings/5d8ce4e302b44f70e46c4c6ea9b4999c95cb119cae201769b466cff163b41e70-000.json",
+      "git_blob": "6e40592e544cebbcdcb9aed90cb218f3ca09ce55",
+      "source_sha256": "ec741aa726f7ce4c5a3c78bb2b99cb18a6793380dcb0122625d1b3094878296a"
+    },
+    "control_lab/data/recordings/builtin/611a71f85e0be5272a1f92b42a8c278fd3c3032490293abb429df2c012db02ff-000.json": {
+      "source": "docs/control-lab-evidence/recordings/611a71f85e0be5272a1f92b42a8c278fd3c3032490293abb429df2c012db02ff-000.json",
+      "git_blob": "0565b59bdf27c7c7a388c7ad7408e6118ac53260",
+      "source_sha256": "5a1a6defb4339729ba1869cab562016f324bff7a2b6730cfcc84aa72a514a374"
+    },
+    "control_lab/data/recordings/builtin/6193d1c03017e5671086c3b042ae93db40a3e5e5526aeefbfaad9bcd3ab0c38c-000.json": {
+      "source": "docs/control-lab-evidence/recordings/6193d1c03017e5671086c3b042ae93db40a3e5e5526aeefbfaad9bcd3ab0c38c-000.json",
+      "git_blob": "4e7dc4f1e2094c57ffedbc79e243575fce0a181d",
+      "source_sha256": "c91fe7b864458e0508dcc7750445176244ab5942d1d1a9e6ebccef9af3344cd2"
+    },
+    "control_lab/data/recordings/builtin/64a001a23f190270c9bf7e98ae3d0521200e2f4dab1c267c0f38ecef5fddd9a6-000.json": {
+      "source": "docs/control-lab-evidence/recordings/64a001a23f190270c9bf7e98ae3d0521200e2f4dab1c267c0f38ecef5fddd9a6-000.json",
+      "git_blob": "7fb24eda092a96eb081a063dc4672246d068548b",
+      "source_sha256": "ea891c9ae1ee74037948ffcc6690667630b6be2360886c6e109a33c298b8ff64"
+    },
+    "control_lab/data/recordings/builtin/664727c66d29ba40c6d3754b7e1b05f182e51ab75e2747bf1014776f48b89eb8-000.json": {
+      "source": "docs/control-lab-evidence/recordings/664727c66d29ba40c6d3754b7e1b05f182e51ab75e2747bf1014776f48b89eb8-000.json",
+      "git_blob": "0b99b080e835a5bd0b5f84bc4f4a6874853f2282",
+      "source_sha256": "04fec1971002850b5bb38c51d2eccae0d9731c7713167269eb760b1e2955e2ca"
+    },
+    "control_lab/data/recordings/builtin/66bd9f8fe1285659baccc79417c86b4eb0f24c8e4bec5037d1bb1bc6373574a2-000.json": {
+      "source": "docs/control-lab-evidence/recordings/66bd9f8fe1285659baccc79417c86b4eb0f24c8e4bec5037d1bb1bc6373574a2-000.json",
+      "git_blob": "a9a7b7dc190bf3989d123baf3cc93879c93c2bb3",
+      "source_sha256": "5a2201665cf8d72386ba4f2ac34a589b3a5115260d6768372c3e51701fb47ad7"
+    },
+    "control_lab/data/recordings/builtin/66c3f8c818ec489c18597356a28ff9e957cedb10f1ef9eb75abb61a133b03ff9-000.json": {
+      "source": "docs/control-lab-evidence/recordings/66c3f8c818ec489c18597356a28ff9e957cedb10f1ef9eb75abb61a133b03ff9-000.json",
+      "git_blob": "cba99cf617c0f45845a4fd59b3f34cca00abb23b",
+      "source_sha256": "445b6d2b45f1377b2e6ce536d5c7c77181cb3d619b0e35f7b239f72f0b5e033d"
+    },
+    "control_lab/data/recordings/builtin/671d99c643d1de4969405b366b300b5ade1f6e8eabbd95f03bb7d1a50b50cd5d-000.json": {
+      "source": "docs/control-lab-evidence/recordings/671d99c643d1de4969405b366b300b5ade1f6e8eabbd95f03bb7d1a50b50cd5d-000.json",
+      "git_blob": "fd10d649d16c800843325df83037efe003fe8df7",
+      "source_sha256": "4faced0137fd5070e6623694c61135cdde5ac63b4a2d6d0ef6679410b8838538"
+    },
+    "control_lab/data/recordings/builtin/67ebb31c19bcae3c2212dcd6d2f154f70fd3412cd548761fe5d71ccdcd966a49-000.json": {
+      "source": "docs/control-lab-evidence/recordings/67ebb31c19bcae3c2212dcd6d2f154f70fd3412cd548761fe5d71ccdcd966a49-000.json",
+      "git_blob": "0bb91a2584a51c3429c046e7801ea1c5981dc353",
+      "source_sha256": "ecfd81ee20c7975894488d8ed2a97fa6d5011e0d98aa139e526d6ff4b119a600"
+    },
+    "control_lab/data/recordings/builtin/69ddf8523c1c29ba127f0c55a000c28baeb296efb329717d7102952311b2f6dd-000.json": {
+      "source": "docs/control-lab-evidence/recordings/69ddf8523c1c29ba127f0c55a000c28baeb296efb329717d7102952311b2f6dd-000.json",
+      "git_blob": "c25e78c1c8b804be1e45eada5c14b118101d33b3",
+      "source_sha256": "0208249a8889fa491274cb5f3772298d01ed7a2d39f2375acf131217c42df8b2"
+    },
+    "control_lab/data/recordings/builtin/69de05c51d12925f6975505205eaa16910ea05518f9068bb858f6ce4279220e1-000.json": {
+      "source": "docs/control-lab-evidence/recordings/69de05c51d12925f6975505205eaa16910ea05518f9068bb858f6ce4279220e1-000.json",
+      "git_blob": "3f786483f7749295fa1f9551993bcb9dddc4fa83",
+      "source_sha256": "909d68733d935bf6ce8ce684878ecc379f916f656bbf1c4a08011631fe273fc0"
+    },
+    "control_lab/data/recordings/builtin/6a730c7e6bdad8036788ea4aaadd066f5b8fd5b74fb43959e600c6ce45a837d8-000.json": {
+      "source": "docs/control-lab-evidence/recordings/6a730c7e6bdad8036788ea4aaadd066f5b8fd5b74fb43959e600c6ce45a837d8-000.json",
+      "git_blob": "dd04097204de682949a79152a622d62c2e78f091",
+      "source_sha256": "7411771cd6769b40b5f640cbe5dccf9fb675732d01fc8099746bcccc7a3637df"
+    },
+    "control_lab/data/recordings/builtin/6bee611d700c2ef0daef081be8346b0df2eb2406e3f6da301d2d9c0d2617c44c-000.json": {
+      "source": "docs/control-lab-evidence/recordings/6bee611d700c2ef0daef081be8346b0df2eb2406e3f6da301d2d9c0d2617c44c-000.json",
+      "git_blob": "9669d591dbd7b2592e6b3a982915369d5815f203",
+      "source_sha256": "e42e67c22e8634450281f4b7a8622921768ef585d1e9f1b7448a290e47572b84"
+    },
+    "control_lab/data/recordings/builtin/6cafdb74ae263f0e3ba56c0c45a6ca2c33f1422a3df18550dbb88ee4fc5e4203-000.json": {
+      "source": "docs/control-lab-evidence/recordings/6cafdb74ae263f0e3ba56c0c45a6ca2c33f1422a3df18550dbb88ee4fc5e4203-000.json",
+      "git_blob": "cd2fa16364b507fe038612e241b59e213461cea8",
+      "source_sha256": "54e84e6aab8ad9d07182ece63c3ab87a4cdcd2dec6c7d505d8ff49aad0a33b02"
+    },
+    "control_lab/data/recordings/builtin/6ccc6158057d9f7f15fbf047b7562fe5ad26eb7cdfb54a96e1898b6f068cb9a2-000.json": {
+      "source": "docs/control-lab-evidence/recordings/6ccc6158057d9f7f15fbf047b7562fe5ad26eb7cdfb54a96e1898b6f068cb9a2-000.json",
+      "git_blob": "757a13691f56566c59e2bc4462ee1f31f5ca05e8",
+      "source_sha256": "b86e51126ded9f65db49ac04db00f5e2da12b352889363bbc2a089ae26c0d5bb"
+    },
+    "control_lab/data/recordings/builtin/6de17d6b9d32a10e0a5c8119316cbb231dd50b27ccea253d8c496e0efe7b4a3f-000.json": {
+      "source": "docs/control-lab-evidence/recordings/6de17d6b9d32a10e0a5c8119316cbb231dd50b27ccea253d8c496e0efe7b4a3f-000.json",
+      "git_blob": "d05058d38808004e798020739ec8a54a6fee3857",
+      "source_sha256": "e8d9b8afeb909e082438e490b991dd277e20aa48b551a03c1a193b1019e7916e"
+    },
+    "control_lab/data/recordings/builtin/710a010ecc076b3f9eb480641e4a7109b124007107260477203dc83454e11038-000.json": {
+      "source": "docs/control-lab-evidence/recordings/710a010ecc076b3f9eb480641e4a7109b124007107260477203dc83454e11038-000.json",
+      "git_blob": "26841bab55dc0d296cbda4402d037f07ddb3deb8",
+      "source_sha256": "a03723cf4cc4e263ac28a089ec95fc2b7a115456846c337f54832a8eda7d6bc3"
+    },
+    "control_lab/data/recordings/builtin/72f0ae2a191fa632b83c8e9e28ad1ffd94ab1334784085649c91843021a70f2a-000.json": {
+      "source": "docs/control-lab-evidence/recordings/72f0ae2a191fa632b83c8e9e28ad1ffd94ab1334784085649c91843021a70f2a-000.json",
+      "git_blob": "bd92ba73fee26f51f88cf25627b9e61f7b2a5232",
+      "source_sha256": "abdcf02d2533b910dee19020d7e85b439b838a12ac734b4eee0eaa0655f3396c"
+    },
+    "control_lab/data/recordings/builtin/77853f171a9ef8236ccfcaaacca70e7c685d82ca02d7daee974a4b582295b003-000.json": {
+      "source": "docs/control-lab-evidence/recordings/77853f171a9ef8236ccfcaaacca70e7c685d82ca02d7daee974a4b582295b003-000.json",
+      "git_blob": "5bbd773a3741bdc799c2ffb3aaf71f5263e536bc",
+      "source_sha256": "ef686de99e99b643363bae9bd4e3c9ea0d111e7cfc7f56813009bff4de3b1a93"
+    },
+    "control_lab/data/recordings/builtin/77ea65536e28dbef4d2fc7e21350cea86d693c5e5cc6296163520384452fb0d9-000.json": {
+      "source": "docs/control-lab-evidence/recordings/77ea65536e28dbef4d2fc7e21350cea86d693c5e5cc6296163520384452fb0d9-000.json",
+      "git_blob": "bd82d60da2c48e784bb80afbe6deb2f336d15eb7",
+      "source_sha256": "a8f69dded61151b17538bb0604058f77b14a7fb7f82f39cedee9ef759f8733c6"
+    },
+    "control_lab/data/recordings/builtin/78756a5de3f2476f6f8ba96d6e8914a628afa7bf773f0f13cf48c89585e4d375-000.json": {
+      "source": "docs/control-lab-evidence/recordings/78756a5de3f2476f6f8ba96d6e8914a628afa7bf773f0f13cf48c89585e4d375-000.json",
+      "git_blob": "65b6089fc8fd57077677785b2461c69bb5ccb917",
+      "source_sha256": "fe2e23a316d44dff89af321c831d96d13577e2a68ec110166f9425d829074025"
+    },
+    "control_lab/data/recordings/builtin/7ace2820f42240b60050e2825d89169dfac7d5f139191704bc226bb491ed78da-000.json": {
+      "source": "docs/control-lab-evidence/recordings/7ace2820f42240b60050e2825d89169dfac7d5f139191704bc226bb491ed78da-000.json",
+      "git_blob": "3e0c20ca473523f3f7589f2beaf89ba5a2417355",
+      "source_sha256": "e1c5e786bfc538a07d70b2134f8cf6feddeb08bf109fed0bda0e4c21d78744ad"
+    },
+    "control_lab/data/recordings/builtin/7aef15fe2e848a1e139178ade39f5ae73b3b96fe444cb2428e7d7ec6ca80d422-000.json": {
+      "source": "docs/control-lab-evidence/recordings/7aef15fe2e848a1e139178ade39f5ae73b3b96fe444cb2428e7d7ec6ca80d422-000.json",
+      "git_blob": "a87e700969165a142b382c745f05b4c3e5007ccc",
+      "source_sha256": "ae7307f57c2aa25fcf480947688c6f02ebfff7a2af89bef68ee676b34e94b09b"
+    },
+    "control_lab/data/recordings/builtin/7e390d01206cc2545e4484a01b7b0ba16ca019d79218515834e5a1e57b7fd2dc-000.json": {
+      "source": "docs/control-lab-evidence/recordings/7e390d01206cc2545e4484a01b7b0ba16ca019d79218515834e5a1e57b7fd2dc-000.json",
+      "git_blob": "8ff2b91421000d35678cc96025f20a9574caedc1",
+      "source_sha256": "06cd02bc4aafe313b677604359047a3af359763c4203c02efdcd309a6e6dd8e8"
+    },
+    "control_lab/data/recordings/builtin/7e390d01206cc2545e4484a01b7b0ba16ca019d79218515834e5a1e57b7fd2dc-001.json": {
+      "source": "docs/control-lab-evidence/recordings/7e390d01206cc2545e4484a01b7b0ba16ca019d79218515834e5a1e57b7fd2dc-001.json",
+      "git_blob": "77694ec818d4d6265754756a4b7cf46fd640032b",
+      "source_sha256": "65e360e8e8a316a5a850f95db63da092040267c6b729807a8e0563565327c432"
+    },
+    "control_lab/data/recordings/builtin/7fdf163c568ac1a0c604b2ad968c8c83725c2fece8f549871abc770125b7345b-000.json": {
+      "source": "docs/control-lab-evidence/recordings/7fdf163c568ac1a0c604b2ad968c8c83725c2fece8f549871abc770125b7345b-000.json",
+      "git_blob": "160d8396c5c9462ce19c7851efa0a64075e5bdcf",
+      "source_sha256": "74e3f314a8d5c66e8408267250a31f7f2a31f279513ee341ce0dfb20e2ba8d6e"
+    },
+    "control_lab/data/recordings/builtin/80a94352dc5708723cccc6d6fbba74dfe377b2df93ad3670a7c828ad7f7511cd-000.json": {
+      "source": "docs/control-lab-evidence/recordings/80a94352dc5708723cccc6d6fbba74dfe377b2df93ad3670a7c828ad7f7511cd-000.json",
+      "git_blob": "fdb91a190d16c9617a98cb79d43edaba169029ef",
+      "source_sha256": "8b951f27d44e5c308c40bcdcf33469de8b0f62529ba57f63e108d446d7be93c0"
+    },
+    "control_lab/data/recordings/builtin/80a94352dc5708723cccc6d6fbba74dfe377b2df93ad3670a7c828ad7f7511cd-001.json": {
+      "source": "docs/control-lab-evidence/recordings/80a94352dc5708723cccc6d6fbba74dfe377b2df93ad3670a7c828ad7f7511cd-001.json",
+      "git_blob": "6b9138043fcf49344bb1acde38fc0ba9c81d2461",
+      "source_sha256": "bf206a9d6756b6d527c50bd345942778c535d8d94d0d048cb80cb6a8f5fdf7d7"
+    },
+    "control_lab/data/recordings/builtin/80a94352dc5708723cccc6d6fbba74dfe377b2df93ad3670a7c828ad7f7511cd-002.json": {
+      "source": "docs/control-lab-evidence/recordings/80a94352dc5708723cccc6d6fbba74dfe377b2df93ad3670a7c828ad7f7511cd-002.json",
+      "git_blob": "27dfa6adab5637d44b34a31c8725f839020e455f",
+      "source_sha256": "6eb91931103879ae8583776be0dbd83b1142b7918422851847d5770d2b7559fc"
+    },
+    "control_lab/data/recordings/builtin/80dd8c9922ec4f0aee537aa94bcfd36cbe11931a638a31456a211436c7dfa537-000.json": {
+      "source": "docs/control-lab-evidence/recordings/80dd8c9922ec4f0aee537aa94bcfd36cbe11931a638a31456a211436c7dfa537-000.json",
+      "git_blob": "f2909401d99353c74058369f0b00b2064cfdf678",
+      "source_sha256": "f97cec10f5af5cb3d7288bf9faf5bc30c06f3300e0458a6fde6e7fcee95917fe"
+    },
+    "control_lab/data/recordings/builtin/835ebb08d28b4d869724e4bcdbc6a962f7384ff7c4fdf868c25d1b3685024bee-000.json": {
+      "source": "docs/control-lab-evidence/recordings/835ebb08d28b4d869724e4bcdbc6a962f7384ff7c4fdf868c25d1b3685024bee-000.json",
+      "git_blob": "f5cd20fb660ba33401386cf39d3b412990a7ca1b",
+      "source_sha256": "d8224284c0901add4c89f599d77d9342079827aa17ef5062dbbf9a4127cedb97"
+    },
+    "control_lab/data/recordings/builtin/853e840ff23e40d2742b00105c87dfc0b95f9d88d218eac324f65a2959efc53f-000.json": {
+      "source": "docs/control-lab-evidence/recordings/853e840ff23e40d2742b00105c87dfc0b95f9d88d218eac324f65a2959efc53f-000.json",
+      "git_blob": "21b5733b3e39d69c958d9c16f464c9ed84f16983",
+      "source_sha256": "57d3fd905a20faef1addba524872b92ee453645af951eaa9731aa7917192b874"
+    },
+    "control_lab/data/recordings/builtin/862b9f2e67e71d380df33a140096c2a255e64542c53d2daab0923f3dd8bd6167-000.json": {
+      "source": "docs/control-lab-evidence/recordings/862b9f2e67e71d380df33a140096c2a255e64542c53d2daab0923f3dd8bd6167-000.json",
+      "git_blob": "843511488ef5a78184cc8732fd5785fe5bea8e05",
+      "source_sha256": "647e6eb382f72825cd8e7f7ca6a650ef4ccd4b7ee044101ecdc2e0c3f6aa5053"
+    },
+    "control_lab/data/recordings/builtin/86bcc5e0b5e1d0b8e4e4d7519960d86d29e64639e46610bff36b750efb20c298-000.json": {
+      "source": "docs/control-lab-evidence/recordings/86bcc5e0b5e1d0b8e4e4d7519960d86d29e64639e46610bff36b750efb20c298-000.json",
+      "git_blob": "4c97935f8c05c70a7087b9e8ad84eca3d211e944",
+      "source_sha256": "430f8ff8f4cfdf9eb67d5435620139b21879a5aef91fa6e51f2843d2783dc84e"
+    },
+    "control_lab/data/recordings/builtin/8777f67a38334bbfc936f25ec2e72a12fe049dd154eacdee5382ceea8192c602-000.json": {
+      "source": "docs/control-lab-evidence/recordings/8777f67a38334bbfc936f25ec2e72a12fe049dd154eacdee5382ceea8192c602-000.json",
+      "git_blob": "b18bfcbe6ae5b934fc22c19f7726884ba2279521",
+      "source_sha256": "1b3da89fe59999c21fd96d3f7ccb7f2f2baab09e05f6519b59d8f9da66bbcb36"
+    },
+    "control_lab/data/recordings/builtin/87edcfd9523857489c944352b02ec9889f64d45dfa59ab96411fd69498799683-000.json": {
+      "source": "docs/control-lab-evidence/recordings/87edcfd9523857489c944352b02ec9889f64d45dfa59ab96411fd69498799683-000.json",
+      "git_blob": "e51059139df3adc1bec3275ba817bb95a59c4d78",
+      "source_sha256": "97e2f16b8fae90647d919cb913ddf0f556caa0b89bd0a25090490803a5483355"
+    },
+    "control_lab/data/recordings/builtin/889afc25b73f5ab91379cbf4d7bfdb712d637dbca9fdcb5ff22ccc29b8069100-000.json": {
+      "source": "docs/control-lab-evidence/recordings/889afc25b73f5ab91379cbf4d7bfdb712d637dbca9fdcb5ff22ccc29b8069100-000.json",
+      "git_blob": "b7a93c3ccf80eb9b8bf0b02733af7c1b9974514e",
+      "source_sha256": "53b13ee702d4f3804c1cbc3939dfd02aaf0f53c91fc91e64e7e786aed589b36c"
+    },
+    "control_lab/data/recordings/builtin/8a1ba42c80b16ef1d06041ef4fadd3cd7e57c1d610fd434c42f612cbb264a0a2-000.json": {
+      "source": "docs/control-lab-evidence/recordings/8a1ba42c80b16ef1d06041ef4fadd3cd7e57c1d610fd434c42f612cbb264a0a2-000.json",
+      "git_blob": "004c03fa1a996ab6108fdf383bd915556db162f2",
+      "source_sha256": "608a76556494034d8b427815d0b9a2539d0edd6858e2692916e73f7e08b046c1"
+    },
+    "control_lab/data/recordings/builtin/8b4e1459fd89d7deec1598ca6102b2ff8e11e38c7bbe143a452c916717f382a7-000.json": {
+      "source": "docs/control-lab-evidence/recordings/8b4e1459fd89d7deec1598ca6102b2ff8e11e38c7bbe143a452c916717f382a7-000.json",
+      "git_blob": "0a890d1738429b030d8aee0c8f0f5f6763780ba2",
+      "source_sha256": "f1826938238e72fadf10ab31c803bb1f4bfaa6936159d50c1dea9167a7023fa2"
+    },
+    "control_lab/data/recordings/builtin/8c0cee865f949f378301297e6215dad5379a80af2b3237e8daf511ce5bcf19df-000.json": {
+      "source": "docs/control-lab-evidence/recordings/8c0cee865f949f378301297e6215dad5379a80af2b3237e8daf511ce5bcf19df-000.json",
+      "git_blob": "04991227c6e14a4a53e8c9003bd08e7da2a6b9e4",
+      "source_sha256": "365082097181028ce55a187b03b0cd71bf56cea60830405265756d50e7f9eca2"
+    },
+    "control_lab/data/recordings/builtin/8c3622576c86919777c00319ded278d11375c2d93a34f9bf889cfe350258bb53-000.json": {
+      "source": "docs/control-lab-evidence/recordings/8c3622576c86919777c00319ded278d11375c2d93a34f9bf889cfe350258bb53-000.json",
+      "git_blob": "3e3ac36efcdd423a9de91517d7b20885eb8e177a",
+      "source_sha256": "d1cf732ad24531924ce2982f3de5001cb0f0203bcea108b70cd9991642c1b9d4"
+    },
+    "control_lab/data/recordings/builtin/8da91ea8c9100115ad9ce6d345d7fcb8b67a556b2e9cd3550fb00cbd08c5e1fe-000.json": {
+      "source": "docs/control-lab-evidence/recordings/8da91ea8c9100115ad9ce6d345d7fcb8b67a556b2e9cd3550fb00cbd08c5e1fe-000.json",
+      "git_blob": "2e05f100ead24e94f71e8c4011f654fedb6b7a22",
+      "source_sha256": "74f3a27574370e8a705e2325e047ef55be11bd7101eda17b69dc9792a13e53b2"
+    },
+    "control_lab/data/recordings/builtin/8e8567d91556afc899d8d85c0e34c635551c7fe77075e4afece56c0941186d6c-000.json": {
+      "source": "docs/control-lab-evidence/recordings/8e8567d91556afc899d8d85c0e34c635551c7fe77075e4afece56c0941186d6c-000.json",
+      "git_blob": "2e69ff4340dea355dbff8aed3719e8be6d82777c",
+      "source_sha256": "e2709761e62c35aed666f147a3c906627cc271f4fd31e1fda1e0ac6ac3fa28ed"
+    },
+    "control_lab/data/recordings/builtin/8e8994197095ff6ac7c99ee1fdd5c7ef5e640b2d89c9767ea82600c9f7e49de8-000.json": {
+      "source": "docs/control-lab-evidence/recordings/8e8994197095ff6ac7c99ee1fdd5c7ef5e640b2d89c9767ea82600c9f7e49de8-000.json",
+      "git_blob": "b1e469926176972c8016cdd62687995c0aa0a39a",
+      "source_sha256": "a7e27721ec63fcce36b415a19e32f24e113e5844c52549e003e6dbe1ac206df5"
+    },
+    "control_lab/data/recordings/builtin/92dc301fffb29ccbc76742fda5e5203d8c098dc152fd6af456797cc8c26b5c39-000.json": {
+      "source": "docs/control-lab-evidence/recordings/92dc301fffb29ccbc76742fda5e5203d8c098dc152fd6af456797cc8c26b5c39-000.json",
+      "git_blob": "d214fccb78aa078f79e05c7fed7a086b5d50b501",
+      "source_sha256": "a3062f5612aa83a53aff693ed5f0b47daac450d5cfb35094fb29cf15d3f8665c"
+    },
+    "control_lab/data/recordings/builtin/93409c03490afd8033dacaa26256840d59add11aeefc05406f020f91ea4b859d-000.json": {
+      "source": "docs/control-lab-evidence/recordings/93409c03490afd8033dacaa26256840d59add11aeefc05406f020f91ea4b859d-000.json",
+      "git_blob": "f2b7b7db6b48a3110ab342b46bb272d4deaefec2",
+      "source_sha256": "d4036a6437505f2888035bea82d36261db11c1e751a5f77ee2f4dba922d4443e"
+    },
+    "control_lab/data/recordings/builtin/9581771e29a5718a53ea9c56d96fe488ba954145f664b8d605c9361a266a5b74-000.json": {
+      "source": "docs/control-lab-evidence/recordings/9581771e29a5718a53ea9c56d96fe488ba954145f664b8d605c9361a266a5b74-000.json",
+      "git_blob": "997e0b5e692a733cf324e395113fac98d7a9fa2d",
+      "source_sha256": "d2df803aad822b25e08d1cffc6bc1f76cdddce8ef477003dc99164822b3e90e8"
+    },
+    "control_lab/data/recordings/builtin/9588ec6fa231c95a2296bab88594ea46e7c8150434fa89c6fa1c01f3c7130d50-000.json": {
+      "source": "docs/control-lab-evidence/recordings/9588ec6fa231c95a2296bab88594ea46e7c8150434fa89c6fa1c01f3c7130d50-000.json",
+      "git_blob": "ca05440c88cca0850f0508fc0f0cee4aac00a127",
+      "source_sha256": "9ddaf92a53af49c3bda1e3b56bc5e4ccc9b95ab987f97b6626f54adf3f51e21d"
+    },
+    "control_lab/data/recordings/builtin/95997432431efcb33ac8ce4454739707ea8601a4a7a3d27cd79b38e795b7cee4-000.json": {
+      "source": "docs/control-lab-evidence/recordings/95997432431efcb33ac8ce4454739707ea8601a4a7a3d27cd79b38e795b7cee4-000.json",
+      "git_blob": "bd8ecc1d5b99067fb9ed565f5f2855d3c2ac7777",
+      "source_sha256": "c9ecb8e2861d4a54d7cbe8834b506883cb0873245748f6abc6a49a1e7c398119"
+    },
+    "control_lab/data/recordings/builtin/95ca27bf11224666b8bde7770324b4065c395d20fb11ea7dc7f6d6457d1db073-000.json": {
+      "source": "docs/control-lab-evidence/recordings/95ca27bf11224666b8bde7770324b4065c395d20fb11ea7dc7f6d6457d1db073-000.json",
+      "git_blob": "f58f9951b7d9230a20d26f1657b903bb64f9d1f4",
+      "source_sha256": "cf490414d4063e8ce4532e71a868290ead0676572759e07b5ac43da8854d05c8"
+    },
+    "control_lab/data/recordings/builtin/9713a55160c6ec10a864894971fead50a515a53019ddde458367738ae8ef8de7-000.json": {
+      "source": "docs/control-lab-evidence/recordings/9713a55160c6ec10a864894971fead50a515a53019ddde458367738ae8ef8de7-000.json",
+      "git_blob": "16ca8c8ee5e2e4c1777a7af908c468b4fc9a4065",
+      "source_sha256": "72404d6579cca3d6cb8764cbd4899dd18d89d3d94c181294a65e8d4dce5fc981"
+    },
+    "control_lab/data/recordings/builtin/97b01362e92a4ae9a2039db73c37a07548f52397692d6396a2635f245af73e8c-000.json": {
+      "source": "docs/control-lab-evidence/recordings/97b01362e92a4ae9a2039db73c37a07548f52397692d6396a2635f245af73e8c-000.json",
+      "git_blob": "284cbe00e7848b4f28c21c24a11b828be1bcf37d",
+      "source_sha256": "f2eb9ef9a74f186c2fde3edda7d7bf7291cb9ca36a9d9ed191ac8b9bc322fbbf"
+    },
+    "control_lab/data/recordings/builtin/9821940c5a335068f6a97ad3cf4aa89aed51ad4e60990bec0dabb26bd9a2b707-000.json": {
+      "source": "docs/control-lab-evidence/recordings/9821940c5a335068f6a97ad3cf4aa89aed51ad4e60990bec0dabb26bd9a2b707-000.json",
+      "git_blob": "96ecb8d5b4dc572c6a58a3ab83e4cb1f820791f5",
+      "source_sha256": "4e03cf1c3e2053b3127439a63d43731f1f611fe42dd6ba7e91b728e514978aec"
+    },
+    "control_lab/data/recordings/builtin/994455dbde929c36680beb6994fdf3756860b09b42763cc0a4e84556d9fd9019-000.json": {
+      "source": "docs/control-lab-evidence/recordings/994455dbde929c36680beb6994fdf3756860b09b42763cc0a4e84556d9fd9019-000.json",
+      "git_blob": "a077b2e43fb76a24625a1b3eddf45ec0c10891bc",
+      "source_sha256": "73f9db1597cc116fa00f4df615e5ce4c1a7b0df0308f763ae80479a0b5bf162b"
+    },
+    "control_lab/data/recordings/builtin/9cc440a600db3c9058747e86aac2f5bd29be7a94c73f266d8f88e55cc506b562-000.json": {
+      "source": "docs/control-lab-evidence/recordings/9cc440a600db3c9058747e86aac2f5bd29be7a94c73f266d8f88e55cc506b562-000.json",
+      "git_blob": "d6828b34294f8f21e8d1dbed3ffdc857731facb2",
+      "source_sha256": "e95ecb890716b52de470bf59e5398e258f536158f294c79f570957e249f5cd16"
+    },
+    "control_lab/data/recordings/builtin/9cc440a600db3c9058747e86aac2f5bd29be7a94c73f266d8f88e55cc506b562-001.json": {
+      "source": "docs/control-lab-evidence/recordings/9cc440a600db3c9058747e86aac2f5bd29be7a94c73f266d8f88e55cc506b562-001.json",
+      "git_blob": "04325dd69c90073e0a535f8bc2463d2702f499b3",
+      "source_sha256": "caa5db30118e72f88dee8172b61f4abbf5d68363090edd2486296d5907bae258"
+    },
+    "control_lab/data/recordings/builtin/9cc440a600db3c9058747e86aac2f5bd29be7a94c73f266d8f88e55cc506b562-002.json": {
+      "source": "docs/control-lab-evidence/recordings/9cc440a600db3c9058747e86aac2f5bd29be7a94c73f266d8f88e55cc506b562-002.json",
+      "git_blob": "dfcab1dfdd82141bc762104f9c77d3c2f778a7cb",
+      "source_sha256": "06bb2b353188be7f176aeb106f4489e20526e79567230cd3597e1470c7a2066b"
+    },
+    "control_lab/data/recordings/builtin/9cc440a600db3c9058747e86aac2f5bd29be7a94c73f266d8f88e55cc506b562-003.json": {
+      "source": "docs/control-lab-evidence/recordings/9cc440a600db3c9058747e86aac2f5bd29be7a94c73f266d8f88e55cc506b562-003.json",
+      "git_blob": "62fa573adfda52550ca57472f71059b153efc2c4",
+      "source_sha256": "09f5715a605b1fe1901f690b6249828f3077a37e05efb9f68861fa5efe9d7e00"
+    },
+    "control_lab/data/recordings/builtin/9ccb4296e87f67958c676eb4a4a00a025051f8234ac9a6db8f3d8657f68b9ea2-000.json": {
+      "source": "docs/control-lab-evidence/recordings/9ccb4296e87f67958c676eb4a4a00a025051f8234ac9a6db8f3d8657f68b9ea2-000.json",
+      "git_blob": "23ae04252cb194831fc786e1a1b6b92791f6aa00",
+      "source_sha256": "6d86eef255dec86fbac30127c27d2213a165c7b781bb01aeebdd5c6d97e940f8"
+    },
+    "control_lab/data/recordings/builtin/9d4a557976843307aad2e7cdbd22e4de2ef5903126c6e6ede8967b931c5b030b-000.json": {
+      "source": "docs/control-lab-evidence/recordings/9d4a557976843307aad2e7cdbd22e4de2ef5903126c6e6ede8967b931c5b030b-000.json",
+      "git_blob": "4b50d801cd7501d08a7b452427cd40a4de861c26",
+      "source_sha256": "0276b7a0d03a942b03e9128991716b321782366007ee8582da92fcf22fcfc7dd"
+    },
+    "control_lab/data/recordings/builtin/9d4a557976843307aad2e7cdbd22e4de2ef5903126c6e6ede8967b931c5b030b-001.json": {
+      "source": "docs/control-lab-evidence/recordings/9d4a557976843307aad2e7cdbd22e4de2ef5903126c6e6ede8967b931c5b030b-001.json",
+      "git_blob": "8a1dbe8b928fe8172dad2b1503ae13f0c0b47f32",
+      "source_sha256": "e297b7f1085dfb5baad8389200d2ab2028c3e12e96141a80514baffa819ab2b5"
+    },
+    "control_lab/data/recordings/builtin/9d4a557976843307aad2e7cdbd22e4de2ef5903126c6e6ede8967b931c5b030b-002.json": {
+      "source": "docs/control-lab-evidence/recordings/9d4a557976843307aad2e7cdbd22e4de2ef5903126c6e6ede8967b931c5b030b-002.json",
+      "git_blob": "e00ad6df0076c67599d78a85dcaa8ceecb544a47",
+      "source_sha256": "387b12511630c89971ea81342290c92a7e59d32d08114dca3ecbb2775fbb1968"
+    },
+    "control_lab/data/recordings/builtin/9dc574b5fbb9093bd33764cda0f09bf93206e2918031e8c83443078ba9c82623-000.json": {
+      "source": "docs/control-lab-evidence/recordings/9dc574b5fbb9093bd33764cda0f09bf93206e2918031e8c83443078ba9c82623-000.json",
+      "git_blob": "64a3176ad9db2c3124566cca83135b2632a47940",
+      "source_sha256": "404b968a9645d71c2cd7145d3dbfd174d3514d551bb4f061c62ce9c9df3cd73a"
+    },
+    "control_lab/data/recordings/builtin/9f7880d77c5ac584dffb11b72bf45f227bc273da37200eb548c2c27b02bc78e6-000.json": {
+      "source": "docs/control-lab-evidence/recordings/9f7880d77c5ac584dffb11b72bf45f227bc273da37200eb548c2c27b02bc78e6-000.json",
+      "git_blob": "a072e75475630dbe2f21b30122605344fda656e0",
+      "source_sha256": "7a16c0fa9ee5b63d9f5f0789e4cdff8674352f2b83514c229254ac5534c52717"
+    },
+    "control_lab/data/recordings/builtin/9f7880d77c5ac584dffb11b72bf45f227bc273da37200eb548c2c27b02bc78e6-001.json": {
+      "source": "docs/control-lab-evidence/recordings/9f7880d77c5ac584dffb11b72bf45f227bc273da37200eb548c2c27b02bc78e6-001.json",
+      "git_blob": "7793f14c242bb3af41230f6d1ca55e33e6744199",
+      "source_sha256": "e87be076d8da459accb142ede5ec2cb7b12afd597d0428eb363d28f3e15fd456"
+    },
+    "control_lab/data/recordings/builtin/9f7880d77c5ac584dffb11b72bf45f227bc273da37200eb548c2c27b02bc78e6-002.json": {
+      "source": "docs/control-lab-evidence/recordings/9f7880d77c5ac584dffb11b72bf45f227bc273da37200eb548c2c27b02bc78e6-002.json",
+      "git_blob": "ffe8345696c430aab8c1b2b572f800bf5e0cd4d2",
+      "source_sha256": "13bec8051a98b85a7f313ba8e22134289f853ba659904e6b8247936b96fff343"
+    },
+    "control_lab/data/recordings/builtin/a02bb3c1926edf0853e9d2c2071b371f57b64d62052cc9d4d0d0f6e68d4f54bb-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a02bb3c1926edf0853e9d2c2071b371f57b64d62052cc9d4d0d0f6e68d4f54bb-000.json",
+      "git_blob": "22acf2028a52a002abac65a02be88471f2b3d7d7",
+      "source_sha256": "235950d363991fff4cd1c02fd649fb6bc256475b7bf9b78c43b9bd2b86a454fe"
+    },
+    "control_lab/data/recordings/builtin/a04b69d6dbafa8dea4259ebdd4475a9a8c93710e90c39712ff28f02afca81f0a-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a04b69d6dbafa8dea4259ebdd4475a9a8c93710e90c39712ff28f02afca81f0a-000.json",
+      "git_blob": "a8a8d7d3b15cb29474386362fefc2fa9c29c2b92",
+      "source_sha256": "355241835cc099385777e8ad4476859278610671fdac4c466b75b6a2dae63521"
+    },
+    "control_lab/data/recordings/builtin/a13582807b6fc8476f9a4bf7a203de67e682d254618036214c9b02e9cfca4242-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a13582807b6fc8476f9a4bf7a203de67e682d254618036214c9b02e9cfca4242-000.json",
+      "git_blob": "8d55670e9194bde5b587871f812182a6a77c89d9",
+      "source_sha256": "54daf4db9bab4bfb7600e8fc71a0fe1ebe4f18427d5524c166e4043a36fa0124"
+    },
+    "control_lab/data/recordings/builtin/a14fffa55d8fde8a4487c8f93769fc29d1a25507aa1c6a04acc951cb9a9ff0d0-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a14fffa55d8fde8a4487c8f93769fc29d1a25507aa1c6a04acc951cb9a9ff0d0-000.json",
+      "git_blob": "5dbfeb38944abe339efd4ea43b07af7f90327560",
+      "source_sha256": "25f884de4c48f6db431d7bc2a365d53b49c17797df362dfb4cf2638c1ab40b74"
+    },
+    "control_lab/data/recordings/builtin/a3913b04b310bb75ce3ec98ded1fa153f458ea71d5deeafe9a30eae081b8a044-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a3913b04b310bb75ce3ec98ded1fa153f458ea71d5deeafe9a30eae081b8a044-000.json",
+      "git_blob": "02b418c6abb70248c0a7ebe71ccf8421ab1a8ef4",
+      "source_sha256": "6965813fcf049a4cf939b925b55dc23f94a1b6179926e5f898970b25f5a5dcf4"
+    },
+    "control_lab/data/recordings/builtin/a3913b04b310bb75ce3ec98ded1fa153f458ea71d5deeafe9a30eae081b8a044-001.json": {
+      "source": "docs/control-lab-evidence/recordings/a3913b04b310bb75ce3ec98ded1fa153f458ea71d5deeafe9a30eae081b8a044-001.json",
+      "git_blob": "5fdfdaec3c5a1ccd22bffc7cb63a412f8f5adafd",
+      "source_sha256": "94e6099f7bfc66741af9950be3d588cc142388df117ac45c97bb1c367f22e568"
+    },
+    "control_lab/data/recordings/builtin/a3913b04b310bb75ce3ec98ded1fa153f458ea71d5deeafe9a30eae081b8a044-002.json": {
+      "source": "docs/control-lab-evidence/recordings/a3913b04b310bb75ce3ec98ded1fa153f458ea71d5deeafe9a30eae081b8a044-002.json",
+      "git_blob": "0b862e408d3298a0bb71c5c2e6ebe0ac885d9eca",
+      "source_sha256": "5f21e81a66268e1b3665f7bb6b40ca0240b8aa3829510baf6b6791335145c071"
+    },
+    "control_lab/data/recordings/builtin/a3f836dd2918b9ab9b749280f07d390ab2fc8806d613507f3d38274f829eee78-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a3f836dd2918b9ab9b749280f07d390ab2fc8806d613507f3d38274f829eee78-000.json",
+      "git_blob": "40434d258c3958ed89f0e6cbdeecf429abf21301",
+      "source_sha256": "f26e17a2210fba9a5d0533d416d8797a20a147883445775691d35ade74ccc8d5"
+    },
+    "control_lab/data/recordings/builtin/a5850ffb6c0a18f5d79ac24e362fed29329e34b33148991f9b04cf159d06375b-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a5850ffb6c0a18f5d79ac24e362fed29329e34b33148991f9b04cf159d06375b-000.json",
+      "git_blob": "24ef9ad94d09b67df4f6f6c5d3d35bd22a34cb54",
+      "source_sha256": "f81e56fab7646e73376838f8f50acb8f08a13beab945e6e5bc5dfdf475fe25d9"
+    },
+    "control_lab/data/recordings/builtin/a68bf92e7417f614bdd98f8ca47a1a3d8ba600c29c77101f4b71bb2849559c78-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a68bf92e7417f614bdd98f8ca47a1a3d8ba600c29c77101f4b71bb2849559c78-000.json",
+      "git_blob": "625aa3ef9481163117db66dcf1fd367f73628a17",
+      "source_sha256": "098b19d1fe4ef3ef82bd7ace931701431f7019c200a59b87fa2bf5e78caaf830"
+    },
+    "control_lab/data/recordings/builtin/a78bfe10d22240ad46778b70819a85d77a36f797b1b4df01779cb070b505e8d2-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a78bfe10d22240ad46778b70819a85d77a36f797b1b4df01779cb070b505e8d2-000.json",
+      "git_blob": "2cc7e278a314cccb70c9c6a50ff2827fd9f1726a",
+      "source_sha256": "7e5f9e3d047771ad8a937918ead7a113b89d69fdc43d8194823586d19306b4d1"
+    },
+    "control_lab/data/recordings/builtin/a7ac857b56851667eafdd10e58d5fd7f303da0712e9b299e07caf27052904a9d-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a7ac857b56851667eafdd10e58d5fd7f303da0712e9b299e07caf27052904a9d-000.json",
+      "git_blob": "fbc2224d21ef089aa65011222a536419b0829fab",
+      "source_sha256": "be4bee586b2119ee4d905e0aebde750d995111bc00650f2b1a6ffc3cc237d8c8"
+    },
+    "control_lab/data/recordings/builtin/a7db2d26cd6b9911eac8b38fdae4182ee29e3a7f24646dfcd5a7a434a70d66e0-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a7db2d26cd6b9911eac8b38fdae4182ee29e3a7f24646dfcd5a7a434a70d66e0-000.json",
+      "git_blob": "ce439cf64b1190b1d000f7772fad32e6714d295d",
+      "source_sha256": "c62f6c825ccdf62bbe6c7b4de619535b8c5b50ea7a7745b9ba7acc5c2a303e27"
+    },
+    "control_lab/data/recordings/builtin/a7dca7ffc6b0c7cee85e910264963e92b5d5643fe2f07e1e71a677c54cfc6ecf-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a7dca7ffc6b0c7cee85e910264963e92b5d5643fe2f07e1e71a677c54cfc6ecf-000.json",
+      "git_blob": "346db21a94c06874ed332311cda9f92dc0ee1f17",
+      "source_sha256": "8ed9b5988ea42e16546b5a33d6d1bc936c5f351019e3afc83549f991f266c98d"
+    },
+    "control_lab/data/recordings/builtin/a8ac56eacf806cc78ec2a3713c3d894fac0ff8f5f70e09a977f9d0e53a0f5f14-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a8ac56eacf806cc78ec2a3713c3d894fac0ff8f5f70e09a977f9d0e53a0f5f14-000.json",
+      "git_blob": "4d3f9e4ce6c6092c6612bace8cfdb559038b07d6",
+      "source_sha256": "862bd975f137867ab5af0a6ce5f545f58bab6217c33d6cc0e998e89d628d01ae"
+    },
+    "control_lab/data/recordings/builtin/a8ae36112f5c2efe23447bed64bc21f8af915487a79370821c3b343100b6890f-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a8ae36112f5c2efe23447bed64bc21f8af915487a79370821c3b343100b6890f-000.json",
+      "git_blob": "b0bb5e8401e6b459f29c406a45222e23811b8e68",
+      "source_sha256": "03b856c7aaddeadece0b750ab6c9df910ee48755fa4c4f9824b9352e9bac8691"
+    },
+    "control_lab/data/recordings/builtin/a8defa35361d0fee8943138bcfd04e91384bbc1f2b94ff6268bb931fecbe4aa7-000.json": {
+      "source": "docs/control-lab-evidence/recordings/a8defa35361d0fee8943138bcfd04e91384bbc1f2b94ff6268bb931fecbe4aa7-000.json",
+      "git_blob": "8a26d9f101b4b169c398cc0bf5707aea5fcbae14",
+      "source_sha256": "475147a859af8519dbd7f7e30dd7df74d5ddeb66076fba38d20f021972421b11"
+    },
+    "control_lab/data/recordings/builtin/aa478087ef1d0d853bba87994cd48a22463114fd0af77e3296f31a2b8867b4d3-000.json": {
+      "source": "docs/control-lab-evidence/recordings/aa478087ef1d0d853bba87994cd48a22463114fd0af77e3296f31a2b8867b4d3-000.json",
+      "git_blob": "e2fead1719e3e5ac3e09098e0939d6e9c2cb155d",
+      "source_sha256": "4633f56c3913d00de7fb18e41e87dae0bf11488926609dfcd4875608f390a092"
+    },
+    "control_lab/data/recordings/builtin/aaa292672da7fd36fe7f34375dd635e0a42e49d9e4204a52c16b74cbc711af6d-000.json": {
+      "source": "docs/control-lab-evidence/recordings/aaa292672da7fd36fe7f34375dd635e0a42e49d9e4204a52c16b74cbc711af6d-000.json",
+      "git_blob": "5e780a7040d62e57e7b17bec93cbdd787ba291f3",
+      "source_sha256": "f4d4bd35b91cbf68145da36d94fdcbb782c768ed65a5e3554d071ef4517f793b"
+    },
+    "control_lab/data/recordings/builtin/adad196ba2c222892e4231df70c138c8aefa429ede80e6ed4b24b192a65e9567-000.json": {
+      "source": "docs/control-lab-evidence/recordings/adad196ba2c222892e4231df70c138c8aefa429ede80e6ed4b24b192a65e9567-000.json",
+      "git_blob": "20c0c14575ae0b80dc5555147b7f3850852f2505",
+      "source_sha256": "d9b93e1ca58a26bb7a59af97516815061d17f4118a57e37010e548480edea27f"
+    },
+    "control_lab/data/recordings/builtin/af39b9a22ceae9850f4a994058b4e44aee753e99e3d51d3606b234d2700d9090-000.json": {
+      "source": "docs/control-lab-evidence/recordings/af39b9a22ceae9850f4a994058b4e44aee753e99e3d51d3606b234d2700d9090-000.json",
+      "git_blob": "3027f0b305ee1d7c112ffe70e600c7d1404dde9b",
+      "source_sha256": "da92703d49f257d540ea938519831fc2efc770e9545ca444f8c321d4ff2aef35"
+    },
+    "control_lab/data/recordings/builtin/afc911c1961251dcfb1ebefbd3b8d19fff3700972e15dc9fc5e20e44c2d7343b-000.json": {
+      "source": "docs/control-lab-evidence/recordings/afc911c1961251dcfb1ebefbd3b8d19fff3700972e15dc9fc5e20e44c2d7343b-000.json",
+      "git_blob": "b78144eb70a0fd5f507b3333c98b641bc3c33492",
+      "source_sha256": "17c847ebcb40fd2159f9849cb61e472d6a87b0615818215beea22e34d756317e"
+    },
+    "control_lab/data/recordings/builtin/b05895b80bd88ee85ae1edea37fd80a35b00c5783b89519b4ed7dc3648f84933-000.json": {
+      "source": "docs/control-lab-evidence/recordings/b05895b80bd88ee85ae1edea37fd80a35b00c5783b89519b4ed7dc3648f84933-000.json",
+      "git_blob": "103d4a233271b02f210d048cdeb7cc89189f68a5",
+      "source_sha256": "bdfbb30e056f94ae9f0281c71a56a020969d862467c4605fbbe0f4b4678f3dd8"
+    },
+    "control_lab/data/recordings/builtin/b176ef47ce49faebe1a8cc3281fa68b16498359f120a15958221db5c7bd895a2-000.json": {
+      "source": "docs/control-lab-evidence/recordings/b176ef47ce49faebe1a8cc3281fa68b16498359f120a15958221db5c7bd895a2-000.json",
+      "git_blob": "541d98359d6ffd4d83a9cd3b25778518f33eb073",
+      "source_sha256": "1af457782a1f2ef5a113e0b9fac8cd38d3f6c37f95ef62292182ef22cae26ed6"
+    },
+    "control_lab/data/recordings/builtin/b1a2f286df86c247844d4091fb34cd281aca1a34e5041d8e51deb69259f55fdd-000.json": {
+      "source": "docs/control-lab-evidence/recordings/b1a2f286df86c247844d4091fb34cd281aca1a34e5041d8e51deb69259f55fdd-000.json",
+      "git_blob": "9c6715fd68dd72c4b1d8d301d5da4832f3acb313",
+      "source_sha256": "df57c6a5b84855cd2aaa054a0903cfedaf2bd25d90c26ae8f5ace771977b5c60"
+    },
+    "control_lab/data/recordings/builtin/b1c1c56ebbcd24cca766b13a78eee11cb847f005a68c1f90cf900ee2b1fc65ee-000.json": {
+      "source": "docs/control-lab-evidence/recordings/b1c1c56ebbcd24cca766b13a78eee11cb847f005a68c1f90cf900ee2b1fc65ee-000.json",
+      "git_blob": "2903b4bcd64668183152eca79220b2af5fcde646",
+      "source_sha256": "7f9f7f77ec22bbb103f9e6248171f245c390ccc5ad7caf88fd1737c5abfa0de6"
+    },
+    "control_lab/data/recordings/builtin/b23a54d42f56847e033a4521c55e95ea67c4dc74e581c25d4a6699012bfb0f4e-000.json": {
+      "source": "docs/control-lab-evidence/recordings/b23a54d42f56847e033a4521c55e95ea67c4dc74e581c25d4a6699012bfb0f4e-000.json",
+      "git_blob": "b7523cde5e031b3b12a1d0794071c75eb21bdd21",
+      "source_sha256": "d0fcdebb177b9747c4d0c360a12d71b222249c9c574a55b74919cd87063de950"
+    },
+    "control_lab/data/recordings/builtin/b28eaaa2acc0c13ef4ec70a221c07a43be806e7db275afe3ac14e433ed2f860e-000.json": {
+      "source": "docs/control-lab-evidence/recordings/b28eaaa2acc0c13ef4ec70a221c07a43be806e7db275afe3ac14e433ed2f860e-000.json",
+      "git_blob": "6160b3a351dc70ce4b7af813854c86380a7d3c00",
+      "source_sha256": "59039b31fd833bfdd248f150a80d2e82771fb5a09724f2e1bfbdb17cd0f03c50"
+    },
+    "control_lab/data/recordings/builtin/b3bf1644026892abd79cb546a5dd72dbafd338c9e126d76c3090a17cbabbd02e-000.json": {
+      "source": "docs/control-lab-evidence/recordings/b3bf1644026892abd79cb546a5dd72dbafd338c9e126d76c3090a17cbabbd02e-000.json",
+      "git_blob": "80eb991bc458411012294ff8951874608ba0664d",
+      "source_sha256": "968c07975d75ad9f9cf705992b117104f6fc314340864508d899d72bddb0127b"
+    },
+    "control_lab/data/recordings/builtin/b45e5b554d32f5ad472df3b7f04aa106fcbdea78b293c06751975fc724fa04c0-000.json": {
+      "source": "docs/control-lab-evidence/recordings/b45e5b554d32f5ad472df3b7f04aa106fcbdea78b293c06751975fc724fa04c0-000.json",
+      "git_blob": "9c9d6a71bab13a505aacd9d595995adbb5d9d533",
+      "source_sha256": "cf31834d779038755b63a9517e750130f499497ea3c84832994cd82649fb0ec7"
+    },
+    "control_lab/data/recordings/builtin/b5fc44b03afc276e0cd733e41a3d59d3592a2bb999ea80912d31bc61fe6d222a-000.json": {
+      "source": "docs/control-lab-evidence/recordings/b5fc44b03afc276e0cd733e41a3d59d3592a2bb999ea80912d31bc61fe6d222a-000.json",
+      "git_blob": "d5727649b972f05e34b26249bb26e98ec6bf78ef",
+      "source_sha256": "8c6eb768551f496954cb47daa537d60231576f08d9ce4048f5edde38db64b874"
+    },
+    "control_lab/data/recordings/builtin/b833affad741a27d71038ce2c162c40cc80493185cfacef5539b9143514de2f7-000.json": {
+      "source": "docs/control-lab-evidence/recordings/b833affad741a27d71038ce2c162c40cc80493185cfacef5539b9143514de2f7-000.json",
+      "git_blob": "d3f91f429205059584199ecf6b1db7f776befb9b",
+      "source_sha256": "fe08c920222b731f85715c674982d73cb24532345370ecd8d73c91f0f9fcce20"
+    },
+    "control_lab/data/recordings/builtin/b9a7f72f233cb42b3ee53c2a6572dd2b66d9488866b7665764b1e6e6133bbacb-000.json": {
+      "source": "docs/control-lab-evidence/recordings/b9a7f72f233cb42b3ee53c2a6572dd2b66d9488866b7665764b1e6e6133bbacb-000.json",
+      "git_blob": "ebc331556562ab092eb091940e3b60a4d0872f8e",
+      "source_sha256": "309487d57e570c84fba796f0657f95a4e0e5925fd957a3c3873fd3fab2720b22"
+    },
+    "control_lab/data/recordings/builtin/bbdedd49c15ea688926f9a253242d23fe960173935c78bcd7d320c26d62b133f-000.json": {
+      "source": "docs/control-lab-evidence/recordings/bbdedd49c15ea688926f9a253242d23fe960173935c78bcd7d320c26d62b133f-000.json",
+      "git_blob": "4172961c442ecda7b3e7f3c4833cd9a93f8aca67",
+      "source_sha256": "5164bdeec5502362a10cb411750a2ddf014416d5f681c2ff5f68debb8aa65255"
+    },
+    "control_lab/data/recordings/builtin/bcd6065053076265d5b8d1bfafdab917f82a29a1cd29f738a8e5020b6c6a2a42-000.json": {
+      "source": "docs/control-lab-evidence/recordings/bcd6065053076265d5b8d1bfafdab917f82a29a1cd29f738a8e5020b6c6a2a42-000.json",
+      "git_blob": "1f690f075148bb60970a3bdff8a8c3b0bc6148a6",
+      "source_sha256": "f6baf4e00eb9d5afb24137958da480cb4ab7e505342e1bcb8bbdf996c9f74775"
+    },
+    "control_lab/data/recordings/builtin/bef607279a6b97540691f8cfb43aa7f4fb57d39c237db38747806ff4f113a3e0-000.json": {
+      "source": "docs/control-lab-evidence/recordings/bef607279a6b97540691f8cfb43aa7f4fb57d39c237db38747806ff4f113a3e0-000.json",
+      "git_blob": "a0af0a75e34e1a6f77f4ad246d2d21f7ac3c0353",
+      "source_sha256": "aa7d78a9d87658b2b635ee8ab1cc1e07b28ed07f7028d721f46f14ad1de61e86"
+    },
+    "control_lab/data/recordings/builtin/c26b37aa1d49aa1ede7d29d41291d419569357b1d87c7e67d58bb76b479a8ebb-000.json": {
+      "source": "docs/control-lab-evidence/recordings/c26b37aa1d49aa1ede7d29d41291d419569357b1d87c7e67d58bb76b479a8ebb-000.json",
+      "git_blob": "54a4986f6aff7aba4b47ef8a5602ebbc41396fd1",
+      "source_sha256": "32915933a53b402368ba7657bdba00b9f3b08d4978463a7d4410fc30849dcf78"
+    },
+    "control_lab/data/recordings/builtin/c421c3e527f3aca71f3cb6bcd9640b01da7c4657eba83bafaee118de5c2a73f7-000.json": {
+      "source": "docs/control-lab-evidence/recordings/c421c3e527f3aca71f3cb6bcd9640b01da7c4657eba83bafaee118de5c2a73f7-000.json",
+      "git_blob": "95bfc7d47255cfbcff2a2679911bcbcde50a8ac4",
+      "source_sha256": "9bf1c69c8f0bf7cac1b484e8c2c334bdd6c1d2a5d840c8cd54b977b7729c1b8a"
+    },
+    "control_lab/data/recordings/builtin/c52032d96c714ab20f97378a57767075bfb49e46463e76cff02d68361362e60a-000.json": {
+      "source": "docs/control-lab-evidence/recordings/c52032d96c714ab20f97378a57767075bfb49e46463e76cff02d68361362e60a-000.json",
+      "git_blob": "ae4fdac31b9890b233da9ff594e2e56a2567047d",
+      "source_sha256": "645777b127810ad8d2a136799066a7cd6f08c44085c32aa98b5b475ca555274c"
+    },
+    "control_lab/data/recordings/builtin/c7f6b8e5daa2df0f151f7520aa260a81b0661eb20568a088e3b25b6ed2907f70-000.json": {
+      "source": "docs/control-lab-evidence/recordings/c7f6b8e5daa2df0f151f7520aa260a81b0661eb20568a088e3b25b6ed2907f70-000.json",
+      "git_blob": "dda067c1b91be19ffdd67f449a28c8f555685cd7",
+      "source_sha256": "f54ad5266039e91ac4487b6216180d156e615098edb3ca22432d8e536c97b750"
+    },
+    "control_lab/data/recordings/builtin/c933f7c036297fc9edf1952889cee5b66bd5fdab0356fa3e8fdbada7399c9af0-000.json": {
+      "source": "docs/control-lab-evidence/recordings/c933f7c036297fc9edf1952889cee5b66bd5fdab0356fa3e8fdbada7399c9af0-000.json",
+      "git_blob": "5c19545d9ee5d9a59fe27020d514083ba281f384",
+      "source_sha256": "2d921b63bcad49fbae2288dd4d0d13f5de90644843d6ca432ee2aa2b9d9200aa"
+    },
+    "control_lab/data/recordings/builtin/cb8d2d320ff6909971f5941d7a267f24d1b485b17ab3e19172440469cb71b844-000.json": {
+      "source": "docs/control-lab-evidence/recordings/cb8d2d320ff6909971f5941d7a267f24d1b485b17ab3e19172440469cb71b844-000.json",
+      "git_blob": "352355a0cd85d6eba113a038e4aab7aa293cdf3c",
+      "source_sha256": "db038bfdac403af575b251669112fa0ef0efff23c4b47bddb0cb63adc3e207fa"
+    },
+    "control_lab/data/recordings/builtin/ccac16d47d83ff68acd8bd898c2edf4bff70f3bcb57941b022f0e8ce72399f19-000.json": {
+      "source": "docs/control-lab-evidence/recordings/ccac16d47d83ff68acd8bd898c2edf4bff70f3bcb57941b022f0e8ce72399f19-000.json",
+      "git_blob": "3be54730e164a21234ea622cdad9ff70a8605ddf",
+      "source_sha256": "fe03adde8cd3b9a7b9686d0c6bdfc7fd218aad3a5fcbdbaf400908882bc34e5e"
+    },
+    "control_lab/data/recordings/builtin/d203a89de4ba3238177017d24a750354ae2cf54369892dfd7c562cc45ba06f03-000.json": {
+      "source": "docs/control-lab-evidence/recordings/d203a89de4ba3238177017d24a750354ae2cf54369892dfd7c562cc45ba06f03-000.json",
+      "git_blob": "a5208a747f9f48a3a0ee14cb76e998e2352c21f6",
+      "source_sha256": "74b99a7285eb7d82ed87f1ae60da2a3d8089bfaa2783d756aa1baf14bb15fe5f"
+    },
+    "control_lab/data/recordings/builtin/d484c8077e5023545dd4f41987b87e761d3cf604d5bd45f598fa3eaca855c9a0-000.json": {
+      "source": "docs/control-lab-evidence/recordings/d484c8077e5023545dd4f41987b87e761d3cf604d5bd45f598fa3eaca855c9a0-000.json",
+      "git_blob": "d16a129a5a7d17c66e7c6963936ccfdffe194108",
+      "source_sha256": "cdbd2704f1410889922f843a22a83c75b804c3c5ef37cdc2a8ef0bc47cc6ea44"
+    },
+    "control_lab/data/recordings/builtin/d4e1d17590e4efefa499d84e4875d4c394a717807682a27bb9cedbb14e11d163-000.json": {
+      "source": "docs/control-lab-evidence/recordings/d4e1d17590e4efefa499d84e4875d4c394a717807682a27bb9cedbb14e11d163-000.json",
+      "git_blob": "f7fb673627d6283fc888149ddcd954b9b54f964e",
+      "source_sha256": "6d203e897c340e0eea5a3a7cc3dba7025473fef58896810a836909b36184c70d"
+    },
+    "control_lab/data/recordings/builtin/d59d01c4c26155cb41b2377c80e5bb40761cce20d8f827d08de618ebcefde392-000.json": {
+      "source": "docs/control-lab-evidence/recordings/d59d01c4c26155cb41b2377c80e5bb40761cce20d8f827d08de618ebcefde392-000.json",
+      "git_blob": "371faf52590def346f1c08e2d70dc4719ed1e7c9",
+      "source_sha256": "ad891068044ee818b65695665477a7ac50502fec3ab035e6b66463595048c751"
+    },
+    "control_lab/data/recordings/builtin/d84ad6507086f2e4b1be4d991d8d3dfad65a32b6b745755b29aab64bf3277e74-000.json": {
+      "source": "docs/control-lab-evidence/recordings/d84ad6507086f2e4b1be4d991d8d3dfad65a32b6b745755b29aab64bf3277e74-000.json",
+      "git_blob": "1e0851ec85081460e8c66bd3aca8f33cf004562d",
+      "source_sha256": "3afc95aca0ebe07bf5b06f1b2afd5f0f6b26e9f1ede2495018ca5cba82ee754a"
+    },
+    "control_lab/data/recordings/builtin/d9f6b066f4add872ccdd2980313f4e51b5afb2bafe06a150904d03e04256ba18-000.json": {
+      "source": "docs/control-lab-evidence/recordings/d9f6b066f4add872ccdd2980313f4e51b5afb2bafe06a150904d03e04256ba18-000.json",
+      "git_blob": "c7b8453a7d365572b8c437e632f6d0e2fa7b38a0",
+      "source_sha256": "11158799081528a43bf2a44068b39724c44c094dcea24d12c9d75bb5f93f7c58"
+    },
+    "control_lab/data/recordings/builtin/da25890bbfc360124eca2f9d9ffaa1f8b02e1060e857521c4a9f5b61cdd07874-000.json": {
+      "source": "docs/control-lab-evidence/recordings/da25890bbfc360124eca2f9d9ffaa1f8b02e1060e857521c4a9f5b61cdd07874-000.json",
+      "git_blob": "a007839716e73fb2ca5ce699de1c74d0b9a151d7",
+      "source_sha256": "862d85555acf911e7d76308c79ee473802398aa1420ccd6646670a0bb26c14e8"
+    },
+    "control_lab/data/recordings/builtin/da6bc8bb229da39b93867970a2dd8bc910e90ad59e9b13f8d8e05fdd864cdf7e-000.json": {
+      "source": "docs/control-lab-evidence/recordings/da6bc8bb229da39b93867970a2dd8bc910e90ad59e9b13f8d8e05fdd864cdf7e-000.json",
+      "git_blob": "38914dbd4a1d729e499408a8d450b4e91240554a",
+      "source_sha256": "dfadfbc378e25cd5e7ed55223bd504c64267799e14c3eb3a99db09ba43896e5a"
+    },
+    "control_lab/data/recordings/builtin/dae327f87096e70945f190fa0061b660d7ecc6284eaef40d41531801ea64f844-000.json": {
+      "source": "docs/control-lab-evidence/recordings/dae327f87096e70945f190fa0061b660d7ecc6284eaef40d41531801ea64f844-000.json",
+      "git_blob": "eddd81dd72a9ad984299c04fb21f6702873a431f",
+      "source_sha256": "fd129ef18f277628a5366004915c37efa74e4b394920ce9de484221f9e96def4"
+    },
+    "control_lab/data/recordings/builtin/dae4e17149c160c3dd17968a3fd7581d2af138d72a2ba1892284001dc5b2a81e-000.json": {
+      "source": "docs/control-lab-evidence/recordings/dae4e17149c160c3dd17968a3fd7581d2af138d72a2ba1892284001dc5b2a81e-000.json",
+      "git_blob": "a7c29803fd2d2c354881a72a279d4e580d818813",
+      "source_sha256": "1e57e8d2b3feb364b4a29359af14bbd1226a4066b95e55eb5ab923b77793a779"
+    },
+    "control_lab/data/recordings/builtin/db49ee1a3c22929c23ef1df9d610de85ea3d5215331c7d092c28d2e53a5855a9-000.json": {
+      "source": "docs/control-lab-evidence/recordings/db49ee1a3c22929c23ef1df9d610de85ea3d5215331c7d092c28d2e53a5855a9-000.json",
+      "git_blob": "351f6cd34cb540f35d0eab10caa3ea82ada62d23",
+      "source_sha256": "1df2a0c5d0ccfd7bbea27e3b6ca956cbdf9649e3c045f760cf68178d35f48620"
+    },
+    "control_lab/data/recordings/builtin/dff56dd2ac983b55fb523a73b22beda6399ac39d9ff03bdcb5544eba5b6589d8-000.json": {
+      "source": "docs/control-lab-evidence/recordings/dff56dd2ac983b55fb523a73b22beda6399ac39d9ff03bdcb5544eba5b6589d8-000.json",
+      "git_blob": "893ce5696f5ead375298816c788e11f8e2398774",
+      "source_sha256": "a3ff2a135ab5587c04b131b9b235ca588700d6cd2ad7889d3a80a4453a09b244"
+    },
+    "control_lab/data/recordings/builtin/e0b9bda63fe8ac226bf781cd38ac4e46e48c78efb687f86f8a7844c621837e07-000.json": {
+      "source": "docs/control-lab-evidence/recordings/e0b9bda63fe8ac226bf781cd38ac4e46e48c78efb687f86f8a7844c621837e07-000.json",
+      "git_blob": "135d797d87037ed9180df36a34113d5d3e203b8f",
+      "source_sha256": "fa9992d8182dad4a7d2dccc3f2e87f98080a44b93b1f79ae3ff067c34b797f0c"
+    },
+    "control_lab/data/recordings/builtin/e1786e0dccdc83075e488f6f965bafe9a1ad53922709c8101f174e6f32332411-000.json": {
+      "source": "docs/control-lab-evidence/recordings/e1786e0dccdc83075e488f6f965bafe9a1ad53922709c8101f174e6f32332411-000.json",
+      "git_blob": "915826a5f32d2f25b5618abe83be53831a3a5be2",
+      "source_sha256": "71d069571092cb964d828f46b25eb048c6b83e4e065ef4e37606dfc709cd0340"
+    },
+    "control_lab/data/recordings/builtin/e3ea8c9acbeaeea6210bbdc8f0c0fa1b5b17b6acf85487f96272b5954f46e9b9-000.json": {
+      "source": "docs/control-lab-evidence/recordings/e3ea8c9acbeaeea6210bbdc8f0c0fa1b5b17b6acf85487f96272b5954f46e9b9-000.json",
+      "git_blob": "1d5a6c08f317bc22362e75a5f010bcf455d89d83",
+      "source_sha256": "05731f7a5fa97cb07a43e72faa70c84b28b4ceb20a5d5a83a90769779eec225f"
+    },
+    "control_lab/data/recordings/builtin/e418a6c0e9719b0b96e60528e9867305596c6dee46eebda63c8c234619ae8bf0-000.json": {
+      "source": "docs/control-lab-evidence/recordings/e418a6c0e9719b0b96e60528e9867305596c6dee46eebda63c8c234619ae8bf0-000.json",
+      "git_blob": "7970f23a3d18c9e412b67315421fc6abcfbaad5c",
+      "source_sha256": "0562c8f6f476fd3b603cc3340342f9b7adc45601d4e644be1d41894522a62601"
+    },
+    "control_lab/data/recordings/builtin/e5cc741b54b694d85a8e4b5016dfea0a5cd2062103f8e28506ddd1f5544c097e-000.json": {
+      "source": "docs/control-lab-evidence/recordings/e5cc741b54b694d85a8e4b5016dfea0a5cd2062103f8e28506ddd1f5544c097e-000.json",
+      "git_blob": "9260464982a4ce466d20895f90b3f6badf86808d",
+      "source_sha256": "1197441e0608cbc9b146178228daf77d635d2cccd90135fe9307728aec8be24b"
+    },
+    "control_lab/data/recordings/builtin/e73b580a385443dd3ef82eea6d266f4188fbb1412f1a3a664957a3c18120def2-000.json": {
+      "source": "docs/control-lab-evidence/recordings/e73b580a385443dd3ef82eea6d266f4188fbb1412f1a3a664957a3c18120def2-000.json",
+      "git_blob": "d3b2482fbc026a8268c36e9080c07aa5d6bd9e9d",
+      "source_sha256": "e29881b1ba9dbf31ed855b1ec4ce2b98be4e615802ea4241857d6679a5555f25"
+    },
+    "control_lab/data/recordings/builtin/e90e28dd20d1274068e4432f9862f77473a992b973593c16d5493ec97cb8ad41-000.json": {
+      "source": "docs/control-lab-evidence/recordings/e90e28dd20d1274068e4432f9862f77473a992b973593c16d5493ec97cb8ad41-000.json",
+      "git_blob": "cc1e6640bc78b0ad174a6064c456a4486b794cc7",
+      "source_sha256": "e37191b31940ccfe7f2fc657b26e164543c47efb28b60376dd012525bd34fc72"
+    },
+    "control_lab/data/recordings/builtin/ebf143462b86399aad9d58f655cb9f315362e0b55ee58075310a46b504a7f087-000.json": {
+      "source": "docs/control-lab-evidence/recordings/ebf143462b86399aad9d58f655cb9f315362e0b55ee58075310a46b504a7f087-000.json",
+      "git_blob": "8e15401f68636c4ebf7769e3796b2e1805de7e0f",
+      "source_sha256": "380f326bd75e7527df537e3aec53833438d948153051d0b24d6d5931e54a678c"
+    },
+    "control_lab/data/recordings/builtin/ed1d90bf04bd19ccc25a42d882ab4dc3e4b5adcc149a7d07df2be13943d093f0-000.json": {
+      "source": "docs/control-lab-evidence/recordings/ed1d90bf04bd19ccc25a42d882ab4dc3e4b5adcc149a7d07df2be13943d093f0-000.json",
+      "git_blob": "01f9ba56eb709804215e0572ffba1c7ccb374e33",
+      "source_sha256": "d739f374b976bcbbb18dd324f3ac09040d5c204c64841490464de68050952148"
+    },
+    "control_lab/data/recordings/builtin/ed8c59ebc2704309e1c59d5b36186ac9a0dbe389b6026cc4c8e3f47c439a4452-000.json": {
+      "source": "docs/control-lab-evidence/recordings/ed8c59ebc2704309e1c59d5b36186ac9a0dbe389b6026cc4c8e3f47c439a4452-000.json",
+      "git_blob": "275c783c0fa16bb5e748cda729c9d11705acef07",
+      "source_sha256": "d485343eb759e155a3e8b554c97365c312e17c0967653443f353e73bfd665a65"
+    },
+    "control_lab/data/recordings/builtin/efed2a9ea2b93999e7ba51108101576abbbe1c391ee74bd3b81b3fda10787eeb-000.json": {
+      "source": "docs/control-lab-evidence/recordings/efed2a9ea2b93999e7ba51108101576abbbe1c391ee74bd3b81b3fda10787eeb-000.json",
+      "git_blob": "7e89fc1130f13357d365209cec025214f4bac4e2",
+      "source_sha256": "dc5ab8d4383c1cd9e2bc3005e10ae7708b39764cd4e98dcf17f2593d729bc99e"
+    },
+    "control_lab/data/recordings/builtin/f2c4c00f84337e4ba292b8177f8c8abcdd278b341a6860bf65fd01669a810fa1-000.json": {
+      "source": "docs/control-lab-evidence/recordings/f2c4c00f84337e4ba292b8177f8c8abcdd278b341a6860bf65fd01669a810fa1-000.json",
+      "git_blob": "403a59e7bd75b2280aa3f8bca257b9bb768f5547",
+      "source_sha256": "46542ee8e60896236590ed14e0b97a249fb09d7f10b934a67a2a12dec2092786"
+    },
+    "control_lab/data/recordings/builtin/f32e1bec1afe60562512f3ab87b69a7951322bf3e7dd6ee997e0cb24fb82d80a-000.json": {
+      "source": "docs/control-lab-evidence/recordings/f32e1bec1afe60562512f3ab87b69a7951322bf3e7dd6ee997e0cb24fb82d80a-000.json",
+      "git_blob": "8dd798140cf32e50861e8591a376c14f2d1311af",
+      "source_sha256": "9f93b5f1824a87a50cf1edc6f404d87247d6e489684bad595f1cb9867b858420"
+    },
+    "control_lab/data/recordings/builtin/f4c92a8d7e574c8ca1c4e50f90c0803736cb2e5af2944d62182b205a3c5f0196-000.json": {
+      "source": "docs/control-lab-evidence/recordings/f4c92a8d7e574c8ca1c4e50f90c0803736cb2e5af2944d62182b205a3c5f0196-000.json",
+      "git_blob": "75a30eecf297ddc3e386ca5c190c5eba7e5a49de",
+      "source_sha256": "0a89cf8bd28c4ade7d4854fb7136d25823809b210380dbc8072ba0fd0f106f78"
+    },
+    "control_lab/data/recordings/builtin/f5005d53d2d4ab1e72cc0bfa69f3fe9a136610de7166e0a8516aef8ae3b20b8a-000.json": {
+      "source": "docs/control-lab-evidence/recordings/f5005d53d2d4ab1e72cc0bfa69f3fe9a136610de7166e0a8516aef8ae3b20b8a-000.json",
+      "git_blob": "73f46bd9d21fbfb3bea612808ad1f16cfdeb5487",
+      "source_sha256": "7a0516b7e5747eca2030c3366fad9f8884435cdad7f8d6bc8ad2e33e41832473"
+    },
+    "control_lab/data/recordings/builtin/f563f2986e5f1cbb29c2e36b7d08a8bed0e5cf8e4731775d05658b132411c139-000.json": {
+      "source": "docs/control-lab-evidence/recordings/f563f2986e5f1cbb29c2e36b7d08a8bed0e5cf8e4731775d05658b132411c139-000.json",
+      "git_blob": "fbb5814dc8aa9270d0cc5371eb75716864bbe211",
+      "source_sha256": "74c3b415c67760e5fe1b7370812a24d46a2f754d6d7d9df2725f0def17e924bd"
+    },
+    "control_lab/data/recordings/builtin/f577aa942f520a30954fd95021ab6336083d488dd9ef41db8734f1a84ed6cba4-000.json": {
+      "source": "docs/control-lab-evidence/recordings/f577aa942f520a30954fd95021ab6336083d488dd9ef41db8734f1a84ed6cba4-000.json",
+      "git_blob": "1709f7c805994c7cf7fc0c90d42b8b546752d515",
+      "source_sha256": "4bad816160b362db206b042a42736871364d8ee133c72c7ab21d2aab4d12d8f0"
+    },
+    "control_lab/data/recordings/builtin/f5dbbf4b9ee8260051b8c509744f0a89e6dc105fd3764f612890c4e626a6ddac-000.json": {
+      "source": "docs/control-lab-evidence/recordings/f5dbbf4b9ee8260051b8c509744f0a89e6dc105fd3764f612890c4e626a6ddac-000.json",
+      "git_blob": "e4dabd33f08488aa97551f6ae3f8ca275b7d6a35",
+      "source_sha256": "5de56dc42749d2c39da87601b4528d83f4a2a422f0dde95333f28570c3157829"
+    },
+    "control_lab/data/recordings/builtin/f5dd9b43a80821e94fc4c9aaae7a4ffba59474b7a46535eb4d81367ec1413f0f-000.json": {
+      "source": "docs/control-lab-evidence/recordings/f5dd9b43a80821e94fc4c9aaae7a4ffba59474b7a46535eb4d81367ec1413f0f-000.json",
+      "git_blob": "48841fff96ed276ecfe7077d67786c701b9cbaae",
+      "source_sha256": "108dc24cbafa0f7951d916a97d52b024c4baffccc079e99afadf19293d967979"
+    },
+    "control_lab/data/recordings/builtin/f7b2bcce989d62a2ca2705772c1b6b065493753040fb137facf552673744d56d-000.json": {
+      "source": "docs/control-lab-evidence/recordings/f7b2bcce989d62a2ca2705772c1b6b065493753040fb137facf552673744d56d-000.json",
+      "git_blob": "3f0c78c92203d5e2444cc8cdf4bbe50e789715e5",
+      "source_sha256": "27f55f4442a7d83e0b5e4aabc48b76e0595b1f17accfbc6c601c87eac3892c2c"
+    },
+    "control_lab/data/recordings/builtin/f8a9bbf3fda441aad6fa22740cb384e6b53b751516c1cc69379d4f612a03ebe1-000.json": {
+      "source": "docs/control-lab-evidence/recordings/f8a9bbf3fda441aad6fa22740cb384e6b53b751516c1cc69379d4f612a03ebe1-000.json",
+      "git_blob": "98a1aa9a34e65e450e8a10e798760b80111d2354",
+      "source_sha256": "aad037282f4a5cb53d1575536bdc6f844669d5a52b41640f524b41d77089375a"
+    },
+    "control_lab/data/recordings/builtin/f922327e933081fc8264565718977cfa042704f4f01745dbc3889a667e1c570b-000.json": {
+      "source": "docs/control-lab-evidence/recordings/f922327e933081fc8264565718977cfa042704f4f01745dbc3889a667e1c570b-000.json",
+      "git_blob": "b43ac325f9c5b0595c9157a9866a4395741ca0c7",
+      "source_sha256": "042993f44c0adcc52c7387eb4cf14446d4f176248781e1eb9488a6f4850c032a"
+    },
+    "control_lab/data/recordings/builtin/fa6accdda9ee83b0dec6a2deb75cfc655593b8374d350f68b2f4921d21d5990b-000.json": {
+      "source": "docs/control-lab-evidence/recordings/fa6accdda9ee83b0dec6a2deb75cfc655593b8374d350f68b2f4921d21d5990b-000.json",
+      "git_blob": "4f4ebb1a2700bbd6da64b86f14a683ccb0af1994",
+      "source_sha256": "2e846c0b66fe28aa941422c1a4510c0ffa13500edc14582f744093d1df962abf"
+    },
+    "control_lab/data/recordings/builtin/faee622aec13981902ab1f758b40181c2abfa182e0e003d93b0a60f722b7b0f1-000.json": {
+      "source": "docs/control-lab-evidence/recordings/faee622aec13981902ab1f758b40181c2abfa182e0e003d93b0a60f722b7b0f1-000.json",
+      "git_blob": "7b6e664a2664693b4bbb64e00569a8ae62848713",
+      "source_sha256": "f6a5fe2988f8ef2581f36ea0d595305e4b2b59a8e6fdfa7eedc8dd49b2525a4c"
+    },
+    "control_lab/data/recordings/builtin/fb17efa2de4e73462e5af5a0e2ef951c8107be7722cef1b24f2a6495f19d3b7c-000.json": {
+      "source": "docs/control-lab-evidence/recordings/fb17efa2de4e73462e5af5a0e2ef951c8107be7722cef1b24f2a6495f19d3b7c-000.json",
+      "git_blob": "c1cdae1c32c0cfaa7eef06b87ae674e9a8634208",
+      "source_sha256": "1364e880b56a0dcadc1730b03e966e1b7eb2b14068b42ba470365cf2c48994bd"
+    },
+    "control_lab/data/recordings/builtin/fe4d0ad38be819944bd567f81a6ebd10cf3fe3926cecd55cc0a6fbd0647fc7a2-000.json": {
+      "source": "docs/control-lab-evidence/recordings/fe4d0ad38be819944bd567f81a6ebd10cf3fe3926cecd55cc0a6fbd0647fc7a2-000.json",
+      "git_blob": "75e45bdbd64648c4bde85dddfd74fca6bce9e965",
+      "source_sha256": "913936df9b65d45cd9791eda30ffd3d806e0cc6859cf77c09e35af5c56addebf"
+    },
+    "control_lab/data/recordings/builtin/fe625602cd61493ef98408dea60b153f2a0e5742e443960e3e92c1ba3bc9043b-000.json": {
+      "source": "docs/control-lab-evidence/recordings/fe625602cd61493ef98408dea60b153f2a0e5742e443960e3e92c1ba3bc9043b-000.json",
+      "git_blob": "01617ac8c6c9f0c3b40376781d4df9636e2042dd",
+      "source_sha256": "f5f7b27b38dff14afa9eade1f0d6ec1a40572d3dfbe768c515b7b3f21416f962"
+    },
+    "control_lab/data/recordings/builtin/ff26ebfae14ffd9d20f114b70dee1aa2558694a30c665d5ed7de9d5a4f294fc0-000.json": {
+      "source": "docs/control-lab-evidence/recordings/ff26ebfae14ffd9d20f114b70dee1aa2558694a30c665d5ed7de9d5a4f294fc0-000.json",
+      "git_blob": "447b1b32c8b0152a6021f221edeb707c9d46a9ae",
+      "source_sha256": "54def85d5eeb5fd44f96543ba8b222e99f1cd2164772c5e82d68604dc6bc433e"
+    },
+    "control_lab/data/recordings/builtin/ff6faef0f8ee6c51fb26429e0c97742234328e59e58ffb604c9d0160e9190510-000.json": {
+      "source": "docs/control-lab-evidence/recordings/ff6faef0f8ee6c51fb26429e0c97742234328e59e58ffb604c9d0160e9190510-000.json",
+      "git_blob": "2dcf434e4608171d17d6d7924c202210720c07cf",
+      "source_sha256": "f9db9ce8d96f0c93e52e021b7437c3be4db6d5753e288c228155fbfa7476b818"
+    },
+    "control_lab/data/recordings/builtin/ffca90825718db2601e7b7b98ed2a3cfb5cca9f841d0bffd66d43703fb5a73ed-000.json": {
+      "source": "docs/control-lab-evidence/recordings/ffca90825718db2601e7b7b98ed2a3cfb5cca9f841d0bffd66d43703fb5a73ed-000.json",
+      "git_blob": "9eb9b8e076ee77394c2f83a1e58021e103af14c4",
+      "source_sha256": "b48ead200b33427a0a771340c942f649666e9b1bb09950929741252429854d79"
+    },
+    "control_lab/data/captures/adversary.json": {
+      "source": "docs/instrument-evidence/adversary/capture.json",
+      "git_blob": "c67445cc962c5b6131c319e5c89f49ce6ea89a5b",
+      "source_sha256": "46781e4f4d47b74220d1f47fee3f667629e4467c580883df54f76833555c48dd"
+    },
+    "control_lab/data/recordings/adversary/016b35129f6f603c39d2f6f1bf897034203c4ea1902c4e86bd77518cc8e8a0cb-000.json": {
+      "source": "docs/instrument-evidence/adversary/recordings/016b35129f6f603c39d2f6f1bf897034203c4ea1902c4e86bd77518cc8e8a0cb-000.json",
+      "git_blob": "8ef93bc58296ffd5614aa310e4bc2d95e40a914e",
+      "source_sha256": "40a21928da0954b852b08e4dc08a0bb29f8461fec3f87b01a204170c2692c4bd"
+    },
+    "control_lab/data/recordings/adversary/3aea730335667ea49174157428b1652a44cc639cb0fc9e95c59ddb82d1136b4c-000.json": {
+      "source": "docs/instrument-evidence/adversary/recordings/3aea730335667ea49174157428b1652a44cc639cb0fc9e95c59ddb82d1136b4c-000.json",
+      "git_blob": "f6e719147584037f2d4ede723dae67457550d36d",
+      "source_sha256": "d1c105c8e277402cdae91fcb602498ecbb4b64f28ede6db0699dc41c9b417d1c"
+    },
+    "control_lab/data/recordings/adversary/3f416fe5b75e169f3bea2e373e6cb3c04ad4aff06840b261924b91fd1758eeb4-000.json": {
+      "source": "docs/instrument-evidence/adversary/recordings/3f416fe5b75e169f3bea2e373e6cb3c04ad4aff06840b261924b91fd1758eeb4-000.json",
+      "git_blob": "0b135106dff6fbc1c3dfe5f61816c7520fae66c9",
+      "source_sha256": "746ef244f1f5125cba43003ecbdc0c1887939f54c0d65bda1e8c2e614671dd13"
+    },
+    "control_lab/data/recordings/adversary/8695e53f8648d5666cacf4c8813d3193b2ea8562609addfca5eaf83b4b113898-000.json": {
+      "source": "docs/instrument-evidence/adversary/recordings/8695e53f8648d5666cacf4c8813d3193b2ea8562609addfca5eaf83b4b113898-000.json",
+      "git_blob": "56c74035ad7694266371c15b82dac6679f133464",
+      "source_sha256": "853eefd231422caf168074cfbea43b9012c9901580e8293f0021619c9abc3779"
+    },
+    "control_lab/data/recordings/adversary/8b010696b1c0beed4c8880d113ad6ab6ce48954421a4846f84289efd812faae7-000.json": {
+      "source": "docs/instrument-evidence/adversary/recordings/8b010696b1c0beed4c8880d113ad6ab6ce48954421a4846f84289efd812faae7-000.json",
+      "git_blob": "324e4e44f2b5333721d417020f7691acfac4c32e",
+      "source_sha256": "df03b1cd7263347e35acbfb6bd5d27704b6153eba3ff886ad519c1ed7457fcd1"
+    },
+    "control_lab/data/recordings/adversary/c47a811eaa5fc84a17c68fa03e368468e2604bfed7d438780dc5b0136e5e5adf-000.json": {
+      "source": "docs/instrument-evidence/adversary/recordings/c47a811eaa5fc84a17c68fa03e368468e2604bfed7d438780dc5b0136e5e5adf-000.json",
+      "git_blob": "cb20467d324584ced440dcd4d515b6ca9f10c820",
+      "source_sha256": "ad8cdb5b8f1589c258d97a30bbce67f1beab7e5bf0112e46e83b9910f5af7030"
+    },
+    "control_lab/data/captures/budget.json": {
+      "source": "docs/instrument-evidence/budget/capture.json",
+      "git_blob": "a16395614201b097d5995dc170ba73907cdc74e5",
+      "source_sha256": "2324e28c9f4a678e025a2a375ba44c25a6f34f32be941b798fdd314fb791337c"
+    },
+    "control_lab/data/recordings/budget/0641ecf15e8c02cf7c19b6f5ed6c0d1468bc7168f8eac730f052b18de61b3145-000.json": {
+      "source": "docs/instrument-evidence/budget/recordings/0641ecf15e8c02cf7c19b6f5ed6c0d1468bc7168f8eac730f052b18de61b3145-000.json",
+      "git_blob": "5e1449537eaaae22adba289f85cff183ab2b542c",
+      "source_sha256": "17ca3a40c6a8f034e8fc00f648bdc2feae15ff1a051e08446b3b15d801eddbdf"
+    },
+    "control_lab/data/recordings/budget/4c0d776dcd11f510844e2a737a7d643ab96fe7a432c2c506ffc99132d8251f0e-000.json": {
+      "source": "docs/instrument-evidence/budget/recordings/4c0d776dcd11f510844e2a737a7d643ab96fe7a432c2c506ffc99132d8251f0e-000.json",
+      "git_blob": "c8ce064d5682225ba7bd5244c6960b72a976c80c",
+      "source_sha256": "9802116fea1d9b41e4efe9854f63410a7833d1b0fe932d29037f5f2e44488094"
+    },
+    "control_lab/data/recordings/budget/98d438036286c5161d1b7ffa7f9d50279228d6a899bb19282da14fffb81758c0-000.json": {
+      "source": "docs/instrument-evidence/budget/recordings/98d438036286c5161d1b7ffa7f9d50279228d6a899bb19282da14fffb81758c0-000.json",
+      "git_blob": "a354c738ef1b35066dac90bb0312d3806ed552ce",
+      "source_sha256": "2e2ca8f781f9df0ef310421b8e5968f802d41badc4d29bc2c82cc4249eac2aca"
+    },
+    "control_lab/data/recordings/budget/d8f1087afbaa619d672cb78133539e790bc936d650ef8d2f1cd4225556a12635-000.json": {
+      "source": "docs/instrument-evidence/budget/recordings/d8f1087afbaa619d672cb78133539e790bc936d650ef8d2f1cd4225556a12635-000.json",
+      "git_blob": "1d9c86c53a1de5176b50c9277825f2c62aef1bb8",
+      "source_sha256": "f8def946c2c50a3b4a386e8a53054a7e48d5defe13a0527b77228cb5d338e7f4"
+    },
+    "control_lab/data/recordings/budget/da99128feed86761316f4529c187d81913398e2308822fc89a1f12c35898ead9-000.json": {
+      "source": "docs/instrument-evidence/budget/recordings/da99128feed86761316f4529c187d81913398e2308822fc89a1f12c35898ead9-000.json",
+      "git_blob": "a7764391cabca70c3c7dc7c32cbad4d0b52fe942",
+      "source_sha256": "9cf4b41fc05bdea2931eb04fb9f533b63d5d9635f7f0fb8c25a9a9a5fe9a978f"
+    },
+    "control_lab/data/recordings/budget/f80cd53523381eb4ecab020f85f8d570e41d9b138d4e412f9d8d8d555a0d5724-000.json": {
+      "source": "docs/instrument-evidence/budget/recordings/f80cd53523381eb4ecab020f85f8d570e41d9b138d4e412f9d8d8d555a0d5724-000.json",
+      "git_blob": "2de4eec7eb7346069c5acccffa3390e150a5caed",
+      "source_sha256": "0bebbd494c538c8fd9b027228fc96c8eb579852d0d888d81043593230e7cd063"
+    },
+    "control_lab/data/captures/camouflage.json": {
+      "source": "docs/instrument-evidence/camouflage/capture.json",
+      "git_blob": "4b80703ad677e854dfeff7b3e6637f369edf09d1",
+      "source_sha256": "b160e6a4a8198f4e27e2f9bfd00a8970c40e340aed0ceb2a2f890757b56c6c82"
+    },
+    "control_lab/data/recordings/camouflage/4518cc53ad9950e0aa30ccd80a62640347ab0f0fd06c5734b02fef1f52ea6197-000.json": {
+      "source": "docs/instrument-evidence/camouflage/recordings/4518cc53ad9950e0aa30ccd80a62640347ab0f0fd06c5734b02fef1f52ea6197-000.json",
+      "git_blob": "b0846c48829f617200f465db05debd8e46977017",
+      "source_sha256": "06744e9919ac180f3d7907c4466b93904794631b08b75839e6240c2fdd42212d"
+    },
+    "control_lab/data/recordings/camouflage/771b605a6fcc9414863d45095251956c36636dbcadf46987fbe58b67ee130a40-000.json": {
+      "source": "docs/instrument-evidence/camouflage/recordings/771b605a6fcc9414863d45095251956c36636dbcadf46987fbe58b67ee130a40-000.json",
+      "git_blob": "4495cdd25890e0c07fa24db1b767d32131cdcadc",
+      "source_sha256": "98a1bd88fe19833eab93211280c048340c0a8daf0da89f06fae49b372430e1e4"
+    },
+    "control_lab/data/recordings/camouflage/7a11429d7dd13f6255ff859168295019420afb7452bcf13bc3527ab9fec8e263-000.json": {
+      "source": "docs/instrument-evidence/camouflage/recordings/7a11429d7dd13f6255ff859168295019420afb7452bcf13bc3527ab9fec8e263-000.json",
+      "git_blob": "c28f5692f9aeb7db96c7367f26eb652f24bc077c",
+      "source_sha256": "3416b9c462805fe6c1e145aa1848b749c2e5749736a48dd1f6c158396d04813d"
+    },
+    "control_lab/data/recordings/camouflage/8f505fcd28bead227958527e58f1a3532e72cfb7df0e74296dd4ece14ec23d82-000.json": {
+      "source": "docs/instrument-evidence/camouflage/recordings/8f505fcd28bead227958527e58f1a3532e72cfb7df0e74296dd4ece14ec23d82-000.json",
+      "git_blob": "460725c447b8df6af3429ed5740bd0f399695124",
+      "source_sha256": "b19588bc7bf1fde8c84a49992ebba70493031f8ba2b58e2177f9402dede10fe0"
+    },
+    "control_lab/data/recordings/camouflage/a415d8482157cffde23d186e74165a3246ca2205db0dac7c35383bf492561ac8-000.json": {
+      "source": "docs/instrument-evidence/camouflage/recordings/a415d8482157cffde23d186e74165a3246ca2205db0dac7c35383bf492561ac8-000.json",
+      "git_blob": "bca506de9e20b1dc222f4dc13b84a36813606d47",
+      "source_sha256": "58ed9b9ba8897769e2866377e6e4ef75a97b8ae1196d10c87f8795c8eca691e4"
+    },
+    "control_lab/data/recordings/camouflage/c15de7980e0fdbbb0e3b96016f3a2fb8dab8e6ee182dae487897d28f24ec9ab8-000.json": {
+      "source": "docs/instrument-evidence/camouflage/recordings/c15de7980e0fdbbb0e3b96016f3a2fb8dab8e6ee182dae487897d28f24ec9ab8-000.json",
+      "git_blob": "b1b84d8058111e0627713a32f61e77915bd61dc5",
+      "source_sha256": "1cfd6bdfa085b83eefff753a51fe43935615abe650bfe9deda6fbe8b88b8e70c"
+    },
+    "control_lab/data/captures/circuit.json": {
+      "source": "docs/instrument-evidence/circuit/capture.json",
+      "git_blob": "f620a1a19bdd7ad3c2bb1d2bee75e004564e3f31",
+      "source_sha256": "4fca74cc060ad9859475358abd22003e025f5024ed2fba3ec1ce3a331adef850"
+    },
+    "control_lab/data/recordings/circuit/4d9e38a94817c6d1bf8a24b8ba701163c37ee6ced7dc266e1124c6c0edf17fe2-000.json": {
+      "source": "docs/instrument-evidence/circuit/recordings/4d9e38a94817c6d1bf8a24b8ba701163c37ee6ced7dc266e1124c6c0edf17fe2-000.json",
+      "git_blob": "6e9672a6ddcaf7c6e5df7982178c9b21eda5fa6e",
+      "source_sha256": "83eac65ebd8c35e8745a65738ce10f5c20b9a764160551f7ce83a456979213c8"
+    },
+    "control_lab/data/recordings/circuit/86e68d0a31a22155f8cf490bab6b10d676ef67a69ec8c203996c258f8f25488e-000.json": {
+      "source": "docs/instrument-evidence/circuit/recordings/86e68d0a31a22155f8cf490bab6b10d676ef67a69ec8c203996c258f8f25488e-000.json",
+      "git_blob": "9a75fba5c566d7ed655b88a436e27818c0bdf76b",
+      "source_sha256": "92d522702fd2e504f12436e18f75b670fe05127e3dffcdfbd087994a18ee4510"
+    },
+    "control_lab/data/recordings/circuit/ba644136a2bbb6ef4db38921dde0d240180db5218ec12ea234f70d4d7bc447c3-000.json": {
+      "source": "docs/instrument-evidence/circuit/recordings/ba644136a2bbb6ef4db38921dde0d240180db5218ec12ea234f70d4d7bc447c3-000.json",
+      "git_blob": "08419d5d2ac3df7670e2bd69f3c495cb244c2ace",
+      "source_sha256": "f7793377c009a9cf1b7af4e22c0f0e84bb6681dcd301b75a3acd1f2376e67d4b"
+    },
+    "control_lab/data/recordings/circuit/bae3a84c2098a6b82fb5b4fc1894c49de53bba585119a544071722d31bba35d0-000.json": {
+      "source": "docs/instrument-evidence/circuit/recordings/bae3a84c2098a6b82fb5b4fc1894c49de53bba585119a544071722d31bba35d0-000.json",
+      "git_blob": "7f9c2e52e51bdc2b0943e484ad0a5b21d0e2abb1",
+      "source_sha256": "68161ccbbe68f7b9b4f4a898c77fd266d703b9219ead5a221a6381eef408b833"
+    },
+    "control_lab/data/recordings/circuit/dcd77303bf0dd1e82fadcc764225d9fefac9766e6184da756772b0b97c1a313a-000.json": {
+      "source": "docs/instrument-evidence/circuit/recordings/dcd77303bf0dd1e82fadcc764225d9fefac9766e6184da756772b0b97c1a313a-000.json",
+      "git_blob": "24947acf13491d7b193bd09e7db4d5bae20295ff",
+      "source_sha256": "a2ff4209b4662ce9b1849015d35ee783f4e0f5a80016782ed1ff5dd75fce8fc9"
+    },
+    "control_lab/data/recordings/circuit/e568fef41706d78fc8810891184ef9b077290245a9ab9f30ea539bfbd454fea1-000.json": {
+      "source": "docs/instrument-evidence/circuit/recordings/e568fef41706d78fc8810891184ef9b077290245a9ab9f30ea539bfbd454fea1-000.json",
+      "git_blob": "ed5a0aa0c312eefd6f78f5c080e750698eab761c",
+      "source_sha256": "2f9e4e54901608a64446ac8383ac1eea0b18e908242caa46f4530605bcb61126"
+    },
+    "control_lab/data/recordings/circuit/ec9ae70c9bd3751968993c805217a1fb401a676c922c65dfc8cabd71281bb60a-000.json": {
+      "source": "docs/instrument-evidence/circuit/recordings/ec9ae70c9bd3751968993c805217a1fb401a676c922c65dfc8cabd71281bb60a-000.json",
+      "git_blob": "4a008839c531a9fa63f3836462eb96bc323e80cd",
+      "source_sha256": "134378116e6a8fb42d013c0c09ee740a8b49d305503aabb19000a9b4c42e842a"
+    },
+    "control_lab/data/captures/compiler.json": {
+      "source": "docs/instrument-evidence/compiler/capture.json",
+      "git_blob": "171888657f2c7e0f8c9d8e9ced1e3f7b9f552335",
+      "source_sha256": "ee2b82f886253627848d978283a3dcb02315bb48e08827845dce4b1ea8dcbb56"
+    },
+    "control_lab/data/recordings/compiler/2a4e45189dedbd66d0acfe359044e304269ab80a90566e333300a65e1de83ffb-000.json": {
+      "source": "docs/instrument-evidence/compiler/recordings/2a4e45189dedbd66d0acfe359044e304269ab80a90566e333300a65e1de83ffb-000.json",
+      "git_blob": "58273e889170c3fd53f9c3709669677050e66cee",
+      "source_sha256": "deb848a0f09cdea30e6e92f240d40eb2d7a509c5c9c644b8d3dd80491228e6cf"
+    },
+    "control_lab/data/recordings/compiler/c4a1e9b4f22a8e535ddefd579692ee04d7060ceef07f78d6b3911a12c2a44025-000.json": {
+      "source": "docs/instrument-evidence/compiler/recordings/c4a1e9b4f22a8e535ddefd579692ee04d7060ceef07f78d6b3911a12c2a44025-000.json",
+      "git_blob": "b06334da8db5c7a760f0288c06ab56c31db2127c",
+      "source_sha256": "1a1c336e71cb2e266f78ecc3d3044eaf42cc815722ce58c5b8bbe678a7cfb363"
+    },
+    "control_lab/data/recordings/compiler/e88af864491b5824e59124c17e1d03ff2e1e9f6e94353d44a6443e37d994e97e-000.json": {
+      "source": "docs/instrument-evidence/compiler/recordings/e88af864491b5824e59124c17e1d03ff2e1e9f6e94353d44a6443e37d994e97e-000.json",
+      "git_blob": "ceca7192c4cbe16576e65c6759827ffda7e2ea81",
+      "source_sha256": "2f24757d8bcd52df8ca5dbd26ea4064cb9bd1cbd90abbdf2bbce3199fc8e97e8"
+    },
+    "control_lab/data/recordings/compiler/fa579cc7931a3cc2dc3594ce484d5563c8693687ade2ada29362b0e0d20d4903-000.json": {
+      "source": "docs/instrument-evidence/compiler/recordings/fa579cc7931a3cc2dc3594ce484d5563c8693687ade2ada29362b0e0d20d4903-000.json",
+      "git_blob": "128575fb97999e0f11cb7954e7aa56ca01e094ed",
+      "source_sha256": "2519faf52b31bba1ce2aee18b5f8d5050e59d11c4aa6e05bf18f043b9f17ced0"
+    },
+    "control_lab/data/captures/control.json": {
+      "source": "docs/instrument-evidence/control/capture.json",
+      "git_blob": "38bc415d23d4931b22ee4951d881373c62092cfd",
+      "source_sha256": "c2b3f8303b8fbbffda1ea5dcaba3b098e84769b02c5bee85888332a6f5057261"
+    },
+    "control_lab/data/recordings/control/26a7f4d64a8878865d77b4560b9967b336ab9f101cbb6a1cc4ce2a53fff61df4-000.json": {
+      "source": "docs/instrument-evidence/control/recordings/26a7f4d64a8878865d77b4560b9967b336ab9f101cbb6a1cc4ce2a53fff61df4-000.json",
+      "git_blob": "4dc6e5ca78b8d44460bb38fe30a68f2a80988785",
+      "source_sha256": "6bba6675af7bd831fe2494c892cf3f1bc0707a6b423b5b4f6ea6e51faad928d5"
+    },
+    "control_lab/data/recordings/control/364f48a8d9f4d78b02559015e6150f8e3191e30f95d443401426a0a1906e8e01-000.json": {
+      "source": "docs/instrument-evidence/control/recordings/364f48a8d9f4d78b02559015e6150f8e3191e30f95d443401426a0a1906e8e01-000.json",
+      "git_blob": "6dbc934f5d748f73b1739f209e351e960ab1305f",
+      "source_sha256": "4dc3aa758322ce8a0fb75e4b2d0f30f4ddc67cc9a2aadb47d6e017ed14e5ba8b"
+    },
+    "control_lab/data/recordings/control/52f3aac53296442b599184a96a66cc8361094120d21f9681903c5a625d3b3979-000.json": {
+      "source": "docs/instrument-evidence/control/recordings/52f3aac53296442b599184a96a66cc8361094120d21f9681903c5a625d3b3979-000.json",
+      "git_blob": "daec357d5f91b88214d9140bd58142e66ef4c020",
+      "source_sha256": "57ad9c5303c4cfd83de0bb926e5699d15d997e65c133a41f32759acf4c2b6188"
+    },
+    "control_lab/data/recordings/control/8ca7a03379a156513bfbc73b3c5822cdcd97e729685ba2836afbc77d4f449c9e-000.json": {
+      "source": "docs/instrument-evidence/control/recordings/8ca7a03379a156513bfbc73b3c5822cdcd97e729685ba2836afbc77d4f449c9e-000.json",
+      "git_blob": "ed12c703c75799130574281687c3602a8dea4f51",
+      "source_sha256": "19a5f4f3172450be2ae62fc4b9e75db4e1cba08e7c39a7c69765bd19535bcadc"
+    },
+    "control_lab/data/recordings/control/d4285d55bbd54bbd2f2078cd87b7a4cc5c829119f872b8c8c0bd534a0459a216-000.json": {
+      "source": "docs/instrument-evidence/control/recordings/d4285d55bbd54bbd2f2078cd87b7a4cc5c829119f872b8c8c0bd534a0459a216-000.json",
+      "git_blob": "80a26537aec5d2525f1060df1c61348305e8f289",
+      "source_sha256": "b5db2f93b9309a47e4412fb8d34e4c54c658d15207bb221366dcc191e73d7909"
+    },
+    "control_lab/data/recordings/control/efc49892a81f999ff8e986e31c771a70d368ea90f963cb0d0da7c06f69ff5296-000.json": {
+      "source": "docs/instrument-evidence/control/recordings/efc49892a81f999ff8e986e31c771a70d368ea90f963cb0d0da7c06f69ff5296-000.json",
+      "git_blob": "13426787ca66ef442eb5e73c31953c765e585130",
+      "source_sha256": "763a0d518cd4f6745069af3ccf21b9e248b2c70a43149d6dc92a0acb60e6e8cc"
+    },
+    "control_lab/data/captures/counterexamples.json": {
+      "source": "docs/instrument-evidence/counterexamples/capture.json",
+      "git_blob": "060794ceec83ad01804a9f619ed0fdb8b703c7c4",
+      "source_sha256": "ab744122bd24739acc391b5938a17690db20fcd078becc499d3e356bcfbe6d01"
+    },
+    "control_lab/data/recordings/counterexamples/09d85a428670ebf35a54f7e7d5ef16a593ecd1dd9098d2a8da530a8d17ed2ec1-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/09d85a428670ebf35a54f7e7d5ef16a593ecd1dd9098d2a8da530a8d17ed2ec1-000.json",
+      "git_blob": "bbe64cdf349f7636d0d2d5510d3f54b54c1259b3",
+      "source_sha256": "2bba72c35183c2e0cd0136de972e0b0e6c7958ae4d038c1157bb0059bfe1e4c0"
+    },
+    "control_lab/data/recordings/counterexamples/11e23d25e8e2948fadfe362268b307f9bd9775840d09fc80d57d184a86c485df-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/11e23d25e8e2948fadfe362268b307f9bd9775840d09fc80d57d184a86c485df-000.json",
+      "git_blob": "a375947bbb3b52039b5a5a936b8f76e065887eb0",
+      "source_sha256": "dce85c196f5233720ca44c4300fd75a1ef630040ff057567a467fdd2df064d13"
+    },
+    "control_lab/data/recordings/counterexamples/39bace4d7400f6221e39802a8a054a2da48e3f2eed102c11c02acdf2254c055a-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/39bace4d7400f6221e39802a8a054a2da48e3f2eed102c11c02acdf2254c055a-000.json",
+      "git_blob": "577dc34d841bb03ea1ac70ea8bfd1baf22700841",
+      "source_sha256": "4827eb3e60c688a96076693d3f0fbdb5a043fed190d5e76c46be9d012aa72d05"
+    },
+    "control_lab/data/recordings/counterexamples/41a1ee37b4b51cb5d287ffdaab284b609c4d448ca0e3bfea727afba04957c6cb-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/41a1ee37b4b51cb5d287ffdaab284b609c4d448ca0e3bfea727afba04957c6cb-000.json",
+      "git_blob": "d9b43616aae7551e4f023c853322ba37583a9b21",
+      "source_sha256": "f65bfd1f5e6474c6909a555693f0598964a7caa55d965761c6b707bc4bd81604"
+    },
+    "control_lab/data/recordings/counterexamples/4a9de463c9d3f8d8a372f00596aa2d0ed755f440c374221c485f58643c955d2f-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/4a9de463c9d3f8d8a372f00596aa2d0ed755f440c374221c485f58643c955d2f-000.json",
+      "git_blob": "fc8de92ea19768f3261e1040175b0b1d7faff4a9",
+      "source_sha256": "febafceea3f2d114b1528ddcc5e8fb0d4525a8b0046393744be428b673aa61a0"
+    },
+    "control_lab/data/recordings/counterexamples/4ba56abeb2ed8ff83204cb5885d059ed8b327844720cf6244361dbaefd953e8b-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/4ba56abeb2ed8ff83204cb5885d059ed8b327844720cf6244361dbaefd953e8b-000.json",
+      "git_blob": "f3819dc41e711b1baeb3096d09c1acc463f5ec30",
+      "source_sha256": "ef98188a34cda23639e9eea2cb7247b6686e37cf5929128f5a4ab2ea5ae3aa55"
+    },
+    "control_lab/data/recordings/counterexamples/4d9359dadf26e25a6603b3492228414a6fc6914680790671b561812a8f088a18-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/4d9359dadf26e25a6603b3492228414a6fc6914680790671b561812a8f088a18-000.json",
+      "git_blob": "4dbd529c1a84b425ccce9d3336f6ec0be25715f7",
+      "source_sha256": "edb29bd200676ebade79fdd466953baf3f55d0d7790445c22d1be7f3553a512a"
+    },
+    "control_lab/data/recordings/counterexamples/5b68c4488de97078f04d4c4075c317f7f48215d24cd1b2d8e89a22ca6a0644ab-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/5b68c4488de97078f04d4c4075c317f7f48215d24cd1b2d8e89a22ca6a0644ab-000.json",
+      "git_blob": "a400311712dfd4c0309e7d87fc8b6943f9eb03c7",
+      "source_sha256": "7ce5b2fc39c5ec151f4e02d5e95b2d353ae253a8632b7aa40fab17eb96551f72"
+    },
+    "control_lab/data/recordings/counterexamples/70304a8488dd919caf6a014cd06731e68da2d2224a55a9972f3a86f269a0c08d-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/70304a8488dd919caf6a014cd06731e68da2d2224a55a9972f3a86f269a0c08d-000.json",
+      "git_blob": "1aa73da3e5ef4ee16fbc13cf3aab5c3b4a91e8cb",
+      "source_sha256": "73e02852d9c8aab400d2dbc1163851dd94ebbd42468e16b4171611823149a606"
+    },
+    "control_lab/data/recordings/counterexamples/758b433017de85526e3efac5918b227568bf1506cc648c93e850c7192edde5c1-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/758b433017de85526e3efac5918b227568bf1506cc648c93e850c7192edde5c1-000.json",
+      "git_blob": "0bf7df76b90e8aa5665c0944dd29aec9c976d334",
+      "source_sha256": "c98f30b26e31886701ec6877034eb3ff02fdc177d04ccbf251477942a761acf1"
+    },
+    "control_lab/data/recordings/counterexamples/7bd82241f629fd8dcebfe2d23ac36659e507c7f7822474531f75b7a1bfbbebae-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/7bd82241f629fd8dcebfe2d23ac36659e507c7f7822474531f75b7a1bfbbebae-000.json",
+      "git_blob": "e1559489860a6653f9c2ab4513ffe3ebfb77f29f",
+      "source_sha256": "eea975fbfeb01750aad764513dfb1fdf7127354df3333da94e30bb12cfce328f"
+    },
+    "control_lab/data/recordings/counterexamples/7f018223bbecbd183cfc8f290c79e23aa8b3c3679e9a443096de1e34ca5c64d6-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/7f018223bbecbd183cfc8f290c79e23aa8b3c3679e9a443096de1e34ca5c64d6-000.json",
+      "git_blob": "1d0d57b63cd80a4d15d6ad22f85671ada5848039",
+      "source_sha256": "c5beb5e0005d530c5bb7c27711005b207367bd330272de1fec19feb7b452afc9"
+    },
+    "control_lab/data/recordings/counterexamples/8bc45accd48ed01a9470a6a900374bf2e3899a5dccf9f6f3891ff14b7078ad4a-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/8bc45accd48ed01a9470a6a900374bf2e3899a5dccf9f6f3891ff14b7078ad4a-000.json",
+      "git_blob": "3b4907104bc502dbdebaf4d0c929aefe8119bef9",
+      "source_sha256": "017732f3e41b729064ddb62bcad7581d46f9e48da2562c7409f35ed48617ec73"
+    },
+    "control_lab/data/recordings/counterexamples/8e212d64f6aefdabce9ee30a37d3437c34e7e31cd11b925160677d14969c1c9f-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/8e212d64f6aefdabce9ee30a37d3437c34e7e31cd11b925160677d14969c1c9f-000.json",
+      "git_blob": "3686ca3e23b7d835c06298599046fdc805582342",
+      "source_sha256": "fcb5d78f2e24734eb9255821edabbe6b376f4a15ddc2adcc5616ed185e2f50df"
+    },
+    "control_lab/data/recordings/counterexamples/a8602cebc5f2b01e438ad1a83305c377d00db48cc2638b7592eafe2ebecad05f-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/a8602cebc5f2b01e438ad1a83305c377d00db48cc2638b7592eafe2ebecad05f-000.json",
+      "git_blob": "85d9700d013f70f5e49235a0da7e7935663b5968",
+      "source_sha256": "cfa743c7b4a54b3490ca0b6c535db0b000fc5b6f1bc3b06f03f62dd546e3f677"
+    },
+    "control_lab/data/recordings/counterexamples/cf7e9bf2f84f5c683f466727d288703b85e1d75563896235a86a378465b37a81-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/cf7e9bf2f84f5c683f466727d288703b85e1d75563896235a86a378465b37a81-000.json",
+      "git_blob": "5f0eb50f07e27b139366ff922cc374c58be561f3",
+      "source_sha256": "cb0c7961a9d24b892a6bd3cbbbe50f94c93e84775cd15102ff4984b3c98e0439"
+    },
+    "control_lab/data/recordings/counterexamples/d05133034cde300d31d5a08d4fed0dd9b9aad864902056367676c5380207392d-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/d05133034cde300d31d5a08d4fed0dd9b9aad864902056367676c5380207392d-000.json",
+      "git_blob": "da60d40791707db9161ba34e4eebd4ead6a003ab",
+      "source_sha256": "d3b0d7c762be36298e8eef0d0bc8b7e9bd906ca6a04cd9cd264f5c7f81f04750"
+    },
+    "control_lab/data/recordings/counterexamples/dd360901be14385eec14061d16edcbffaa0ba8796c7c87040b467b8fcd9f2a72-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/dd360901be14385eec14061d16edcbffaa0ba8796c7c87040b467b8fcd9f2a72-000.json",
+      "git_blob": "f7431496f48e6ffa25faf104d9ac440d0afeadd3",
+      "source_sha256": "475bcc3d06c460a0611b998e52337428b96496bb5469ce9f1158842b07d85e92"
+    },
+    "control_lab/data/recordings/counterexamples/e4fe158515d853b56dae1344de9cd122f06c14189ee2b8d13c339311a1a490e0-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/e4fe158515d853b56dae1344de9cd122f06c14189ee2b8d13c339311a1a490e0-000.json",
+      "git_blob": "a0c55c3cbf47f7eb3f932b7d3fb2738a858f907d",
+      "source_sha256": "bdbbdb95f4cf94cda13cf79a7acae433e25474a27ba0c06802f1a181ae41962e"
+    },
+    "control_lab/data/recordings/counterexamples/ede3c61e4fdf74c2c98837fa6ba0a2bd3b8fd4147c9ef28fce8a5d03f6e92418-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/ede3c61e4fdf74c2c98837fa6ba0a2bd3b8fd4147c9ef28fce8a5d03f6e92418-000.json",
+      "git_blob": "3cfeff3b4fae538d189d5fe8dfb27628aec2ba27",
+      "source_sha256": "a8e747584381080638c20faf33f6c2462506effa82f94fd2ce354e2de23213d9"
+    },
+    "control_lab/data/recordings/counterexamples/f022bb4624a64fe6720ac6e95dec8f9b28bfaba003db27bc346ea7750c35d179-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/f022bb4624a64fe6720ac6e95dec8f9b28bfaba003db27bc346ea7750c35d179-000.json",
+      "git_blob": "79483444fbb4dcbfc39b8fbf9f8e85fdfcb03fb1",
+      "source_sha256": "73d3af9bf4e483d26659c1da9ddc17888c85de969968fad747a0e1a04f3531b0"
+    },
+    "control_lab/data/recordings/counterexamples/f2c9c7cde61c6022cb3b39afbffa0a1dbe9d40624f9f1d9d68e094146ab8249c-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/f2c9c7cde61c6022cb3b39afbffa0a1dbe9d40624f9f1d9d68e094146ab8249c-000.json",
+      "git_blob": "68250f6585d31aa52d26de87dfce28bbb2b96537",
+      "source_sha256": "55b56e2641523be2f1fb5a9ee44a447de94bc865dd79d2851847f52a3f8b68ab"
+    },
+    "control_lab/data/recordings/counterexamples/f34575dfe2b5af6db32f2308188c8b7cdb6970486c35085374c115778f815c19-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/f34575dfe2b5af6db32f2308188c8b7cdb6970486c35085374c115778f815c19-000.json",
+      "git_blob": "e191bacfd3d31cec2375951d835b2cf8ee99d15a",
+      "source_sha256": "4b44a2fe3de1ec6840f6d552fc609dd68db6ef6d167078a4bff99626f8a4ed99"
+    },
+    "control_lab/data/recordings/counterexamples/fcb85aae3840e12b7347ac01dccf5b4caedddb75160fecb5578a1d3168358d28-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/fcb85aae3840e12b7347ac01dccf5b4caedddb75160fecb5578a1d3168358d28-000.json",
+      "git_blob": "512750b4931e415e383df43a75a143ea5e447d9c",
+      "source_sha256": "586dc223b54709c2285ddc5f27ab15b99c1714657d92924930b0c7dd065d6ea4"
+    },
+    "control_lab/data/recordings/counterexamples/fe1d895099f76af475710b53a7ce1dde4d73057a4ecc01cce586d39fc5475e22-000.json": {
+      "source": "docs/instrument-evidence/counterexamples/recordings/fe1d895099f76af475710b53a7ce1dde4d73057a4ecc01cce586d39fc5475e22-000.json",
+      "git_blob": "d0ea04ba1153c81f91c7b0da115c4227747de335",
+      "source_sha256": "d1bb0ce70e94be0c1d863edea86ea80c856b0d04cd3cfe329d4624af1cb32e09"
+    },
+    "control_lab/data/captures/divider.json": {
+      "source": "docs/instrument-evidence/divider/capture.json",
+      "git_blob": "02fe2a4c3003976dc8cecc736eaaf2c1a7734c41",
+      "source_sha256": "dd535e83c29cfe5597acfecf819a26ebb8b9253babbfd1245698cbda76eddd41"
+    },
+    "control_lab/data/recordings/divider/401629eee5a45958bd31d464a906ce325b861c415c495376c258897cae063431-000.json": {
+      "source": "docs/instrument-evidence/divider/recordings/401629eee5a45958bd31d464a906ce325b861c415c495376c258897cae063431-000.json",
+      "git_blob": "4bca699f913564e1491d8084f59e53f7c696265b",
+      "source_sha256": "1ce27df62d509a318c7e35df0902e918afc092c482455990e483072cae308f9c"
+    },
+    "control_lab/data/recordings/divider/4787f0f910b99da915470fd42300c33a6794625d2f504214d41231dd7c1affaf-000.json": {
+      "source": "docs/instrument-evidence/divider/recordings/4787f0f910b99da915470fd42300c33a6794625d2f504214d41231dd7c1affaf-000.json",
+      "git_blob": "1e5c4827a665b55efc8f8e6cec8d1c8aafee2bb1",
+      "source_sha256": "56ab0962f463710e94259553ea53a23620099cb7dbb50826aac0ddbd020e0f8e"
+    },
+    "control_lab/data/recordings/divider/61118e5386c5bca6e3576e54f868e0dd2fec4d5b0f19bfe7e16907956610065a-000.json": {
+      "source": "docs/instrument-evidence/divider/recordings/61118e5386c5bca6e3576e54f868e0dd2fec4d5b0f19bfe7e16907956610065a-000.json",
+      "git_blob": "97a68746a7956377767a152828c3ec4634f4c649",
+      "source_sha256": "7f683c5fde61e2d9612cc27b8d870274b67e6056e4f6e8e6ecb4032cd397470a"
+    },
+    "control_lab/data/recordings/divider/745ef4ca38d487a67b711b841f826ed684a6e46ce68d468abaf8d4eed7d2d86c-000.json": {
+      "source": "docs/instrument-evidence/divider/recordings/745ef4ca38d487a67b711b841f826ed684a6e46ce68d468abaf8d4eed7d2d86c-000.json",
+      "git_blob": "e0051baf72866e57f47808907b338a0d2f13efcb",
+      "source_sha256": "c8f58eadf10567c746ca598457a763fb0273d4254966251c38168db221690e88"
+    },
+    "control_lab/data/recordings/divider/8b3861c8eac6b09d6d2432f81275c63036446285a032c42e3d536eef3e0f48c1-000.json": {
+      "source": "docs/instrument-evidence/divider/recordings/8b3861c8eac6b09d6d2432f81275c63036446285a032c42e3d536eef3e0f48c1-000.json",
+      "git_blob": "e056013dd0b3382abb425145b8dfe295f64e600c",
+      "source_sha256": "735400fd12e1408403b9d86e9bfb3303ccf89704a029c9d058d1cfe1db62b559"
+    },
+    "control_lab/data/recordings/divider/f6e4c9e2b47279e8652f17d378a8fb4b1e9f0caf334a2faa4a5af03cda7b381d-000.json": {
+      "source": "docs/instrument-evidence/divider/recordings/f6e4c9e2b47279e8652f17d378a8fb4b1e9f0caf334a2faa4a5af03cda7b381d-000.json",
+      "git_blob": "e9e044229cf944829f62f3fdfaa01dc0cee52218",
+      "source_sha256": "ca9ac55889a05e06f128518a9d82ea637913e43a43613d792406936e15777517"
+    },
+    "control_lab/data/captures/future.json": {
+      "source": "docs/instrument-evidence/future/capture.json",
+      "git_blob": "b7ab5a88dbd98129cb4320cca193593d93c36675",
+      "source_sha256": "4740bd0d3b2f3d4155cb512224c8feb16bd418f2216affe691ce189242dc17d2"
+    },
+    "control_lab/data/recordings/future/61b091e6ea743ad2b8d77964ce77635f4602abb3ca0bd7f4c62761fc28fa1fb3-000.json": {
+      "source": "docs/instrument-evidence/future/recordings/61b091e6ea743ad2b8d77964ce77635f4602abb3ca0bd7f4c62761fc28fa1fb3-000.json",
+      "git_blob": "52bd0533f3fa93f760ab85badd247969210d654c",
+      "source_sha256": "61295f3fc110df2f273fe07cc8e510f2af59ae8ccad3c538f0810520e59ed58d"
+    },
+    "control_lab/data/recordings/future/886489b1892b9e8c1d27abdba237510930418537ca8423945299504f98337e8c-000.json": {
+      "source": "docs/instrument-evidence/future/recordings/886489b1892b9e8c1d27abdba237510930418537ca8423945299504f98337e8c-000.json",
+      "git_blob": "ffda9efd8470b0563e43b12e7c7d061844e684b8",
+      "source_sha256": "345d7a7a31b830ac8382508d0329360b6fc41d08f33edb131ffbac4e0be22120"
+    },
+    "control_lab/data/recordings/future/c02c0c85b5af6d587b921ffbf66f072b3bbfcdddc464d154fde9474a8695030b-000.json": {
+      "source": "docs/instrument-evidence/future/recordings/c02c0c85b5af6d587b921ffbf66f072b3bbfcdddc464d154fde9474a8695030b-000.json",
+      "git_blob": "65d7ac4a2695d77eba358935c29357bf3251cac1",
+      "source_sha256": "8bc4eca10d05c6581d3928f79150b409954cce153a48182c8a094d6570fb1f25"
+    },
+    "control_lab/data/recordings/future/dba11819456c70156e82e5479c432093d63f59c76f8ad435a81c9f0eed9177b0-000.json": {
+      "source": "docs/instrument-evidence/future/recordings/dba11819456c70156e82e5479c432093d63f59c76f8ad435a81c9f0eed9177b0-000.json",
+      "git_blob": "fc6c9a3081b2c5e31be062b926fe2d4404245f99",
+      "source_sha256": "604af8c9b82744f00f746eb409be81f2113f51f3e6c66554e593ec42ac2be30d"
+    },
+    "control_lab/data/recordings/future/e5eb0340b999baf570543133c03368078c1217936f8d268a6a7b96cb3a0b96aa-000.json": {
+      "source": "docs/instrument-evidence/future/recordings/e5eb0340b999baf570543133c03368078c1217936f8d268a6a7b96cb3a0b96aa-000.json",
+      "git_blob": "a3a90d43f0201b4666184c7d3378cf62a0bf26c7",
+      "source_sha256": "ce124c5be8cf49d7cd5cfbc3c694368fee1abbdad72097c47fb51c7c98f16258"
+    },
+    "control_lab/data/recordings/future/ec0439a5b125c36632f5b6f0ebb67b187ada28910beb55bfde66245ac17a882b-000.json": {
+      "source": "docs/instrument-evidence/future/recordings/ec0439a5b125c36632f5b6f0ebb67b187ada28910beb55bfde66245ac17a882b-000.json",
+      "git_blob": "f9164d81c8e9bbefefefd23d18ce0ebf1a4c47e2",
+      "source_sha256": "e909dd475158831853dc7330e9ba9eb804b70e3a0651c2af3ca7e3e13d4eb08b"
+    },
+    "control_lab/data/recordings/future/ec91de223e68adc0e16e3db9505b43f7800e1dc3a28f07fa9360d4612a483e8c-000.json": {
+      "source": "docs/instrument-evidence/future/recordings/ec91de223e68adc0e16e3db9505b43f7800e1dc3a28f07fa9360d4612a483e8c-000.json",
+      "git_blob": "f9bc25f7ce750c659cca2b1bf6d57794d2d719ef",
+      "source_sha256": "f543bc62b5093a2b26c22996f3294cb907bca03a3667cd688aee7fe8c972073f"
+    },
+    "control_lab/data/captures/music.json": {
+      "source": "docs/instrument-evidence/music/capture.json",
+      "git_blob": "db7289c2fc51f9ba2f05f749ba8112f813dfb408",
+      "source_sha256": "26bc58bb1347b4e30e8c4f75b79b09fa2c02d3b59701ba09994520e22ecb9675"
+    },
+    "control_lab/data/recordings/music/0001aa5b51e93cfe5595a891799a87bdd622a431647ae5f8d58afe44bcf0c42b-000.json": {
+      "source": "docs/instrument-evidence/music/recordings/0001aa5b51e93cfe5595a891799a87bdd622a431647ae5f8d58afe44bcf0c42b-000.json",
+      "git_blob": "582e6abb6fce91161a2ec9cd87c6078f6309d733",
+      "source_sha256": "4ce532a04fe7f2a5a6434959c9fe80b313762a13c14bc014399971fa8b40a167"
+    },
+    "control_lab/data/recordings/music/430931d3ceb5a9b7ad4d5917f7aba1f10882fc1e2f27d8824b61d5078447298e-000.json": {
+      "source": "docs/instrument-evidence/music/recordings/430931d3ceb5a9b7ad4d5917f7aba1f10882fc1e2f27d8824b61d5078447298e-000.json",
+      "git_blob": "eb992160a1967ed75885a7c80251a4480c5a8bbf",
+      "source_sha256": "b172be6e1c89827604a7cf982f7cbd1d4b368f3f27769e628a92282970fa42a1"
+    },
+    "control_lab/data/recordings/music/9883a274e3e6863dc85d420b7cfe4dc5c3ddba978d3ec000f0159088085b8c85-000.json": {
+      "source": "docs/instrument-evidence/music/recordings/9883a274e3e6863dc85d420b7cfe4dc5c3ddba978d3ec000f0159088085b8c85-000.json",
+      "git_blob": "13a8e5383c8bc2b46214518cdd766454d466dc87",
+      "source_sha256": "77db11051f3f527ee16f663197a3ba3e4eccb6af0ad7436a33c2f0caaa5fe762"
+    },
+    "control_lab/data/recordings/music/f3f0ea80429bbdfb83d262b04f66ba6dd6ba11617a9c318ab2cc9ef2e9e22396-000.json": {
+      "source": "docs/instrument-evidence/music/recordings/f3f0ea80429bbdfb83d262b04f66ba6dd6ba11617a9c318ab2cc9ef2e9e22396-000.json",
+      "git_blob": "158735a07b80695b51883d1e397a711481522fb2",
+      "source_sha256": "60e9dc14de39c66b875fb7877adf03b311b289382be4eac99acd6fe85a05ab89"
+    },
+    "control_lab/data/captures/pressure.json": {
+      "source": "docs/instrument-evidence/pressure/capture.json",
+      "git_blob": "2d962f6ccb3386ccb7328754d026c885b41edad0",
+      "source_sha256": "5d825caf273d714c3490be371fbf91835104efa54cec3fe53dd0c58f7aad5216"
+    },
+    "control_lab/data/recordings/pressure/5172ce7232242f7d2f0e4ee23e3710c0193eba7553482a0272b2a286942cca86-000.json": {
+      "source": "docs/instrument-evidence/pressure/recordings/5172ce7232242f7d2f0e4ee23e3710c0193eba7553482a0272b2a286942cca86-000.json",
+      "git_blob": "09a4bf88f2400204d05c2da63eaabd28fdd28440",
+      "source_sha256": "ce650ef6b2053f391d3829323f305f3ba612fc891912aa8701f5caa743af3615"
+    },
+    "control_lab/data/recordings/pressure/686d1f8e31844156b9e402d779c9a77db38eca26ac02e158bb92574dba31bd33-000.json": {
+      "source": "docs/instrument-evidence/pressure/recordings/686d1f8e31844156b9e402d779c9a77db38eca26ac02e158bb92574dba31bd33-000.json",
+      "git_blob": "fd9c6a58e1d7e69093c473aa1a692e4ba3f7d648",
+      "source_sha256": "475597027f5f5b22c9adce5ca60c6be4db3252a809487e8c0f2e3ca635e7edf1"
+    },
+    "control_lab/data/recordings/pressure/c8989da1cb6a92c38990755157f9502ace0c6375f30910caa0e29f6266897823-000.json": {
+      "source": "docs/instrument-evidence/pressure/recordings/c8989da1cb6a92c38990755157f9502ace0c6375f30910caa0e29f6266897823-000.json",
+      "git_blob": "7a5ab777880b41c4bf7f12cae2875aa5c3fa7359",
+      "source_sha256": "91844ecc1bcf68b4f45e3a5a5c8e8753c7e446ce0cad3f3579134d76569331e1"
+    },
+    "control_lab/data/recordings/pressure/d78514b20d7848cc8fa28cf8426ea8bfbc2697eedd6011087b110d42f92122ce-000.json": {
+      "source": "docs/instrument-evidence/pressure/recordings/d78514b20d7848cc8fa28cf8426ea8bfbc2697eedd6011087b110d42f92122ce-000.json",
+      "git_blob": "e7623266c30ecbfcea426ae78f4e3d3a1a1ae4c7",
+      "source_sha256": "96ae460bb34f7e424841c7237a051d0639618408dfc80dcb5a7c836cfd769574"
+    },
+    "control_lab/data/captures/proof.json": {
+      "source": "docs/instrument-evidence/proof/capture.json",
+      "git_blob": "c4780d88c142d8b0f5eef3892893177d464efc8e",
+      "source_sha256": "e4ed291eaca86dee5d1c210c20222d63423902d8eaaba0952dbc38396f5ee550"
+    },
+    "control_lab/data/recordings/proof/5876c9f8698b000f868e5011b2727c48d6c7487cf31bcd882ba84ca411a956a9-000.json": {
+      "source": "docs/instrument-evidence/proof/recordings/5876c9f8698b000f868e5011b2727c48d6c7487cf31bcd882ba84ca411a956a9-000.json",
+      "git_blob": "ec80cb518adcf4da18ab3d53857f5156fef95a21",
+      "source_sha256": "4f89071d201fc25f91f958248a196aea5f281ace63b19f45c13e6f6a73b3b485"
+    },
+    "control_lab/data/recordings/proof/5e40544b00142a1335420e46e27c65f59d615c8f203028bd3989eaef5d6d863d-000.json": {
+      "source": "docs/instrument-evidence/proof/recordings/5e40544b00142a1335420e46e27c65f59d615c8f203028bd3989eaef5d6d863d-000.json",
+      "git_blob": "34f4bd774f527b8f8f005fa6ed3d2b209d48158a",
+      "source_sha256": "43cd3093d80f2a02c32361871e868de8d3caa9072d539d731eb951bc07992534"
+    },
+    "control_lab/data/recordings/proof/6512459aaad61383d0c1af062d4f51818b63c3c6cfeb33175f1ec2f4bce08de3-000.json": {
+      "source": "docs/instrument-evidence/proof/recordings/6512459aaad61383d0c1af062d4f51818b63c3c6cfeb33175f1ec2f4bce08de3-000.json",
+      "git_blob": "d75ef322089fef219f244158e9e274b38b4d2995",
+      "source_sha256": "d5db905b969f7b1ecf79f5739012e3898b6afb72671692d4858a66adb29d7a7f"
+    },
+    "control_lab/data/recordings/proof/a99ffa891f00651951e70cbb1ee90997279405c4c67ea6828e2397eeed867617-000.json": {
+      "source": "docs/instrument-evidence/proof/recordings/a99ffa891f00651951e70cbb1ee90997279405c4c67ea6828e2397eeed867617-000.json",
+      "git_blob": "f2fffd60d4554c42fc493039ca4f33563f095052",
+      "source_sha256": "3b9103c5a4810d8319193090be05ae7135b55472e3bf2cd33a9000b59e9d89f1"
+    },
+    "control_lab/data/recordings/proof/bc4ac01d6711012fd52d9d7483e2b41a2cbc7399872b3ac093ab11207f11db33-000.json": {
+      "source": "docs/instrument-evidence/proof/recordings/bc4ac01d6711012fd52d9d7483e2b41a2cbc7399872b3ac093ab11207f11db33-000.json",
+      "git_blob": "1e1bf8e55e9d446de808480559595aa3248236ed",
+      "source_sha256": "640852886b9a98676d09364e5a42fb6c42afd8cab16124fc1308111ea5f07690"
+    },
+    "control_lab/data/recordings/proof/c38ada26c3deeed4d2ae0ebc5f0c085560739cbc5826e83b648d3e1375592012-000.json": {
+      "source": "docs/instrument-evidence/proof/recordings/c38ada26c3deeed4d2ae0ebc5f0c085560739cbc5826e83b648d3e1375592012-000.json",
+      "git_blob": "29c67b7f07b640a23f8ba48a235e29ca71427e05",
+      "source_sha256": "441538e31b8174b89e4a9ca5eb9ade1102e025f19b5a58214ed6033184b893ef"
+    },
+    "control_lab/data/captures/sensitivity.json": {
+      "source": "docs/instrument-evidence/sensitivity/capture.json",
+      "git_blob": "906256424330c73c64dd4e3158fcba0c5a187a81",
+      "source_sha256": "5ea03a219ae9e0066a8619c11aa6bfd3acd6acb7de9e2ea974e202406afdbd8b"
+    },
+    "control_lab/data/recordings/sensitivity/135e801a2b818915351a72bea94c52870e9ee3c50824ac9f1b8d16970bc07787-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/135e801a2b818915351a72bea94c52870e9ee3c50824ac9f1b8d16970bc07787-000.json",
+      "git_blob": "f7a70f7c2ca18950d48b49f262d0502de528503c",
+      "source_sha256": "475cb32e029bd22ff051e1f4ecc09b641eeb9b1012ace8360504e97ba395beff"
+    },
+    "control_lab/data/recordings/sensitivity/23452d8811e9d9b507ea36314bed60940b1843f4a6abb2afa0ca48e95da1a66f-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/23452d8811e9d9b507ea36314bed60940b1843f4a6abb2afa0ca48e95da1a66f-000.json",
+      "git_blob": "be29fbb64c03f81ed1f0568078b9e28ba96a1219",
+      "source_sha256": "e4833eb090fe1a0a4b349b6dd02edd8055308965277e8118bbe4dbb054f35027"
+    },
+    "control_lab/data/recordings/sensitivity/2bf3d86f5c655b336e596bce7bacaea375d14138efca262b30b715351d783bd1-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/2bf3d86f5c655b336e596bce7bacaea375d14138efca262b30b715351d783bd1-000.json",
+      "git_blob": "06da77cd9464a3af6b41e8c189578da8c2dea73b",
+      "source_sha256": "09f73f86b557e14b1e7fdd2004216259c520467277e63c1edcadd02c0fa86343"
+    },
+    "control_lab/data/recordings/sensitivity/2e8c802dc6f71ad69e81e4bd0128583fac867f4a5f042ec1658002b571b0b666-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/2e8c802dc6f71ad69e81e4bd0128583fac867f4a5f042ec1658002b571b0b666-000.json",
+      "git_blob": "02e302a869aca15f6862d3324fcb81cffe7f5914",
+      "source_sha256": "9235e0e300c2e4854ad3381f7ca1d7fcbbbfdd4610aee416c53f4158aabadc54"
+    },
+    "control_lab/data/recordings/sensitivity/303f6762b9d1ac34411eb65f37ad2d535abd237c149a39ff82cdc63ff9845b75-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/303f6762b9d1ac34411eb65f37ad2d535abd237c149a39ff82cdc63ff9845b75-000.json",
+      "git_blob": "70b37e5de1a1d69c86b17be4f177509a95d41c47",
+      "source_sha256": "d3cfd7b9bba1ef6dd8cdc0b7050e3d195afc7ef2965adc6f289353adbfddefe5"
+    },
+    "control_lab/data/recordings/sensitivity/3437447e8566a86576b5cf19e726aea89a7e4b6368c33d38acee6d0a4c1af2f2-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/3437447e8566a86576b5cf19e726aea89a7e4b6368c33d38acee6d0a4c1af2f2-000.json",
+      "git_blob": "014fcb6d76116b472a928beb6111c0ad93f2f3d5",
+      "source_sha256": "296cbd77ed921a7beb09c423dfa2768b16130b9883acb50dbb9b2688e9d56aae"
+    },
+    "control_lab/data/recordings/sensitivity/47b4518c132a0c4e3949745acce0cfaccb23a652a7334edf77aa1659959074a8-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/47b4518c132a0c4e3949745acce0cfaccb23a652a7334edf77aa1659959074a8-000.json",
+      "git_blob": "777784b041866eee1d65f5f461bd3045b6fd1dac",
+      "source_sha256": "c117ab4d883bd025f58ce65a58b444fad517e37d7dc2c5b077a1473134b381fc"
+    },
+    "control_lab/data/recordings/sensitivity/5cd64147ce8e58cffd53cc063098a5ed44ec8f3a9a5eae30d59fffa5d9c7f47a-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/5cd64147ce8e58cffd53cc063098a5ed44ec8f3a9a5eae30d59fffa5d9c7f47a-000.json",
+      "git_blob": "0cb1d1473e7cd2a6d358481f1264ce10381d4a03",
+      "source_sha256": "47c254dbc65c8400494dea64e97ebc385b4df0c9e967ccdaedc50b72d6f118fa"
+    },
+    "control_lab/data/recordings/sensitivity/6bd35f3cecbda41edb30ce5b84c24716529a895801a4edce551c4bbd11088b8a-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/6bd35f3cecbda41edb30ce5b84c24716529a895801a4edce551c4bbd11088b8a-000.json",
+      "git_blob": "448b5ce664bb9d546ccd3b341d7da1c56a5e9053",
+      "source_sha256": "5d329031ea53417e2e065861d9bdba5dd9554bca7b5614ec94fca95e4521e809"
+    },
+    "control_lab/data/recordings/sensitivity/7daf2d43d16ca48f20a8f11728cb032026ba196fa0985665991b723888f7837c-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/7daf2d43d16ca48f20a8f11728cb032026ba196fa0985665991b723888f7837c-000.json",
+      "git_blob": "40f5ba9730f6efa837e90f5ddad4a7a22592dd9a",
+      "source_sha256": "a99800d2f9fa3b375e4aefa3b791677fdc339e82463042ad517d18b383527e3c"
+    },
+    "control_lab/data/recordings/sensitivity/9a304565ffde73c62ba0d2d8ab296bba790834b245ef0d5b68bb7057e2512eee-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/9a304565ffde73c62ba0d2d8ab296bba790834b245ef0d5b68bb7057e2512eee-000.json",
+      "git_blob": "729669d2bb421ad42c26c51ae8ad4604f6874db4",
+      "source_sha256": "3921ca4f2215867809b2d676fc2c1e7d23f40292aef09b1de0ac194fd6314d0f"
+    },
+    "control_lab/data/recordings/sensitivity/9e1a140c234c3fb2d0f126e7a0114b6455d8ba9092d8e8b763797ca3678c70ec-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/9e1a140c234c3fb2d0f126e7a0114b6455d8ba9092d8e8b763797ca3678c70ec-000.json",
+      "git_blob": "1022406c51d4306e1b3c2e8832b42f721795009f",
+      "source_sha256": "a71395178b5f783434fc06613f41714a8614b9b7b148e35c8d4ea2f88b1a3890"
+    },
+    "control_lab/data/recordings/sensitivity/b6e0468149ee6e1d46514af753f77fc965a2da917f34ccced3b386dcb5e79f5b-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/b6e0468149ee6e1d46514af753f77fc965a2da917f34ccced3b386dcb5e79f5b-000.json",
+      "git_blob": "2180ad3ce6aa9785dd16c65564bd66bc97a16a5b",
+      "source_sha256": "c25e673898e432bbb81b76273a4114b3696d88a42f113fd298125297246ac343"
+    },
+    "control_lab/data/recordings/sensitivity/c5be58170d0a83380439ec90890bed20458b5a6b9303034e55851340d375b633-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/c5be58170d0a83380439ec90890bed20458b5a6b9303034e55851340d375b633-000.json",
+      "git_blob": "5e72916d8491b950351704ad425b6013b276cc97",
+      "source_sha256": "d23bb7f71e415d0ea2d34cc7d586c3265561167652b978be4cccddd9f6d410dc"
+    },
+    "control_lab/data/recordings/sensitivity/c891ed19f2e3b43a8d045fbeb35fe2317d95f75a930dedd05c504c618864c817-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/c891ed19f2e3b43a8d045fbeb35fe2317d95f75a930dedd05c504c618864c817-000.json",
+      "git_blob": "d720097679587928b01bc9e1b7baa92c4c7de608",
+      "source_sha256": "d397bf6c0c29db7986949739353beae7f078c44254a076905416e15e1016c390"
+    },
+    "control_lab/data/recordings/sensitivity/cdc7946ddebbfef44b73f02874b250f35fdb2ff850cc582d53fb661bd31af443-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/cdc7946ddebbfef44b73f02874b250f35fdb2ff850cc582d53fb661bd31af443-000.json",
+      "git_blob": "140047fd6b4876755f052d38e8c92334137f0141",
+      "source_sha256": "b92368a9a47231dc7dcfd3b023dd9adacc7358bfe77e7774298d08f012730390"
+    },
+    "control_lab/data/recordings/sensitivity/ceed00d29f5a472f443901b56b255d96931dc9b064df4f089c0ee4e922fb0b45-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/ceed00d29f5a472f443901b56b255d96931dc9b064df4f089c0ee4e922fb0b45-000.json",
+      "git_blob": "3de49a79d10d0281932672fa39e6392387506741",
+      "source_sha256": "bdc66042d000edf524c91814cd2ad71b2d8a19ba9bfffef6fa2a085bcb7e1c00"
+    },
+    "control_lab/data/recordings/sensitivity/d25a23893ecd5e9b2569dd968b4388c52b818dddba686dd4fe8a260ed2d19238-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/d25a23893ecd5e9b2569dd968b4388c52b818dddba686dd4fe8a260ed2d19238-000.json",
+      "git_blob": "fff09e5fe59828aaf64cc4b5ab0719840c648fcb",
+      "source_sha256": "bc23755bbeff2591cb44b5fea140681d7d22e0bd2d8cebaef0615fca6c01ffb9"
+    },
+    "control_lab/data/recordings/sensitivity/d38727157cc4e79c2a339c07f62fb800ea4ca9407dca37625c40f8af29caa871-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/d38727157cc4e79c2a339c07f62fb800ea4ca9407dca37625c40f8af29caa871-000.json",
+      "git_blob": "a9cf54f059f95de46705be1bc5ce3643132dd1b5",
+      "source_sha256": "918df9ed5331470b0e176285745fff1c162c906068fab9444ef0c5b8421ccfee"
+    },
+    "control_lab/data/recordings/sensitivity/e1310b548372c929e55b93218da141266dda30718abcaafdf797602236641868-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/e1310b548372c929e55b93218da141266dda30718abcaafdf797602236641868-000.json",
+      "git_blob": "8936393bc05e65fab8bdc411e75f6d3169b8b630",
+      "source_sha256": "ad4691874e2a7c4bf7a3b9c2b636e7c6eba9bb04553cd82f45c839913112066f"
+    },
+    "control_lab/data/recordings/sensitivity/fc4082c608f68ebdba871ea82771bea694488f6792b77841894760822e908f40-000.json": {
+      "source": "docs/instrument-evidence/sensitivity/recordings/fc4082c608f68ebdba871ea82771bea694488f6792b77841894760822e908f40-000.json",
+      "git_blob": "dbf06742746e6b316dd077fc31e78618db393cda",
+      "source_sha256": "03e5239824ca109476543727184658534c0d0c00706525bd00c946dd967e403c"
+    },
+    "control_lab/data/captures/transaction.json": {
+      "source": "docs/instrument-evidence/transaction/capture.json",
+      "git_blob": "e2da76d208ba8d56452c8ba978d6a549e56f9781",
+      "source_sha256": "e06d390c23e10a673c3c5a1e179ef06d0a6483febe23a3aa5d399bba593d7716"
+    },
+    "control_lab/data/recordings/transaction/7e78ecc7b3235d9ae6c286f7b4643eb03a08a3647878e62483e9c825ac20d985-000.json": {
+      "source": "docs/instrument-evidence/transaction/recordings/7e78ecc7b3235d9ae6c286f7b4643eb03a08a3647878e62483e9c825ac20d985-000.json",
+      "git_blob": "398f2fe1f46dd00f61fe857e176047cc34904943",
+      "source_sha256": "31a9941c8b7432ab9271628be0a26453cd5c87b0a5dd6a259fd95272434ab543"
+    },
+    "control_lab/data/recordings/transaction/9237245e1e52fb15ad4b9c8e8eba3a67284a29468bac43fc756ba80c49d68d73-000.json": {
+      "source": "docs/instrument-evidence/transaction/recordings/9237245e1e52fb15ad4b9c8e8eba3a67284a29468bac43fc756ba80c49d68d73-000.json",
+      "git_blob": "477771a48aabe15a62f0982159b6acbf12d5ea33",
+      "source_sha256": "507dab9f3ba6f9eb7aef4a17de76164c8d52094a518d4551ecc9389f5da6b51c"
+    },
+    "control_lab/data/recordings/transaction/bd1ddf146f8f7e76ee1ee04eb936120b9d0e660c7c74a1747ba4ccae168fc750-000.json": {
+      "source": "docs/instrument-evidence/transaction/recordings/bd1ddf146f8f7e76ee1ee04eb936120b9d0e660c7c74a1747ba4ccae168fc750-000.json",
+      "git_blob": "b9b9691c40549c1756e56ed6c6c5dc873f3bc190",
+      "source_sha256": "ef6678466bebcdd82df46811bdbe0a6f611f567cbae60dc84778b471b81daa19"
+    },
+    "control_lab/data/recordings/transaction/c4948a2036dea015a32d7e07046a446604f4c6dbad2d2d1200a822c6e7c782a3-000.json": {
+      "source": "docs/instrument-evidence/transaction/recordings/c4948a2036dea015a32d7e07046a446604f4c6dbad2d2d1200a822c6e7c782a3-000.json",
+      "git_blob": "21dfe8433ab4873623b1416a242d06406f78ddd3",
+      "source_sha256": "247a3b133d56d57b7164fc0eded4cbfb7e06831de430fdf5cf90feb9ed346b9d"
+    },
+    "control_lab/__init__.py": {
+      "source": "examples/control_lab/__init__.py",
+      "git_blob": "fbaeda706d7c07e6187641cd9124c3653b7cffb9",
+      "source_sha256": "47b029fe9d7050e645c666d2a56d48dac2cf75eba9d1ecff3a4883e86428f544"
+    },
+    "control_lab/__main__.py": {
+      "source": "examples/control_lab/__main__.py",
+      "git_blob": "e776f6049b29e8756c8029a52976f01ae328d347",
+      "source_sha256": "66e06e528136b2403beeee8180e9389c5f6ba70e5f3be7ebad847f85f827812a"
+    },
+    "control_lab/app.py": {
+      "source": "examples/control_lab/app.py",
+      "git_blob": "83a3041daa002303e16965f473db2f286c1f37d5",
+      "source_sha256": "8085177f916590505da9b7c52f1709e442ab78b76e57f641145ff582ab1df313"
+    },
+    "control_lab/applied.py": {
+      "source": "examples/control_lab/applied.py",
+      "git_blob": "1396c5e2bda1291d4a8a723c3309465fab64260a",
+      "source_sha256": "126b53832117e43c8c143952129e81f4e20ac768f1c7db1b4fa86383afd64599"
+    },
+    "control_lab/capture.py": {
+      "source": "examples/control_lab/capture.py",
+      "git_blob": "585a8cb6e5d5d17be06474350d8f11364db38edb",
+      "source_sha256": "fb3d6cd838203f2666b76ddd5aa9a6ebd2761104ca35f1529a507c19102cab95"
+    },
+    "control_lab/capture_instrument.py": {
+      "source": "examples/control_lab/capture_instrument.py",
+      "git_blob": "bd83896736d49fb292f26313bcc3307c0d675662",
+      "source_sha256": "a1127e2c77dbdda296d8ba073e8e392948d3cfe16ff8a92a92b707068a49f7cb"
+    },
+    "control_lab/catalog.py": {
+      "source": "examples/control_lab/catalog.py",
+      "git_blob": "d683da3291f247a5dca8edfcc582b16806abf5b8",
+      "source_sha256": "77782658270e04721825c375b005f8ebb35787d82f6fc4660392256674979c3b"
+    },
+    "control_lab/check_browser.py": {
+      "source": "examples/control_lab/check_browser.py",
+      "git_blob": "b34473993f50e52be5c76df9981b6f9c1cf8eb97",
+      "source_sha256": "01b4dea2200b8252343ede05cd5a97347ed90af2e4a85a018bceb2876478dabc"
+    },
+    "control_lab/check_empty_receipts.py": {
+      "source": "examples/control_lab/check_empty_receipts.py",
+      "git_blob": "268831728301f7b386fa3b50977fb13ffc7e4a03",
+      "source_sha256": "77b5dda12b76b061075f6e7ede4d87760fa0ae5f78e763cab19f54694a87620d"
+    },
+    "control_lab/check_exports.py": {
+      "source": "examples/control_lab/check_exports.py",
+      "git_blob": "bffee52f70cdfdfcc2133c33700940328c4346e7",
+      "source_sha256": "11565b54030b112c08059fc1eb0b0aa8b2dfee5670389242fd965e3b9e585c48"
+    },
+    "control_lab/check_instruments.py": {
+      "source": "examples/control_lab/check_instruments.py",
+      "git_blob": "41445775d95871145ce7bdbf5876d04b14461f55",
+      "source_sha256": "91ee170632c55126ae6e930f6075b2aab30e5df986c5b3036c45a31c8aaa009b"
+    },
+    "control_lab/check_portable_archive.py": {
+      "source": "examples/control_lab/check_portable_archive.py",
+      "git_blob": "2f715ccf0231edf9cac77465a21b06656411c12a",
+      "source_sha256": "214a97d4cc05060d47b137fdca196d7704e1d31a48bc1f9c56d44f5834d2980c"
+    },
+    "control_lab/check_quality.py": {
+      "source": "examples/control_lab/check_quality.py",
+      "git_blob": "db9af46de98894066307946de4a7f66f679fb40c",
+      "source_sha256": "82f894a0ad0e54c5d7f36e14adba08f3e3a18c954612a482eff5f2d4f3bebd73"
+    },
+    "control_lab/check_research_browser.py": {
+      "source": "examples/control_lab/check_research_browser.py",
+      "git_blob": "1f6e887f75feac81222ae6c5735aa0d48fb4aa11",
+      "source_sha256": "be4d2e8bbb151fecc3eea5f9c701ffb59e77bbf17ccc25788fc3f470eb2b2b2f"
+    },
+    "control_lab/check_research_live.py": {
+      "source": "examples/control_lab/check_research_live.py",
+      "git_blob": "85733d3e81489a161e1330a8243a9f0b1ebcb783",
+      "source_sha256": "1fc953bb8b47c7b16b2675e372a915bcddfc0a36d91472eba1afa8c7eb88124b"
+    },
+    "control_lab/check_windowshop.py": {
+      "source": "examples/control_lab/check_windowshop.py",
+      "git_blob": "f55e7264c50a898963137554bb5d5200361cffef",
+      "source_sha256": "df9db42c25176372f0290d6ea3a66eb63c60c942a9661ef9999fe22df42cc500"
+    },
+    "control_lab/client.py": {
+      "source": "examples/control_lab/client.py",
+      "git_blob": "35557037f01047d2491f624714d9e99572b5c32d",
+      "source_sha256": "6e95b5bdcff8c16844c3c795a4ce61ed0b6bfedfdd7babf217b355cf83232918"
+    },
+    "control_lab/control_math.py": {
+      "source": "examples/control_lab/control_math.py",
+      "git_blob": "4762cfd8a989e95d07da0f5ac89fd9fcdd243118",
+      "source_sha256": "68bc41ba7568312a372da3f454eca5483c2dae49c008feaca3b62d377d6764af"
+    },
+    "control_lab/core.py": {
+      "source": "examples/control_lab/core.py",
+      "git_blob": "b71bf35efaa09762f4f7b550978f692ef25298fa",
+      "source_sha256": "7cb36330d3cbce81b07e552e786ba9c395728f7b057f3f92cb10634c3a16a8d8"
+    },
+    "control_lab/instrument_math.py": {
+      "source": "examples/control_lab/instrument_math.py",
+      "git_blob": "d2adc1f06e2ae2ee0c7ead5e41efcdfe3cd72bf1",
+      "source_sha256": "57a9a46fcf168ce61f0a28b34d7a48337ef57ff39c7984350040612e7f6944cb"
+    },
+    "control_lab/instrument_page_adversary.py": {
+      "source": "examples/control_lab/instrument_page_adversary.py",
+      "git_blob": "b2061aeca756473b8fcecb6781153a4f0f1acaba",
+      "source_sha256": "de891331941a21cc07aeb4192178dad1b7bc429f9db8ff73db8b5e746a7be92b"
+    },
+    "control_lab/instrument_page_budget.py": {
+      "source": "examples/control_lab/instrument_page_budget.py",
+      "git_blob": "e8566b2601ab6ed7f90eb765eea779dd1bfa69e5",
+      "source_sha256": "a9e8dfa770c49c90f3efa1567781dbb7d7082a3aad66bdb72deff333ada69d83"
+    },
+    "control_lab/instrument_page_camouflage.py": {
+      "source": "examples/control_lab/instrument_page_camouflage.py",
+      "git_blob": "daa764020aed6ba0e57ca7e323221fec4b837f5b",
+      "source_sha256": "58c9308b56fe2bf6c00d003a617f5c368ae71b178454705d704edad0547ffb8c"
+    },
+    "control_lab/instrument_page_circuit.py": {
+      "source": "examples/control_lab/instrument_page_circuit.py",
+      "git_blob": "dcefce5edd17e9d9fdd6392426390376f9c90ae5",
+      "source_sha256": "263129ca6e707cbc2840e48cfc536292709cc15911f68b3696fb8af536d93f43"
+    },
+    "control_lab/instrument_page_compiler.py": {
+      "source": "examples/control_lab/instrument_page_compiler.py",
+      "git_blob": "0ee6715dabf138530f12d243356ec6f9150e18f2",
+      "source_sha256": "660ad5796d086af785f8fea7bae6385601441c9e9a0330b29844f0c18c5040d1"
+    },
+    "control_lab/instrument_page_control.py": {
+      "source": "examples/control_lab/instrument_page_control.py",
+      "git_blob": "21f89b0454d1f028f7b25c3c2f184bd1757cc075",
+      "source_sha256": "886fbb3053948e7aabdfac1ef9efb10fd247728531727434dc3cc6a25e920afc"
+    },
+    "control_lab/instrument_page_counterexamples.py": {
+      "source": "examples/control_lab/instrument_page_counterexamples.py",
+      "git_blob": "4cc3a6f3bb0083ee6b5b5826687853ac21c988bd",
+      "source_sha256": "d78691ddc6a6dcb8b88a06f0eddead5c2e44a7520572314a6b957b861ede3f0b"
+    },
+    "control_lab/instrument_page_divider.py": {
+      "source": "examples/control_lab/instrument_page_divider.py",
+      "git_blob": "9d8b2a18fe38706fddb592b3f0c04535a36d31c5",
+      "source_sha256": "9f6ecc9767adca973d629fdb8f632f1d5db38e8361b45ff1eb8607bb45ea43fa"
+    },
+    "control_lab/instrument_page_future.py": {
+      "source": "examples/control_lab/instrument_page_future.py",
+      "git_blob": "7bda9914e69e83f7ed886a1838c3e62c1c1d8262",
+      "source_sha256": "4b9282ed67348471de4d7eeaac452dc15af488601f25360ed1f239a53a1ae707"
+    },
+    "control_lab/instrument_page_music.py": {
+      "source": "examples/control_lab/instrument_page_music.py",
+      "git_blob": "9c48f503186bb42acafda5eb6163bef93e61388e",
+      "source_sha256": "8fca1215fa187c4f8339344447293f4872ea7bf3b0b8e4c21bb7ece800d52884"
+    },
+    "control_lab/instrument_page_pressure.py": {
+      "source": "examples/control_lab/instrument_page_pressure.py",
+      "git_blob": "76de060ca3c58a0929313ad71b95ea32366bfc19",
+      "source_sha256": "c44b0ba885b7d97ced8c844d84a049782a7d9bbe5211dc1f11f9ab8a357ea9b9"
+    },
+    "control_lab/instrument_page_proof.py": {
+      "source": "examples/control_lab/instrument_page_proof.py",
+      "git_blob": "04e0daa40bac9d770af84ee290209359070a9c78",
+      "source_sha256": "eb03fb14164b0eba8b0c7d54d6261e39542fd1612f0dc95fdd166da676e4b3da"
+    },
+    "control_lab/instrument_page_sensitivity.py": {
+      "source": "examples/control_lab/instrument_page_sensitivity.py",
+      "git_blob": "52c968d9d1776bfc80f9c900294d5da7def6ae88",
+      "source_sha256": "9ee96e2c5e46178fe850f21054abceed686bedd6ddd1ec1a212bdb1d727b107d"
+    },
+    "control_lab/instrument_page_transaction.py": {
+      "source": "examples/control_lab/instrument_page_transaction.py",
+      "git_blob": "47b3ffd1e85e685e1e2665c00f6e940723f59570",
+      "source_sha256": "e59a6d5c52f0861d1dbca260264d5bf9f5a80c55958383ac0de8af977ad0da27"
+    },
+    "control_lab/instrument_registry.py": {
+      "source": "examples/control_lab/instrument_registry.py",
+      "git_blob": "8d8e6b602cb2db9c4c07bae6a0bae43c4760e9d7",
+      "source_sha256": "81e43e50cae8b152b70e768bf5c6a23a32a84d4a103082587edc543260d3e974"
+    },
+    "control_lab/package_examples.py": {
+      "source": "examples/control_lab/package_examples.py",
+      "git_blob": "d41061b213dc36d818bf314e1bb9e7eeaa1bc7d3",
+      "source_sha256": "31afdd7bf5cda4cb362461909f2f7f0f2c08bc75168252b7de3ea254b00d999f"
+    },
+    "control_lab/research.py": {
+      "source": "examples/control_lab/research.py",
+      "git_blob": "a1db3b92516cba528a7f9b330dc25530ca9b3066",
+      "source_sha256": "612629ef8349f0d64bd6540d90e9db327b1d7b3f24e25d37322381b2bc9be7aa"
+    },
+    "control_lab/research_catalog.py": {
+      "source": "examples/control_lab/research_catalog.py",
+      "git_blob": "eb017bdbe13ab52b8c9f9266957a4f016bf7e90f",
+      "source_sha256": "a235915d1f86d2c249d473e4e4905323ee91b4a1dd0c81558ddebc813fd38f20"
+    },
+    "control_lab/research_ideas.py": {
+      "source": "examples/control_lab/research_ideas.py",
+      "git_blob": "6b11401a144297c855289840fad673ae150032ef",
+      "source_sha256": "32d6c19f2a1ca23719ec7b577c667192c7a4952add11ddbbdffedd59540c0602"
+    },
+    "control_lab/scenarios.py": {
+      "source": "examples/control_lab/scenarios.py",
+      "git_blob": "bd175ba6c3f8f4c739eb420396046145d29e8874",
+      "source_sha256": "b3aab96acb9fc208fd9d262442e9f866ebbad9a267c13b582c20af63102026f9"
+    },
+    "control_lab/static/OFL.txt": {
+      "source": "examples/control_lab/static/OFL.txt",
+      "git_blob": "9ff875d586ae3ad5174a36e28f9a60555cfe0209",
+      "source_sha256": "e2a6bbb2589b85bac1690ec8f220b22a9c3af9bfda56df6391f7ab491c7a039f"
+    },
+    "control_lab/static/applied-art.js": {
+      "source": "examples/control_lab/static/applied-art.js",
+      "git_blob": "52a8e0cf7399481e74d2ab0a08ad4b3cbcb8b8a5",
+      "source_sha256": "557d1b46950b7a3a4de5fc1d740a9b4f95ccfbda4a35765ef174da2129b4f370"
+    },
+    "control_lab/static/applied-ui.js": {
+      "source": "examples/control_lab/static/applied-ui.js",
+      "git_blob": "c044ac3ff5fe51cfd2de84e015d571fcf3605e69",
+      "source_sha256": "d5eaa906998734761842c56fefad6e92860487a6913d01696130fb34d77a9f14"
+    },
+    "control_lab/static/applied.css": {
+      "source": "examples/control_lab/static/applied.css",
+      "git_blob": "f5a8e96550f54594397a9dcabb1149c1b8061e47",
+      "source_sha256": "7cc07c6898e75bae6376ce1b79e248fe2a97ec741d377b0efaf87d5e6992bb29"
+    },
+    "control_lab/static/applied_math.py": {
+      "source": "examples/control_lab/static/applied_math.py",
+      "git_blob": "e513414f3bbd64ab91dacce6f4fe00beec48583d",
+      "source_sha256": "5809f8753743a0ba62f5811cddaed972c79e027c3d8cd97097769deb64e781a6"
+    },
+    "control_lab/static/gallery.css": {
+      "source": "examples/control_lab/static/gallery.css",
+      "git_blob": "48bdf4d899c5a92ffcfb074219cd4c27bbd3730f",
+      "source_sha256": "99a9cee8c675ccd52e8e3866d5d1a027f46f041b8a567bab3e0c9cccf5940ad9"
+    },
+    "control_lab/static/gallery.html": {
+      "source": "examples/control_lab/static/gallery.html",
+      "git_blob": "ef1c218af55f95b3b00eebe1841e4218269d4a4a",
+      "source_sha256": "896ad3ae6135e4297a935c1f0513c6090c3190605a9637920fd8752bef5c8f4c"
+    },
+    "control_lab/static/gallery.js": {
+      "source": "examples/control_lab/static/gallery.js",
+      "git_blob": "4658a3f5808e775ae8d74c2908592158d9550377",
+      "source_sha256": "e2df539214e016da0be382384038f451acbd7e683901d352e163b1cd8d02e693"
+    },
+    "control_lab/static/index.html": {
+      "source": "examples/control_lab/static/index.html",
+      "git_blob": "5d134db1b188016522ee62bfb0f66f76887e7613",
+      "source_sha256": "9bf2780bd6329b7f9bfc6839bc5fb2786473b0da0ea0530372c19b99fb66dfdf"
+    },
+    "control_lab/static/instrument-adversary.js": {
+      "source": "examples/control_lab/static/instrument-adversary.js",
+      "git_blob": "f7fb74432c99b39fb5f005bbf74cd53554b54fad",
+      "source_sha256": "cdcb098db8c47f3e720324d5ea843d19b53aa5667dbf8e21ffe1081cb45089d7"
+    },
+    "control_lab/static/instrument-budget.js": {
+      "source": "examples/control_lab/static/instrument-budget.js",
+      "git_blob": "f7fb74432c99b39fb5f005bbf74cd53554b54fad",
+      "source_sha256": "cdcb098db8c47f3e720324d5ea843d19b53aa5667dbf8e21ffe1081cb45089d7"
+    },
+    "control_lab/static/instrument-camouflage.js": {
+      "source": "examples/control_lab/static/instrument-camouflage.js",
+      "git_blob": "f7fb74432c99b39fb5f005bbf74cd53554b54fad",
+      "source_sha256": "cdcb098db8c47f3e720324d5ea843d19b53aa5667dbf8e21ffe1081cb45089d7"
+    },
+    "control_lab/static/instrument-circuit.js": {
+      "source": "examples/control_lab/static/instrument-circuit.js",
+      "git_blob": "feeccd556ce32228af567ef6943feb46d8468d0a",
+      "source_sha256": "7176b764f0f37b8ae9f90732b010ad166915011c0a0dc5d17e062a6d2774ef70"
+    },
+    "control_lab/static/instrument-compiler.js": {
+      "source": "examples/control_lab/static/instrument-compiler.js",
+      "git_blob": "f7fb74432c99b39fb5f005bbf74cd53554b54fad",
+      "source_sha256": "cdcb098db8c47f3e720324d5ea843d19b53aa5667dbf8e21ffe1081cb45089d7"
+    },
+    "control_lab/static/instrument-control.js": {
+      "source": "examples/control_lab/static/instrument-control.js",
+      "git_blob": "9cd3c882eb79fcc6e2f56d1c90ddafe1890685a9",
+      "source_sha256": "1174c2367dd6c5f78df54aa687c83b30567bfe1779ca8b9d6b59a82a601bd224"
+    },
+    "control_lab/static/instrument-counterexamples.js": {
+      "source": "examples/control_lab/static/instrument-counterexamples.js",
+      "git_blob": "0db2dd869e46e62ab9298ad5b1d15fa7ceb3021b",
+      "source_sha256": "484dc2c96478a29aacc6a117218caaac06bf4cb3f3d9b95c70fecf3b52a8d3f8"
+    },
+    "control_lab/static/instrument-divider.js": {
+      "source": "examples/control_lab/static/instrument-divider.js",
+      "git_blob": "f7fb74432c99b39fb5f005bbf74cd53554b54fad",
+      "source_sha256": "cdcb098db8c47f3e720324d5ea843d19b53aa5667dbf8e21ffe1081cb45089d7"
+    },
+    "control_lab/static/instrument-future.js": {
+      "source": "examples/control_lab/static/instrument-future.js",
+      "git_blob": "c483af2d7d7f35434c781c88ebec2d1290093281",
+      "source_sha256": "37d02efe8dab7788d731d185f2d261ce7e0b1ddb5b58ec04a2f21a9b6e71d285"
+    },
+    "control_lab/static/instrument-music.js": {
+      "source": "examples/control_lab/static/instrument-music.js",
+      "git_blob": "f7fb74432c99b39fb5f005bbf74cd53554b54fad",
+      "source_sha256": "cdcb098db8c47f3e720324d5ea843d19b53aa5667dbf8e21ffe1081cb45089d7"
+    },
+    "control_lab/static/instrument-pressure.js": {
+      "source": "examples/control_lab/static/instrument-pressure.js",
+      "git_blob": "35caec479dbc61c000d5447d7ad2faebaf521ab5",
+      "source_sha256": "78ec039688d52b97782871509b1f844a116910a4635b03ae02d368e7cd0ede69"
+    },
+    "control_lab/static/instrument-proof.js": {
+      "source": "examples/control_lab/static/instrument-proof.js",
+      "git_blob": "f7fb74432c99b39fb5f005bbf74cd53554b54fad",
+      "source_sha256": "cdcb098db8c47f3e720324d5ea843d19b53aa5667dbf8e21ffe1081cb45089d7"
+    },
+    "control_lab/static/instrument-sensitivity.js": {
+      "source": "examples/control_lab/static/instrument-sensitivity.js",
+      "git_blob": "19f7cd74a4d7b3395a75c0f77d836f5e3af8e93f",
+      "source_sha256": "ec53221db192a122ce2e59bc2749883464c329b397a5259f369c70de0d89bd8a"
+    },
+    "control_lab/static/instrument-transaction.js": {
+      "source": "examples/control_lab/static/instrument-transaction.js",
+      "git_blob": "f7fb74432c99b39fb5f005bbf74cd53554b54fad",
+      "source_sha256": "cdcb098db8c47f3e720324d5ea843d19b53aa5667dbf8e21ffe1081cb45089d7"
+    },
+    "control_lab/static/instrument-ui.js": {
+      "source": "examples/control_lab/static/instrument-ui.js",
+      "git_blob": "f65a7715f9c0902ad819addb7f7f4ed1d7b40ca9",
+      "source_sha256": "f0458d4a211a26867f5a6c62df4b8a61d763d01c66f55d2e58b5a25eb856355c"
+    },
+    "control_lab/static/instrument.css": {
+      "source": "examples/control_lab/static/instrument.css",
+      "git_blob": "f66212db28fc008af7d8d247b4ddf38e6b434c78",
+      "source_sha256": "ab5f07a16beec1cba31f30989a344dde9b9dba5e0f09ba33e139d1c96ae1ca84"
+    },
+    "control_lab/static/lab.css": {
+      "source": "examples/control_lab/static/lab.css",
+      "git_blob": "d93ae97340b88afbf6b269153c0bc8937e654519",
+      "source_sha256": "17a787c55403f268ceb910222d9e1277446a215122d9ce04cb99f35603cd203f"
+    },
+    "control_lab/static/lab.js": {
+      "source": "examples/control_lab/static/lab.js",
+      "git_blob": "827d0b9b6b14c0f52c33576a58eb47f53cfa9a0e",
+      "source_sha256": "99b87d097d4eacbebd18f397c008a3f20bca33b1e2469e9259316bdc5be510ef"
+    },
+    "control_lab/static/lesson.css": {
+      "source": "examples/control_lab/static/lesson.css",
+      "git_blob": "ea4939cd18da382d671b3672721aebe69debd586",
+      "source_sha256": "cd21d3907f7d3edfeb62c0830798aabe86a44a967f0c25fe2022021a01390850"
+    },
+    "control_lab/static/lesson.js": {
+      "source": "examples/control_lab/static/lesson.js",
+      "git_blob": "f03789a27610b7c7a6b9c2a86703f25c683f7419",
+      "source_sha256": "21e8c6ef9ba95eb8b1330c288baf598d90cf8fec8a50b68a1a68dbbaa31cd02a"
+    },
+    "control_lab/static/lesson_math.py": {
+      "source": "examples/control_lab/static/lesson_math.py",
+      "git_blob": "0a56d401f6dad14c416cc50ff858b228e8062fdc",
+      "source_sha256": "3d5bc5489f71bb9d676253c0cf360881fbc841532758362675e534ddf1af2285"
+    },
+    "control_lab/static/outfit.woff2": {
+      "source": "examples/control_lab/static/outfit.woff2",
+      "git_blob": "85e3332e6d9430f3c6b158843ceb6d3f95743f8a",
+      "source_sha256": "6c18d579fd87c3776be068b762cbc83fde3acb543d49eabd3ade842eb987e887"
+    },
+    "control_lab/static/portable.py": {
+      "source": "examples/control_lab/static/portable.py",
+      "git_blob": "2b84bd3f77e2e9926693f6728a24b9594b6554a3",
+      "source_sha256": "41c722c6ea837e68af46a1dbf40dc31c960f16180389e6a890ce847acb68278e"
+    },
+    "control_lab/static/request-panel.js": {
+      "source": "examples/control_lab/static/request-panel.js",
+      "git_blob": "b1154727a92b52638406af1227fb388383c54547",
+      "source_sha256": "ce72d97dbc2a97a0891ab78d3c00ad60e23d2b50fcee602e78668dbbabaffae3"
+    },
+    "control_lab/static/research.css": {
+      "source": "examples/control_lab/static/research.css",
+      "git_blob": "b2b755089156008aeddac862811b6f8561e32c51",
+      "source_sha256": "b9ee63bfdc266696fc7a60e6fce672ebeca1d7c07b592bb1db4e0cfa68a780ad"
+    },
+    "control_lab/static/research.js": {
+      "source": "examples/control_lab/static/research.js",
+      "git_blob": "15c489faea631775fd69b9f8163ce6c9862c3d87",
+      "source_sha256": "e3fdc0761440263a5ac9e25781ae8fd1ab47ac8206bd2bc410f9bc4bf2e7b75f"
+    },
+    "control_lab/static/strata-control-lab-39-offline-examples.zip": {
+      "source": "examples/control_lab/static/strata-control-lab-39-offline-examples.zip",
+      "git_blob": "f67bb9bff8f00bbc61dd16562461131af1739a2c",
+      "source_sha256": "e4129cd4cbc2f75273de30fcc01f7f1420a0f1d2360094a7dd75c185a2315c1d"
+    },
+    "control_lab/static/tour.css": {
+      "source": "examples/control_lab/static/tour.css",
+      "git_blob": "e378345d60edd98eec763f7b6a93ead138e41ea4",
+      "source_sha256": "6c96bb819ff486448456a936f21ad3843e5ba06bec9bfdf4db23f00ea0c3beba"
+    },
+    "control_lab/static/tour.js": {
+      "source": "examples/control_lab/static/tour.js",
+      "git_blob": "4b72c12ce0097f8b5572f5329c154c82436c9324",
+      "source_sha256": "1cd21fee160c677ea63e50b32bbdc9f77eb3ff4b991b832e95f77f3245431176"
+    },
+    "tests/test_app.py": {
+      "source": "examples/control_lab/test_app.py",
+      "git_blob": "de44c9c719cee14f51c8814a34f2431dfadbabec",
+      "source_sha256": "080b9eccb7abc9e02b2d5acb2bb41346e9994decad29506e24c698f5ba816455"
+    },
+    "tests/test_applied.py": {
+      "source": "examples/control_lab/test_applied.py",
+      "git_blob": "dff46ee08b73dcbf491d8ef0b71e3bf82a820105",
+      "source_sha256": "81084f5bd717ca117db360900c00eb93b14a8c1eb8d4f02f46c5b1f73f9e24b3"
+    },
+    "tests/test_circuit.py": {
+      "source": "examples/control_lab/test_circuit.py",
+      "git_blob": "eaf5c4ffe905d0cb7476e3c06db72717ce73c291",
+      "source_sha256": "6766f71997ce9c4f56b4ff9befa26e18b4325dc7088d33f4ef1680b27ad70669"
+    },
+    "tests/test_control.py": {
+      "source": "examples/control_lab/test_control.py",
+      "git_blob": "38318ad2c303aea389ff32de5568831e166fe5e9",
+      "source_sha256": "dee936c1f07a670253913bedf85f350f7ba857a1cab8ab8418ea7133752396ac"
+    },
+    "tests/test_control_math.py": {
+      "source": "examples/control_lab/test_control_math.py",
+      "git_blob": "0a8557e9bce85514783a2cdc1a80632aa6a20f8f",
+      "source_sha256": "9a423e77148c936e211222d3438b55dc92cea0228f2c18e6274b50fb532dab3f"
+    },
+    "tests/test_core.py": {
+      "source": "examples/control_lab/test_core.py",
+      "git_blob": "fe2639c9aa70fad31b7c5c65cd5a5e7647be5cbe",
+      "source_sha256": "551c872eb7326f3d22b08ded301719a75cbd6cb4cf4c0a62c78ae7149a167b66"
+    },
+    "tests/test_counterexamples.py": {
+      "source": "examples/control_lab/test_counterexamples.py",
+      "git_blob": "d970823fb81be261567c6130bf230eb75761bf27",
+      "source_sha256": "6089fd8a0bc192ae8dc747745b91039df429fa3588cd625456d0441671f63dd7"
+    },
+    "tests/test_future.py": {
+      "source": "examples/control_lab/test_future.py",
+      "git_blob": "5f0cc02c3a5ab80f7e0e1faa40ac24c211f4cc59",
+      "source_sha256": "cf62ae7426ed1a38551a06625c0cfceb6a01cea9e151f70973b02659ef3f6502"
+    },
+    "tests/test_instrument_math.py": {
+      "source": "examples/control_lab/test_instrument_math.py",
+      "git_blob": "15b42190e1707c267118ed7b64bc4330475247dc",
+      "source_sha256": "d0a8aebb59c7bf66bfeb7727cdc01150e94f66e07c147a8fcde41e200d7d6a76"
+    },
+    "tests/test_lessons.py": {
+      "source": "examples/control_lab/test_lessons.py",
+      "git_blob": "fcd5d12418b097e982c0ec1a1b98b01d73aec35b",
+      "source_sha256": "51e29e03262eec1b11f43946a3bef83302f2f52591975724435e0fd9d37b2b84"
+    },
+    "tests/test_portable.py": {
+      "source": "examples/control_lab/test_portable.py",
+      "git_blob": "974abe2d00e04f3a69c137c73c606f22659bfcc7",
+      "source_sha256": "f5143df8fcabfd6efad01e7b384107559d524e38a013828e16e8fbe34b8067aa"
+    },
+    "tests/test_pressure.py": {
+      "source": "examples/control_lab/test_pressure.py",
+      "git_blob": "2c045f4b1c1dc22864669e83746bd9715a58107e",
+      "source_sha256": "a66e58d6276c7883409cad7207da3b7b00c47c90677bb04b6351fc71a39e7a18"
+    },
+    "tests/test_sensitivity.py": {
+      "source": "examples/control_lab/test_sensitivity.py",
+      "git_blob": "5a054ae62c066170d9487f494e4022c8d6889718",
+      "source_sha256": "91be742d34d4dbb944488222b10f6044bce513399a309533f2cbd3d484da3c3d"
+    },
+    "control_lab/data/requests/ambiguity.json": {
+      "source": "examples/logprobs/ambiguity.json",
+      "git_blob": "4de8e99a84f420479c1d08b95f667f9759d79c09",
+      "source_sha256": "51fa39060c8d1f6582242ef2559cbc7279cea5aca98dbdaf8a84bbfb733ff135"
+    },
+    "control_lab/data/requests/decision.json": {
+      "source": "examples/logprobs/decision.json",
+      "git_blob": "253d538b033de2713283258f90a5d79f251bd58e",
+      "source_sha256": "122e5ce893f49a5f7f9575b318b3782db354e149b557132212dc0ced47747c29"
+    },
+    "control_lab/data/requests/grammar.json": {
+      "source": "examples/logprobs/grammar.json",
+      "git_blob": "11a93b6dcab7cc23ae608121e64cd36743ea2728",
+      "source_sha256": "154253d870c729290a79bd53d57ab8a71a8b19e94365014692d1d660a0651b50"
+    },
+    "control_lab/data/requests/json-schema.json": {
+      "source": "examples/logprobs/json-schema.json",
+      "git_blob": "855b16c8281335ab8ddb61ee023f87defd768e35",
+      "source_sha256": "73120b4d07d2f757d193ea97aaff13b4691d29bac3a5897ac5fcbaa2fc4f6dee"
+    },
+    "control_lab/data/requests/reasoning-json.json": {
+      "source": "examples/logprobs/reasoning-json.json",
+      "git_blob": "9bfeac8b31cc35abfa19508f6d2092006ec087a0",
+      "source_sha256": "f53e2e2b6b03043a0740a9dfbb6ea5f9f2435edf6eaa055908188e72e53118b2"
+    },
+    "control_lab/data/requests/router.json": {
+      "source": "examples/logprobs/router.json",
+      "git_blob": "80028642b37ece3e265fa7b2e9dbc5f6c18dd637",
+      "source_sha256": "3343c47f0e1d642bb191852da8dfda2dde5d54d00e25dde5cc295f4a40e44f5e"
+    },
+    "control_lab/data/requests/selected-only.json": {
+      "source": "examples/logprobs/selected-only.json",
+      "git_blob": "3baed1472a291c87bbd57bde08447b49ae03be94",
+      "source_sha256": "38ff39e06b2b2ba171099b4e444a3b1eab5dd57fcbf7fa8124556e138e4f4cb9"
+    },
+    "control_lab/data/requests/stream.json": {
+      "source": "examples/logprobs/stream.json",
+      "git_blob": "f645614197773ffaefb152dd4182fe1c1c77e124",
+      "source_sha256": "8b2332f9497b1b0f14013199b69e87f631d0708b2bd01163ec96faf7b0a86d4e"
+    },
+    "control_lab/data/requests/tool-call.json": {
+      "source": "examples/logprobs/tool-call.json",
+      "git_blob": "dc4ca5c738fd6c1159e87a4dce85a4a1be8add02",
+      "source_sha256": "f9037be750a884aad298e0cd582ea54b348c9867fda43d4e6d1f2565f225140b"
+    },
+    "control_lab/data/requests/tool-result.json": {
+      "source": "examples/logprobs/tool-result.json",
+      "git_blob": "9d3c69e6c64bdfbceebfd5265dc4d0b2d8ac7c1a",
+      "source_sha256": "77399000908df688d97fee82de3cc265880d13fa3359bfacb94e52ca5b178ce0"
+    },
+    "control_lab/data/captures/tictactoe.json": {
+      "source": "docs/control-lab-evidence/tictactoe.json",
+      "git_blob": "237dbec781548e6aae8b65c2c815163490a1ae6c",
+      "source_sha256": "521f97dc1086da873a56e19ab61524a120cfd2d301b4f1d1641f3f01781e1224"
+    },
+    "control_lab/data/captures/thermal.json": {
+      "source": "docs/control-lab-evidence/thermal.json",
+      "git_blob": "18a5aa96b9ff237490210f8bed11a7c6bc1b588e",
+      "source_sha256": "fafdd3a04bc3f1e6f27c209bf92226124e4f523f4d3a744dc1281aab293e4a5c"
+    },
+    "control_lab/data/captures/information.json": {
+      "source": "docs/control-lab-evidence/information.json",
+      "git_blob": "b35c014a73f94da6271c12af1a89823947932af1",
+      "source_sha256": "408d2c196734f7b105dea69f90170d9597170be894a0fee3c7857f6e15206c64"
+    },
+    "control_lab/data/captures/samplers.json": {
+      "source": "docs/control-lab-evidence/samplers.json",
+      "git_blob": "b40b04e4404a88df69b95f3e1ac033c499f48e87",
+      "source_sha256": "64c829031e66c438c692af9f0992231402e261180d9ccad1ad4a3923f2513c4e"
+    },
+    "control_lab/data/captures/scheduler.json": {
+      "source": "docs/control-lab-evidence/scheduler.json",
+      "git_blob": "dbb161cd259e9a00644be2b4d135c02f7e28b842",
+      "source_sha256": "c5b683e334c8be24809b89271a01a0a88a403f962648fc1422ac08cbca2b0222"
+    },
+    "control_lab/data/captures/chess.json": {
+      "source": "docs/control-lab-evidence/chess.json",
+      "git_blob": "a70c8007facda4ee25cea11c06541ca13906c109",
+      "source_sha256": "6ec7ac649948a96c7338c9c1a21613f8bc6bf8ccdcc486c69f2f3630f2a431b5"
+    },
+    "control_lab/data/diagnostics/logprobs/target/results.json": {
+      "source": "docs/logprobs-evidence/native/target/results.json",
+      "git_blob": "70bdb442fa823ecf066e60308db7593e473d566b",
+      "source_sha256": "f3ff3ec8cffa9641f2760fe4f8c81322da580a93131c3535e13fb1b4d0bb6adc"
+    },
+    "control_lab/data/diagnostics/logprobs/mtp/results.json": {
+      "source": "docs/logprobs-evidence/native/mtp/results.json",
+      "git_blob": "7af050f13a69dc1fc97ab50db4fb93614f5778a4",
+      "source_sha256": "459501c943206a70a608c214cabf134d330d9e4008dbbed329621ef52f141f14"
+    },
+    "control_lab/data/diagnostics/logprobs/suffix/results.json": {
+      "source": "docs/logprobs-evidence/native/suffix/results.json",
+      "git_blob": "19a24567f8412004051b983e0254ce3da5127667",
+      "source_sha256": "a9b9d203d3720e049ec7f7241e8c00b115c4db148858db0a7b32e8ff49f5331d"
+    },
+    "control_lab/data/diagnostics/logprobs/coupled/results.json": {
+      "source": "docs/logprobs-evidence/native/coupled/results.json",
+      "git_blob": "3031e4037572c87f7f8a2b9a88e48f9de0baab37",
+      "source_sha256": "b7515d0c7b62263d8d78c7dd62e6b68168900e81350a9978bc668d16ed0bedc8"
+    },
+    "control_lab/data/diagnostics/logprobs/edges/oracle.json": {
+      "source": "docs/logprobs-evidence/native/edges/oracle.json",
+      "git_blob": "2dd5f5e94ab2ee7b85271c73dbcd126eb952b509",
+      "source_sha256": "9703bfaea95fc55c1fccd39d9977894fb7374844ec129342f22d76b5a5e064a1"
+    },
+    "control_lab/data/diagnostics/logprobs/edges/teacher-forced.json": {
+      "source": "docs/logprobs-evidence/native/edges/teacher-forced.json",
+      "git_blob": "deca2c75d4aa8709a9f64080b28a311b393caac4",
+      "source_sha256": "9935a3dc94fe46b6b7f65b45554a07a90c3dbb874d6d8b21de106ba7b1fe40b6"
+    },
+    "control_lab/data/diagnostics/logprobs/edges/trace.jsonl": {
+      "source": "docs/logprobs-evidence/native/edges/trace.jsonl",
+      "git_blob": "68f018b0b9bdf9d089092a6f2db13e59d00153d5",
+      "source_sha256": "82b91b3933c1990e098818f88fda43eb8ad9b18604eebd87c9d50c3773ee7dec"
+    },
+    "control_lab/data/diagnostics/logprobs/identity.json": {
+      "source": "docs/logprobs-evidence/native/identity.json",
+      "git_blob": "1c3f165b5b4a388b0178c805ef49f37c2e55c362",
+      "source_sha256": "50eed717b0ff6dfa5590ada010d84324fb635b815e31ce52efaf163210b3c589"
+    },
+    "control_lab/data/diagnostics/samplers/oracle.json": {
+      "source": "docs/sampler-evidence/oracle.json",
+      "git_blob": "5a839b3389d3253ac114cc5e31b3e5c83a962f0b",
+      "source_sha256": "51ef7d0f24af61dc8f81cdad37b28d975b84e33e6c798c99a237ebe2dd0ca281"
+    },
+    "control_lab/data/diagnostics/samplers/identity.json": {
+      "source": "docs/sampler-evidence/identity.json",
+      "git_blob": "999cb95b565a3f485d3fb154742827e56a8ee84d",
+      "source_sha256": "e672b04cd4c7378ba6ea40da3106d31f9c531e281858c57b584bca25272027bd"
+    },
+    "LICENSE": {
+      "source": "LICENSE",
+      "git_blob": "6687a423dde6b7aff1b748c07f5ee93ff788089c",
+      "source_sha256": "949b9b0aada7476006469e58ee4ffb0e0f68c2d9137e90a356757b61a09d37f0"
+    },
+    "docs/CONTROL_LAB_QUALITY_RUBRIC.md": {
+      "source": "docs/CONTROL_LAB_QUALITY_RUBRIC.md",
+      "git_blob": "152393374173958ac95c86f2e079939e44d2dacf",
+      "source_sha256": "657b5667471bbe7f1d9c15fc1e2958659acce3d317e205ba58a792ff70c2af93"
+    },
+    "docs/provenance/prior-assessment.json": {
+      "source": "docs/applied-evidence/assessment.json",
+      "git_blob": "8d5c4d57acf5e05d4abfa0555dc2441db6060ece",
+      "source_sha256": "5d6726c6c82f681c64cd70ebd9c5a9105f4374d11a61ed291ed5c472886ab728"
+    },
+    "docs/provenance/native-identity.json": {
+      "source": "docs/applied-evidence/identity.json",
+      "git_blob": "4cfce611d11589c7715876c324d06de6160ff531",
+      "source_sha256": "8c53c3d47dadfb0fc3f662c43799315e1252f0d69611cb0ce50deccf5e4395bf"
+    },
+    "docs/provenance/archive.json": {
+      "source": "docs/applied-evidence/archive.json",
+      "git_blob": "08e5492bdeae7c836f667bd22aefb52fdd7104fa",
+      "source_sha256": "d0c629d2eb7fb42beca2dad2a9d93aeaced0ebf7fd0e503cc65a87096667ffc6"
+    },
+    "docs/provenance/portable-checks.json": {
+      "source": "docs/applied-evidence/browser/results.json",
+      "git_blob": "006068934d0b365448f2f62e0ec84e0d59407caf",
+      "source_sha256": "fc1fa135060afa9a76e97ab984d0c236902d02ea39546c2745e0f2c840d151e6"
+    },
+    "docs/images/index.png": {
+      "source": "docs/applied-evidence/regression/index-preview.png",
+      "git_blob": "f05cbbc71637976f73891f9c4114fbb10b062887",
+      "source_sha256": "ff2c40dfde6cd168ba5b96ee48d2d28ee1b27d271d22ff062876827fae62f7c8"
+    },
+    "docs/images/budget-phone.png": {
+      "source": "docs/applied-evidence/browser/budget-phone-4.png",
+      "git_blob": "71f9066386efbaab28a267fbbcfe605be2a728e6",
+      "source_sha256": "b0978133083ae4506d00488c910ae4d051ecbf9720fdfb66be95a9eec2d6a9fb"
+    }
+  }
+}

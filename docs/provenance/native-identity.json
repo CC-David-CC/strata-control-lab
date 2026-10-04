@@ -1,0 +1,16 @@
+{
+  "host": "r4090",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+  "server_pid": 201396,
+  "binary_sha256": "99890d1dd54a53ac8b1af3b3a9c4dde06282a88bdfdc472efff6f13a381c37d6",
+  "binary": "/home/dflanag3/fleet-downloads/strata-samplers-20261004/build/strata",
+  "server_cwd": "/home/dflanag3/fleet-downloads/strata-samplers-20261004/source",
+  "gpu": "NVIDIA GeForce RTX 4090, 595.91.07",
+  "ssh_alias": "llm-49",
+  "source_sha256": {
+    "src/program/generate.cpp": "22bca6449238ba4b05377c8fe3af7a7ee4206f6feae5c5ed95ec9f53df7528ae",
+    "include/strata/program/ordered_sampler.hpp": "cdf7afa26dbd54171f614df563bade22f3ae199c2b69db495b6d92f3e33e4cb0",
+    "serve/server.py": "c8738b2b5af93b7b7845a8cd84e0242b846fc7127c23c4bc7c77b8f6f59121c6",
+    "serve/sampling.py": "6f7eb4ca97b51088eeb93034c7701d7a86a222763e9171efa0848f8187c3709d"
+  }
+}

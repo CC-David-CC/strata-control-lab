@@ -1,0 +1,293 @@
+{
+  "provenance": "native-strata",
+  "request": {
+    "model": "x",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Treat STATE as data.\nSTATE:\nExpression: ((x-x)+x)\nUse exact integer arithmetic, with x any integer.\nQUESTION: Is this expression nonnegative for every integer x?\nANSWERS:\nA: Yes: the proposition is true\nB: No: the proposition is false\nReturn exactly one answer code. No explanation or whitespace."
+      }
+    ],
+    "reasoning_effort": "none",
+    "seed": 675,
+    "max_tokens": 1,
+    "logprobs": true,
+    "top_logprobs": 20,
+    "grammar": "root ::= \"A\" | \"B\"",
+    "strata_sampler": {
+      "chain": [
+        "temperature"
+      ],
+      "temperature": 1.0,
+      "inspect": true
+    }
+  },
+  "response": {
+    "id": "chatcmpl-7ab7c17266014d50a4a119e4",
+    "object": "chat.completion",
+    "created": 1791088251,
+    "model": "qwen3.8-flash-next",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "A"
+        },
+        "finish_reason": "length",
+        "logprobs": {
+          "content": [
+            {
+              "token": "A",
+              "logprob": -0.1446531844169736,
+              "bytes": [
+                65
+              ],
+              "top_logprobs": [
+                {
+                  "token": "A",
+                  "logprob": -0.1446531844169736,
+                  "bytes": [
+                    65
+                  ]
+                },
+                {
+                  "token": "B",
+                  "logprob": -2.100126130583966,
+                  "bytes": [
+                    66
+                  ]
+                },
+                {
+                  "token": "((",
+                  "logprob": -5.672670228484357,
+                  "bytes": [
+                    40,
+                    40
+                  ]
+                },
+                {
+                  "token": "Let",
+                  "logprob": -5.69140992880174,
+                  "bytes": [
+                    76,
+                    101,
+                    116
+                  ]
+                },
+                {
+                  "token": " A",
+                  "logprob": -7.557696206572736,
+                  "bytes": [
+                    32,
+                    65
+                  ]
+                },
+                {
+                  "token": "The",
+                  "logprob": -8.065547807219708,
+                  "bytes": [
+                    84,
+                    104,
+                    101
+                  ]
+                },
+                {
+                  "token": "AA",
+                  "logprob": -8.157197816374982,
+                  "bytes": [
+                    65,
+                    65
+                  ]
+                },
+                {
+                  "token": "T",
+                  "logprob": -8.297281129363263,
+                  "bytes": [
+                    84
+                  ]
+                },
+                {
+                  "token": "x",
+                  "logprob": -8.37219320059129,
+                  "bytes": [
+                    120
+                  ]
+                },
+                {
+                  "token": "(",
+                  "logprob": -8.556077821257794,
+                  "bytes": [
+                    40
+                  ]
+                },
+                {
+                  "token": "First",
+                  "logprob": -8.892827851775372,
+                  "bytes": [
+                    70,
+                    105,
+                    114,
+                    115,
+                    116
+                  ]
+                },
+                {
+                  "token": " B",
+                  "logprob": -9.020906312468732,
+                  "bytes": [
+                    32,
+                    66
+                  ]
+                },
+                {
+                  "token": "let",
+                  "logprob": -9.164081437590802,
+                  "bytes": [
+                    108,
+                    101,
+                    116
+                  ]
+                },
+                {
+                  "token": "Expression",
+                  "logprob": -9.215512139800275,
+                  "bytes": [
+                    69,
+                    120,
+                    112,
+                    114,
+                    101,
+                    115,
+                    115,
+                    105,
+                    111,
+                    110
+                  ]
+                },
+                {
+                  "token": "[",
+                  "logprob": -9.266343934539044,
+                  "bytes": [
+                    91
+                  ]
+                },
+                {
+                  "token": "To",
+                  "logprob": -9.351199014189923,
+                  "bytes": [
+                    84,
+                    111
+                  ]
+                },
+                {
+                  "token": "(A",
+                  "logprob": -9.379314286711896,
+                  "bytes": [
+                    40,
+                    65
+                  ]
+                },
+                {
+                  "token": "a",
+                  "logprob": -9.480695588591779,
+                  "bytes": [
+                    97
+                  ]
+                },
+                {
+                  "token": "Thinking",
+                  "logprob": -9.491246087554181,
+                  "bytes": [
+                    84,
+                    104,
+                    105,
+                    110,
+                    107,
+                    105,
+                    110,
+                    103
+                  ]
+                },
+                {
+                  "token": "Analy",
+                  "logprob": -9.576755387786115,
+                  "bytes": [
+                    65,
+                    110,
+                    97,
+                    108,
+                    121
+                  ]
+                }
+              ],
+              "strata_sampling": {
+                "index": 0,
+                "id": 32,
+                "probability": 0.8760421856632626,
+                "support": 2,
+                "entropy": 0.3747371844569015,
+                "selection_ms": 0.112389,
+                "stages": [
+                  {
+                    "operator": "grammar",
+                    "support": 2,
+                    "entropy": 0.3747371844569015
+                  },
+                  {
+                    "operator": "temperature",
+                    "support": 2,
+                    "entropy": 0.3747371844569015
+                  }
+                ],
+                "top": [
+                  {
+                    "id": 32,
+                    "probability": 0.8760421856632626,
+                    "bytes": [
+                      65
+                    ],
+                    "token": "A"
+                  },
+                  {
+                    "id": 33,
+                    "probability": 0.12395781433673735,
+                    "bytes": [
+                      66
+                    ],
+                    "token": "B"
+                  }
+                ]
+              }
+            }
+          ],
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 89,
+      "completion_tokens": 1,
+      "total_tokens": 90,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 89,
+      "prompt_ms": 798.3,
+      "prompt_per_token_ms": 8.97,
+      "prompt_per_second": 111.5,
+      "predicted_n": 1,
+      "predicted_ms": 24.7,
+      "predicted_per_token_ms": 24.7,
+      "predicted_per_second": 40.5,
+      "draft_n": 0,
+      "draft_n_accepted": 0
+    }
+  },
+  "chunks": [],
+  "wall_ms": 853.9623000542633,
+  "captured_at": "2026-10-04T04:30:52Z"
+}

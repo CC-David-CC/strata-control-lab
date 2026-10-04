@@ -1,0 +1,21 @@
+name: Lab contracts and installed package
+on:
+  push:
+  pull_request:
+
+jobs:
+  offline:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install ".[dev]"
+      - run: python -m pytest -q
+      - run: python -I tools/check_installed.py --output evidence/installed.json
+      - run: python -m control_lab.check_portable_archive control_lab/static/strata-control-lab-39-offline-examples.zip --output evidence/archive.json

@@ -1,0 +1,304 @@
+{
+  "provenance": "native-strata",
+  "request": {
+    "model": "x",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Finite-action controller, alpha=1.0. A unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nThe controller selected A. Emit that code only."
+      }
+    ],
+    "reasoning_effort": "none",
+    "seed": 675,
+    "max_tokens": 4,
+    "logprobs": true,
+    "top_logprobs": 20,
+    "grammar": "root ::= \"A\"",
+    "strata_sampler": {
+      "chain": [
+        "temperature"
+      ],
+      "temperature": 1.0,
+      "inspect": true
+    }
+  },
+  "response": {
+    "id": "chatcmpl-5fd85c228ca846f7801f442d",
+    "object": "chat.completion",
+    "created": 1791087471,
+    "model": "qwen3.8-flash-next",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "A"
+        },
+        "finish_reason": "stop",
+        "logprobs": {
+          "content": [
+            {
+              "token": "A",
+              "logprob": -3.435758086883272,
+              "bytes": [
+                65
+              ],
+              "top_logprobs": [
+                {
+                  "token": "```",
+                  "logprob": -0.36628100558444376,
+                  "bytes": [
+                    96,
+                    96,
+                    96
+                  ]
+                },
+                {
+                  "token": "I",
+                  "logprob": -2.417478057586397,
+                  "bytes": [
+                    73
+                  ]
+                },
+                {
+                  "token": "The",
+                  "logprob": -2.867461654388155,
+                  "bytes": [
+                    84,
+                    104,
+                    101
+                  ]
+                },
+                {
+                  "token": "A",
+                  "logprob": -3.435758086883272,
+                  "bytes": [
+                    65
+                  ]
+                },
+                {
+                  "token": "Selected",
+                  "logprob": -3.7422938077084673,
+                  "bytes": [
+                    83,
+                    101,
+                    108,
+                    101,
+                    99,
+                    116,
+                    101,
+                    100
+                  ]
+                },
+                {
+                  "token": "Looking",
+                  "logprob": -4.591089698516573,
+                  "bytes": [
+                    76,
+                    111,
+                    111,
+                    107,
+                    105,
+                    110,
+                    103
+                  ]
+                },
+                {
+                  "token": "Based",
+                  "logprob": -4.815434905730928,
+                  "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                  ]
+                },
+                {
+                  "token": "**",
+                  "logprob": -5.259200545989717,
+                  "bytes": [
+                    42,
+                    42
+                  ]
+                },
+                {
+                  "token": "`",
+                  "logprob": -5.405437919341768,
+                  "bytes": [
+                    96
+                  ]
+                },
+                {
+                  "token": "SELECT",
+                  "logprob": -5.533030959808077,
+                  "bytes": [
+                    83,
+                    69,
+                    76,
+                    69,
+                    67,
+                    84
+                  ]
+                },
+                {
+                  "token": "To",
+                  "logprob": -5.576741668426241,
+                  "bytes": [
+                    84,
+                    111
+                  ]
+                },
+                {
+                  "token": "\"",
+                  "logprob": -5.8242668835751665,
+                  "bytes": [
+                    34
+                  ]
+                },
+                {
+                  "token": "Choosing",
+                  "logprob": -6.01208445712253,
+                  "bytes": [
+                    67,
+                    104,
+                    111,
+                    111,
+                    115,
+                    105,
+                    110,
+                    103
+                  ]
+                },
+                {
+                  "token": "selected",
+                  "logprob": -6.2906927792660845,
+                  "bytes": [
+                    115,
+                    101,
+                    108,
+                    101,
+                    99,
+                    116,
+                    101,
+                    100
+                  ]
+                },
+                {
+                  "token": "<",
+                  "logprob": -6.418945762359346,
+                  "bytes": [
+                    60
+                  ]
+                },
+                {
+                  "token": "Let",
+                  "logprob": -6.535281631194795,
+                  "bytes": [
+                    76,
+                    101,
+                    116
+                  ]
+                },
+                {
+                  "token": "Since",
+                  "logprob": -6.568378898345674,
+                  "bytes": [
+                    83,
+                    105,
+                    110,
+                    99,
+                    101
+                  ]
+                },
+                {
+                  "token": "Under",
+                  "logprob": -6.6056694714657915,
+                  "bytes": [
+                    85,
+                    110,
+                    100,
+                    101,
+                    114
+                  ]
+                },
+                {
+                  "token": "<tool_call>",
+                  "logprob": -6.718596908294405,
+                  "bytes": null
+                },
+                {
+                  "token": "Choice",
+                  "logprob": -6.736027213775362,
+                  "bytes": [
+                    67,
+                    104,
+                    111,
+                    105,
+                    99,
+                    101
+                  ]
+                }
+              ],
+              "strata_sampling": {
+                "index": 0,
+                "id": 32,
+                "probability": 1,
+                "support": 1,
+                "entropy": 0,
+                "selection_ms": 0.111297,
+                "stages": [
+                  {
+                    "operator": "grammar",
+                    "support": 1,
+                    "entropy": 0
+                  },
+                  {
+                    "operator": "temperature",
+                    "support": 1,
+                    "entropy": 0
+                  }
+                ],
+                "top": [
+                  {
+                    "id": 32,
+                    "probability": 1,
+                    "bytes": [
+                      65
+                    ],
+                    "token": "A"
+                  }
+                ]
+              }
+            }
+          ],
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 2,
+      "total_tokens": 60,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 58,
+      "prompt_ms": 1345.7,
+      "prompt_per_token_ms": 23.202,
+      "prompt_per_second": 43.1,
+      "predicted_n": 2,
+      "predicted_ms": 36.0,
+      "predicted_per_token_ms": 18.0,
+      "predicted_per_second": 55.6,
+      "draft_n": 0,
+      "draft_n_accepted": 0
+    }
+  },
+  "chunks": [],
+  "wall_ms": 1408.3248000242747,
+  "captured_at": "2026-10-04T04:17:53Z"
+}

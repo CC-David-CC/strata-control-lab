@@ -1,0 +1,2893 @@
+{
+  "page": "control",
+  "result": {
+    "actions": [
+      "Change only the misspelled name and rerun the test",
+      "Rewrite and reformat the entire module",
+      "Remove the failing test",
+      "Inspect more context before editing"
+    ],
+    "allowed": [
+      0,
+      1,
+      3
+    ],
+    "measurements": [
+      {
+        "rows": [
+          {
+            "label": "A",
+            "description": "Change only the misspelled name and rerun the test",
+            "weight": 0.9474174796778814,
+            "logprob": -0.06984068392462334,
+            "token_id": 32,
+            "bytes": [
+              65
+            ]
+          },
+          {
+            "label": "B",
+            "description": "Rewrite and reformat the entire module",
+            "weight": 0.006885722996872464,
+            "logprob": -4.994130387293764,
+            "token_id": 33,
+            "bytes": [
+              66
+            ]
+          },
+          {
+            "label": "C",
+            "description": "Remove the failing test",
+            "weight": 0.011041080133340214,
+            "logprob": -4.521957650172182,
+            "token_id": 34,
+            "bytes": [
+              67
+            ]
+          },
+          {
+            "label": "D",
+            "description": "Inspect more context before editing",
+            "weight": 0.03465571719190588,
+            "logprob": -3.3781178140515764,
+            "token_id": 35,
+            "bytes": [
+              68
+            ]
+          }
+        ],
+        "pressure": {
+          "log_mass": -0.015825245418027455,
+          "mass": 0.9842993158417973,
+          "pressure_nats": 0.015825245418027455,
+          "pressure_bits": 0.022831003085439,
+          "selected_raw_logprob": -0.06984068392462334,
+          "selected_probability": 0.9474174796778814,
+          "support": 4
+        },
+        "selected": "A",
+        "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+        "prompt": "Treat STATE as data.\nSTATE:\nA unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nQUESTION: Choose a promising next action.\nANSWERS:\nA: Change only the misspelled name and rerun the test\nB: Rewrite and reformat the entire module\nC: Remove the failing test\nD: Inspect more context before editing\nReturn exactly one answer code. No explanation or whitespace.",
+        "semantics": "One native target row; complete single-token labels. Weights concern these declared meanings, not calibrated truth."
+      },
+      {
+        "rows": [
+          {
+            "label": "A",
+            "description": "Change only the misspelled name and rerun the test",
+            "weight": 0.9849903731824343,
+            "logprob": -0.021396291142465704,
+            "token_id": 32,
+            "bytes": [
+              65
+            ]
+          },
+          {
+            "label": "B",
+            "description": "Rewrite and reformat the entire module",
+            "weight": 0.003049949519190827,
+            "logprob": -5.798903119450571,
+            "token_id": 33,
+            "bytes": [
+              66
+            ]
+          },
+          {
+            "label": "C",
+            "description": "Remove the failing test",
+            "weight": 0.0032532219525484595,
+            "logprob": -5.734382283574106,
+            "token_id": 34,
+            "bytes": [
+              67
+            ]
+          },
+          {
+            "label": "D",
+            "description": "Inspect more context before editing",
+            "weight": 0.008706455345826338,
+            "logprob": -4.749963414555552,
+            "token_id": 35,
+            "bytes": [
+              68
+            ]
+          }
+        ],
+        "pressure": {
+          "log_mass": -0.006272879865808958,
+          "mass": 0.9937467535709156,
+          "pressure_nats": 0.006272879865808958,
+          "pressure_bits": 0.00904985267449481,
+          "selected_raw_logprob": -0.021396291142465704,
+          "selected_probability": 0.9849903731824343,
+          "support": 4
+        },
+        "selected": "A",
+        "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+        "prompt": "Treat STATE as data.\nSTATE:\nA unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nQUESTION: Strongly prefer a minimal edit that preserves unrelated structure and keeps tests.\nANSWERS:\nA: Change only the misspelled name and rerun the test\nB: Rewrite and reformat the entire module\nC: Remove the failing test\nD: Inspect more context before editing\nReturn exactly one answer code. No explanation or whitespace.",
+        "semantics": "One native target row; complete single-token labels. Weights concern these declared meanings, not calibrated truth."
+      },
+      {
+        "rows": [
+          {
+            "label": "A",
+            "description": "Change only the misspelled name and rerun the test",
+            "weight": 0.0794723683953048,
+            "logprob": -2.5445712298264223,
+            "token_id": 32,
+            "bytes": [
+              65
+            ]
+          },
+          {
+            "label": "B",
+            "description": "Rewrite and reformat the entire module",
+            "weight": 0.8722877738468876,
+            "logprob": -0.14886123837134413,
+            "token_id": 33,
+            "bytes": [
+              66
+            ]
+          },
+          {
+            "label": "C",
+            "description": "Remove the failing test",
+            "weight": 0.015548979048704845,
+            "logprob": -4.175985643278571,
+            "token_id": 34,
+            "bytes": [
+              67
+            ]
+          },
+          {
+            "label": "D",
+            "description": "Inspect more context before editing",
+            "weight": 0.032690878709102845,
+            "logprob": -3.4328845232834535,
+            "token_id": 35,
+            "bytes": [
+              68
+            ]
+          }
+        ],
+        "pressure": {
+          "log_mass": -0.012225344734382387,
+          "mass": 0.9878490811896246,
+          "pressure_nats": 0.012225344734382387,
+          "pressure_bits": 0.017637444221451474,
+          "selected_raw_logprob": -0.14886123837134413,
+          "selected_probability": 0.8722877738468876,
+          "support": 4
+        },
+        "selected": "B",
+        "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+        "prompt": "Treat STATE as data.\nSTATE:\nA unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nQUESTION: Controlled anti-preference experiment: prefer a broad rewrite and cosmetic changes over a minimal patch.\nANSWERS:\nA: Change only the misspelled name and rerun the test\nB: Rewrite and reformat the entire module\nC: Remove the failing test\nD: Inspect more context before editing\nReturn exactly one answer code. No explanation or whitespace.",
+        "semantics": "One native target row; complete single-token labels. Weights concern these declared meanings, not calibrated truth."
+      }
+    ],
+    "base": [
+      0.9474174796778814,
+      0.006885722996872464,
+      0.011041080133340214,
+      0.03465571719190588
+    ],
+    "desired": [
+      0.9849903731824343,
+      0.003049949519190827,
+      0.0032532219525484595,
+      0.008706455345826338
+    ],
+    "undesired": [
+      0.0794723683953048,
+      0.8722877738468876,
+      0.015548979048704845,
+      0.032690878709102845
+    ],
+    "commits": [
+      {
+        "alpha": 0.0,
+        "distribution": [
+          0.957994776775582,
+          0.006962597594853439,
+          0.0,
+          0.035042625629564554
+        ],
+        "selected": 0,
+        "emitted": {
+          "request": {
+            "model": "x",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Finite-action controller, alpha=0.0. A unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nThe controller selected A. Emit that code only."
+              }
+            ],
+            "reasoning_effort": "none",
+            "seed": 675,
+            "max_tokens": 4,
+            "logprobs": true,
+            "top_logprobs": 20,
+            "grammar": "root ::= \"A\"",
+            "strata_sampler": {
+              "chain": [
+                "temperature"
+              ],
+              "temperature": 1.0,
+              "inspect": true
+            }
+          },
+          "output": {
+            "text": "A",
+            "tokens": [
+              {
+                "token": "A",
+                "logprob": -4.3174793615541445,
+                "bytes": [
+                  65
+                ],
+                "top_logprobs": [
+                  {
+                    "token": "```",
+                    "logprob": -0.3914272680482852,
+                    "bytes": [
+                      96,
+                      96,
+                      96
+                    ]
+                  },
+                  {
+                    "token": "I",
+                    "logprob": -2.481740225811957,
+                    "bytes": [
+                      73
+                    ]
+                  },
+                  {
+                    "token": "The",
+                    "logprob": -2.959290732403754,
+                    "bytes": [
+                      84,
+                      104,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "Looking",
+                    "logprob": -3.115336646100043,
+                    "bytes": [
+                      76,
+                      111,
+                      111,
+                      107,
+                      105,
+                      110,
+                      103
+                    ]
+                  },
+                  {
+                    "token": "Selected",
+                    "logprob": -3.237883795758246,
+                    "bytes": [
+                      83,
+                      101,
+                      108,
+                      101,
+                      99,
+                      116,
+                      101,
+                      100
+                    ]
+                  },
+                  {
+                    "token": "A",
+                    "logprob": -4.3174793615541445,
+                    "bytes": [
+                      65
+                    ]
+                  },
+                  {
+                    "token": "**",
+                    "logprob": -4.921477545758246,
+                    "bytes": [
+                      42,
+                      42
+                    ]
+                  },
+                  {
+                    "token": "Based",
+                    "logprob": -5.415953864117621,
+                    "bytes": [
+                      66,
+                      97,
+                      115,
+                      101,
+                      100
+                    ]
+                  },
+                  {
+                    "token": "Option",
+                    "logprob": -5.614836920758246,
+                    "bytes": [
+                      79,
+                      112,
+                      116,
+                      105,
+                      111,
+                      110
+                    ]
+                  },
+                  {
+                    "token": "Choosing",
+                    "logprob": -5.644540061017035,
+                    "bytes": [
+                      67,
+                      104,
+                      111,
+                      111,
+                      115,
+                      105,
+                      110,
+                      103
+                    ]
+                  },
+                  {
+                    "token": "<",
+                    "logprob": -5.684245337506293,
+                    "bytes": [
+                      60
+                    ]
+                  },
+                  {
+                    "token": "Let",
+                    "logprob": -5.841691245099066,
+                    "bytes": [
+                      76,
+                      101,
+                      116
+                    ]
+                  },
+                  {
+                    "token": "Choice",
+                    "logprob": -6.057410468121527,
+                    "bytes": [
+                      67,
+                      104,
+                      111,
+                      105,
+                      99,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "SELECT",
+                    "logprob": -6.093661536236762,
+                    "bytes": [
+                      83,
+                      69,
+                      76,
+                      69,
+                      67,
+                      84
+                    ]
+                  },
+                  {
+                    "token": "Select",
+                    "logprob": -6.10771869566059,
+                    "bytes": [
+                      83,
+                      101,
+                      108,
+                      101,
+                      99,
+                      116
+                    ]
+                  },
+                  {
+                    "token": "Since",
+                    "logprob": -6.224530447979926,
+                    "bytes": [
+                      83,
+                      105,
+                      110,
+                      99,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "`",
+                    "logprob": -6.231388319989203,
+                    "bytes": [
+                      96
+                    ]
+                  },
+                  {
+                    "token": "Prop",
+                    "logprob": -6.23482822324848,
+                    "bytes": [
+                      80,
+                      114,
+                      111,
+                      112
+                    ]
+                  },
+                  {
+                    "token": "##",
+                    "logprob": -6.480000723858832,
+                    "bytes": [
+                      35,
+                      35
+                    ]
+                  },
+                  {
+                    "token": "<tool_call>",
+                    "logprob": -6.5471336736879335,
+                    "bytes": null
+                  }
+                ],
+                "strata_sampling": {
+                  "index": 0,
+                  "id": 32,
+                  "probability": 1,
+                  "support": 1,
+                  "entropy": 0,
+                  "selection_ms": 0.138758,
+                  "stages": [
+                    {
+                      "operator": "grammar",
+                      "support": 1,
+                      "entropy": 0
+                    },
+                    {
+                      "operator": "temperature",
+                      "support": 1,
+                      "entropy": 0
+                    }
+                  ],
+                  "top": [
+                    {
+                      "id": 32,
+                      "probability": 1,
+                      "bytes": [
+                        65
+                      ],
+                      "token": "A"
+                    }
+                  ]
+                }
+              }
+            ],
+            "token_count": 1,
+            "logprob": -4.3174793615541445,
+            "path_probability": 0.013333450026939529,
+            "mean_logprob": -4.3174793615541445,
+            "finish_reason": "stop"
+          },
+          "owner": "The lab selected the action; native GBNF enforces its exact emitted code."
+        }
+      },
+      {
+        "alpha": 1.0,
+        "distribution": [
+          0.9992125523005273,
+          2.0487221901628253e-06,
+          0.0,
+          0.000785398977282702
+        ],
+        "selected": 0,
+        "emitted": {
+          "request": {
+            "model": "x",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Finite-action controller, alpha=1.0. A unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nThe controller selected A. Emit that code only."
+              }
+            ],
+            "reasoning_effort": "none",
+            "seed": 675,
+            "max_tokens": 4,
+            "logprobs": true,
+            "top_logprobs": 20,
+            "grammar": "root ::= \"A\"",
+            "strata_sampler": {
+              "chain": [
+                "temperature"
+              ],
+              "temperature": 1.0,
+              "inspect": true
+            }
+          },
+          "output": {
+            "text": "A",
+            "tokens": [
+              {
+                "token": "A",
+                "logprob": -3.435758086883272,
+                "bytes": [
+                  65
+                ],
+                "top_logprobs": [
+                  {
+                    "token": "```",
+                    "logprob": -0.36628100558444376,
+                    "bytes": [
+                      96,
+                      96,
+                      96
+                    ]
+                  },
+                  {
+                    "token": "I",
+                    "logprob": -2.417478057586397,
+                    "bytes": [
+                      73
+                    ]
+                  },
+                  {
+                    "token": "The",
+                    "logprob": -2.867461654388155,
+                    "bytes": [
+                      84,
+                      104,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "A",
+                    "logprob": -3.435758086883272,
+                    "bytes": [
+                      65
+                    ]
+                  },
+                  {
+                    "token": "Selected",
+                    "logprob": -3.7422938077084673,
+                    "bytes": [
+                      83,
+                      101,
+                      108,
+                      101,
+                      99,
+                      116,
+                      101,
+                      100
+                    ]
+                  },
+                  {
+                    "token": "Looking",
+                    "logprob": -4.591089698516573,
+                    "bytes": [
+                      76,
+                      111,
+                      111,
+                      107,
+                      105,
+                      110,
+                      103
+                    ]
+                  },
+                  {
+                    "token": "Based",
+                    "logprob": -4.815434905730928,
+                    "bytes": [
+                      66,
+                      97,
+                      115,
+                      101,
+                      100
+                    ]
+                  },
+                  {
+                    "token": "**",
+                    "logprob": -5.259200545989717,
+                    "bytes": [
+                      42,
+                      42
+                    ]
+                  },
+                  {
+                    "token": "`",
+                    "logprob": -5.405437919341768,
+                    "bytes": [
+                      96
+                    ]
+                  },
+                  {
+                    "token": "SELECT",
+                    "logprob": -5.533030959808077,
+                    "bytes": [
+                      83,
+                      69,
+                      76,
+                      69,
+                      67,
+                      84
+                    ]
+                  },
+                  {
+                    "token": "To",
+                    "logprob": -5.576741668426241,
+                    "bytes": [
+                      84,
+                      111
+                    ]
+                  },
+                  {
+                    "token": "\"",
+                    "logprob": -5.8242668835751665,
+                    "bytes": [
+                      34
+                    ]
+                  },
+                  {
+                    "token": "Choosing",
+                    "logprob": -6.01208445712253,
+                    "bytes": [
+                      67,
+                      104,
+                      111,
+                      111,
+                      115,
+                      105,
+                      110,
+                      103
+                    ]
+                  },
+                  {
+                    "token": "selected",
+                    "logprob": -6.2906927792660845,
+                    "bytes": [
+                      115,
+                      101,
+                      108,
+                      101,
+                      99,
+                      116,
+                      101,
+                      100
+                    ]
+                  },
+                  {
+                    "token": "<",
+                    "logprob": -6.418945762359346,
+                    "bytes": [
+                      60
+                    ]
+                  },
+                  {
+                    "token": "Let",
+                    "logprob": -6.535281631194795,
+                    "bytes": [
+                      76,
+                      101,
+                      116
+                    ]
+                  },
+                  {
+                    "token": "Since",
+                    "logprob": -6.568378898345674,
+                    "bytes": [
+                      83,
+                      105,
+                      110,
+                      99,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "Under",
+                    "logprob": -6.6056694714657915,
+                    "bytes": [
+                      85,
+                      110,
+                      100,
+                      101,
+                      114
+                    ]
+                  },
+                  {
+                    "token": "<tool_call>",
+                    "logprob": -6.718596908294405,
+                    "bytes": null
+                  },
+                  {
+                    "token": "Choice",
+                    "logprob": -6.736027213775362,
+                    "bytes": [
+                      67,
+                      104,
+                      111,
+                      105,
+                      99,
+                      101
+                    ]
+                  }
+                ],
+                "strata_sampling": {
+                  "index": 0,
+                  "id": 32,
+                  "probability": 1,
+                  "support": 1,
+                  "entropy": 0,
+                  "selection_ms": 0.111297,
+                  "stages": [
+                    {
+                      "operator": "grammar",
+                      "support": 1,
+                      "entropy": 0
+                    },
+                    {
+                      "operator": "temperature",
+                      "support": 1,
+                      "entropy": 0
+                    }
+                  ],
+                  "top": [
+                    {
+                      "id": 32,
+                      "probability": 1,
+                      "bytes": [
+                        65
+                      ],
+                      "token": "A"
+                    }
+                  ]
+                }
+              }
+            ],
+            "token_count": 1,
+            "logprob": -3.435758086883272,
+            "path_probability": 0.03220098982867514,
+            "mean_logprob": -3.435758086883272,
+            "finish_reason": "stop"
+          },
+          "owner": "The lab selected the action; native GBNF enforces its exact emitted code."
+        }
+      },
+      {
+        "alpha": 2.0,
+        "distribution": [
+          0.9999831096386839,
+          5.78408798505251e-10,
+          0.0,
+          1.6889782907495236e-05
+        ],
+        "selected": 0,
+        "emitted": {
+          "request": {
+            "model": "x",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Finite-action controller, alpha=2.0. A unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nThe controller selected A. Emit that code only."
+              }
+            ],
+            "reasoning_effort": "none",
+            "seed": 675,
+            "max_tokens": 4,
+            "logprobs": true,
+            "top_logprobs": 20,
+            "grammar": "root ::= \"A\"",
+            "strata_sampler": {
+              "chain": [
+                "temperature"
+              ],
+              "temperature": 1.0,
+              "inspect": true
+            }
+          },
+          "output": {
+            "text": "A",
+            "tokens": [
+              {
+                "token": "A",
+                "logprob": -3.345767471874275,
+                "bytes": [
+                  65
+                ],
+                "top_logprobs": [
+                  {
+                    "token": "```",
+                    "logprob": -0.761540863597908,
+                    "bytes": [
+                      96,
+                      96,
+                      96
+                    ]
+                  },
+                  {
+                    "token": "I",
+                    "logprob": -1.7382292486076736,
+                    "bytes": [
+                      73
+                    ]
+                  },
+                  {
+                    "token": "Selected",
+                    "logprob": -2.7681956029777908,
+                    "bytes": [
+                      83,
+                      101,
+                      108,
+                      101,
+                      99,
+                      116,
+                      101,
+                      100
+                    ]
+                  },
+                  {
+                    "token": "The",
+                    "logprob": -2.905269119823494,
+                    "bytes": [
+                      84,
+                      104,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "Based",
+                    "logprob": -3.0576796270256423,
+                    "bytes": [
+                      66,
+                      97,
+                      115,
+                      101,
+                      100
+                    ]
+                  },
+                  {
+                    "token": "A",
+                    "logprob": -3.345767471874275,
+                    "bytes": [
+                      65
+                    ]
+                  },
+                  {
+                    "token": "Looking",
+                    "logprob": -4.180845711315193,
+                    "bytes": [
+                      76,
+                      111,
+                      111,
+                      107,
+                      105,
+                      110,
+                      103
+                    ]
+                  },
+                  {
+                    "token": "**",
+                    "logprob": -4.32664630183033,
+                    "bytes": [
+                      42,
+                      42
+                    ]
+                  },
+                  {
+                    "token": "Let",
+                    "logprob": -5.199843857372322,
+                    "bytes": [
+                      76,
+                      101,
+                      116
+                    ]
+                  },
+                  {
+                    "token": "SELECT",
+                    "logprob": -5.2447104192619705,
+                    "bytes": [
+                      83,
+                      69,
+                      76,
+                      69,
+                      67,
+                      84
+                    ]
+                  },
+                  {
+                    "token": "<tool_call>",
+                    "logprob": -5.261014435375252,
+                    "bytes": null
+                  },
+                  {
+                    "token": "Option",
+                    "logprob": -5.5058893895988845,
+                    "bytes": [
+                      79,
+                      112,
+                      116,
+                      105,
+                      111,
+                      110
+                    ]
+                  },
+                  {
+                    "token": "selected",
+                    "logprob": -5.511836502635994,
+                    "bytes": [
+                      115,
+                      101,
+                      108,
+                      101,
+                      99,
+                      116,
+                      101,
+                      100
+                    ]
+                  },
+                  {
+                    "token": "Action",
+                    "logprob": -5.521176788890877,
+                    "bytes": [
+                      65,
+                      99,
+                      116,
+                      105,
+                      111,
+                      110
+                    ]
+                  },
+                  {
+                    "token": "\"",
+                    "logprob": -5.550067398632088,
+                    "bytes": [
+                      34
+                    ]
+                  },
+                  {
+                    "token": "Choice",
+                    "logprob": -5.651694748485603,
+                    "bytes": [
+                      67,
+                      104,
+                      111,
+                      105,
+                      99,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "`",
+                    "logprob": -5.799909088695564,
+                    "bytes": [
+                      96
+                    ]
+                  },
+                  {
+                    "token": "Here",
+                    "logprob": -6.071988556469002,
+                    "bytes": [
+                      72,
+                      101,
+                      114,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "<",
+                    "logprob": -6.231146309459724,
+                    "bytes": [
+                      60
+                    ]
+                  },
+                  {
+                    "token": "To",
+                    "logprob": -6.241500351512947,
+                    "bytes": [
+                      84,
+                      111
+                    ]
+                  }
+                ],
+                "strata_sampling": {
+                  "index": 0,
+                  "id": 32,
+                  "probability": 1,
+                  "support": 1,
+                  "entropy": 0,
+                  "selection_ms": 0.11309,
+                  "stages": [
+                    {
+                      "operator": "grammar",
+                      "support": 1,
+                      "entropy": 0
+                    },
+                    {
+                      "operator": "temperature",
+                      "support": 1,
+                      "entropy": 0
+                    }
+                  ],
+                  "top": [
+                    {
+                      "id": 32,
+                      "probability": 1,
+                      "bytes": [
+                        65
+                      ],
+                      "token": "A"
+                    }
+                  ]
+                }
+              }
+            ],
+            "token_count": 1,
+            "logprob": -3.345767471874275,
+            "path_probability": 0.03523316431590763,
+            "mean_logprob": -3.345767471874275,
+            "finish_reason": "stop"
+          },
+          "owner": "The lab selected the action; native GBNF enforces its exact emitted code."
+        }
+      }
+    ],
+    "hypothetical": {
+      "base": [
+        0.2,
+        0.55,
+        0.05,
+        0.2
+      ],
+      "desired": [
+        0.65,
+        0.2,
+        0.01,
+        0.14
+      ],
+      "undesired": [
+        0.05,
+        0.75,
+        0.15,
+        0.05
+      ]
+    },
+    "semantics": "Native rows measure preferences. The lab owns the finite-action combination and choice; native GBNF enforces its emitted code. Alpha controls in the browser recompute that arithmetic. Only the recorded alpha=0,1,2 commitments were sent to the model."
+  },
+  "receipt": {
+    "mode": "live",
+    "requests": 6,
+    "summed_request_ms": 6871.0757999215275,
+    "prompt_tokens": 536,
+    "completion_tokens": 9,
+    "calls": [
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Treat STATE as data.\nSTATE:\nA unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nQUESTION: Choose a promising next action.\nANSWERS:\nA: Change only the misspelled name and rerun the test\nB: Rewrite and reformat the entire module\nC: Remove the failing test\nD: Inspect more context before editing\nReturn exactly one answer code. No explanation or whitespace."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 1,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-2567844698a24ccbbbed58b4",
+          "object": "chat.completion",
+          "created": 1791087467,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "A"
+              },
+              "finish_reason": "length",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "A",
+                    "logprob": -0.06984068392462334,
+                    "bytes": [
+                      65
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "A",
+                        "logprob": -0.06984068392462334,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "D",
+                        "logprob": -3.3781178140515764,
+                        "bytes": [
+                          68
+                        ]
+                      },
+                      {
+                        "token": "C",
+                        "logprob": -4.521957650172182,
+                        "bytes": [
+                          67
+                        ]
+                      },
+                      {
+                        "token": "B",
+                        "logprob": -4.994130387293764,
+                        "bytes": [
+                          66
+                        ]
+                      },
+                      {
+                        "token": " A",
+                        "logprob": -5.540082230555483,
+                        "bytes": [
+                          32,
+                          65
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -6.392466797816225,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "ANS",
+                        "logprob": -7.143222107874819,
+                        "bytes": [
+                          65,
+                          78,
+                          83
+                        ]
+                      },
+                      {
+                        "token": "AA",
+                        "logprob": -7.426805748927065,
+                        "bytes": [
+                          65,
+                          65
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -7.472007050501772,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "a",
+                        "logprob": -7.947233452784487,
+                        "bytes": [
+                          97
+                        ]
+                      },
+                      {
+                        "token": "d",
+                        "logprob": -8.207350029932924,
+                        "bytes": [
+                          100
+                        ]
+                      },
+                      {
+                        "token": " D",
+                        "logprob": -8.25990225313849,
+                        "bytes": [
+                          32,
+                          68
+                        ]
+                      },
+                      {
+                        "token": "Answer",
+                        "logprob": -8.34114290713019,
+                        "bytes": [
+                          65,
+                          110,
+                          115,
+                          119,
+                          101,
+                          114
+                        ]
+                      },
+                      {
+                        "token": "Based",
+                        "logprob": -8.395909562098451,
+                        "bytes": [
+                          66,
+                          97,
+                          115,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "AAA",
+                        "logprob": -8.428693070399232,
+                        "bytes": [
+                          65,
+                          65,
+                          65
+                        ]
+                      },
+                      {
+                        "token": "1",
+                        "logprob": -8.609232201563783,
+                        "bytes": [
+                          49
+                        ]
+                      },
+                      {
+                        "token": "I",
+                        "logprob": -8.700852646815248,
+                        "bytes": [
+                          73
+                        ]
+                      },
+                      {
+                        "token": "Option",
+                        "logprob": -8.814903511988588,
+                        "bytes": [
+                          79,
+                          112,
+                          116,
+                          105,
+                          111,
+                          110
+                        ]
+                      },
+                      {
+                        "token": "T",
+                        "logprob": -8.857156052576967,
+                        "bytes": [
+                          84
+                        ]
+                      },
+                      {
+                        "token": "DDD",
+                        "logprob": -8.918883576380678,
+                        "bytes": [
+                          68,
+                          68,
+                          68
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 32,
+                      "probability": 0.9474174796778814,
+                      "support": 4,
+                      "entropy": 0.2517296301618196,
+                      "selection_ms": 0.126626,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 4,
+                          "entropy": 0.2517296301618196
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 4,
+                          "entropy": 0.2517296301618196
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 32,
+                          "probability": 0.9474174796778814,
+                          "bytes": [
+                            65
+                          ],
+                          "token": "A"
+                        },
+                        {
+                          "id": 35,
+                          "probability": 0.03465571719190588,
+                          "bytes": [
+                            68
+                          ],
+                          "token": "D"
+                        },
+                        {
+                          "id": 34,
+                          "probability": 0.011041080133340214,
+                          "bytes": [
+                            67
+                          ],
+                          "token": "C"
+                        },
+                        {
+                          "id": 33,
+                          "probability": 0.006885722996872464,
+                          "bytes": [
+                            66
+                          ],
+                          "token": "B"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 114,
+            "completion_tokens": 1,
+            "total_tokens": 115,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 114,
+            "prompt_ms": 716.6,
+            "prompt_per_token_ms": 6.286,
+            "prompt_per_second": 159.1,
+            "predicted_n": 1,
+            "predicted_ms": 24.1,
+            "predicted_per_token_ms": 24.1,
+            "predicted_per_second": 41.5,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 982.0195999927819,
+        "captured_at": "2026-10-04T04:17:49Z"
+      },
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Treat STATE as data.\nSTATE:\nA unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nQUESTION: Strongly prefer a minimal edit that preserves unrelated structure and keeps tests.\nANSWERS:\nA: Change only the misspelled name and rerun the test\nB: Rewrite and reformat the entire module\nC: Remove the failing test\nD: Inspect more context before editing\nReturn exactly one answer code. No explanation or whitespace."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 1,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-bbdea90bf8a14655b27690d9",
+          "object": "chat.completion",
+          "created": 1791087468,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "A"
+              },
+              "finish_reason": "length",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "A",
+                    "logprob": -0.021396291142465704,
+                    "bytes": [
+                      65
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "A",
+                        "logprob": -0.021396291142465704,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "D",
+                        "logprob": -4.749963414555552,
+                        "bytes": [
+                          68
+                        ]
+                      },
+                      {
+                        "token": "C",
+                        "logprob": -5.7343822835741065,
+                        "bytes": [
+                          67
+                        ]
+                      },
+                      {
+                        "token": "B",
+                        "logprob": -5.798903119450571,
+                        "bytes": [
+                          66
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -7.306984555607798,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": " A",
+                        "logprob": -7.712875020390513,
+                        "bytes": [
+                          32,
+                          65
+                        ]
+                      },
+                      {
+                        "token": "Answer",
+                        "logprob": -7.921945226078989,
+                        "bytes": [
+                          65,
+                          110,
+                          115,
+                          119,
+                          101,
+                          114
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -8.244383466130259,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "a",
+                        "logprob": -8.35926975000477,
+                        "bytes": [
+                          97
+                        ]
+                      },
+                      {
+                        "token": "ANS",
+                        "logprob": -8.501199376469614,
+                        "bytes": [
+                          65,
+                          78,
+                          83
+                        ]
+                      },
+                      {
+                        "token": "Based",
+                        "logprob": -8.666905057316782,
+                        "bytes": [
+                          66,
+                          97,
+                          115,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "Change",
+                        "logprob": -8.763095509892466,
+                        "bytes": [
+                          67,
+                          104,
+                          97,
+                          110,
+                          103,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "1",
+                        "logprob": -9.021144521122935,
+                        "bytes": [
+                          49
+                        ]
+                      },
+                      {
+                        "token": "Just",
+                        "logprob": -9.024939191227915,
+                        "bytes": [
+                          74,
+                          117,
+                          115,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "Return",
+                        "logprob": -9.161178243046763,
+                        "bytes": [
+                          82,
+                          101,
+                          116,
+                          117,
+                          114,
+                          110
+                        ]
+                      },
+                      {
+                        "token": "AA",
+                        "logprob": -9.161942136174204,
+                        "bytes": [
+                          65,
+                          65
+                        ]
+                      },
+                      {
+                        "token": "Option",
+                        "logprob": -9.23044837701893,
+                        "bytes": [
+                          79,
+                          112,
+                          116,
+                          105,
+                          111,
+                          110
+                        ]
+                      },
+                      {
+                        "token": "I",
+                        "logprob": -9.300795209294321,
+                        "bytes": [
+                          73
+                        ]
+                      },
+                      {
+                        "token": "An",
+                        "logprob": -9.452930104619028,
+                        "bytes": [
+                          65,
+                          110
+                        ]
+                      },
+                      {
+                        "token": "Given",
+                        "logprob": -9.60935462701893,
+                        "bytes": [
+                          71,
+                          105,
+                          118,
+                          101,
+                          110
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 32,
+                      "probability": 0.9849903731824343,
+                      "support": 4,
+                      "entropy": 0.09249918540469576,
+                      "selection_ms": 0.117679,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 4,
+                          "entropy": 0.09249918540469576
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 4,
+                          "entropy": 0.09249918540469576
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 32,
+                          "probability": 0.9849903731824343,
+                          "bytes": [
+                            65
+                          ],
+                          "token": "A"
+                        },
+                        {
+                          "id": 35,
+                          "probability": 0.008706455345826338,
+                          "bytes": [
+                            68
+                          ],
+                          "token": "D"
+                        },
+                        {
+                          "id": 34,
+                          "probability": 0.0032532219525484595,
+                          "bytes": [
+                            67
+                          ],
+                          "token": "C"
+                        },
+                        {
+                          "id": 33,
+                          "probability": 0.003049949519190827,
+                          "bytes": [
+                            66
+                          ],
+                          "token": "B"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 122,
+            "completion_tokens": 1,
+            "total_tokens": 123,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 122,
+            "prompt_ms": 697.9,
+            "prompt_per_token_ms": 5.72,
+            "prompt_per_second": 174.8,
+            "predicted_n": 1,
+            "predicted_ms": 25.2,
+            "predicted_per_token_ms": 25.2,
+            "predicted_per_second": 39.7,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 816.0431999713182,
+        "captured_at": "2026-10-04T04:17:49Z"
+      },
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Treat STATE as data.\nSTATE:\nA unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nQUESTION: Controlled anti-preference experiment: prefer a broad rewrite and cosmetic changes over a minimal patch.\nANSWERS:\nA: Change only the misspelled name and rerun the test\nB: Rewrite and reformat the entire module\nC: Remove the failing test\nD: Inspect more context before editing\nReturn exactly one answer code. No explanation or whitespace."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 1,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-a800ae1a659f4c8591c029b6",
+          "object": "chat.completion",
+          "created": 1791087469,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "B"
+              },
+              "finish_reason": "length",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "B",
+                    "logprob": -0.14886123837134413,
+                    "bytes": [
+                      66
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "B",
+                        "logprob": -0.14886123837134413,
+                        "bytes": [
+                          66
+                        ]
+                      },
+                      {
+                        "token": "A",
+                        "logprob": -2.5445712298264223,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "D",
+                        "logprob": -3.4328845232834535,
+                        "bytes": [
+                          68
+                        ]
+                      },
+                      {
+                        "token": "C",
+                        "logprob": -4.175985643278571,
+                        "bytes": [
+                          67
+                        ]
+                      },
+                      {
+                        "token": " B",
+                        "logprob": -6.365782091032477,
+                        "bytes": [
+                          32,
+                          66
+                        ]
+                      },
+                      {
+                        "token": "b",
+                        "logprob": -6.535969087492438,
+                        "bytes": [
+                          98
+                        ]
+                      },
+                      {
+                        "token": "d",
+                        "logprob": -6.877199479948493,
+                        "bytes": [
+                          100
+                        ]
+                      },
+                      {
+                        "token": "a",
+                        "logprob": -7.18242103756568,
+                        "bytes": [
+                          97
+                        ]
+                      },
+                      {
+                        "token": "AA",
+                        "logprob": -7.337590524565192,
+                        "bytes": [
+                          65,
+                          65
+                        ]
+                      },
+                      {
+                        "token": "c",
+                        "logprob": -8.022079774748297,
+                        "bytes": [
+                          99
+                        ]
+                      },
+                      {
+                        "token": "ANS",
+                        "logprob": -8.067168542753668,
+                        "bytes": [
+                          65,
+                          78,
+                          83
+                        ]
+                      },
+                      {
+                        "token": "Y",
+                        "logprob": -8.229555436979743,
+                        "bytes": [
+                          89
+                        ]
+                      },
+                      {
+                        "token": " A",
+                        "logprob": -8.29207451046607,
+                        "bytes": [
+                          32,
+                          65
+                        ]
+                      },
+                      {
+                        "token": " D",
+                        "logprob": -8.321905443083258,
+                        "bytes": [
+                          32,
+                          68
+                        ]
+                      },
+                      {
+                        "token": "Answer",
+                        "logprob": -8.437146493803473,
+                        "bytes": [
+                          65,
+                          110,
+                          115,
+                          119,
+                          101,
+                          114
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -8.610181161772223,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -9.049116441618414,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": " C",
+                        "logprob": -9.103647539030524,
+                        "bytes": [
+                          32,
+                          67
+                        ]
+                      },
+                      {
+                        "token": "BB",
+                        "logprob": -9.104205438505621,
+                        "bytes": [
+                          66,
+                          66
+                        ]
+                      },
+                      {
+                        "token": "DD",
+                        "logprob": -9.131019899260016,
+                        "bytes": [
+                          68,
+                          68
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 33,
+                      "probability": 0.8722877738468876,
+                      "support": 4,
+                      "entropy": 0.4970039205295539,
+                      "selection_ms": 0.111998,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 4,
+                          "entropy": 0.4970039205295539
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 4,
+                          "entropy": 0.4970039205295539
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 33,
+                          "probability": 0.8722877738468876,
+                          "bytes": [
+                            66
+                          ],
+                          "token": "B"
+                        },
+                        {
+                          "id": 32,
+                          "probability": 0.0794723683953048,
+                          "bytes": [
+                            65
+                          ],
+                          "token": "A"
+                        },
+                        {
+                          "id": 35,
+                          "probability": 0.032690878709102845,
+                          "bytes": [
+                            68
+                          ],
+                          "token": "D"
+                        },
+                        {
+                          "id": 34,
+                          "probability": 0.015548979048704845,
+                          "bytes": [
+                            67
+                          ],
+                          "token": "C"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 126,
+            "completion_tokens": 1,
+            "total_tokens": 127,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 126,
+            "prompt_ms": 703.9,
+            "prompt_per_token_ms": 5.587,
+            "prompt_per_second": 179.0,
+            "predicted_n": 1,
+            "predicted_ms": 22.7,
+            "predicted_per_token_ms": 22.7,
+            "predicted_per_second": 44.1,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 807.1272999513894,
+        "captured_at": "2026-10-04T04:17:50Z"
+      },
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Finite-action controller, alpha=0.0. A unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nThe controller selected A. Emit that code only."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 4,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"A\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-7c3ed4330d19440bb271fd2a",
+          "object": "chat.completion",
+          "created": 1791087470,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "A"
+              },
+              "finish_reason": "stop",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "A",
+                    "logprob": -4.3174793615541445,
+                    "bytes": [
+                      65
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "```",
+                        "logprob": -0.3914272680482852,
+                        "bytes": [
+                          96,
+                          96,
+                          96
+                        ]
+                      },
+                      {
+                        "token": "I",
+                        "logprob": -2.481740225811957,
+                        "bytes": [
+                          73
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -2.959290732403754,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "Looking",
+                        "logprob": -3.115336646100043,
+                        "bytes": [
+                          76,
+                          111,
+                          111,
+                          107,
+                          105,
+                          110,
+                          103
+                        ]
+                      },
+                      {
+                        "token": "Selected",
+                        "logprob": -3.237883795758246,
+                        "bytes": [
+                          83,
+                          101,
+                          108,
+                          101,
+                          99,
+                          116,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "A",
+                        "logprob": -4.3174793615541445,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "**",
+                        "logprob": -4.921477545758246,
+                        "bytes": [
+                          42,
+                          42
+                        ]
+                      },
+                      {
+                        "token": "Based",
+                        "logprob": -5.415953864117621,
+                        "bytes": [
+                          66,
+                          97,
+                          115,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "Option",
+                        "logprob": -5.614836920758246,
+                        "bytes": [
+                          79,
+                          112,
+                          116,
+                          105,
+                          111,
+                          110
+                        ]
+                      },
+                      {
+                        "token": "Choosing",
+                        "logprob": -5.644540061017035,
+                        "bytes": [
+                          67,
+                          104,
+                          111,
+                          111,
+                          115,
+                          105,
+                          110,
+                          103
+                        ]
+                      },
+                      {
+                        "token": "<",
+                        "logprob": -5.684245337506293,
+                        "bytes": [
+                          60
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -5.841691245099066,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "Choice",
+                        "logprob": -6.057410468121527,
+                        "bytes": [
+                          67,
+                          104,
+                          111,
+                          105,
+                          99,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "SELECT",
+                        "logprob": -6.093661536236762,
+                        "bytes": [
+                          83,
+                          69,
+                          76,
+                          69,
+                          67,
+                          84
+                        ]
+                      },
+                      {
+                        "token": "Select",
+                        "logprob": -6.10771869566059,
+                        "bytes": [
+                          83,
+                          101,
+                          108,
+                          101,
+                          99,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "Since",
+                        "logprob": -6.224530447979926,
+                        "bytes": [
+                          83,
+                          105,
+                          110,
+                          99,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "`",
+                        "logprob": -6.231388319989203,
+                        "bytes": [
+                          96
+                        ]
+                      },
+                      {
+                        "token": "Prop",
+                        "logprob": -6.23482822324848,
+                        "bytes": [
+                          80,
+                          114,
+                          111,
+                          112
+                        ]
+                      },
+                      {
+                        "token": "##",
+                        "logprob": -6.480000723858832,
+                        "bytes": [
+                          35,
+                          35
+                        ]
+                      },
+                      {
+                        "token": "<tool_call>",
+                        "logprob": -6.5471336736879335,
+                        "bytes": null
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 32,
+                      "probability": 1,
+                      "support": 1,
+                      "entropy": 0,
+                      "selection_ms": 0.138758,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 1,
+                          "entropy": 0
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 1,
+                          "entropy": 0
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 32,
+                          "probability": 1,
+                          "bytes": [
+                            65
+                          ],
+                          "token": "A"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 58,
+            "completion_tokens": 2,
+            "total_tokens": 60,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 58,
+            "prompt_ms": 1344.6,
+            "prompt_per_token_ms": 23.183,
+            "prompt_per_second": 43.1,
+            "predicted_n": 2,
+            "predicted_ms": 38.6,
+            "predicted_per_token_ms": 19.3,
+            "predicted_per_second": 51.8,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 1444.707099988591,
+        "captured_at": "2026-10-04T04:17:52Z"
+      },
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Finite-action controller, alpha=1.0. A unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nThe controller selected A. Emit that code only."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 4,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"A\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-5fd85c228ca846f7801f442d",
+          "object": "chat.completion",
+          "created": 1791087471,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "A"
+              },
+              "finish_reason": "stop",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "A",
+                    "logprob": -3.435758086883272,
+                    "bytes": [
+                      65
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "```",
+                        "logprob": -0.36628100558444376,
+                        "bytes": [
+                          96,
+                          96,
+                          96
+                        ]
+                      },
+                      {
+                        "token": "I",
+                        "logprob": -2.417478057586397,
+                        "bytes": [
+                          73
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -2.867461654388155,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "A",
+                        "logprob": -3.435758086883272,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "Selected",
+                        "logprob": -3.7422938077084673,
+                        "bytes": [
+                          83,
+                          101,
+                          108,
+                          101,
+                          99,
+                          116,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "Looking",
+                        "logprob": -4.591089698516573,
+                        "bytes": [
+                          76,
+                          111,
+                          111,
+                          107,
+                          105,
+                          110,
+                          103
+                        ]
+                      },
+                      {
+                        "token": "Based",
+                        "logprob": -4.815434905730928,
+                        "bytes": [
+                          66,
+                          97,
+                          115,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "**",
+                        "logprob": -5.259200545989717,
+                        "bytes": [
+                          42,
+                          42
+                        ]
+                      },
+                      {
+                        "token": "`",
+                        "logprob": -5.405437919341768,
+                        "bytes": [
+                          96
+                        ]
+                      },
+                      {
+                        "token": "SELECT",
+                        "logprob": -5.533030959808077,
+                        "bytes": [
+                          83,
+                          69,
+                          76,
+                          69,
+                          67,
+                          84
+                        ]
+                      },
+                      {
+                        "token": "To",
+                        "logprob": -5.576741668426241,
+                        "bytes": [
+                          84,
+                          111
+                        ]
+                      },
+                      {
+                        "token": "\"",
+                        "logprob": -5.8242668835751665,
+                        "bytes": [
+                          34
+                        ]
+                      },
+                      {
+                        "token": "Choosing",
+                        "logprob": -6.01208445712253,
+                        "bytes": [
+                          67,
+                          104,
+                          111,
+                          111,
+                          115,
+                          105,
+                          110,
+                          103
+                        ]
+                      },
+                      {
+                        "token": "selected",
+                        "logprob": -6.2906927792660845,
+                        "bytes": [
+                          115,
+                          101,
+                          108,
+                          101,
+                          99,
+                          116,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "<",
+                        "logprob": -6.418945762359346,
+                        "bytes": [
+                          60
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -6.535281631194795,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "Since",
+                        "logprob": -6.568378898345674,
+                        "bytes": [
+                          83,
+                          105,
+                          110,
+                          99,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "Under",
+                        "logprob": -6.6056694714657915,
+                        "bytes": [
+                          85,
+                          110,
+                          100,
+                          101,
+                          114
+                        ]
+                      },
+                      {
+                        "token": "<tool_call>",
+                        "logprob": -6.718596908294405,
+                        "bytes": null
+                      },
+                      {
+                        "token": "Choice",
+                        "logprob": -6.736027213775362,
+                        "bytes": [
+                          67,
+                          104,
+                          111,
+                          105,
+                          99,
+                          101
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 32,
+                      "probability": 1,
+                      "support": 1,
+                      "entropy": 0,
+                      "selection_ms": 0.111297,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 1,
+                          "entropy": 0
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 1,
+                          "entropy": 0
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 32,
+                          "probability": 1,
+                          "bytes": [
+                            65
+                          ],
+                          "token": "A"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 58,
+            "completion_tokens": 2,
+            "total_tokens": 60,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 58,
+            "prompt_ms": 1345.7,
+            "prompt_per_token_ms": 23.202,
+            "prompt_per_second": 43.1,
+            "predicted_n": 2,
+            "predicted_ms": 36.0,
+            "predicted_per_token_ms": 18.0,
+            "predicted_per_second": 55.6,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 1408.3248000242747,
+        "captured_at": "2026-10-04T04:17:53Z"
+      },
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Finite-action controller, alpha=2.0. A unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nThe controller selected A. Emit that code only."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 4,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"A\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-2de4f22165404881b882d8bd",
+          "object": "chat.completion",
+          "created": 1791087473,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "A"
+              },
+              "finish_reason": "stop",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "A",
+                    "logprob": -3.345767471874275,
+                    "bytes": [
+                      65
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "```",
+                        "logprob": -0.761540863597908,
+                        "bytes": [
+                          96,
+                          96,
+                          96
+                        ]
+                      },
+                      {
+                        "token": "I",
+                        "logprob": -1.7382292486076736,
+                        "bytes": [
+                          73
+                        ]
+                      },
+                      {
+                        "token": "Selected",
+                        "logprob": -2.7681956029777908,
+                        "bytes": [
+                          83,
+                          101,
+                          108,
+                          101,
+                          99,
+                          116,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -2.905269119823494,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "Based",
+                        "logprob": -3.0576796270256423,
+                        "bytes": [
+                          66,
+                          97,
+                          115,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "A",
+                        "logprob": -3.345767471874275,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "Looking",
+                        "logprob": -4.180845711315193,
+                        "bytes": [
+                          76,
+                          111,
+                          111,
+                          107,
+                          105,
+                          110,
+                          103
+                        ]
+                      },
+                      {
+                        "token": "**",
+                        "logprob": -4.32664630183033,
+                        "bytes": [
+                          42,
+                          42
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -5.199843857372322,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "SELECT",
+                        "logprob": -5.2447104192619705,
+                        "bytes": [
+                          83,
+                          69,
+                          76,
+                          69,
+                          67,
+                          84
+                        ]
+                      },
+                      {
+                        "token": "<tool_call>",
+                        "logprob": -5.261014435375252,
+                        "bytes": null
+                      },
+                      {
+                        "token": "Option",
+                        "logprob": -5.5058893895988845,
+                        "bytes": [
+                          79,
+                          112,
+                          116,
+                          105,
+                          111,
+                          110
+                        ]
+                      },
+                      {
+                        "token": "selected",
+                        "logprob": -5.511836502635994,
+                        "bytes": [
+                          115,
+                          101,
+                          108,
+                          101,
+                          99,
+                          116,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "Action",
+                        "logprob": -5.521176788890877,
+                        "bytes": [
+                          65,
+                          99,
+                          116,
+                          105,
+                          111,
+                          110
+                        ]
+                      },
+                      {
+                        "token": "\"",
+                        "logprob": -5.550067398632088,
+                        "bytes": [
+                          34
+                        ]
+                      },
+                      {
+                        "token": "Choice",
+                        "logprob": -5.651694748485603,
+                        "bytes": [
+                          67,
+                          104,
+                          111,
+                          105,
+                          99,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "`",
+                        "logprob": -5.799909088695564,
+                        "bytes": [
+                          96
+                        ]
+                      },
+                      {
+                        "token": "Here",
+                        "logprob": -6.071988556469002,
+                        "bytes": [
+                          72,
+                          101,
+                          114,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "<",
+                        "logprob": -6.231146309459724,
+                        "bytes": [
+                          60
+                        ]
+                      },
+                      {
+                        "token": "To",
+                        "logprob": -6.241500351512947,
+                        "bytes": [
+                          84,
+                          111
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 32,
+                      "probability": 1,
+                      "support": 1,
+                      "entropy": 0,
+                      "selection_ms": 0.11309,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 1,
+                          "entropy": 0
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 1,
+                          "entropy": 0
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 32,
+                          "probability": 1,
+                          "bytes": [
+                            65
+                          ],
+                          "token": "A"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 58,
+            "completion_tokens": 2,
+            "total_tokens": 60,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 58,
+            "prompt_ms": 1356.0,
+            "prompt_per_token_ms": 23.379,
+            "prompt_per_second": 42.8,
+            "predicted_n": 2,
+            "predicted_ms": 35.2,
+            "predicted_per_token_ms": 17.6,
+            "predicted_per_second": 56.8,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 1412.8537999931723,
+        "captured_at": "2026-10-04T04:17:54Z"
+      }
+    ]
+  },
+  "wall_ms": 6911.144000012428
+}

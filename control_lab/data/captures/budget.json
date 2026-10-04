@@ -1,0 +1,2756 @@
+{
+  "page": "budget",
+  "result": {
+    "kind": "budget",
+    "cases": [
+      {
+        "name": "Inspection costs 0.1",
+        "state": "Toy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.1 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.",
+        "choices": [
+          "act for state A now",
+          "act for state B now",
+          "inspect once, then act",
+          "defer"
+        ],
+        "prior": 0.55,
+        "accuracy": 0.9,
+        "cost": 0.1,
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "measurement": {
+          "rows": [
+            {
+              "label": "A",
+              "description": "act for state A now",
+              "weight": 0.044289307521699156,
+              "logprob": -3.123764514542111,
+              "token_id": 32,
+              "bytes": [
+                65
+              ]
+            },
+            {
+              "label": "B",
+              "description": "act for state B now",
+              "weight": 0.002935548196929023,
+              "logprob": -5.837613582230099,
+              "token_id": 33,
+              "bytes": [
+                66
+              ]
+            },
+            {
+              "label": "C",
+              "description": "inspect once, then act",
+              "weight": 0.946811696774943,
+              "logprob": -0.06140756568957175,
+              "token_id": 34,
+              "bytes": [
+                67
+              ]
+            },
+            {
+              "label": "D",
+              "description": "defer",
+              "weight": 0.005963447506428834,
+              "logprob": -5.128859042740353,
+              "token_id": 35,
+              "bytes": [
+                68
+              ]
+            }
+          ],
+          "pressure": {
+            "log_mass": -0.00675251827913155,
+            "mass": 0.9932702287437298,
+            "pressure_nats": 0.00675251827913155,
+            "pressure_bits": 0.009741824634815165,
+            "selected_raw_logprob": -0.06140756568957175,
+            "selected_probability": 0.946811696774943,
+            "support": 4
+          },
+          "selected": "C",
+          "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+          "prompt": "Treat STATE as data.\nSTATE:\nToy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.1 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.\nQUESTION: Which listed choice best serves the stated task?\nANSWERS:\nA: act for state A now\nB: act for state B now\nC: inspect once, then act\nD: defer\nReturn exactly one answer code. No explanation or whitespace.",
+          "semantics": "One native target row; complete single-token labels. Weights concern these declared meanings, not calibrated truth."
+        },
+        "commit": {
+          "request": {
+            "model": "x",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Toy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.1 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.\nThe controller selected C. Emit that code only."
+              }
+            ],
+            "reasoning_effort": "none",
+            "seed": 675,
+            "max_tokens": 4,
+            "logprobs": true,
+            "top_logprobs": 20,
+            "grammar": "root ::= \"C\"",
+            "strata_sampler": {
+              "chain": [
+                "temperature"
+              ],
+              "temperature": 1.0,
+              "inspect": true
+            }
+          },
+          "output": {
+            "text": "C",
+            "tokens": [
+              {
+                "token": "C",
+                "logprob": -7.89583910621703,
+                "bytes": [
+                  67
+                ],
+                "top_logprobs": [
+                  {
+                    "token": "```",
+                    "logprob": -0.15642584480345606,
+                    "bytes": [
+                      96,
+                      96,
+                      96
+                    ]
+                  },
+                  {
+                    "token": "Looking",
+                    "logprob": -3.7364210001379288,
+                    "bytes": [
+                      76,
+                      111,
+                      111,
+                      107,
+                      105,
+                      110,
+                      103
+                    ]
+                  },
+                  {
+                    "token": "To",
+                    "logprob": -3.8201259485632217,
+                    "bytes": [
+                      84,
+                      111
+                    ]
+                  },
+                  {
+                    "token": "Let",
+                    "logprob": -4.204743754044179,
+                    "bytes": [
+                      76,
+                      101,
+                      116
+                    ]
+                  },
+                  {
+                    "token": "I",
+                    "logprob": -4.58072794593871,
+                    "bytes": [
+                      73
+                    ]
+                  },
+                  {
+                    "token": "**",
+                    "logprob": -4.669733416214589,
+                    "bytes": [
+                      42,
+                      42
+                    ]
+                  },
+                  {
+                    "token": "The",
+                    "logprob": -4.80841292060912,
+                    "bytes": [
+                      84,
+                      104,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "This",
+                    "logprob": -4.886750589981679,
+                    "bytes": [
+                      84,
+                      104,
+                      105,
+                      115
+                    ]
+                  },
+                  {
+                    "token": "Based",
+                    "logprob": -5.163708101883534,
+                    "bytes": [
+                      66,
+                      97,
+                      115,
+                      101,
+                      100
+                    ]
+                  },
+                  {
+                    "token": "import",
+                    "logprob": -5.549836527481679,
+                    "bytes": [
+                      105,
+                      109,
+                      112,
+                      111,
+                      114,
+                      116
+                    ]
+                  },
+                  {
+                    "token": "It",
+                    "logprob": -5.878048311844472,
+                    "bytes": [
+                      73,
+                      116
+                    ]
+                  },
+                  {
+                    "token": "\"\"\"",
+                    "logprob": -5.935244928970937,
+                    "bytes": [
+                      34,
+                      34,
+                      34
+                    ]
+                  },
+                  {
+                    "token": "SELECT",
+                    "logprob": -6.085279833450917,
+                    "bytes": [
+                      83,
+                      69,
+                      76,
+                      69,
+                      67,
+                      84
+                    ]
+                  },
+                  {
+                    "token": "def",
+                    "logprob": -6.111079584732655,
+                    "bytes": [
+                      100,
+                      101,
+                      102
+                    ]
+                  },
+                  {
+                    "token": "<|im_end|>",
+                    "logprob": -6.146416079178456,
+                    "bytes": null
+                  },
+                  {
+                    "token": "#",
+                    "logprob": -6.185251604691151,
+                    "bytes": [
+                      35
+                    ]
+                  },
+                  {
+                    "token": "<",
+                    "logprob": -6.192131411209706,
+                    "bytes": [
+                      60
+                    ]
+                  },
+                  {
+                    "token": "<tool_call>",
+                    "logprob": -6.52649153389037,
+                    "bytes": null
+                  },
+                  {
+                    "token": "###",
+                    "logprob": -6.85486067451537,
+                    "bytes": [
+                      35,
+                      35,
+                      35
+                    ]
+                  },
+                  {
+                    "token": "##",
+                    "logprob": -7.0633128992468155,
+                    "bytes": [
+                      35,
+                      35
+                    ]
+                  }
+                ],
+                "strata_sampling": {
+                  "index": 0,
+                  "id": 34,
+                  "probability": 1,
+                  "support": 1,
+                  "entropy": 0,
+                  "selection_ms": 0.111017,
+                  "stages": [
+                    {
+                      "operator": "grammar",
+                      "support": 1,
+                      "entropy": 0
+                    },
+                    {
+                      "operator": "temperature",
+                      "support": 1,
+                      "entropy": 0
+                    }
+                  ],
+                  "top": [
+                    {
+                      "id": 34,
+                      "probability": 1,
+                      "bytes": [
+                        67
+                      ],
+                      "token": "C"
+                    }
+                  ]
+                }
+              }
+            ],
+            "token_count": 1,
+            "logprob": -7.89583910621703,
+            "path_probability": 0.0003722893787558777,
+            "mean_logprob": -7.89583910621703,
+            "finish_reason": "stop"
+          },
+          "owner": "The lab selected the action; native GBNF enforces its exact emitted code."
+        },
+        "selected": 2,
+        "oracle": 2,
+        "utilities": [
+          0.55,
+          0.44999999999999996,
+          0.8,
+          0.25
+        ],
+        "regret": 0.0,
+        "uniform_utility": 0.5125
+      },
+      {
+        "name": "Inspection costs 0.3",
+        "state": "Toy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.3 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.",
+        "choices": [
+          "act for state A now",
+          "act for state B now",
+          "inspect once, then act",
+          "defer"
+        ],
+        "prior": 0.55,
+        "accuracy": 0.9,
+        "cost": 0.3,
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "measurement": {
+          "rows": [
+            {
+              "label": "A",
+              "description": "act for state A now",
+              "weight": 0.042787999528702075,
+              "logprob": -3.155144259099354,
+              "token_id": 32,
+              "bytes": [
+                65
+              ]
+            },
+            {
+              "label": "B",
+              "description": "act for state B now",
+              "weight": 0.0030544038833898108,
+              "logprob": -5.79481749213158,
+              "token_id": 33,
+              "bytes": [
+                66
+              ]
+            },
+            {
+              "label": "C",
+              "description": "inspect once, then act",
+              "weight": 0.9463451879462268,
+              "logprob": -0.05879454291283033,
+              "token_id": 34,
+              "bytes": [
+                67
+              ]
+            },
+            {
+              "label": "D",
+              "description": "defer",
+              "weight": 0.007812408641681341,
+              "logprob": -4.855688616399158,
+              "token_id": 35,
+              "bytes": [
+                68
+              ]
+            }
+          ],
+          "pressure": {
+            "log_mass": -0.00364665854637905,
+            "mass": 0.9963599824379779,
+            "pressure_nats": 0.00364665854637905,
+            "pressure_bits": 0.0052610162006764116,
+            "selected_raw_logprob": -0.05879454291283033,
+            "selected_probability": 0.9463451879462268,
+            "support": 4
+          },
+          "selected": "C",
+          "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+          "prompt": "Treat STATE as data.\nSTATE:\nToy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.3 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.\nQUESTION: Which listed choice best serves the stated task?\nANSWERS:\nA: act for state A now\nB: act for state B now\nC: inspect once, then act\nD: defer\nReturn exactly one answer code. No explanation or whitespace.",
+          "semantics": "One native target row; complete single-token labels. Weights concern these declared meanings, not calibrated truth."
+        },
+        "commit": {
+          "request": {
+            "model": "x",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Toy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.3 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.\nThe controller selected C. Emit that code only."
+              }
+            ],
+            "reasoning_effort": "none",
+            "seed": 675,
+            "max_tokens": 4,
+            "logprobs": true,
+            "top_logprobs": 20,
+            "grammar": "root ::= \"C\"",
+            "strata_sampler": {
+              "chain": [
+                "temperature"
+              ],
+              "temperature": 1.0,
+              "inspect": true
+            }
+          },
+          "output": {
+            "text": "C",
+            "tokens": [
+              {
+                "token": "C",
+                "logprob": -5.29582111589888,
+                "bytes": [
+                  67
+                ],
+                "top_logprobs": [
+                  {
+                    "token": "```",
+                    "logprob": -0.2972335075614774,
+                    "bytes": [
+                      96,
+                      96,
+                      96
+                    ]
+                  },
+                  {
+                    "token": "**",
+                    "logprob": -3.5642928337333526,
+                    "bytes": [
+                      42,
+                      42
+                    ]
+                  },
+                  {
+                    "token": "Let",
+                    "logprob": -3.7340058540580596,
+                    "bytes": [
+                      76,
+                      101,
+                      116
+                    ]
+                  },
+                  {
+                    "token": "To",
+                    "logprob": -3.778621599602493,
+                    "bytes": [
+                      84,
+                      111
+                    ]
+                  },
+                  {
+                    "token": "The",
+                    "logprob": -3.8559703087089385,
+                    "bytes": [
+                      84,
+                      104,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "I",
+                    "logprob": -4.142131731438431,
+                    "bytes": [
+                      73
+                    ]
+                  },
+                  {
+                    "token": "<",
+                    "logprob": -4.263477251457962,
+                    "bytes": [
+                      60
+                    ]
+                  },
+                  {
+                    "token": "import",
+                    "logprob": -4.469005510735306,
+                    "bytes": [
+                      105,
+                      109,
+                      112,
+                      111,
+                      114,
+                      116
+                    ]
+                  },
+                  {
+                    "token": "def",
+                    "logprob": -4.4745215629813995,
+                    "bytes": [
+                      100,
+                      101,
+                      102
+                    ]
+                  },
+                  {
+                    "token": "Looking",
+                    "logprob": -4.794048235344681,
+                    "bytes": [
+                      76,
+                      111,
+                      111,
+                      107,
+                      105,
+                      110,
+                      103
+                    ]
+                  },
+                  {
+                    "token": "Based",
+                    "logprob": -4.8910350059745635,
+                    "bytes": [
+                      66,
+                      97,
+                      115,
+                      101,
+                      100
+                    ]
+                  },
+                  {
+                    "token": "C",
+                    "logprob": -5.29582111589888,
+                    "bytes": [
+                      67
+                    ]
+                  },
+                  {
+                    "token": "This",
+                    "logprob": -5.374599382805618,
+                    "bytes": [
+                      84,
+                      104,
+                      105,
+                      115
+                    ]
+                  },
+                  {
+                    "token": "max",
+                    "logprob": -5.828633234429153,
+                    "bytes": [
+                      109,
+                      97,
+                      120
+                    ]
+                  },
+                  {
+                    "token": "A",
+                    "logprob": -5.886699602532181,
+                    "bytes": [
+                      65
+                    ]
+                  },
+                  {
+                    "token": "SELECT",
+                    "logprob": -5.942684099602493,
+                    "bytes": [
+                      83,
+                      69,
+                      76,
+                      69,
+                      67,
+                      84
+                    ]
+                  },
+                  {
+                    "token": "#",
+                    "logprob": -6.0681895469901885,
+                    "bytes": [
+                      35
+                    ]
+                  },
+                  {
+                    "token": "##",
+                    "logprob": -6.219502375054153,
+                    "bytes": [
+                      35,
+                      35
+                    ]
+                  },
+                  {
+                    "token": "###",
+                    "logprob": -6.263153002190384,
+                    "bytes": [
+                      35,
+                      35,
+                      35
+                    ]
+                  },
+                  {
+                    "token": "We",
+                    "logprob": -6.420589373039993,
+                    "bytes": [
+                      87,
+                      101
+                    ]
+                  }
+                ],
+                "strata_sampling": {
+                  "index": 0,
+                  "id": 34,
+                  "probability": 1,
+                  "support": 1,
+                  "entropy": 0,
+                  "selection_ms": 0.111188,
+                  "stages": [
+                    {
+                      "operator": "grammar",
+                      "support": 1,
+                      "entropy": 0
+                    },
+                    {
+                      "operator": "temperature",
+                      "support": 1,
+                      "entropy": 0
+                    }
+                  ],
+                  "top": [
+                    {
+                      "id": 34,
+                      "probability": 1,
+                      "bytes": [
+                        67
+                      ],
+                      "token": "C"
+                    }
+                  ]
+                }
+              }
+            ],
+            "token_count": 1,
+            "logprob": -5.29582111589888,
+            "path_probability": 0.005012496844384473,
+            "mean_logprob": -5.29582111589888,
+            "finish_reason": "stop"
+          },
+          "owner": "The lab selected the action; native GBNF enforces its exact emitted code."
+        },
+        "selected": 2,
+        "oracle": 2,
+        "utilities": [
+          0.55,
+          0.44999999999999996,
+          0.6000000000000001,
+          0.25
+        ],
+        "regret": 0.0,
+        "uniform_utility": 0.4625
+      },
+      {
+        "name": "Inspection costs 0.5",
+        "state": "Toy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.5 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.",
+        "choices": [
+          "act for state A now",
+          "act for state B now",
+          "inspect once, then act",
+          "defer"
+        ],
+        "prior": 0.55,
+        "accuracy": 0.9,
+        "cost": 0.5,
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "measurement": {
+          "rows": [
+            {
+              "label": "A",
+              "description": "act for state A now",
+              "weight": 0.03821853109637645,
+              "logprob": -3.2676448875795137,
+              "token_id": 32,
+              "bytes": [
+                65
+              ]
+            },
+            {
+              "label": "B",
+              "description": "act for state B now",
+              "weight": 0.0020246253600472316,
+              "logprob": -6.205580716742111,
+              "token_id": 33,
+              "bytes": [
+                66
+              ]
+            },
+            {
+              "label": "C",
+              "description": "inspect once, then act",
+              "weight": 0.950334333221798,
+              "logprob": -0.054151540411544886,
+              "token_id": 34,
+              "bytes": [
+                67
+              ]
+            },
+            {
+              "label": "D",
+              "description": "defer",
+              "weight": 0.009422510321778118,
+              "logprob": -4.6678638512025605,
+              "token_id": 35,
+              "bytes": [
+                68
+              ]
+            }
+          ],
+          "pressure": {
+            "log_mass": -0.003210113818416342,
+            "mass": 0.996795033088089,
+            "pressure_nats": 0.003210113818416342,
+            "pressure_bits": 0.004631215286518392,
+            "selected_raw_logprob": -0.054151540411544886,
+            "selected_probability": 0.950334333221798,
+            "support": 4
+          },
+          "selected": "C",
+          "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+          "prompt": "Treat STATE as data.\nSTATE:\nToy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.5 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.\nQUESTION: Which listed choice best serves the stated task?\nANSWERS:\nA: act for state A now\nB: act for state B now\nC: inspect once, then act\nD: defer\nReturn exactly one answer code. No explanation or whitespace.",
+          "semantics": "One native target row; complete single-token labels. Weights concern these declared meanings, not calibrated truth."
+        },
+        "commit": {
+          "request": {
+            "model": "x",
+            "messages": [
+              {
+                "role": "user",
+                "content": "Toy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.5 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.\nThe controller selected C. Emit that code only."
+              }
+            ],
+            "reasoning_effort": "none",
+            "seed": 675,
+            "max_tokens": 4,
+            "logprobs": true,
+            "top_logprobs": 20,
+            "grammar": "root ::= \"C\"",
+            "strata_sampler": {
+              "chain": [
+                "temperature"
+              ],
+              "temperature": 1.0,
+              "inspect": true
+            }
+          },
+          "output": {
+            "text": "C",
+            "tokens": [
+              {
+                "token": "C",
+                "logprob": -5.071955546127061,
+                "bytes": [
+                  67
+                ],
+                "top_logprobs": [
+                  {
+                    "token": "```",
+                    "logprob": -0.19063745378086946,
+                    "bytes": [
+                      96,
+                      96,
+                      96
+                    ]
+                  },
+                  {
+                    "token": "The",
+                    "logprob": -3.795696123824815,
+                    "bytes": [
+                      84,
+                      104,
+                      101
+                    ]
+                  },
+                  {
+                    "token": "**",
+                    "logprob": -4.108984812484483,
+                    "bytes": [
+                      42,
+                      42
+                    ]
+                  },
+                  {
+                    "token": "Let",
+                    "logprob": -4.544652804122666,
+                    "bytes": [
+                      76,
+                      101,
+                      116
+                    ]
+                  },
+                  {
+                    "token": "To",
+                    "logprob": -4.589580401168565,
+                    "bytes": [
+                      84,
+                      111
+                    ]
+                  },
+                  {
+                    "token": "I",
+                    "logprob": -4.749561175094346,
+                    "bytes": [
+                      73
+                    ]
+                  },
+                  {
+                    "token": "<",
+                    "logprob": -4.980440958724717,
+                    "bytes": [
+                      60
+                    ]
+                  },
+                  {
+                    "token": "Based",
+                    "logprob": -5.04839883683751,
+                    "bytes": [
+                      66,
+                      97,
+                      115,
+                      101,
+                      100
+                    ]
+                  },
+                  {
+                    "token": "C",
+                    "logprob": -5.071955546127061,
+                    "bytes": [
+                      67
+                    ]
+                  },
+                  {
+                    "token": "Looking",
+                    "logprob": -5.074336870895127,
+                    "bytes": [
+                      76,
+                      111,
+                      111,
+                      107,
+                      105,
+                      110,
+                      103
+                    ]
+                  },
+                  {
+                    "token": "This",
+                    "logprob": -5.100417956100205,
+                    "bytes": [
+                      84,
+                      104,
+                      105,
+                      115
+                    ]
+                  },
+                  {
+                    "token": "def",
+                    "logprob": -5.662872179733018,
+                    "bytes": [
+                      100,
+                      101,
+                      102
+                    ]
+                  },
+                  {
+                    "token": "A",
+                    "logprob": -5.8075808131558695,
+                    "bytes": [
+                      65
+                    ]
+                  },
+                  {
+                    "token": "import",
+                    "logprob": -6.04119668840001,
+                    "bytes": [
+                      105,
+                      109,
+                      112,
+                      111,
+                      114,
+                      116
+                    ]
+                  },
+                  {
+                    "token": "#",
+                    "logprob": -6.060085161910752,
+                    "bytes": [
+                      35
+                    ]
+                  },
+                  {
+                    "token": "Given",
+                    "logprob": -6.184305056319932,
+                    "bytes": [
+                      71,
+                      105,
+                      118,
+                      101,
+                      110
+                    ]
+                  },
+                  {
+                    "token": "##",
+                    "logprob": -6.186903818832139,
+                    "bytes": [
+                      35,
+                      35
+                    ]
+                  },
+                  {
+                    "token": "<|im_end|>",
+                    "logprob": -6.22160611985753,
+                    "bytes": null
+                  },
+                  {
+                    "token": "SELECT",
+                    "logprob": -6.255397661910752,
+                    "bytes": [
+                      83,
+                      69,
+                      76,
+                      69,
+                      67,
+                      84
+                    ]
+                  },
+                  {
+                    "token": "###",
+                    "logprob": -6.26839338182042,
+                    "bytes": [
+                      35,
+                      35,
+                      35
+                    ]
+                  }
+                ],
+                "strata_sampling": {
+                  "index": 0,
+                  "id": 34,
+                  "probability": 1,
+                  "support": 1,
+                  "entropy": 0,
+                  "selection_ms": 0.111638,
+                  "stages": [
+                    {
+                      "operator": "grammar",
+                      "support": 1,
+                      "entropy": 0
+                    },
+                    {
+                      "operator": "temperature",
+                      "support": 1,
+                      "entropy": 0
+                    }
+                  ],
+                  "top": [
+                    {
+                      "id": 34,
+                      "probability": 1,
+                      "bytes": [
+                        67
+                      ],
+                      "token": "C"
+                    }
+                  ]
+                }
+              }
+            ],
+            "token_count": 1,
+            "logprob": -5.071955546127061,
+            "path_probability": 0.006270146583091666,
+            "mean_logprob": -5.071955546127061,
+            "finish_reason": "stop"
+          },
+          "owner": "The lab selected the action; native GBNF enforces its exact emitted code."
+        },
+        "selected": 2,
+        "oracle": 0,
+        "utilities": [
+          0.55,
+          0.44999999999999996,
+          0.4,
+          0.25
+        ],
+        "regret": 0.15000000000000002,
+        "uniform_utility": 0.4125
+      }
+    ],
+    "semantics": "Independent bounded cases, not one adaptive trajectory. The model supplies native answer weights. Code checks admissibility and selects the highest-weight permitted code; native GBNF emits that code. The exact utility oracle is a separate baseline.",
+    "next_gate": "Measure actual model/verification time and held-out decision outcomes. Learn observation models before using expected value to allocate a real inference budget."
+  },
+  "receipt": {
+    "mode": "live",
+    "requests": 6,
+    "summed_request_ms": 5532.658600015566,
+    "prompt_tokens": 756,
+    "completion_tokens": 9,
+    "calls": [
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Treat STATE as data.\nSTATE:\nToy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.1 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.\nQUESTION: Which listed choice best serves the stated task?\nANSWERS:\nA: act for state A now\nB: act for state B now\nC: inspect once, then act\nD: defer\nReturn exactly one answer code. No explanation or whitespace."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 1,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-66e89ac26a7749de9ccac51c",
+          "object": "chat.completion",
+          "created": 1791095627,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "C"
+              },
+              "finish_reason": "length",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "C",
+                    "logprob": -0.06140756568957175,
+                    "bytes": [
+                      67
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "C",
+                        "logprob": -0.06140756568957175,
+                        "bytes": [
+                          67
+                        ]
+                      },
+                      {
+                        "token": "A",
+                        "logprob": -3.1237645145421107,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "D",
+                        "logprob": -5.128859042740353,
+                        "bytes": [
+                          68
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -5.825514316177853,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "B",
+                        "logprob": -5.837613582230099,
+                        "bytes": [
+                          66
+                        ]
+                      },
+                      {
+                        "token": "**",
+                        "logprob": -7.829384326553829,
+                        "bytes": [
+                          42,
+                          42
+                        ]
+                      },
+                      {
+                        "token": "E",
+                        "logprob": -7.83411836586047,
+                        "bytes": [
+                          69
+                        ]
+                      },
+                      {
+                        "token": "To",
+                        "logprob": -8.51617860755969,
+                        "bytes": [
+                          84,
+                          111
+                        ]
+                      },
+                      {
+                        "token": "T",
+                        "logprob": -8.863443851089963,
+                        "bytes": [
+                          84
+                        ]
+                      },
+                      {
+                        "token": " C",
+                        "logprob": -9.061619281387815,
+                        "bytes": [
+                          32,
+                          67
+                        ]
+                      },
+                      {
+                        "token": "c",
+                        "logprob": -9.165201663589963,
+                        "bytes": [
+                          99
+                        ]
+                      },
+                      {
+                        "token": "Given",
+                        "logprob": -9.499100207901487,
+                        "bytes": [
+                          71,
+                          105,
+                          118,
+                          101,
+                          110
+                        ]
+                      },
+                      {
+                        "token": "1",
+                        "logprob": -9.50040769538928,
+                        "bytes": [
+                          49
+                        ]
+                      },
+                      {
+                        "token": "<|im_end|>",
+                        "logprob": -9.668539523697385,
+                        "bytes": null
+                      },
+                      {
+                        "token": "I",
+                        "logprob": -9.81781434974719,
+                        "bytes": [
+                          73
+                        ]
+                      },
+                      {
+                        "token": "X",
+                        "logprob": -9.85154008827258,
+                        "bytes": [
+                          88
+                        ]
+                      },
+                      {
+                        "token": "Looking",
+                        "logprob": -9.935326099014768,
+                        "bytes": [
+                          76,
+                          111,
+                          111,
+                          107,
+                          105,
+                          110,
+                          103
+                        ]
+                      },
+                      {
+                        "token": "AA",
+                        "logprob": -9.975384235001096,
+                        "bytes": [
+                          65,
+                          65
+                        ]
+                      },
+                      {
+                        "token": "Option",
+                        "logprob": -9.982234477615842,
+                        "bytes": [
+                          79,
+                          112,
+                          116,
+                          105,
+                          111,
+                          110
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -10.003145694351682,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 34,
+                      "probability": 0.946811696774943,
+                      "support": 4,
+                      "entropy": 0.23746052809109636,
+                      "selection_ms": 0.112269,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 4,
+                          "entropy": 0.23746052809109636
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 4,
+                          "entropy": 0.23746052809109636
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 34,
+                          "probability": 0.946811696774943,
+                          "bytes": [
+                            67
+                          ],
+                          "token": "C"
+                        },
+                        {
+                          "id": 32,
+                          "probability": 0.044289307521699156,
+                          "bytes": [
+                            65
+                          ],
+                          "token": "A"
+                        },
+                        {
+                          "id": 35,
+                          "probability": 0.005963447506428834,
+                          "bytes": [
+                            68
+                          ],
+                          "token": "D"
+                        },
+                        {
+                          "id": 33,
+                          "probability": 0.002935548196929023,
+                          "bytes": [
+                            66
+                          ],
+                          "token": "B"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 154,
+            "completion_tokens": 1,
+            "total_tokens": 155,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 154,
+            "prompt_ms": 957.0,
+            "prompt_per_token_ms": 6.214,
+            "prompt_per_second": 160.9,
+            "predicted_n": 1,
+            "predicted_ms": 25.4,
+            "predicted_per_token_ms": 25.4,
+            "predicted_per_second": 39.4,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 1046.8522000010125,
+        "captured_at": "2026-10-04T06:33:48Z"
+      },
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Toy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.1 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.\nThe controller selected C. Emit that code only."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 4,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"C\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-77b2c50ff0de4a6f875024ca",
+          "object": "chat.completion",
+          "created": 1791095628,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "C"
+              },
+              "finish_reason": "stop",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "C",
+                    "logprob": -7.89583910621703,
+                    "bytes": [
+                      67
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "```",
+                        "logprob": -0.15642584480345606,
+                        "bytes": [
+                          96,
+                          96,
+                          96
+                        ]
+                      },
+                      {
+                        "token": "Looking",
+                        "logprob": -3.7364210001379288,
+                        "bytes": [
+                          76,
+                          111,
+                          111,
+                          107,
+                          105,
+                          110,
+                          103
+                        ]
+                      },
+                      {
+                        "token": "To",
+                        "logprob": -3.8201259485632217,
+                        "bytes": [
+                          84,
+                          111
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -4.204743754044179,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "I",
+                        "logprob": -4.58072794593871,
+                        "bytes": [
+                          73
+                        ]
+                      },
+                      {
+                        "token": "**",
+                        "logprob": -4.669733416214589,
+                        "bytes": [
+                          42,
+                          42
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -4.80841292060912,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "This",
+                        "logprob": -4.886750589981679,
+                        "bytes": [
+                          84,
+                          104,
+                          105,
+                          115
+                        ]
+                      },
+                      {
+                        "token": "Based",
+                        "logprob": -5.163708101883534,
+                        "bytes": [
+                          66,
+                          97,
+                          115,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "import",
+                        "logprob": -5.549836527481679,
+                        "bytes": [
+                          105,
+                          109,
+                          112,
+                          111,
+                          114,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "It",
+                        "logprob": -5.878048311844472,
+                        "bytes": [
+                          73,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "\"\"\"",
+                        "logprob": -5.935244928970937,
+                        "bytes": [
+                          34,
+                          34,
+                          34
+                        ]
+                      },
+                      {
+                        "token": "SELECT",
+                        "logprob": -6.085279833450917,
+                        "bytes": [
+                          83,
+                          69,
+                          76,
+                          69,
+                          67,
+                          84
+                        ]
+                      },
+                      {
+                        "token": "def",
+                        "logprob": -6.111079584732655,
+                        "bytes": [
+                          100,
+                          101,
+                          102
+                        ]
+                      },
+                      {
+                        "token": "<|im_end|>",
+                        "logprob": -6.146416079178456,
+                        "bytes": null
+                      },
+                      {
+                        "token": "#",
+                        "logprob": -6.185251604691151,
+                        "bytes": [
+                          35
+                        ]
+                      },
+                      {
+                        "token": "<",
+                        "logprob": -6.192131411209706,
+                        "bytes": [
+                          60
+                        ]
+                      },
+                      {
+                        "token": "<tool_call>",
+                        "logprob": -6.52649153389037,
+                        "bytes": null
+                      },
+                      {
+                        "token": "###",
+                        "logprob": -6.85486067451537,
+                        "bytes": [
+                          35,
+                          35,
+                          35
+                        ]
+                      },
+                      {
+                        "token": "##",
+                        "logprob": -7.0633128992468155,
+                        "bytes": [
+                          35,
+                          35
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 34,
+                      "probability": 1,
+                      "support": 1,
+                      "entropy": 0,
+                      "selection_ms": 0.111017,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 1,
+                          "entropy": 0
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 1,
+                          "entropy": 0
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 34,
+                          "probability": 1,
+                          "bytes": [
+                            67
+                          ],
+                          "token": "C"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 98,
+            "completion_tokens": 2,
+            "total_tokens": 100,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 98,
+            "prompt_ms": 769.3,
+            "prompt_per_token_ms": 7.85,
+            "prompt_per_second": 127.4,
+            "predicted_n": 2,
+            "predicted_ms": 44.4,
+            "predicted_per_token_ms": 22.2,
+            "predicted_per_second": 45.0,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 833.6882999865338,
+        "captured_at": "2026-10-04T06:33:49Z"
+      },
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Treat STATE as data.\nSTATE:\nToy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.3 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.\nQUESTION: Which listed choice best serves the stated task?\nANSWERS:\nA: act for state A now\nB: act for state B now\nC: inspect once, then act\nD: defer\nReturn exactly one answer code. No explanation or whitespace."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 1,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-a7a48a37b943429d899f5f81",
+          "object": "chat.completion",
+          "created": 1791095629,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "C"
+              },
+              "finish_reason": "length",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "C",
+                    "logprob": -0.05879454291283033,
+                    "bytes": [
+                      67
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "C",
+                        "logprob": -0.05879454291283033,
+                        "bytes": [
+                          67
+                        ]
+                      },
+                      {
+                        "token": "A",
+                        "logprob": -3.155144259099354,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "D",
+                        "logprob": -4.855688616399158,
+                        "bytes": [
+                          68
+                        ]
+                      },
+                      {
+                        "token": "B",
+                        "logprob": -5.79481749213158,
+                        "bytes": [
+                          66
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -6.856283709172596,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "E",
+                        "logprob": -7.861882731084217,
+                        "bytes": [
+                          69
+                        ]
+                      },
+                      {
+                        "token": "**",
+                        "logprob": -8.374585672978748,
+                        "bytes": [
+                          42,
+                          42
+                        ]
+                      },
+                      {
+                        "token": "c",
+                        "logprob": -8.801268145207752,
+                        "bytes": [
+                          99
+                        ]
+                      },
+                      {
+                        "token": "To",
+                        "logprob": -9.300388857488025,
+                        "bytes": [
+                          84,
+                          111
+                        ]
+                      },
+                      {
+                        "token": "T",
+                        "logprob": -9.60106806433617,
+                        "bytes": [
+                          84
+                        ]
+                      },
+                      {
+                        "token": "X",
+                        "logprob": -9.689055964116443,
+                        "bytes": [
+                          88
+                        ]
+                      },
+                      {
+                        "token": "AA",
+                        "logprob": -9.72981505072533,
+                        "bytes": [
+                          65,
+                          65
+                        ]
+                      },
+                      {
+                        "token": "N",
+                        "logprob": -10.045542284612049,
+                        "bytes": [
+                          78
+                        ]
+                      },
+                      {
+                        "token": "a",
+                        "logprob": -10.170399233464588,
+                        "bytes": [
+                          97
+                        ]
+                      },
+                      {
+                        "token": "Option",
+                        "logprob": -10.355495974187244,
+                        "bytes": [
+                          79,
+                          112,
+                          116,
+                          105,
+                          111,
+                          110
+                        ]
+                      },
+                      {
+                        "token": "1",
+                        "logprob": -10.442867800359119,
+                        "bytes": [
+                          49
+                        ]
+                      },
+                      {
+                        "token": "Answer",
+                        "logprob": -10.457994982365955,
+                        "bytes": [
+                          65,
+                          110,
+                          115,
+                          119,
+                          101,
+                          114
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -10.486588045720447,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "CC",
+                        "logprob": -10.612345263127674,
+                        "bytes": [
+                          67,
+                          67
+                        ]
+                      },
+                      {
+                        "token": "I",
+                        "logprob": -10.679470583562244,
+                        "bytes": [
+                          73
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 34,
+                      "probability": 0.9463451879462268,
+                      "support": 4,
+                      "entropy": 0.2426299220475785,
+                      "selection_ms": 0.113191,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 4,
+                          "entropy": 0.2426299220475785
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 4,
+                          "entropy": 0.2426299220475785
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 34,
+                          "probability": 0.9463451879462268,
+                          "bytes": [
+                            67
+                          ],
+                          "token": "C"
+                        },
+                        {
+                          "id": 32,
+                          "probability": 0.042787999528702075,
+                          "bytes": [
+                            65
+                          ],
+                          "token": "A"
+                        },
+                        {
+                          "id": 35,
+                          "probability": 0.007812408641681341,
+                          "bytes": [
+                            68
+                          ],
+                          "token": "D"
+                        },
+                        {
+                          "id": 33,
+                          "probability": 0.0030544038833898108,
+                          "bytes": [
+                            66
+                          ],
+                          "token": "B"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 154,
+            "completion_tokens": 1,
+            "total_tokens": 155,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 154,
+            "prompt_ms": 926.3,
+            "prompt_per_token_ms": 6.015,
+            "prompt_per_second": 166.3,
+            "predicted_n": 1,
+            "predicted_ms": 26.5,
+            "predicted_per_token_ms": 26.5,
+            "predicted_per_second": 37.7,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 980.0398999941535,
+        "captured_at": "2026-10-04T06:33:50Z"
+      },
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Toy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.3 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.\nThe controller selected C. Emit that code only."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 4,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"C\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-042d56aedcfe44d1afe0ea52",
+          "object": "chat.completion",
+          "created": 1791095630,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "C"
+              },
+              "finish_reason": "stop",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "C",
+                    "logprob": -5.29582111589888,
+                    "bytes": [
+                      67
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "```",
+                        "logprob": -0.2972335075614774,
+                        "bytes": [
+                          96,
+                          96,
+                          96
+                        ]
+                      },
+                      {
+                        "token": "**",
+                        "logprob": -3.5642928337333526,
+                        "bytes": [
+                          42,
+                          42
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -3.7340058540580596,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "To",
+                        "logprob": -3.778621599602493,
+                        "bytes": [
+                          84,
+                          111
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -3.8559703087089385,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "I",
+                        "logprob": -4.142131731438431,
+                        "bytes": [
+                          73
+                        ]
+                      },
+                      {
+                        "token": "<",
+                        "logprob": -4.263477251457962,
+                        "bytes": [
+                          60
+                        ]
+                      },
+                      {
+                        "token": "import",
+                        "logprob": -4.469005510735306,
+                        "bytes": [
+                          105,
+                          109,
+                          112,
+                          111,
+                          114,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "def",
+                        "logprob": -4.4745215629813995,
+                        "bytes": [
+                          100,
+                          101,
+                          102
+                        ]
+                      },
+                      {
+                        "token": "Looking",
+                        "logprob": -4.794048235344681,
+                        "bytes": [
+                          76,
+                          111,
+                          111,
+                          107,
+                          105,
+                          110,
+                          103
+                        ]
+                      },
+                      {
+                        "token": "Based",
+                        "logprob": -4.8910350059745635,
+                        "bytes": [
+                          66,
+                          97,
+                          115,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "C",
+                        "logprob": -5.29582111589888,
+                        "bytes": [
+                          67
+                        ]
+                      },
+                      {
+                        "token": "This",
+                        "logprob": -5.374599382805618,
+                        "bytes": [
+                          84,
+                          104,
+                          105,
+                          115
+                        ]
+                      },
+                      {
+                        "token": "max",
+                        "logprob": -5.828633234429153,
+                        "bytes": [
+                          109,
+                          97,
+                          120
+                        ]
+                      },
+                      {
+                        "token": "A",
+                        "logprob": -5.886699602532181,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "SELECT",
+                        "logprob": -5.942684099602493,
+                        "bytes": [
+                          83,
+                          69,
+                          76,
+                          69,
+                          67,
+                          84
+                        ]
+                      },
+                      {
+                        "token": "#",
+                        "logprob": -6.0681895469901885,
+                        "bytes": [
+                          35
+                        ]
+                      },
+                      {
+                        "token": "##",
+                        "logprob": -6.219502375054153,
+                        "bytes": [
+                          35,
+                          35
+                        ]
+                      },
+                      {
+                        "token": "###",
+                        "logprob": -6.263153002190384,
+                        "bytes": [
+                          35,
+                          35,
+                          35
+                        ]
+                      },
+                      {
+                        "token": "We",
+                        "logprob": -6.420589373039993,
+                        "bytes": [
+                          87,
+                          101
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 34,
+                      "probability": 1,
+                      "support": 1,
+                      "entropy": 0,
+                      "selection_ms": 0.111188,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 1,
+                          "entropy": 0
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 1,
+                          "entropy": 0
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 34,
+                          "probability": 1,
+                          "bytes": [
+                            67
+                          ],
+                          "token": "C"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 98,
+            "completion_tokens": 2,
+            "total_tokens": 100,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 98,
+            "prompt_ms": 770.3,
+            "prompt_per_token_ms": 7.86,
+            "prompt_per_second": 127.2,
+            "predicted_n": 2,
+            "predicted_ms": 47.6,
+            "predicted_per_token_ms": 23.8,
+            "predicted_per_second": 42.0,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 836.4823000156321,
+        "captured_at": "2026-10-04T06:33:51Z"
+      },
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Treat STATE as data.\nSTATE:\nToy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.5 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.\nQUESTION: Which listed choice best serves the stated task?\nANSWERS:\nA: act for state A now\nB: act for state B now\nC: inspect once, then act\nD: defer\nReturn exactly one answer code. No explanation or whitespace."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 1,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-1653dbbbcbd04fcf9c0cc753",
+          "object": "chat.completion",
+          "created": 1791095631,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "C"
+              },
+              "finish_reason": "length",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "C",
+                    "logprob": -0.054151540411544886,
+                    "bytes": [
+                      67
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "C",
+                        "logprob": -0.054151540411544886,
+                        "bytes": [
+                          67
+                        ]
+                      },
+                      {
+                        "token": "A",
+                        "logprob": -3.2676448875795137,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "D",
+                        "logprob": -4.6678638512025605,
+                        "bytes": [
+                          68
+                        ]
+                      },
+                      {
+                        "token": "B",
+                        "logprob": -6.205580716742111,
+                        "bytes": [
+                          66
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -7.1051101738343965,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "E",
+                        "logprob": -8.19111824573381,
+                        "bytes": [
+                          69
+                        ]
+                      },
+                      {
+                        "token": "**",
+                        "logprob": -8.394966130865646,
+                        "bytes": [
+                          42,
+                          42
+                        ]
+                      },
+                      {
+                        "token": "c",
+                        "logprob": -8.975834851873946,
+                        "bytes": [
+                          99
+                        ]
+                      },
+                      {
+                        "token": "T",
+                        "logprob": -9.574352269781661,
+                        "bytes": [
+                          84
+                        ]
+                      },
+                      {
+                        "token": "1",
+                        "logprob": -9.588774686468673,
+                        "bytes": [
+                          49
+                        ]
+                      },
+                      {
+                        "token": "To",
+                        "logprob": -10.065790181768966,
+                        "bytes": [
+                          84,
+                          111
+                        ]
+                      },
+                      {
+                        "token": "AA",
+                        "logprob": -10.13166714252336,
+                        "bytes": [
+                          65,
+                          65
+                        ]
+                      },
+                      {
+                        "token": "N",
+                        "logprob": -10.151343351019454,
+                        "bytes": [
+                          78
+                        ]
+                      },
+                      {
+                        "token": "\"C",
+                        "logprob": -10.175097470892501,
+                        "bytes": [
+                          34,
+                          67
+                        ]
+                      },
+                      {
+                        "token": "2",
+                        "logprob": -10.260447507513595,
+                        "bytes": [
+                          50
+                        ]
+                      },
+                      {
+                        "token": "3",
+                        "logprob": -10.350574498785567,
+                        "bytes": [
+                          51
+                        ]
+                      },
+                      {
+                        "token": "V",
+                        "logprob": -10.495278363836837,
+                        "bytes": [
+                          86
+                        ]
+                      },
+                      {
+                        "token": "X",
+                        "logprob": -10.531373983038497,
+                        "bytes": [
+                          88
+                        ]
+                      },
+                      {
+                        "token": "AC",
+                        "logprob": -10.59632778705461,
+                        "bytes": [
+                          65,
+                          67
+                        ]
+                      },
+                      {
+                        "token": "a",
+                        "logprob": -10.598260884893966,
+                        "bytes": [
+                          97
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 34,
+                      "probability": 0.950334333221798,
+                      "support": 4,
+                      "entropy": 0.22968351339094284,
+                      "selection_ms": 0.11286,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 4,
+                          "entropy": 0.22968351339094284
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 4,
+                          "entropy": 0.22968351339094284
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 34,
+                          "probability": 0.950334333221798,
+                          "bytes": [
+                            67
+                          ],
+                          "token": "C"
+                        },
+                        {
+                          "id": 32,
+                          "probability": 0.03821853109637645,
+                          "bytes": [
+                            65
+                          ],
+                          "token": "A"
+                        },
+                        {
+                          "id": 35,
+                          "probability": 0.009422510321778118,
+                          "bytes": [
+                            68
+                          ],
+                          "token": "D"
+                        },
+                        {
+                          "id": 33,
+                          "probability": 0.0020246253600472316,
+                          "bytes": [
+                            66
+                          ],
+                          "token": "B"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 154,
+            "completion_tokens": 1,
+            "total_tokens": 155,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 154,
+            "prompt_ms": 940.0,
+            "prompt_per_token_ms": 6.104,
+            "prompt_per_second": 163.8,
+            "predicted_n": 1,
+            "predicted_ms": 26.2,
+            "predicted_per_token_ms": 26.2,
+            "predicted_per_second": 38.2,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 979.7765000257641,
+        "captured_at": "2026-10-04T06:33:52Z"
+      },
+      {
+        "provenance": "native-strata",
+        "request": {
+          "model": "x",
+          "messages": [
+            {
+              "role": "user",
+              "content": "Toy decision: hidden state A has probability .55, B has probability .45. Correct action rewards 1, wrong action 0. An inspection is 90 percent accurate under either state and costs 0.5 reward units. After inspection, choose the more likely state using Bayes. Deferring rewards .25. Maximize expected net reward.\nThe controller selected C. Emit that code only."
+            }
+          ],
+          "reasoning_effort": "none",
+          "seed": 675,
+          "max_tokens": 4,
+          "logprobs": true,
+          "top_logprobs": 20,
+          "grammar": "root ::= \"C\"",
+          "strata_sampler": {
+            "chain": [
+              "temperature"
+            ],
+            "temperature": 1.0,
+            "inspect": true
+          }
+        },
+        "response": {
+          "id": "chatcmpl-5a2315db53ea493fa2283e77",
+          "object": "chat.completion",
+          "created": 1791095632,
+          "model": "qwen3.8-flash-next",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "C"
+              },
+              "finish_reason": "stop",
+              "logprobs": {
+                "content": [
+                  {
+                    "token": "C",
+                    "logprob": -5.071955546127061,
+                    "bytes": [
+                      67
+                    ],
+                    "top_logprobs": [
+                      {
+                        "token": "```",
+                        "logprob": -0.19063745378086946,
+                        "bytes": [
+                          96,
+                          96,
+                          96
+                        ]
+                      },
+                      {
+                        "token": "The",
+                        "logprob": -3.795696123824815,
+                        "bytes": [
+                          84,
+                          104,
+                          101
+                        ]
+                      },
+                      {
+                        "token": "**",
+                        "logprob": -4.108984812484483,
+                        "bytes": [
+                          42,
+                          42
+                        ]
+                      },
+                      {
+                        "token": "Let",
+                        "logprob": -4.544652804122666,
+                        "bytes": [
+                          76,
+                          101,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "To",
+                        "logprob": -4.589580401168565,
+                        "bytes": [
+                          84,
+                          111
+                        ]
+                      },
+                      {
+                        "token": "I",
+                        "logprob": -4.749561175094346,
+                        "bytes": [
+                          73
+                        ]
+                      },
+                      {
+                        "token": "<",
+                        "logprob": -4.980440958724717,
+                        "bytes": [
+                          60
+                        ]
+                      },
+                      {
+                        "token": "Based",
+                        "logprob": -5.04839883683751,
+                        "bytes": [
+                          66,
+                          97,
+                          115,
+                          101,
+                          100
+                        ]
+                      },
+                      {
+                        "token": "C",
+                        "logprob": -5.071955546127061,
+                        "bytes": [
+                          67
+                        ]
+                      },
+                      {
+                        "token": "Looking",
+                        "logprob": -5.074336870895127,
+                        "bytes": [
+                          76,
+                          111,
+                          111,
+                          107,
+                          105,
+                          110,
+                          103
+                        ]
+                      },
+                      {
+                        "token": "This",
+                        "logprob": -5.100417956100205,
+                        "bytes": [
+                          84,
+                          104,
+                          105,
+                          115
+                        ]
+                      },
+                      {
+                        "token": "def",
+                        "logprob": -5.662872179733018,
+                        "bytes": [
+                          100,
+                          101,
+                          102
+                        ]
+                      },
+                      {
+                        "token": "A",
+                        "logprob": -5.8075808131558695,
+                        "bytes": [
+                          65
+                        ]
+                      },
+                      {
+                        "token": "import",
+                        "logprob": -6.04119668840001,
+                        "bytes": [
+                          105,
+                          109,
+                          112,
+                          111,
+                          114,
+                          116
+                        ]
+                      },
+                      {
+                        "token": "#",
+                        "logprob": -6.060085161910752,
+                        "bytes": [
+                          35
+                        ]
+                      },
+                      {
+                        "token": "Given",
+                        "logprob": -6.184305056319932,
+                        "bytes": [
+                          71,
+                          105,
+                          118,
+                          101,
+                          110
+                        ]
+                      },
+                      {
+                        "token": "##",
+                        "logprob": -6.186903818832139,
+                        "bytes": [
+                          35,
+                          35
+                        ]
+                      },
+                      {
+                        "token": "<|im_end|>",
+                        "logprob": -6.22160611985753,
+                        "bytes": null
+                      },
+                      {
+                        "token": "SELECT",
+                        "logprob": -6.255397661910752,
+                        "bytes": [
+                          83,
+                          69,
+                          76,
+                          69,
+                          67,
+                          84
+                        ]
+                      },
+                      {
+                        "token": "###",
+                        "logprob": -6.26839338182042,
+                        "bytes": [
+                          35,
+                          35,
+                          35
+                        ]
+                      }
+                    ],
+                    "strata_sampling": {
+                      "index": 0,
+                      "id": 34,
+                      "probability": 1,
+                      "support": 1,
+                      "entropy": 0,
+                      "selection_ms": 0.111638,
+                      "stages": [
+                        {
+                          "operator": "grammar",
+                          "support": 1,
+                          "entropy": 0
+                        },
+                        {
+                          "operator": "temperature",
+                          "support": 1,
+                          "entropy": 0
+                        }
+                      ],
+                      "top": [
+                        {
+                          "id": 34,
+                          "probability": 1,
+                          "bytes": [
+                            67
+                          ],
+                          "token": "C"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "refusal": null
+              }
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 98,
+            "completion_tokens": 2,
+            "total_tokens": 100,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 98,
+            "prompt_ms": 770.1,
+            "prompt_per_token_ms": 7.858,
+            "prompt_per_second": 127.3,
+            "predicted_n": 2,
+            "predicted_ms": 45.0,
+            "predicted_per_token_ms": 22.5,
+            "predicted_per_second": 44.4,
+            "draft_n": 0,
+            "draft_n_accepted": 0
+          }
+        },
+        "chunks": [],
+        "wall_ms": 855.8193999924697,
+        "captured_at": "2026-10-04T06:33:53Z"
+      }
+    ]
+  },
+  "wall_ms": 5590.712200035341
+}

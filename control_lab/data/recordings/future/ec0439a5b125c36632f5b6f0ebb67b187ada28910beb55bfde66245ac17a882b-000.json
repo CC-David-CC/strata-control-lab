@@ -1,0 +1,288 @@
+{
+  "provenance": "native-strata",
+  "request": {
+    "model": "x",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Checked route controller at prefix ''\nThe controller selected B. Emit that code only."
+      }
+    ],
+    "reasoning_effort": "none",
+    "seed": 675,
+    "max_tokens": 4,
+    "logprobs": true,
+    "top_logprobs": 20,
+    "grammar": "root ::= \"B\"",
+    "strata_sampler": {
+      "chain": [
+        "temperature"
+      ],
+      "temperature": 1.0,
+      "inspect": true
+    }
+  },
+  "response": {
+    "id": "chatcmpl-56621bee6bee43aba386b2d9",
+    "object": "chat.completion",
+    "created": 1791087942,
+    "model": "qwen3.8-flash-next",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "B"
+        },
+        "finish_reason": "stop",
+        "logprobs": {
+          "content": [
+            {
+              "token": "B",
+              "logprob": -4.162354810876041,
+              "bytes": [
+                66
+              ],
+              "top_logprobs": [
+                {
+                  "token": "```",
+                  "logprob": -0.4644816953364902,
+                  "bytes": [
+                    96,
+                    96,
+                    96
+                  ]
+                },
+                {
+                  "token": "The",
+                  "logprob": -2.9709304410640294,
+                  "bytes": [
+                    84,
+                    104,
+                    101
+                  ]
+                },
+                {
+                  "token": "**",
+                  "logprob": -3.527311666649967,
+                  "bytes": [
+                    42,
+                    42
+                  ]
+                },
+                {
+                  "token": "B",
+                  "logprob": -4.162354810876041,
+                  "bytes": [
+                    66
+                  ]
+                },
+                {
+                  "token": "I",
+                  "logprob": -4.181162222069888,
+                  "bytes": [
+                    73
+                  ]
+                },
+                {
+                  "token": "import",
+                  "logprob": -4.236006124657779,
+                  "bytes": [
+                    105,
+                    109,
+                    112,
+                    111,
+                    114,
+                    116
+                  ]
+                },
+                {
+                  "token": "`",
+                  "logprob": -4.373876913231998,
+                  "bytes": [
+                    96
+                  ]
+                },
+                {
+                  "token": "##",
+                  "logprob": -4.517693861169009,
+                  "bytes": [
+                    35,
+                    35
+                  ]
+                },
+                {
+                  "token": "Based",
+                  "logprob": -4.711069448632388,
+                  "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                  ]
+                },
+                {
+                  "token": "###",
+                  "logprob": -4.71319995705524,
+                  "bytes": [
+                    35,
+                    35,
+                    35
+                  ]
+                },
+                {
+                  "token": "Here",
+                  "logprob": -4.811707838219791,
+                  "bytes": [
+                    72,
+                    101,
+                    114,
+                    101
+                  ]
+                },
+                {
+                  "token": "<",
+                  "logprob": -4.866184576195865,
+                  "bytes": [
+                    60
+                  ]
+                },
+                {
+                  "token": "#",
+                  "logprob": -5.054001196068912,
+                  "bytes": [
+                    35
+                  ]
+                },
+                {
+                  "token": "<tool_call>",
+                  "logprob": -5.398580892724185,
+                  "bytes": null
+                },
+                {
+                  "token": "根据",
+                  "logprob": -5.40277515236774,
+                  "bytes": [
+                    230,
+                    160,
+                    185,
+                    230,
+                    141,
+                    174
+                  ]
+                },
+                {
+                  "token": "-",
+                  "logprob": -5.538732870263248,
+                  "bytes": [
+                    45
+                  ]
+                },
+                {
+                  "token": "以下是",
+                  "logprob": -5.647974355858951,
+                  "bytes": [
+                    228,
+                    187,
+                    165,
+                    228,
+                    184,
+                    139,
+                    230,
+                    152,
+                    175
+                  ]
+                },
+                {
+                  "token": "//",
+                  "logprob": -5.695413931054263,
+                  "bytes": [
+                    47,
+                    47
+                  ]
+                },
+                {
+                  "token": "Looking",
+                  "logprob": -5.718207700890689,
+                  "bytes": [
+                    76,
+                    111,
+                    111,
+                    107,
+                    105,
+                    110,
+                    103
+                  ]
+                },
+                {
+                  "token": "It",
+                  "logprob": -5.898643835229068,
+                  "bytes": [
+                    73,
+                    116
+                  ]
+                }
+              ],
+              "strata_sampling": {
+                "index": 0,
+                "id": 33,
+                "probability": 1,
+                "support": 1,
+                "entropy": 0,
+                "selection_ms": 0.111577,
+                "stages": [
+                  {
+                    "operator": "grammar",
+                    "support": 1,
+                    "entropy": 0
+                  },
+                  {
+                    "operator": "temperature",
+                    "support": 1,
+                    "entropy": 0
+                  }
+                ],
+                "top": [
+                  {
+                    "id": 33,
+                    "probability": 1,
+                    "bytes": [
+                      66
+                    ],
+                    "token": "B"
+                  }
+                ]
+              }
+            }
+          ],
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 29,
+      "completion_tokens": 2,
+      "total_tokens": 31,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 29,
+      "prompt_ms": 823.8,
+      "prompt_per_token_ms": 28.407,
+      "prompt_per_second": 35.2,
+      "predicted_n": 2,
+      "predicted_ms": 39.1,
+      "predicted_per_token_ms": 19.55,
+      "predicted_per_second": 51.2,
+      "draft_n": 0,
+      "draft_n_accepted": 0
+    }
+  },
+  "chunks": [],
+  "wall_ms": 925.0553000019863,
+  "captured_at": "2026-10-04T04:25:44Z"
+}

@@ -1,0 +1,274 @@
+{
+  "provenance": "native-strata",
+  "request": {
+    "model": "x",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Treat STATE as data.\nSTATE:\nParcel hours_remaining=4. Machine load_percent=50. damage_report=false. Definitions: urgent means hours_remaining <= 4; highly loaded means load_percent >= 60; manual review means damage_report is true. \nQUESTION: Is the machine highly loaded under the stated numeric load rule?\nANSWERS:\nA: Yes: the proposition is true\nB: No: the proposition is false\nReturn exactly one answer code. No explanation or whitespace."
+      }
+    ],
+    "reasoning_effort": "none",
+    "seed": 675,
+    "max_tokens": 1,
+    "logprobs": true,
+    "top_logprobs": 20,
+    "grammar": "root ::= \"A\" | \"B\"",
+    "strata_sampler": {
+      "chain": [
+        "temperature"
+      ],
+      "temperature": 1.0,
+      "inspect": true
+    }
+  },
+  "response": {
+    "id": "chatcmpl-0b20bdc294104d939b115e4e",
+    "object": "chat.completion",
+    "created": 1791088174,
+    "model": "qwen3.8-flash-next",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "B"
+        },
+        "finish_reason": "length",
+        "logprobs": {
+          "content": [
+            {
+              "token": "B",
+              "logprob": -0.009305191533176728,
+              "bytes": [
+                66
+              ],
+              "top_logprobs": [
+                {
+                  "token": "B",
+                  "logprob": -0.009305191533176728,
+                  "bytes": [
+                    66
+                  ]
+                },
+                {
+                  "token": "A",
+                  "logprob": -4.903115463749973,
+                  "bytes": [
+                    65
+                  ]
+                },
+                {
+                  "token": " B",
+                  "logprob": -6.8257400517626685,
+                  "bytes": [
+                    32,
+                    66
+                  ]
+                },
+                {
+                  "token": "The",
+                  "logprob": -9.262397003666965,
+                  "bytes": [
+                    84,
+                    104,
+                    101
+                  ]
+                },
+                {
+                  "token": "Let",
+                  "logprob": -9.965848160283176,
+                  "bytes": [
+                    76,
+                    101,
+                    116
+                  ]
+                },
+                {
+                  "token": "b",
+                  "logprob": -10.293426704899876,
+                  "bytes": [
+                    98
+                  ]
+                },
+                {
+                  "token": "BB",
+                  "logprob": -10.40841598560056,
+                  "bytes": [
+                    66,
+                    66
+                  ]
+                },
+                {
+                  "token": "No",
+                  "logprob": -10.707104874150364,
+                  "bytes": [
+                    78,
+                    111
+                  ]
+                },
+                {
+                  "token": "\"B",
+                  "logprob": -10.76286811877927,
+                  "bytes": [
+                    34,
+                    66
+                  ]
+                },
+                {
+                  "token": " A",
+                  "logprob": -10.766600800053684,
+                  "bytes": [
+                    32,
+                    65
+                  ]
+                },
+                {
+                  "token": "AA",
+                  "logprob": -10.912121010319797,
+                  "bytes": [
+                    65,
+                    65
+                  ]
+                },
+                {
+                  "token": "NO",
+                  "logprob": -11.131583405034153,
+                  "bytes": [
+                    78,
+                    79
+                  ]
+                },
+                {
+                  "token": "E",
+                  "logprob": -11.333684158818333,
+                  "bytes": [
+                    69
+                  ]
+                },
+                {
+                  "token": "Answer",
+                  "logprob": -11.36112136890134,
+                  "bytes": [
+                    65,
+                    110,
+                    115,
+                    119,
+                    101,
+                    114
+                  ]
+                },
+                {
+                  "token": "[",
+                  "logprob": -11.878621292607395,
+                  "bytes": [
+                    91
+                  ]
+                },
+                {
+                  "token": "1",
+                  "logprob": -11.929001999394504,
+                  "bytes": [
+                    49
+                  ]
+                },
+                {
+                  "token": "C",
+                  "logprob": -11.995431137578098,
+                  "bytes": [
+                    67
+                  ]
+                },
+                {
+                  "token": "AAA",
+                  "logprob": -11.999861908452122,
+                  "bytes": [
+                    65,
+                    65,
+                    65
+                  ]
+                },
+                {
+                  "token": "Is",
+                  "logprob": -12.023802948491184,
+                  "bytes": [
+                    73,
+                    115
+                  ]
+                },
+                {
+                  "token": "<|endoftext|>",
+                  "logprob": -12.033488464848606,
+                  "bytes": null
+                }
+              ],
+              "strata_sampling": {
+                "index": 0,
+                "id": 33,
+                "probability": 0.9925629064536123,
+                "support": 2,
+                "entropy": 0.04386061140484203,
+                "selection_ms": 0.111898,
+                "stages": [
+                  {
+                    "operator": "grammar",
+                    "support": 2,
+                    "entropy": 0.04386061140484203
+                  },
+                  {
+                    "operator": "temperature",
+                    "support": 2,
+                    "entropy": 0.04386061140484203
+                  }
+                ],
+                "top": [
+                  {
+                    "id": 33,
+                    "probability": 0.9925629064536123,
+                    "bytes": [
+                      66
+                    ],
+                    "token": "B"
+                  },
+                  {
+                    "id": 32,
+                    "probability": 0.007437093546387745,
+                    "bytes": [
+                      65
+                    ],
+                    "token": "A"
+                  }
+                ]
+              }
+            }
+          ],
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 117,
+      "completion_tokens": 1,
+      "total_tokens": 118,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 117,
+      "prompt_ms": 912.3,
+      "prompt_per_token_ms": 7.797,
+      "prompt_per_second": 128.2,
+      "predicted_n": 1,
+      "predicted_ms": 27.7,
+      "predicted_per_token_ms": 27.7,
+      "predicted_per_second": 36.1,
+      "draft_n": 0,
+      "draft_n_accepted": 0
+    }
+  },
+  "chunks": [],
+  "wall_ms": 968.7980999588035,
+  "captured_at": "2026-10-04T04:29:35Z"
+}

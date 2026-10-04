@@ -1,0 +1,14 @@
+export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export const $=id=>document.getElementById(id);
+export const n=(x,d=3)=>x==null?'undefined':Number(x).toFixed(d);
+export const pct=x=>x==null?'undefined':n(x*100,2)+'%';
+export const info=t=>`<p class="research-note">${esc(t)}</p>`;
+export const details=(title,data)=>`<details><summary>${esc(title)}</summary><pre>${esc(JSON.stringify(data,null,2))}</pre></details>`;
+export const stats=rows=>`<div class="research-stats">${rows.map(([a,b])=>`<div><span>${esc(a)}</span><strong>${esc(b)}</strong></div>`).join('')}</div>`;
+export const bars=(names,values)=>`<div class="measure-bars">${names.map((name,i)=>`<div class="measure-row"><div><span>${esc(name)}</span><b>${pct(values[i])}</b></div><div class="measure-track"><i style="width:${Math.max(0,Math.min(100,values[i]*100))}%"></i></div></div>`).join('')}</div>`;
+export function shell(target,title,text,options,dial){
+ target.innerHTML=`<div class="research-banner"><span class="eyebrow">MEASURE / COMPOSE / INTERVENE</span><h3>${esc(title)}</h3><p>${esc(text)}</p></div><div class="instrument-flow" aria-label="Illustration of the measurement pipeline"><span>state</span><i></i><span>distribution</span><i></i><span>arithmetic</span><i></i><span>decision</span></div><p class="instrument-caption">Flow motion illustrates the calculation. Controls below recompute the captured measurements; Run experiment obtains a new run.</p><div class="instrument-controls"><label class="field"><span>Inspect a case</span><select id="lens">${options.map((x,i)=>`<option value="${i}">${esc(x)}</option>`).join('')}</select></label><label class="field"><span>${esc(dial.name)} <b id="dial-value"></b></span><input type="range" id="dial" min="${dial.min}" max="${dial.max}" step="${dial.step}" value="${dial.value}"></label></div><div id="instrument-view" aria-live="polite"></div>`;
+}
+export function bind(draw){const update=()=>{$('dial-value').textContent=$('dial').value;draw(+$('lens').value,+$('dial').value,$('instrument-view'));};$('lens').onchange=update;$('dial').oninput=update;update();}
+export function softmax(values){const high=Math.max(...values),p=values.map(x=>Math.exp(x-high)),z=p.reduce((a,b)=>a+b);return p.map(x=>x/z);}
+export function line(values,color='#4b8055') {const w=580,h=170;const low=Math.min(0,...values),high=Math.max(1e-8,...values),range=high-low;return `<svg class="instrument-curve" viewBox="0 0 ${w} ${h}" role="img" aria-label="Measured or calculated values; open the accompanying data for exact units"><path d="M20 140H560" stroke="#b7c9a0"/><path d="${values.map((v,i)=>`${i?'L':'M'}${20+i*540/Math.max(1,values.length-1)} ${140-(v-low)/range*110}`).join(' ')}" fill="none" stroke="${color}" stroke-width="3"/>${values.map((v,i)=>`<circle cx="${20+i*540/Math.max(1,values.length-1)}" cy="${140-(v-low)/range*110}" r="4" fill="${color}"/>`).join('')}</svg>`;}

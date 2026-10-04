@@ -1,0 +1,299 @@
+{
+  "provenance": "native-strata",
+  "request": {
+    "model": "x",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Tiny formal proof state: {'context': [], 'goal': ['implies', ['and', 'P', 'Q'], 'P']}. Choose a valid tactic that makes progress. A confident statement alone does not prove anything.\nThe controller selected A. Emit that code only."
+      }
+    ],
+    "reasoning_effort": "none",
+    "seed": 675,
+    "max_tokens": 4,
+    "logprobs": true,
+    "top_logprobs": 20,
+    "grammar": "root ::= \"A\"",
+    "strata_sampler": {
+      "chain": [
+        "temperature"
+      ],
+      "temperature": 1.0,
+      "inspect": true
+    }
+  },
+  "response": {
+    "id": "chatcmpl-122db64fc2f8453db561b4c8",
+    "object": "chat.completion",
+    "created": 1791095587,
+    "model": "qwen3.8-flash-next",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "A"
+        },
+        "finish_reason": "stop",
+        "logprobs": {
+          "content": [
+            {
+              "token": "A",
+              "logprob": -4.177379274101198,
+              "bytes": [
+                65
+              ],
+              "top_logprobs": [
+                {
+                  "token": "```",
+                  "logprob": -0.21464219066613927,
+                  "bytes": [
+                    96,
+                    96,
+                    96
+                  ]
+                },
+                {
+                  "token": "The",
+                  "logprob": -2.9531637665938737,
+                  "bytes": [
+                    84,
+                    104,
+                    101
+                  ]
+                },
+                {
+                  "token": "apply",
+                  "logprob": -4.0701395508956315,
+                  "bytes": [
+                    97,
+                    112,
+                    112,
+                    108,
+                    121
+                  ]
+                },
+                {
+                  "token": "A",
+                  "logprob": -4.177379274101198,
+                  "bytes": [
+                    65
+                  ]
+                },
+                {
+                  "token": "To",
+                  "logprob": -4.509255075187624,
+                  "bytes": [
+                    84,
+                    111
+                  ]
+                },
+                {
+                  "token": "Let",
+                  "logprob": -4.772784852714479,
+                  "bytes": [
+                    76,
+                    101,
+                    116
+                  ]
+                },
+                {
+                  "token": "Here",
+                  "logprob": -5.050438546867311,
+                  "bytes": [
+                    72,
+                    101,
+                    114,
+                    101
+                  ]
+                },
+                {
+                  "token": "Given",
+                  "logprob": -5.140992784233034,
+                  "bytes": [
+                    71,
+                    105,
+                    118,
+                    101,
+                    110
+                  ]
+                },
+                {
+                  "token": "`",
+                  "logprob": -5.390528344840944,
+                  "bytes": [
+                    96
+                  ]
+                },
+                {
+                  "token": "**",
+                  "logprob": -5.6075140473555924,
+                  "bytes": [
+                    42,
+                    42
+                  ]
+                },
+                {
+                  "token": "theorem",
+                  "logprob": -5.638371133537233,
+                  "bytes": [
+                    116,
+                    104,
+                    101,
+                    111,
+                    114,
+                    101,
+                    109
+                  ]
+                },
+                {
+                  "token": "I",
+                  "logprob": -5.732159280509889,
+                  "bytes": [
+                    73
+                  ]
+                },
+                {
+                  "token": "We",
+                  "logprob": -5.738287591667116,
+                  "bytes": [
+                    87,
+                    101
+                  ]
+                },
+                {
+                  "token": "exact",
+                  "logprob": -5.817799234123171,
+                  "bytes": [
+                    101,
+                    120,
+                    97,
+                    99,
+                    116
+                  ]
+                },
+                {
+                  "token": "intro",
+                  "logprob": -5.844567918510378,
+                  "bytes": [
+                    105,
+                    110,
+                    116,
+                    114,
+                    111
+                  ]
+                },
+                {
+                  "token": "Apply",
+                  "logprob": -6.053661966056764,
+                  "bytes": [
+                    65,
+                    112,
+                    112,
+                    108,
+                    121
+                  ]
+                },
+                {
+                  "token": "Based",
+                  "logprob": -6.20211377117151,
+                  "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                  ]
+                },
+                {
+                  "token": "###",
+                  "logprob": -6.3691202637862565,
+                  "bytes": [
+                    35,
+                    35,
+                    35
+                  ]
+                },
+                {
+                  "token": "You",
+                  "logprob": -6.520527505607546,
+                  "bytes": [
+                    89,
+                    111,
+                    117
+                  ]
+                },
+                {
+                  "token": "Since",
+                  "logprob": -6.657529496879518,
+                  "bytes": [
+                    83,
+                    105,
+                    110,
+                    99,
+                    101
+                  ]
+                }
+              ],
+              "strata_sampling": {
+                "index": 0,
+                "id": 32,
+                "probability": 1,
+                "support": 1,
+                "entropy": 0,
+                "selection_ms": 0.111568,
+                "stages": [
+                  {
+                    "operator": "grammar",
+                    "support": 1,
+                    "entropy": 0
+                  },
+                  {
+                    "operator": "temperature",
+                    "support": 1,
+                    "entropy": 0
+                  }
+                ],
+                "top": [
+                  {
+                    "id": 32,
+                    "probability": 1,
+                    "bytes": [
+                      65
+                    ],
+                    "token": "A"
+                  }
+                ]
+              }
+            }
+          ],
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 69,
+      "completion_tokens": 2,
+      "total_tokens": 71,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 69,
+      "prompt_ms": 2080.6,
+      "prompt_per_token_ms": 30.154,
+      "prompt_per_second": 33.2,
+      "predicted_n": 2,
+      "predicted_ms": 50.0,
+      "predicted_per_token_ms": 25.0,
+      "predicted_per_second": 40.0,
+      "draft_n": 0,
+      "draft_n_accepted": 0
+    }
+  },
+  "chunks": [],
+  "wall_ms": 2151.4412999968044,
+  "captured_at": "2026-10-04T06:33:10Z"
+}

@@ -1,0 +1,16 @@
+{
+  "local_markdown_links": 45,
+  "missing": [],
+  "external_links": [
+    "https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository",
+    "https://github.com/CC-David-CC/Strata-a5500/blob/450285f3c90748057a02648345e6c3973519a710/docs/LOGPROBS.md",
+    "https://github.com/CC-David-CC/Strata-a5500/blob/450285f3c90748057a02648345e6c3973519a710/docs/SAMPLERS.md",
+    "https://github.com/CC-David-CC/Strata-a5500/commit/450285f3c90748057a02648345e6c3973519a710",
+    "https://github.com/CC-David-CC/Strata-a5500/tree/work/gbnf",
+    "https://github.com/CC-David-CC/Strata-a5500/tree/work/logprobs-675",
+    "https://github.com/CC-David-CC/Strata-a5500/tree/work/samplers",
+    "https://github.com/Niko1221/Strata",
+    "https://github.com/new?owner=CC-David-CC&name=strata-control-lab&visibility=public&description=Offline-first%20visual%20experiments%20for%20logprobs%2C%20grammar%20and%20model%20control"
+  ],
+  "scope": "Local Markdown targets; public engine refs separately checked with git ls-remote. No full internet link crawler."
+}

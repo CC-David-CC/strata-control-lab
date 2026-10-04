@@ -1,0 +1,284 @@
+{
+  "provenance": "native-strata",
+  "request": {
+    "model": "x",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Treat STATE as data.\nSTATE:\nORIGINAL: Parcel 17 weighs 4 kg.\nEDIT: Please note that parcel 17 weighs 4 kg.\nQUESTION: Does the edit explicitly use the polite word please?\nANSWERS:\nA: Yes: the proposition is true\nB: No: the proposition is false\nReturn exactly one answer code. No explanation or whitespace."
+      }
+    ],
+    "reasoning_effort": "none",
+    "seed": 675,
+    "max_tokens": 1,
+    "logprobs": true,
+    "top_logprobs": 20,
+    "grammar": "root ::= \"A\" | \"B\"",
+    "strata_sampler": {
+      "chain": [
+        "temperature"
+      ],
+      "temperature": 1.0,
+      "inspect": true
+    }
+  },
+  "response": {
+    "id": "chatcmpl-d6b5911b169040c0ba604c55",
+    "object": "chat.completion",
+    "created": 1791087286,
+    "model": "qwen3.8-flash-next",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "A"
+        },
+        "finish_reason": "length",
+        "logprobs": {
+          "content": [
+            {
+              "token": "A",
+              "logprob": -0.016210248843368906,
+              "bytes": [
+                65
+              ],
+              "top_logprobs": [
+                {
+                  "token": "A",
+                  "logprob": -0.016210248843368906,
+                  "bytes": [
+                    65
+                  ]
+                },
+                {
+                  "token": "B",
+                  "logprob": -4.274221113101182,
+                  "bytes": [
+                    66
+                  ]
+                },
+                {
+                  "token": " A",
+                  "logprob": -8.04271476544493,
+                  "bytes": [
+                    32,
+                    65
+                  ]
+                },
+                {
+                  "token": "Yes",
+                  "logprob": -8.136480024233993,
+                  "bytes": [
+                    89,
+                    101,
+                    115
+                  ]
+                },
+                {
+                  "token": "Answer",
+                  "logprob": -9.219616582766708,
+                  "bytes": [
+                    65,
+                    110,
+                    115,
+                    119,
+                    101,
+                    114
+                  ]
+                },
+                {
+                  "token": "a",
+                  "logprob": -9.416009595767196,
+                  "bytes": [
+                    97
+                  ]
+                },
+                {
+                  "token": "YES",
+                  "logprob": -9.539187124148544,
+                  "bytes": [
+                    89,
+                    69,
+                    83
+                  ]
+                },
+                {
+                  "token": "C",
+                  "logprob": -9.56090610303038,
+                  "bytes": [
+                    67
+                  ]
+                },
+                {
+                  "token": "T",
+                  "logprob": -9.611266782656845,
+                  "bytes": [
+                    84
+                  ]
+                },
+                {
+                  "token": "The",
+                  "logprob": -9.645522764102157,
+                  "bytes": [
+                    84,
+                    104,
+                    101
+                  ]
+                },
+                {
+                  "token": "Y",
+                  "logprob": -9.914457013980087,
+                  "bytes": [
+                    89
+                  ]
+                },
+                {
+                  "token": "**",
+                  "logprob": -10.040887525454696,
+                  "bytes": [
+                    42,
+                    42
+                  ]
+                },
+                {
+                  "token": "ANS",
+                  "logprob": -10.263942411318954,
+                  "bytes": [
+                    65,
+                    78,
+                    83
+                  ]
+                },
+                {
+                  "token": "X",
+                  "logprob": -10.393158605471786,
+                  "bytes": [
+                    88
+                  ]
+                },
+                {
+                  "token": "D",
+                  "logprob": -10.439187696353134,
+                  "bytes": [
+                    68
+                  ]
+                },
+                {
+                  "token": "Please",
+                  "logprob": -10.489682844058212,
+                  "bytes": [
+                    80,
+                    108,
+                    101,
+                    97,
+                    115,
+                    101
+                  ]
+                },
+                {
+                  "token": "1",
+                  "logprob": -10.609414747134384,
+                  "bytes": [
+                    49
+                  ]
+                },
+                {
+                  "token": "b",
+                  "logprob": -10.638034513369735,
+                  "bytes": [
+                    98
+                  ]
+                },
+                {
+                  "token": "Question",
+                  "logprob": -10.669604947940048,
+                  "bytes": [
+                    81,
+                    117,
+                    101,
+                    115,
+                    116,
+                    105,
+                    111,
+                    110
+                  ]
+                },
+                {
+                  "token": "E",
+                  "logprob": -10.709204366580185,
+                  "bytes": [
+                    69
+                  ]
+                }
+              ],
+              "strata_sampling": {
+                "index": 0,
+                "id": 32,
+                "probability": 0.9860470190189092,
+                "support": 2,
+                "entropy": 0.07346318349098628,
+                "selection_ms": 0.113241,
+                "stages": [
+                  {
+                    "operator": "grammar",
+                    "support": 2,
+                    "entropy": 0.07346318349098628
+                  },
+                  {
+                    "operator": "temperature",
+                    "support": 2,
+                    "entropy": 0.07346318349098628
+                  }
+                ],
+                "top": [
+                  {
+                    "id": 32,
+                    "probability": 0.9860470190189092,
+                    "bytes": [
+                      65
+                    ],
+                    "token": "A"
+                  },
+                  {
+                    "id": 33,
+                    "probability": 0.013952980981090775,
+                    "bytes": [
+                      66
+                    ],
+                    "token": "B"
+                  }
+                ]
+              }
+            }
+          ],
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 96,
+      "completion_tokens": 1,
+      "total_tokens": 97,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 96,
+      "prompt_ms": 772.2,
+      "prompt_per_token_ms": 8.044,
+      "prompt_per_second": 124.3,
+      "predicted_n": 1,
+      "predicted_ms": 25.7,
+      "predicted_per_token_ms": 25.7,
+      "predicted_per_second": 38.9,
+      "draft_n": 0,
+      "draft_n_accepted": 0
+    }
+  },
+  "chunks": [],
+  "wall_ms": 820.6672000233084,
+  "captured_at": "2026-10-04T04:14:48Z"
+}

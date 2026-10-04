@@ -1,0 +1,175 @@
+{
+  "package": "0.1.0",
+  "installed_in_site_packages": true,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "network_blocked": true,
+  "native_recordings": 342,
+  "request_examples": 10,
+  "pages": [
+    {
+      "page": "choice",
+      "calls": 3
+    },
+    {
+      "page": "boolean",
+      "calls": 2
+    },
+    {
+      "page": "score",
+      "calls": 3
+    },
+    {
+      "page": "candidates",
+      "calls": 5
+    },
+    {
+      "page": "controller",
+      "calls": 6
+    },
+    {
+      "page": "rerank",
+      "calls": 9
+    },
+    {
+      "page": "graph",
+      "calls": 10
+    },
+    {
+      "page": "scene",
+      "calls": 13
+    },
+    {
+      "page": "wire",
+      "calls": 1
+    },
+    {
+      "page": "speculation",
+      "calls": 0
+    },
+    {
+      "page": "performance",
+      "calls": 19
+    },
+    {
+      "page": "samplers",
+      "calls": 9
+    },
+    {
+      "page": "sampler-sandbox",
+      "calls": 0
+    },
+    {
+      "page": "tictactoe",
+      "calls": 14
+    },
+    {
+      "page": "chess",
+      "calls": 7
+    },
+    {
+      "page": "poker",
+      "calls": 9
+    },
+    {
+      "page": "thermal",
+      "calls": 24
+    },
+    {
+      "page": "scheduler",
+      "calls": 12
+    },
+    {
+      "page": "context",
+      "calls": 8
+    },
+    {
+      "page": "observer",
+      "calls": 18
+    },
+    {
+      "page": "calibration",
+      "calls": 14
+    },
+    {
+      "page": "information",
+      "calls": 4
+    },
+    {
+      "page": "search",
+      "calls": 10
+    },
+    {
+      "page": "frontier",
+      "calls": 0
+    },
+    {
+      "page": "research-map",
+      "calls": 0
+    },
+    {
+      "page": "circuit",
+      "calls": 7
+    },
+    {
+      "page": "control",
+      "calls": 6
+    },
+    {
+      "page": "counterexamples",
+      "calls": 25
+    },
+    {
+      "page": "future",
+      "calls": 7
+    },
+    {
+      "page": "pressure",
+      "calls": 4
+    },
+    {
+      "page": "sensitivity",
+      "calls": 21
+    },
+    {
+      "page": "adversary",
+      "calls": 6
+    },
+    {
+      "page": "budget",
+      "calls": 6
+    },
+    {
+      "page": "camouflage",
+      "calls": 6
+    },
+    {
+      "page": "compiler",
+      "calls": 4
+    },
+    {
+      "page": "divider",
+      "calls": 6
+    },
+    {
+      "page": "music",
+      "calls": 4
+    },
+    {
+      "page": "proof",
+      "calls": 6
+    },
+    {
+      "page": "transaction",
+      "calls": 4
+    }
+  ],
+  "dependencies": {
+    "fastapi": "0.142.2",
+    "uvicorn": "0.54.0",
+    "httpx": "0.28.1",
+    "chess": "1.11.2",
+    "pydantic": "2.13.5",
+    "starlette": "1.7.0"
+  }
+}

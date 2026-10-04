@@ -1,0 +1,95 @@
+# Strata Control Lab
+
+**Watch a model's preferences become decisions you can inspect.**
+
+39 animated experiments explore logprobs, GBNF, JSON, sampler order and feedback
+control. Start with yes/no questions, then follow games, document graphs,
+grammar pressure, semantic sensitivity and small worlds with exact referees.
+Every page shows its request, rules, measurements and a runnable Python example.
+
+![The 39-experiment gallery](docs/images/index.png)
+
+The first run uses **342 bundled native recordings**. You need Python 3.11 or
+newer, but no model, GPU, Node, database or Strata checkout. Dependency
+installation needs internet access; the recorded tour works offline afterward.
+
+## Start the lab
+
+Download this repository with GitHub's **Code → Download ZIP** and extract it,
+or clone it. Open a terminal in the extracted repository folder.
+
+**Windows PowerShell**
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\python.exe -m pip install .
+.\.venv\Scripts\python.exe -m control_lab
+```
+
+**Ubuntu / Linux**
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install .
+.venv/bin/python -m control_lab
+```
+
+Open **[localhost:8876](http://127.0.0.1:8876)** and leave the terminal running.
+The index starts the recorded tour after 12 seconds. Each page walks through its
+example, opens the next page and eventually loops. **Pause / explore** lets you
+take over. Press **Ctrl+C** in the terminal to stop the server.
+
+If port 8876 is occupied, add `--port 8877` and open that port instead. Ubuntu
+may require `sudo apt install python3-venv` before creating the environment.
+The [getting-started guide](docs/GETTING_STARTED.md) covers controls, downloads
+and connecting your own model.
+
+## Try the examples without the website
+
+[Download the ZIP of all 39 self-contained Python examples](control_lab/static/strata-control-lab-39-offline-examples.zip).
+On its GitHub file page, use **Download raw file**, then extract it.
+
+```sh
+python strata-choice-example.py
+python strata-samplers-example.py --all
+python strata-pressure-example.py --lesson-only --value 1
+python strata-scene-example.py --request 1 --show
+```
+
+Use `py` on Windows or `python3` on Linux if `python` is unavailable. These files
+use only the standard library. They contain the actual calculations, exact
+requests, constraints and recorded replies. Network use requires an explicit
+`--live-url`; replay is the default.
+
+## What is inside?
+
+| Start here | Then explore | Inspect the limits |
+| --- | --- | --- |
+| Choice, yes/no, rubric scores | Finite grammar branches and state controllers | Missing top-N labels stay unknown |
+| Grammar and sampler order | Min-P, sigma, XTC and grammar pressure | Raw scores differ from sampled weights |
+| Games and feedback loops | Graph reconstruction and semantic observers | Legal actions can still be poor decisions |
+| Joint probability circuits | Control directions and counterexample search | Model scores are not calibrated truth |
+| Small applied worlds | Proofs, compiler rewrites, circuits and transactions | Exact toy referees expose model mistakes |
+
+[All 39 experiments](docs/EXPERIMENTS.md) ·
+[Live Strata compatibility](docs/ENGINE_COMPATIBILITY.md) ·
+[Evidence and limitations](docs/EVIDENCE.md) ·
+[Contributing and tests](docs/DEVELOPING.md)
+
+The UI's motion explains operations; it is not hardware telemetry. Native
+recordings, simulations and analytical inputs are labeled. The tour never
+starts an unattended loop of live model requests. The examples support learning
+and bounded experiments, not claims of universal model superiority or measured
+hardware roofline performance.
+
+## A separate client for Strata
+
+This repository contains the lab and its evidence. It calls a compatible Strata
+server over HTTP when you select **Live model**. The inference engine, Responses
+API, GBNF/JSON implementation, logprobs and native samplers remain in the
+[Strata contributions](docs/ENGINE_COMPATIBILITY.md).
+
+Extracted into fresh history from the lab developed in CC-David-CC's Strata
+fork. See [provenance and attribution](ATTRIBUTION.md). This is an independent
+educational project, not an official upstream Strata release. Code is MIT
+licensed; the bundled font retains its OFL license.

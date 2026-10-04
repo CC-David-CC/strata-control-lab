@@ -1,0 +1,11 @@
+{
+  "source_commit": "8c99143e05234c02f2ccf41cc3361746b09773cd",
+  "source_files_copied": 481,
+  "data_files_byte_identical": 382,
+  "native_recordings_byte_identical": 342,
+  "archive_sha256": "e4129cd4cbc2f75273de30fcc01f7f1420a0f1d2360094a7dd75c185a2315c1d",
+  "archive_bytes": 925435,
+  "archive_examples": 39,
+  "engine_files_included": false,
+  "original_checkout_modified": false
+}

@@ -1,0 +1,302 @@
+{
+  "provenance": "native-strata",
+  "request": {
+    "model": "x",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Finite-action controller, alpha=2.0. A unit test fails because a variable name was misspelled. The surrounding module otherwise works. Choose a next editing action.\nThe controller selected A. Emit that code only."
+      }
+    ],
+    "reasoning_effort": "none",
+    "seed": 675,
+    "max_tokens": 4,
+    "logprobs": true,
+    "top_logprobs": 20,
+    "grammar": "root ::= \"A\"",
+    "strata_sampler": {
+      "chain": [
+        "temperature"
+      ],
+      "temperature": 1.0,
+      "inspect": true
+    }
+  },
+  "response": {
+    "id": "chatcmpl-2de4f22165404881b882d8bd",
+    "object": "chat.completion",
+    "created": 1791087473,
+    "model": "qwen3.8-flash-next",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "A"
+        },
+        "finish_reason": "stop",
+        "logprobs": {
+          "content": [
+            {
+              "token": "A",
+              "logprob": -3.345767471874275,
+              "bytes": [
+                65
+              ],
+              "top_logprobs": [
+                {
+                  "token": "```",
+                  "logprob": -0.761540863597908,
+                  "bytes": [
+                    96,
+                    96,
+                    96
+                  ]
+                },
+                {
+                  "token": "I",
+                  "logprob": -1.7382292486076736,
+                  "bytes": [
+                    73
+                  ]
+                },
+                {
+                  "token": "Selected",
+                  "logprob": -2.7681956029777908,
+                  "bytes": [
+                    83,
+                    101,
+                    108,
+                    101,
+                    99,
+                    116,
+                    101,
+                    100
+                  ]
+                },
+                {
+                  "token": "The",
+                  "logprob": -2.905269119823494,
+                  "bytes": [
+                    84,
+                    104,
+                    101
+                  ]
+                },
+                {
+                  "token": "Based",
+                  "logprob": -3.0576796270256423,
+                  "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                  ]
+                },
+                {
+                  "token": "A",
+                  "logprob": -3.345767471874275,
+                  "bytes": [
+                    65
+                  ]
+                },
+                {
+                  "token": "Looking",
+                  "logprob": -4.180845711315193,
+                  "bytes": [
+                    76,
+                    111,
+                    111,
+                    107,
+                    105,
+                    110,
+                    103
+                  ]
+                },
+                {
+                  "token": "**",
+                  "logprob": -4.32664630183033,
+                  "bytes": [
+                    42,
+                    42
+                  ]
+                },
+                {
+                  "token": "Let",
+                  "logprob": -5.199843857372322,
+                  "bytes": [
+                    76,
+                    101,
+                    116
+                  ]
+                },
+                {
+                  "token": "SELECT",
+                  "logprob": -5.2447104192619705,
+                  "bytes": [
+                    83,
+                    69,
+                    76,
+                    69,
+                    67,
+                    84
+                  ]
+                },
+                {
+                  "token": "<tool_call>",
+                  "logprob": -5.261014435375252,
+                  "bytes": null
+                },
+                {
+                  "token": "Option",
+                  "logprob": -5.5058893895988845,
+                  "bytes": [
+                    79,
+                    112,
+                    116,
+                    105,
+                    111,
+                    110
+                  ]
+                },
+                {
+                  "token": "selected",
+                  "logprob": -5.511836502635994,
+                  "bytes": [
+                    115,
+                    101,
+                    108,
+                    101,
+                    99,
+                    116,
+                    101,
+                    100
+                  ]
+                },
+                {
+                  "token": "Action",
+                  "logprob": -5.521176788890877,
+                  "bytes": [
+                    65,
+                    99,
+                    116,
+                    105,
+                    111,
+                    110
+                  ]
+                },
+                {
+                  "token": "\"",
+                  "logprob": -5.550067398632088,
+                  "bytes": [
+                    34
+                  ]
+                },
+                {
+                  "token": "Choice",
+                  "logprob": -5.651694748485603,
+                  "bytes": [
+                    67,
+                    104,
+                    111,
+                    105,
+                    99,
+                    101
+                  ]
+                },
+                {
+                  "token": "`",
+                  "logprob": -5.799909088695564,
+                  "bytes": [
+                    96
+                  ]
+                },
+                {
+                  "token": "Here",
+                  "logprob": -6.071988556469002,
+                  "bytes": [
+                    72,
+                    101,
+                    114,
+                    101
+                  ]
+                },
+                {
+                  "token": "<",
+                  "logprob": -6.231146309459724,
+                  "bytes": [
+                    60
+                  ]
+                },
+                {
+                  "token": "To",
+                  "logprob": -6.241500351512947,
+                  "bytes": [
+                    84,
+                    111
+                  ]
+                }
+              ],
+              "strata_sampling": {
+                "index": 0,
+                "id": 32,
+                "probability": 1,
+                "support": 1,
+                "entropy": 0,
+                "selection_ms": 0.11309,
+                "stages": [
+                  {
+                    "operator": "grammar",
+                    "support": 1,
+                    "entropy": 0
+                  },
+                  {
+                    "operator": "temperature",
+                    "support": 1,
+                    "entropy": 0
+                  }
+                ],
+                "top": [
+                  {
+                    "id": 32,
+                    "probability": 1,
+                    "bytes": [
+                      65
+                    ],
+                    "token": "A"
+                  }
+                ]
+              }
+            }
+          ],
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 58,
+      "completion_tokens": 2,
+      "total_tokens": 60,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 58,
+      "prompt_ms": 1356.0,
+      "prompt_per_token_ms": 23.379,
+      "prompt_per_second": 42.8,
+      "predicted_n": 2,
+      "predicted_ms": 35.2,
+      "predicted_per_token_ms": 17.6,
+      "predicted_per_second": 56.8,
+      "draft_n": 0,
+      "draft_n_accepted": 0
+    }
+  },
+  "chunks": [],
+  "wall_ms": 1412.8537999931723,
+  "captured_at": "2026-10-04T04:17:54Z"
+}

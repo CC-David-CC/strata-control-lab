@@ -1,0 +1,287 @@
+{
+  "provenance": "native-strata",
+  "request": {
+    "model": "x",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Treat STATE as data.\nSTATE:\nSimulated voltage divider: output = input * R_bottom/(R_top + R_bottom). Input=12 V, target=5 V. Each resistor can vary independently by 5 percent. Pick the pair with minimum worst-case absolute voltage error.\nQUESTION: Which listed choice best serves the stated task?\nANSWERS:\nA: R_top=1000 ohm; R_bottom=2000 ohm\nB: R_top=2000 ohm; R_bottom=1000 ohm\nC: R_top=1000 ohm; R_bottom=1000 ohm\nD: R_top=3000 ohm; R_bottom=2000 ohm\nReturn exactly one answer code. No explanation or whitespace."
+      }
+    ],
+    "reasoning_effort": "none",
+    "seed": 675,
+    "max_tokens": 1,
+    "logprobs": true,
+    "top_logprobs": 20,
+    "grammar": "root ::= \"A\" | \"B\" | \"C\" | \"D\"",
+    "strata_sampler": {
+      "chain": [
+        "temperature"
+      ],
+      "temperature": 1.0,
+      "inspect": true
+    }
+  },
+  "response": {
+    "id": "chatcmpl-8d0475c15a1d49dea7958154",
+    "object": "chat.completion",
+    "created": 1791095604,
+    "model": "qwen3.8-flash-next",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "B"
+        },
+        "finish_reason": "length",
+        "logprobs": {
+          "content": [
+            {
+              "token": "B",
+              "logprob": -1.5514358970784814,
+              "bytes": [
+                66
+              ],
+              "top_logprobs": [
+                {
+                  "token": "A",
+                  "logprob": -0.7157635185384422,
+                  "bytes": [
+                    65
+                  ]
+                },
+                {
+                  "token": "B",
+                  "logprob": -1.5514358970784814,
+                  "bytes": [
+                    66
+                  ]
+                },
+                {
+                  "token": "C",
+                  "logprob": -1.7955860588216455,
+                  "bytes": [
+                    67
+                  ]
+                },
+                {
+                  "token": "D",
+                  "logprob": -2.203182646956411,
+                  "bytes": [
+                    68
+                  ]
+                },
+                {
+                  "token": "1",
+                  "logprob": -5.716318556990591,
+                  "bytes": [
+                    49
+                  ]
+                },
+                {
+                  "token": "Let",
+                  "logprob": -6.040903517928091,
+                  "bytes": [
+                    76,
+                    101,
+                    116
+                  ]
+                },
+                {
+                  "token": " A",
+                  "logprob": -6.490896651473013,
+                  "bytes": [
+                    32,
+                    65
+                  ]
+                },
+                {
+                  "token": "E",
+                  "logprob": -6.912103125777212,
+                  "bytes": [
+                    69
+                  ]
+                },
+                {
+                  "token": " C",
+                  "logprob": -7.081038901534048,
+                  "bytes": [
+                    32,
+                    67
+                  ]
+                },
+                {
+                  "token": "2",
+                  "logprob": -7.118849227156606,
+                  "bytes": [
+                    50
+                  ]
+                },
+                {
+                  "token": " B",
+                  "logprob": -7.197717139449087,
+                  "bytes": [
+                    32,
+                    66
+                  ]
+                },
+                {
+                  "token": "Option",
+                  "logprob": -7.411576697554556,
+                  "bytes": [
+                    79,
+                    112,
+                    116,
+                    105,
+                    111,
+                    110
+                  ]
+                },
+                {
+                  "token": "3",
+                  "logprob": -7.628364989485708,
+                  "bytes": [
+                    51
+                  ]
+                },
+                {
+                  "token": "5",
+                  "logprob": -7.671482512679067,
+                  "bytes": [
+                    53
+                  ]
+                },
+                {
+                  "token": " D",
+                  "logprob": -7.6960377189778955,
+                  "bytes": [
+                    32,
+                    68
+                  ]
+                },
+                {
+                  "token": "output",
+                  "logprob": -7.968124816145864,
+                  "bytes": [
+                    111,
+                    117,
+                    116,
+                    112,
+                    117,
+                    116
+                  ]
+                },
+                {
+                  "token": "c",
+                  "logprob": -8.033659407820668,
+                  "bytes": [
+                    99
+                  ]
+                },
+                {
+                  "token": "a",
+                  "logprob": -8.073620269026723,
+                  "bytes": [
+                    97
+                  ]
+                },
+                {
+                  "token": "T",
+                  "logprob": -8.096293875899281,
+                  "bytes": [
+                    84
+                  ]
+                },
+                {
+                  "token": "<|im_end|>",
+                  "logprob": -8.330233046736684,
+                  "bytes": null
+                }
+              ],
+              "strata_sampling": {
+                "index": 0,
+                "id": 33,
+                "probability": 0.21687885923348463,
+                "support": 4,
+                "entropy": 1.2255542955967904,
+                "selection_ms": 0.1127,
+                "stages": [
+                  {
+                    "operator": "grammar",
+                    "support": 4,
+                    "entropy": 1.2255542955967904
+                  },
+                  {
+                    "operator": "temperature",
+                    "support": 4,
+                    "entropy": 1.2255542955967904
+                  }
+                ],
+                "top": [
+                  {
+                    "id": 32,
+                    "probability": 0.5002016533517317,
+                    "bytes": [
+                      65
+                    ],
+                    "token": "A"
+                  },
+                  {
+                    "id": 33,
+                    "probability": 0.21687885923348463,
+                    "bytes": [
+                      66
+                    ],
+                    "token": "B"
+                  },
+                  {
+                    "id": 34,
+                    "probability": 0.16989639048876376,
+                    "bytes": [
+                      67
+                    ],
+                    "token": "C"
+                  },
+                  {
+                    "id": 35,
+                    "probability": 0.11302309692601974,
+                    "bytes": [
+                      68
+                    ],
+                    "token": "D"
+                  }
+                ]
+              }
+            }
+          ],
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 189,
+      "completion_tokens": 1,
+      "total_tokens": 190,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 189,
+      "prompt_ms": 1106.8,
+      "prompt_per_token_ms": 5.856,
+      "prompt_per_second": 170.8,
+      "predicted_n": 1,
+      "predicted_ms": 23.6,
+      "predicted_per_token_ms": 23.6,
+      "predicted_per_second": 42.4,
+      "draft_n": 0,
+      "draft_n_accepted": 0
+    }
+  },
+  "chunks": [],
+  "wall_ms": 1154.2630000039935,
+  "captured_at": "2026-10-04T06:33:26Z"
+}

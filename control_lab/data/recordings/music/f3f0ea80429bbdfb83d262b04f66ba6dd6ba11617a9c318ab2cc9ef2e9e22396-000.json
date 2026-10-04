@@ -1,0 +1,284 @@
+{
+  "provenance": "native-strata",
+  "request": {
+    "model": "x",
+    "messages": [
+      {
+        "role": "user",
+        "content": "The last beat must land on a C-major chord tone: C, E, or G. Previous note is E. D is syntactically representable but violates this application rule.\nThe controller selected A. Emit that code only."
+      }
+    ],
+    "reasoning_effort": "none",
+    "seed": 675,
+    "max_tokens": 4,
+    "logprobs": true,
+    "top_logprobs": 20,
+    "grammar": "root ::= \"A\"",
+    "strata_sampler": {
+      "chain": [
+        "temperature"
+      ],
+      "temperature": 1.0,
+      "inspect": true
+    }
+  },
+  "response": {
+    "id": "chatcmpl-f45a339dc1ec4e3e9af00ef6",
+    "object": "chat.completion",
+    "created": 1791095535,
+    "model": "qwen3.8-flash-next",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "A"
+        },
+        "finish_reason": "stop",
+        "logprobs": {
+          "content": [
+            {
+              "token": "A",
+              "logprob": -2.688782724717069,
+              "bytes": [
+                65
+              ],
+              "top_logprobs": [
+                {
+                  "token": "```",
+                  "logprob": -0.47129348216335787,
+                  "bytes": [
+                    96,
+                    96,
+                    96
+                  ]
+                },
+                {
+                  "token": "The",
+                  "logprob": -2.4784803718117954,
+                  "bytes": [
+                    84,
+                    104,
+                    101
+                  ]
+                },
+                {
+                  "token": "A",
+                  "logprob": -2.688782724717069,
+                  "bytes": [
+                    65
+                  ]
+                },
+                {
+                  "token": "**",
+                  "logprob": -2.948417696335721,
+                  "bytes": [
+                    42,
+                    42
+                  ]
+                },
+                {
+                  "token": "D",
+                  "logprob": -3.924620661118436,
+                  "bytes": [
+                    68
+                  ]
+                },
+                {
+                  "token": "E",
+                  "logprob": -4.373765024521756,
+                  "bytes": [
+                    69
+                  ]
+                },
+                {
+                  "token": "I",
+                  "logprob": -4.959109339096951,
+                  "bytes": [
+                    73
+                  ]
+                },
+                {
+                  "token": "SELECT",
+                  "logprob": -4.979331049302029,
+                  "bytes": [
+                    83,
+                    69,
+                    76,
+                    69,
+                    67,
+                    84
+                  ]
+                },
+                {
+                  "token": "Looking",
+                  "logprob": -5.199737581589627,
+                  "bytes": [
+                    76,
+                    111,
+                    111,
+                    107,
+                    105,
+                    110,
+                    103
+                  ]
+                },
+                {
+                  "token": "C",
+                  "logprob": -5.214392694809842,
+                  "bytes": [
+                    67
+                  ]
+                },
+                {
+                  "token": "Based",
+                  "logprob": -5.304135355332303,
+                  "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                  ]
+                },
+                {
+                  "token": "{",
+                  "logprob": -5.480313333847928,
+                  "bytes": [
+                    123
+                  ]
+                },
+                {
+                  "token": "To",
+                  "logprob": -5.600451502182889,
+                  "bytes": [
+                    84,
+                    111
+                  ]
+                },
+                {
+                  "token": "##",
+                  "logprob": -5.654418978074002,
+                  "bytes": [
+                    35,
+                    35
+                  ]
+                },
+                {
+                  "token": "It",
+                  "logprob": -5.756108316758084,
+                  "bytes": [
+                    73,
+                    116
+                  ]
+                },
+                {
+                  "token": "Let",
+                  "logprob": -5.952511820176053,
+                  "bytes": [
+                    76,
+                    101,
+                    116
+                  ]
+                },
+                {
+                  "token": "You",
+                  "logprob": -5.95830825267117,
+                  "bytes": [
+                    89,
+                    111,
+                    117
+                  ]
+                },
+                {
+                  "token": "This",
+                  "logprob": -5.991034540512967,
+                  "bytes": [
+                    84,
+                    104,
+                    105,
+                    115
+                  ]
+                },
+                {
+                  "token": "###",
+                  "logprob": -6.0599050849465605,
+                  "bytes": [
+                    35,
+                    35,
+                    35
+                  ]
+                },
+                {
+                  "token": "Here",
+                  "logprob": -6.131335291245389,
+                  "bytes": [
+                    72,
+                    101,
+                    114,
+                    101
+                  ]
+                }
+              ],
+              "strata_sampling": {
+                "index": 0,
+                "id": 32,
+                "probability": 1,
+                "support": 1,
+                "entropy": 0,
+                "selection_ms": 0.111287,
+                "stages": [
+                  {
+                    "operator": "grammar",
+                    "support": 1,
+                    "entropy": 0
+                  },
+                  {
+                    "operator": "temperature",
+                    "support": 1,
+                    "entropy": 0
+                  }
+                ],
+                "top": [
+                  {
+                    "id": 32,
+                    "probability": 1,
+                    "bytes": [
+                      65
+                    ],
+                    "token": "A"
+                  }
+                ]
+              }
+            }
+          ],
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 60,
+      "completion_tokens": 2,
+      "total_tokens": 62,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 60,
+      "prompt_ms": 1744.1,
+      "prompt_per_token_ms": 29.068,
+      "prompt_per_second": 34.4,
+      "predicted_n": 2,
+      "predicted_ms": 68.0,
+      "predicted_per_token_ms": 34.0,
+      "predicted_per_second": 29.4,
+      "draft_n": 0,
+      "draft_n_accepted": 0
+    }
+  },
+  "chunks": [],
+  "wall_ms": 1832.4032999807969,
+  "captured_at": "2026-10-04T06:32:17Z"
+}

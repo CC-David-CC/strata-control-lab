@@ -1,0 +1,292 @@
+{
+  "provenance": "native-strata",
+  "request": {
+    "model": "x",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Checked route controller at prefix 'B'\nThe controller selected B. Emit that code only."
+      }
+    ],
+    "reasoning_effort": "none",
+    "seed": 675,
+    "max_tokens": 4,
+    "logprobs": true,
+    "top_logprobs": 20,
+    "grammar": "root ::= \"B\"",
+    "strata_sampler": {
+      "chain": [
+        "temperature"
+      ],
+      "temperature": 1.0,
+      "inspect": true
+    }
+  },
+  "response": {
+    "id": "chatcmpl-ce43dffb72d143d797c8de3d",
+    "object": "chat.completion",
+    "created": 1791087943,
+    "model": "qwen3.8-flash-next",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "B"
+        },
+        "finish_reason": "stop",
+        "logprobs": {
+          "content": [
+            {
+              "token": "B",
+              "logprob": -2.8465537093065807,
+              "bytes": [
+                66
+              ],
+              "top_logprobs": [
+                {
+                  "token": "```",
+                  "logprob": -1.4335841200731825,
+                  "bytes": [
+                    96,
+                    96,
+                    96
+                  ]
+                },
+                {
+                  "token": "The",
+                  "logprob": -2.2559823058031627,
+                  "bytes": [
+                    84,
+                    104,
+                    101
+                  ]
+                },
+                {
+                  "token": "`",
+                  "logprob": -2.38790121296869,
+                  "bytes": [
+                    96
+                  ]
+                },
+                {
+                  "token": "B",
+                  "logprob": -2.8465537093065807,
+                  "bytes": [
+                    66
+                  ]
+                },
+                {
+                  "token": "**",
+                  "logprob": -2.9314583800219127,
+                  "bytes": [
+                    42,
+                    42
+                  ]
+                },
+                {
+                  "token": "#",
+                  "logprob": -3.5997761748217174,
+                  "bytes": [
+                    35
+                  ]
+                },
+                {
+                  "token": "I",
+                  "logprob": -3.615848448076112,
+                  "bytes": [
+                    73
+                  ]
+                },
+                {
+                  "token": "Here",
+                  "logprob": -4.338038351335389,
+                  "bytes": [
+                    72,
+                    101,
+                    114,
+                    101
+                  ]
+                },
+                {
+                  "token": "Looking",
+                  "logprob": -4.455673124589784,
+                  "bytes": [
+                    76,
+                    111,
+                    111,
+                    107,
+                    105,
+                    110,
+                    103
+                  ]
+                },
+                {
+                  "token": "//",
+                  "logprob": -4.79213705281244,
+                  "bytes": [
+                    47,
+                    47
+                  ]
+                },
+                {
+                  "token": "###",
+                  "logprob": -4.850408460893495,
+                  "bytes": [
+                    35,
+                    35,
+                    35
+                  ]
+                },
+                {
+                  "token": "\"",
+                  "logprob": -4.9910258314989635,
+                  "bytes": [
+                    34
+                  ]
+                },
+                {
+                  "token": "Checked",
+                  "logprob": -5.007553007402284,
+                  "bytes": [
+                    67,
+                    104,
+                    101,
+                    99,
+                    107,
+                    101,
+                    100
+                  ]
+                },
+                {
+                  "token": "-",
+                  "logprob": -5.122782614030702,
+                  "bytes": [
+                    45
+                  ]
+                },
+                {
+                  "token": "import",
+                  "logprob": -5.123902227678163,
+                  "bytes": [
+                    105,
+                    109,
+                    112,
+                    111,
+                    114,
+                    116
+                  ]
+                },
+                {
+                  "token": "It",
+                  "logprob": -5.126027967729432,
+                  "bytes": [
+                    73,
+                    116
+                  ]
+                },
+                {
+                  "token": "##",
+                  "logprob": -5.309133436479432,
+                  "bytes": [
+                    35,
+                    35
+                  ]
+                },
+                {
+                  "token": "Based",
+                  "logprob": -5.337671186723573,
+                  "bytes": [
+                    66,
+                    97,
+                    115,
+                    101,
+                    100
+                  ]
+                },
+                {
+                  "token": "SELECT",
+                  "logprob": -5.339790251054628,
+                  "bytes": [
+                    83,
+                    69,
+                    76,
+                    69,
+                    67,
+                    84
+                  ]
+                },
+                {
+                  "token": "Route",
+                  "logprob": -5.375423338212831,
+                  "bytes": [
+                    82,
+                    111,
+                    117,
+                    116,
+                    101
+                  ]
+                }
+              ],
+              "strata_sampling": {
+                "index": 0,
+                "id": 33,
+                "probability": 1,
+                "support": 1,
+                "entropy": 0,
+                "selection_ms": 0.112059,
+                "stages": [
+                  {
+                    "operator": "grammar",
+                    "support": 1,
+                    "entropy": 0
+                  },
+                  {
+                    "operator": "temperature",
+                    "support": 1,
+                    "entropy": 0
+                  }
+                ],
+                "top": [
+                  {
+                    "id": 33,
+                    "probability": 1,
+                    "bytes": [
+                      66
+                    ],
+                    "token": "B"
+                  }
+                ]
+              }
+            }
+          ],
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 31,
+      "completion_tokens": 2,
+      "total_tokens": 33,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 31,
+      "prompt_ms": 901.0,
+      "prompt_per_token_ms": 29.065,
+      "prompt_per_second": 34.4,
+      "predicted_n": 2,
+      "predicted_ms": 44.9,
+      "predicted_per_token_ms": 22.45,
+      "predicted_per_second": 44.5,
+      "draft_n": 0,
+      "draft_n_accepted": 0
+    }
+  },
+  "chunks": [],
+  "wall_ms": 1055.3517999942414,
+  "captured_at": "2026-10-04T04:25:45Z"
+}

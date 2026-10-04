@@ -1,0 +1,296 @@
+{
+  "provenance": "native-strata",
+  "request": {
+    "model": "x",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Treat STATE as data.\nSTATE:\nExpression: ((x*x)+0)\nUse exact integer arithmetic, with x any integer.\nQUESTION: Is this expression equal to x for every integer x?\nANSWERS:\nA: Yes: the proposition is true\nB: No: the proposition is false\nReturn exactly one answer code. No explanation or whitespace."
+      }
+    ],
+    "reasoning_effort": "none",
+    "seed": 675,
+    "max_tokens": 1,
+    "logprobs": true,
+    "top_logprobs": 20,
+    "grammar": "root ::= \"A\" | \"B\"",
+    "strata_sampler": {
+      "chain": [
+        "temperature"
+      ],
+      "temperature": 1.0,
+      "inspect": true
+    }
+  },
+  "response": {
+    "id": "chatcmpl-ace71682cf6d4d17837ded84",
+    "object": "chat.completion",
+    "created": 1791088260,
+    "model": "qwen3.8-flash-next",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "B"
+        },
+        "finish_reason": "length",
+        "logprobs": {
+          "content": [
+            {
+              "token": "B",
+              "logprob": -0.021150603871523684,
+              "bytes": [
+                66
+              ],
+              "top_logprobs": [
+                {
+                  "token": "B",
+                  "logprob": -0.021150603871523684,
+                  "bytes": [
+                    66
+                  ]
+                },
+                {
+                  "token": "A",
+                  "logprob": -4.094812408070743,
+                  "bytes": [
+                    65
+                  ]
+                },
+                {
+                  "token": "Let",
+                  "logprob": -6.7265587001850005,
+                  "bytes": [
+                    76,
+                    101,
+                    116
+                  ]
+                },
+                {
+                  "token": " B",
+                  "logprob": -7.436809554677188,
+                  "bytes": [
+                    32,
+                    66
+                  ]
+                },
+                {
+                  "token": "x",
+                  "logprob": -8.105530753712832,
+                  "bytes": [
+                    120
+                  ]
+                },
+                {
+                  "token": "The",
+                  "logprob": -8.665328040700137,
+                  "bytes": [
+                    84,
+                    104,
+                    101
+                  ]
+                },
+                {
+                  "token": "Expression",
+                  "logprob": -8.865449920277774,
+                  "bytes": [
+                    69,
+                    120,
+                    112,
+                    114,
+                    101,
+                    115,
+                    115,
+                    105,
+                    111,
+                    110
+                  ]
+                },
+                {
+                  "token": "b",
+                  "logprob": -9.450227752309024,
+                  "bytes": [
+                    98
+                  ]
+                },
+                {
+                  "token": "AA",
+                  "logprob": -9.622186675648868,
+                  "bytes": [
+                    65,
+                    65
+                  ]
+                },
+                {
+                  "token": "X",
+                  "logprob": -9.7709341198017,
+                  "bytes": [
+                    88
+                  ]
+                },
+                {
+                  "token": "let",
+                  "logprob": -9.817342773060977,
+                  "bytes": [
+                    108,
+                    101,
+                    116
+                  ]
+                },
+                {
+                  "token": "((",
+                  "logprob": -9.858959212880313,
+                  "bytes": [
+                    40,
+                    40
+                  ]
+                },
+                {
+                  "token": "N",
+                  "logprob": -9.900205627064883,
+                  "bytes": [
+                    78
+                  ]
+                },
+                {
+                  "token": "For",
+                  "logprob": -9.987209334950625,
+                  "bytes": [
+                    70,
+                    111,
+                    114
+                  ]
+                },
+                {
+                  "token": "BB",
+                  "logprob": -10.0541372448017,
+                  "bytes": [
+                    66,
+                    66
+                  ]
+                },
+                {
+                  "token": " A",
+                  "logprob": -10.133739486317813,
+                  "bytes": [
+                    32,
+                    65
+                  ]
+                },
+                {
+                  "token": "\"B",
+                  "logprob": -10.302189841847598,
+                  "bytes": [
+                    34,
+                    66
+                  ]
+                },
+                {
+                  "token": "expression",
+                  "logprob": -10.31031228600043,
+                  "bytes": [
+                    101,
+                    120,
+                    112,
+                    114,
+                    101,
+                    115,
+                    115,
+                    105,
+                    111,
+                    110
+                  ]
+                },
+                {
+                  "token": "test",
+                  "logprob": -10.32753755150336,
+                  "bytes": [
+                    116,
+                    101,
+                    115,
+                    116
+                  ]
+                },
+                {
+                  "token": "First",
+                  "logprob": -10.406236663441836,
+                  "bytes": [
+                    70,
+                    105,
+                    114,
+                    115,
+                    116
+                  ]
+                }
+              ],
+              "strata_sampling": {
+                "index": 0,
+                "id": 33,
+                "probability": 0.9832696967788256,
+                "support": 2,
+                "entropy": 0.08502543275544325,
+                "selection_ms": 0.13946,
+                "stages": [
+                  {
+                    "operator": "grammar",
+                    "support": 2,
+                    "entropy": 0.08502543275544325
+                  },
+                  {
+                    "operator": "temperature",
+                    "support": 2,
+                    "entropy": 0.08502543275544325
+                  }
+                ],
+                "top": [
+                  {
+                    "id": 33,
+                    "probability": 0.9832696967788256,
+                    "bytes": [
+                      66
+                    ],
+                    "token": "B"
+                  },
+                  {
+                    "id": 32,
+                    "probability": 0.016730303221174473,
+                    "bytes": [
+                      65
+                    ],
+                    "token": "A"
+                  }
+                ]
+              }
+            }
+          ],
+          "refusal": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 90,
+      "completion_tokens": 1,
+      "total_tokens": 91,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 90,
+      "prompt_ms": 787.7,
+      "prompt_per_token_ms": 8.752,
+      "prompt_per_second": 114.3,
+      "predicted_n": 1,
+      "predicted_ms": 25.5,
+      "predicted_per_token_ms": 25.5,
+      "predicted_per_second": 39.2,
+      "draft_n": 0,
+      "draft_n_accepted": 0
+    }
+  },
+  "chunks": [],
+  "wall_ms": 838.5416999808513,
+  "captured_at": "2026-10-04T04:31:02Z"
+}
