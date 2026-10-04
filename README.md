@@ -7,6 +7,8 @@ control. Start with yes/no questions, then follow games, document graphs,
 grammar pressure, semantic sensitivity and small worlds with exact referees.
 Every page shows its request, rules, measurements and a runnable Python example.
 
+**[Watch the Control Lab video on YouTube](https://www.youtube.com/watch?v=yCFbqbt7rH0).**
+
 ![The 39-experiment gallery](docs/images/index.png)
 
 The first run uses **342 bundled native recordings**. You need Python 3.11 or
