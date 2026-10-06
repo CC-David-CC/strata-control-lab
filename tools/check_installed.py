@@ -24,6 +24,9 @@ async def check():
     assert len(PAGES) == 39
     assert sum(len(list(root.glob('*.json'))) for root in recording_roots()) == 342
     assert (STATIC/'strata-control-lab-39-offline-examples.zip').is_file()
+    assert (STATIC/'strata-control-lab-39-raw-score-examples.zip').is_file()
+    assert (STATIC/'score-panel.js').is_file()
+    assert all(p.get('score_view', {}).get('derived') for p in PAGES)
     assert (STATIC/'OFL.txt').is_file()
     assert len(list((DATA/'requests').glob('*.json'))) == 10
 

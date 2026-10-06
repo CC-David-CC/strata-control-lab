@@ -11,6 +11,18 @@ import pytest
 RUNNER=STATIC/'portable.py'
 
 
+def test_token_printing_keeps_native_raw_and_sampling_scores_distinct(capsys):
+    module=runpy.run_path(str(RUNNER))
+    token=dict(token='Z',bytes=[90],logprob=-16,strata_sampling={'probability':1})
+    response={'sse_events':[{'choices':[{'logprobs':{'content':[token]}}]}]}
+    assert module['raw_tokens'](response)==[token]
+    module['print_raw_tokens'](response)
+    output=capsys.readouterr().out
+    assert 'raw ln p=-16' in output and 'raw p=1.12535175e-07' in output
+    assert 'weight q=1 (separate from raw p)' in output
+    assert token['logprob']==-16
+
+
 def test_mock_is_exact_and_does_not_mutate_its_fixture():
     module=runpy.run_path(str(RUNNER))
     fixture={'request':{'messages':[{'role':'user','content':'emoji 🧪 and "quotes"'}]},

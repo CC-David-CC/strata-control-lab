@@ -90,4 +90,9 @@ from .research_catalog import PAGES as RESEARCH_PAGES
 PAGES += RESEARCH_PAGES
 from .instrument_registry import PAGES as INSTRUMENT_PAGES
 PAGES += INSTRUMENT_PAGES
+from .score_views import SCORE_VIEWS
+if set(SCORE_VIEWS) != {p['id'] for p in PAGES}:
+    raise ValueError('Every lab page needs an explicit raw/derived score explanation')
+for p in PAGES:
+    p['score_view'] = SCORE_VIEWS[p['id']]
 BY_ID = {p['id']: p for p in PAGES}

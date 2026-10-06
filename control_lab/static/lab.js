@@ -1,4 +1,5 @@
 import {rawTokenMarkup} from './token-chip.js';
+import {clearScorePanel,renderScorePanel} from './score-panel.js';
 import {renderResearch,stopResearch} from './research.js';
 import {clearRequests,setRequests,showRequest} from './request-panel.js';
 import {createTour} from './tour.js';
@@ -59,6 +60,7 @@ function navigate(name, replace=false) {
   sourceNote();
   clearRequests();
   clearLesson();
+  clearScorePanel($('score-panel'));
   const nextPage=catalog.pages[(catalog.pages.findIndex(p=>p.id===name)+1)%catalog.pages.length];
   tour.start({...page,name:page.name||names[page.id]},{...nextPage,name:nextPage.name||names[nextPage.id]},manualTour||$('mode').value!=='recorded');
 }
@@ -204,6 +206,7 @@ async function run(event) {
   aborter=new AbortController(); last=null;steps=[];
   clearRequests();
   $('download').disabled=true;
+  clearScorePanel($('score-panel'));
   $('timeline').innerHTML='<li class="subtle">Preparing the first request…</li>';
   $('result').innerHTML='<div class="request-progress"><span class="spinner"></span>Preparing experiment…</div>';
   status('Running','running');busy(true);
@@ -223,7 +226,7 @@ async function run(event) {
         }
         if(data.type==='error'){sawTerminal=true;throw new Error(data.message);}
         if(data.type==='result'){
-          last={experiment:page.id,...data};await render(data.result);if(runId!==generation)return;renderLesson(data.lesson);setRequests(last,steps);status('Completed','completed');
+          last={experiment:page.id,score_view:structuredClone(page.score_view),...data};await render(data.result);if(runId!==generation)return;renderLesson(data.lesson);setRequests(last,steps);renderScorePanel(page,last,$('score-panel'),showRequest);status('Completed','completed');
           $('download').disabled=false;sawTerminal=true;
           if(!steps.length)$('timeline').innerHTML='';
           const li=document.createElement('li');

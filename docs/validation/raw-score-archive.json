@@ -1,0 +1,206 @@
+{
+  "archive": "control_lab/static/strata-control-lab-39-raw-score-examples.zip",
+  "sha256": "45ea2d4879781bbfbb70dd50e0f3ed8885a09f559b538790a9260c6727ddf109",
+  "files": [
+    {
+      "file": "strata-choice-example.py",
+      "sha256": "9f25fa72598ad996c8af0f61404663fff98e52f5dc830a6e91392c22fadd00f0",
+      "bytes": 107814
+    },
+    {
+      "file": "strata-boolean-example.py",
+      "sha256": "fd2ddc99b113e6b636d0f0811df80cd622547d2ac5131ba1071cdcb0605ed8af",
+      "bytes": 88533
+    },
+    {
+      "file": "strata-score-example.py",
+      "sha256": "b9042259e8e4e6221849bc41fbc55100d1a2c35f4e6385770b5c44e560feba5c",
+      "bytes": 107087
+    },
+    {
+      "file": "strata-candidates-example.py",
+      "sha256": "c6b123b0b04612d85668e77a7191ba12d483d2a996d1960c2384723736219f9f",
+      "bytes": 189935
+    },
+    {
+      "file": "strata-controller-example.py",
+      "sha256": "74437ba216cb1d1f2b33b0904606fa1ad8f4f9d7ae85ddb86d0da8a23f274d9c",
+      "bytes": 163161
+    },
+    {
+      "file": "strata-rerank-example.py",
+      "sha256": "c680748c2e8ceff7dc613af6b8a2368fbfc84b68fbbc27222723551bd3896edd",
+      "bytes": 268713
+    },
+    {
+      "file": "strata-graph-example.py",
+      "sha256": "8a6e28d83a0a0482ab0ef3cbb6b01ffd2dbc7604ba76fb50253c6e3b8da79bff",
+      "bytes": 341549
+    },
+    {
+      "file": "strata-scene-example.py",
+      "sha256": "fe18ed174fad8d9416ae4b487decd02714ae8bd35b7eab47f008b0f32cc1ae86",
+      "bytes": 623175
+    },
+    {
+      "file": "strata-wire-example.py",
+      "sha256": "df551517c2ab14e26560d4d4ad67bccb0c740ee468298f00c449d7591ea9da1e",
+      "bytes": 484289
+    },
+    {
+      "file": "strata-speculation-example.py",
+      "sha256": "c77ff85681ebbbbe6785bb7c5d5811b68f481362edf21d3624e54a9a56471181",
+      "bytes": 166403
+    },
+    {
+      "file": "strata-performance-example.py",
+      "sha256": "ec8cff8b17cc5dd2a5b04e7d3a910d4a9b234182f6b650c7a755a2b46a3c158a",
+      "bytes": 217365
+    },
+    {
+      "file": "strata-samplers-example.py",
+      "sha256": "625bebfb171fae5266535218392af0f01972a07072177bb8598f28837c6c8ba9",
+      "bytes": 332924
+    },
+    {
+      "file": "strata-sampler-sandbox-example.py",
+      "sha256": "c5122b365a032affda75a39231a27777b88e85905d962da5925909e28c84b864",
+      "bytes": 46421
+    },
+    {
+      "file": "strata-tictactoe-example.py",
+      "sha256": "924078d6486c7941f490ba0c89b598bac3c8c0070c0e9bee4eebd7733936e581",
+      "bytes": 341483
+    },
+    {
+      "file": "strata-chess-example.py",
+      "sha256": "26c6bfb48cf2c357608d8a47610e8f1e72a17bc9572dd252e2101d4f4f282361",
+      "bytes": 186650
+    },
+    {
+      "file": "strata-poker-example.py",
+      "sha256": "7904cfd46efaece01c7a55ce1d75abd11b347343d34dfdeecb51fd5a5e938eea",
+      "bytes": 223074
+    },
+    {
+      "file": "strata-thermal-example.py",
+      "sha256": "f0900247c45bb95aa40b44443ef7b6165e7b602bf30862aedfbd03f5563b5576",
+      "bytes": 532278
+    },
+    {
+      "file": "strata-scheduler-example.py",
+      "sha256": "ad00106d5d6dad12f0bbab175359faac602245319dfea66613dca1f7c8dc843e",
+      "bytes": 293272
+    },
+    {
+      "file": "strata-context-example.py",
+      "sha256": "96b61dd2d2c5e28d822a2ba3db40512a12da2da00017bb5ba49a62818184303e",
+      "bytes": 213260
+    },
+    {
+      "file": "strata-observer-example.py",
+      "sha256": "4ffd67f5aebb3af7b7bd8c23bad0c44ce47cf1fce36c1caa1eb082ae99c9fed6",
+      "bytes": 509320
+    },
+    {
+      "file": "strata-calibration-example.py",
+      "sha256": "508bb6984077f1fb0af99bd1c785f7f258770b1b2c5617e953e84f1b2e698f9a",
+      "bytes": 378885
+    },
+    {
+      "file": "strata-information-example.py",
+      "sha256": "5f62c4bd555e0aafd767063a1f2ad8e7f89140cceca22fda4969b6e5835097c0",
+      "bytes": 125446
+    },
+    {
+      "file": "strata-search-example.py",
+      "sha256": "2cb95602a57c33a335c70b573f08810cb5c90438ee2ce9db94e1d3cae88bf870",
+      "bytes": 295459
+    },
+    {
+      "file": "strata-frontier-example.py",
+      "sha256": "5e907b4a42bd9beeef0ddb8c357f9f01bbec8160a38b6865a34664f8df9fb326",
+      "bytes": 46916
+    },
+    {
+      "file": "strata-research-map-example.py",
+      "sha256": "361303c24dc2628865504779da39cc0dca3df3c761ff9d860669c84d4f8e8c63",
+      "bytes": 62610
+    },
+    {
+      "file": "strata-circuit-example.py",
+      "sha256": "672b2f3144c8e759647c81f390a0583e57a2a1b5e0aa18f6b2d7cfe25902e59a",
+      "bytes": 174316
+    },
+    {
+      "file": "strata-control-example.py",
+      "sha256": "d9ef480832429b67c4c963d7a5a0bab6dd2ebbc29e7c9d82b13a10813173e832",
+      "bytes": 193718
+    },
+    {
+      "file": "strata-counterexamples-example.py",
+      "sha256": "df4bd08c62fef8ed72cee45fafedcfdf3477cb7c9771bbdb0ceea2f61f44a2d2",
+      "bytes": 662325
+    },
+    {
+      "file": "strata-future-example.py",
+      "sha256": "caf01d04e371b2feed16f213b9abd1fce825cfea1875e202e8601087bba92138",
+      "bytes": 185203
+    },
+    {
+      "file": "strata-pressure-example.py",
+      "sha256": "3d8837311e6f75a0a0cab042514bab153af53f38dfe33b29ca7e17b6f7078f68",
+      "bytes": 239144
+    },
+    {
+      "file": "strata-sensitivity-example.py",
+      "sha256": "7188d799bb8f4dec07aac8a1253df78f108d1cb3ec10f427c16fb496b766af65",
+      "bytes": 419621
+    },
+    {
+      "file": "strata-adversary-example.py",
+      "sha256": "a036f7611dd3e0fc2b91dc04502b001c46ee28adb104f2e765cc43504a60adbb",
+      "bytes": 180744
+    },
+    {
+      "file": "strata-budget-example.py",
+      "sha256": "6e3cab43e6c25e1e23d2c58c7fc235c7c21a90609b62ef4440ca95aebda1f4cb",
+      "bytes": 177881
+    },
+    {
+      "file": "strata-camouflage-example.py",
+      "sha256": "33cd766ce90f3fc224549c6e0a88451e9663bf65436e9903ab4363f426bbf5ca",
+      "bytes": 181950
+    },
+    {
+      "file": "strata-compiler-example.py",
+      "sha256": "9b169189e795e0bc2affcc989602d5fb62133c690aaa6a2696ccb59bc0936235",
+      "bytes": 131940
+    },
+    {
+      "file": "strata-divider-example.py",
+      "sha256": "9d9bb24e53e722cbd49d3b30b12d93ce5645ae85e36408ee3a2df6c64f42b2d0",
+      "bytes": 186736
+    },
+    {
+      "file": "strata-music-example.py",
+      "sha256": "dd5bdd7bfd22b9145f226174323ea37f9e0504697b1105170fc91a2bf3bc0557",
+      "bytes": 127287
+    },
+    {
+      "file": "strata-proof-example.py",
+      "sha256": "30f8958d49bb508765a50484a1ceb02c29739345b9e220fb909ee3bcbc11fd1e",
+      "bytes": 181166
+    },
+    {
+      "file": "strata-transaction-example.py",
+      "sha256": "464c7e4861e457c6a36778331f3bee6fb744a513e9cf31a3fd84a93ca7e107e4",
+      "bytes": 133596
+    }
+  ],
+  "pages": 39,
+  "native_calls": 312,
+  "original_archive_sha256": "e4129cd4cbc2f75273de30fcc01f7f1420a0f1d2360094a7dd75c185a2315c1d",
+  "original_archive_unchanged": true,
+  "all_original_native_requests_responses_unchanged": true
+}

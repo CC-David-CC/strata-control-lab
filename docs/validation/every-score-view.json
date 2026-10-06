@@ -1,0 +1,1060 @@
+{
+  "pages": [
+    {
+      "page": "choice",
+      "raw_kind": "native",
+      "requests": 3,
+      "scored_tokens": 3,
+      "request_token_counts": [
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "boolean",
+      "raw_kind": "native",
+      "requests": 2,
+      "scored_tokens": 2,
+      "request_token_counts": [
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "score",
+      "raw_kind": "native",
+      "requests": 3,
+      "scored_tokens": 3,
+      "request_token_counts": [
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "candidates",
+      "raw_kind": "native",
+      "requests": 5,
+      "scored_tokens": 23,
+      "request_token_counts": [
+        5,
+        5,
+        4,
+        4,
+        5
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "controller",
+      "raw_kind": "native",
+      "requests": 6,
+      "scored_tokens": 6,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "rerank",
+      "raw_kind": "native",
+      "requests": 9,
+      "scored_tokens": 9,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "graph",
+      "raw_kind": "native",
+      "requests": 10,
+      "scored_tokens": 10,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "scene",
+      "raw_kind": "native",
+      "requests": 13,
+      "scored_tokens": 59,
+      "request_token_counts": [
+        47,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "wire",
+      "raw_kind": "native",
+      "requests": 1,
+      "scored_tokens": 29,
+      "request_token_counts": [
+        29
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "speculation",
+      "raw_kind": "diagnostic",
+      "requests": 0,
+      "scored_tokens": 0,
+      "request_token_counts": [],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "performance",
+      "raw_kind": "native",
+      "requests": 19,
+      "scored_tokens": 31,
+      "request_token_counts": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        6,
+        6,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        6
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "samplers",
+      "raw_kind": "native",
+      "requests": 9,
+      "scored_tokens": 23,
+      "request_token_counts": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        7
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "sampler-sandbox",
+      "raw_kind": "synthetic",
+      "requests": 0,
+      "scored_tokens": 0,
+      "request_token_counts": [],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "tictactoe",
+      "raw_kind": "native",
+      "requests": 14,
+      "scored_tokens": 14,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "chess",
+      "raw_kind": "native",
+      "requests": 7,
+      "scored_tokens": 10,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "poker",
+      "raw_kind": "native",
+      "requests": 9,
+      "scored_tokens": 9,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "thermal",
+      "raw_kind": "native",
+      "requests": 24,
+      "scored_tokens": 24,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "scheduler",
+      "raw_kind": "native",
+      "requests": 12,
+      "scored_tokens": 12,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "context",
+      "raw_kind": "native",
+      "requests": 8,
+      "scored_tokens": 8,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "observer",
+      "raw_kind": "native",
+      "requests": 18,
+      "scored_tokens": 18,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "calibration",
+      "raw_kind": "native",
+      "requests": 14,
+      "scored_tokens": 14,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "information",
+      "raw_kind": "native",
+      "requests": 4,
+      "scored_tokens": 4,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "search",
+      "raw_kind": "native",
+      "requests": 10,
+      "scored_tokens": 10,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "frontier",
+      "raw_kind": "no_token_row",
+      "requests": 0,
+      "scored_tokens": 0,
+      "request_token_counts": [],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "research-map",
+      "raw_kind": "no_token_row",
+      "requests": 0,
+      "scored_tokens": 0,
+      "request_token_counts": [],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "circuit",
+      "raw_kind": "native",
+      "requests": 7,
+      "scored_tokens": 7,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "control",
+      "raw_kind": "native",
+      "requests": 6,
+      "scored_tokens": 6,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "counterexamples",
+      "raw_kind": "native",
+      "requests": 25,
+      "scored_tokens": 29,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        5
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "future",
+      "raw_kind": "native",
+      "requests": 7,
+      "scored_tokens": 7,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "pressure",
+      "raw_kind": "native",
+      "requests": 4,
+      "scored_tokens": 6,
+      "request_token_counts": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "sensitivity",
+      "raw_kind": "native",
+      "requests": 21,
+      "scored_tokens": 21,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "adversary",
+      "raw_kind": "native",
+      "requests": 6,
+      "scored_tokens": 6,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "budget",
+      "raw_kind": "native",
+      "requests": 6,
+      "scored_tokens": 6,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "camouflage",
+      "raw_kind": "native",
+      "requests": 6,
+      "scored_tokens": 6,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "compiler",
+      "raw_kind": "native",
+      "requests": 4,
+      "scored_tokens": 4,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "divider",
+      "raw_kind": "native",
+      "requests": 6,
+      "scored_tokens": 6,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "music",
+      "raw_kind": "native",
+      "requests": 4,
+      "scored_tokens": 4,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "proof",
+      "raw_kind": "native",
+      "requests": 6,
+      "scored_tokens": 6,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    },
+    {
+      "page": "transaction",
+      "raw_kind": "native",
+      "requests": 4,
+      "scored_tokens": 4,
+      "request_token_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "derived_explanation": true,
+      "exports_keep_contract": true,
+      "desktop_phone_no_overflow": true
+    }
+  ],
+  "wire_cases": [
+    {
+      "case": "decision",
+      "tokens": 1,
+      "raw_and_derived_explained": true
+    },
+    {
+      "case": "router",
+      "tokens": 1,
+      "raw_and_derived_explained": true
+    },
+    {
+      "case": "ambiguity",
+      "tokens": 1,
+      "raw_and_derived_explained": true
+    },
+    {
+      "case": "stream",
+      "tokens": 29,
+      "raw_and_derived_explained": true
+    },
+    {
+      "case": "grammar",
+      "tokens": 1,
+      "raw_and_derived_explained": true
+    },
+    {
+      "case": "json-schema",
+      "tokens": 6,
+      "raw_and_derived_explained": true
+    },
+    {
+      "case": "reasoning-json",
+      "tokens": 6,
+      "raw_and_derived_explained": true
+    },
+    {
+      "case": "tool-call",
+      "tokens": 0,
+      "raw_and_derived_explained": true
+    },
+    {
+      "case": "tool-result",
+      "tokens": 1,
+      "raw_and_derived_explained": true
+    },
+    {
+      "case": "selected-only",
+      "tokens": 1,
+      "raw_and_derived_explained": true
+    }
+  ],
+  "page_errors": [],
+  "pytest_passed": 184,
+  "tour_phases": 469,
+  "tour_loop_closed": true,
+  "selected_export_view_passed": true,
+  "all_39_portable_calculations_passed": true,
+  "archive_check": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+    "network_blocked": true,
+    "archive_sha256": "45ea2d4879781bbfbb70dd50e0f3ed8885a09f559b538790a9260c6727ddf109",
+    "calculation_tolerance": {
+      "relative": 1e-12,
+      "absolute": 1e-12
+    },
+    "pages": [
+      {
+        "page": "choice",
+        "mock_calls": 3,
+        "calculations": 2,
+        "sha256": "9f25fa72598ad996c8af0f61404663fff98e52f5dc830a6e91392c22fadd00f0"
+      },
+      {
+        "page": "boolean",
+        "mock_calls": 2,
+        "calculations": 2,
+        "sha256": "fd2ddc99b113e6b636d0f0811df80cd622547d2ac5131ba1071cdcb0605ed8af"
+      },
+      {
+        "page": "score",
+        "mock_calls": 3,
+        "calculations": 2,
+        "sha256": "b9042259e8e4e6221849bc41fbc55100d1a2c35f4e6385770b5c44e560feba5c"
+      },
+      {
+        "page": "candidates",
+        "mock_calls": 5,
+        "calculations": 2,
+        "sha256": "c6b123b0b04612d85668e77a7191ba12d483d2a996d1960c2384723736219f9f"
+      },
+      {
+        "page": "controller",
+        "mock_calls": 6,
+        "calculations": 2,
+        "sha256": "74437ba216cb1d1f2b33b0904606fa1ad8f4f9d7ae85ddb86d0da8a23f274d9c"
+      },
+      {
+        "page": "rerank",
+        "mock_calls": 9,
+        "calculations": 2,
+        "sha256": "c680748c2e8ceff7dc613af6b8a2368fbfc84b68fbbc27222723551bd3896edd"
+      },
+      {
+        "page": "graph",
+        "mock_calls": 10,
+        "calculations": 2,
+        "sha256": "8a6e28d83a0a0482ab0ef3cbb6b01ffd2dbc7604ba76fb50253c6e3b8da79bff"
+      },
+      {
+        "page": "scene",
+        "mock_calls": 13,
+        "calculations": 2,
+        "sha256": "fe18ed174fad8d9416ae4b487decd02714ae8bd35b7eab47f008b0f32cc1ae86"
+      },
+      {
+        "page": "wire",
+        "mock_calls": 1,
+        "calculations": 2,
+        "sha256": "df551517c2ab14e26560d4d4ad67bccb0c740ee468298f00c449d7591ea9da1e"
+      },
+      {
+        "page": "speculation",
+        "mock_calls": 0,
+        "calculations": 2,
+        "sha256": "c77ff85681ebbbbe6785bb7c5d5811b68f481362edf21d3624e54a9a56471181"
+      },
+      {
+        "page": "performance",
+        "mock_calls": 19,
+        "calculations": 2,
+        "sha256": "ec8cff8b17cc5dd2a5b04e7d3a910d4a9b234182f6b650c7a755a2b46a3c158a"
+      },
+      {
+        "page": "samplers",
+        "mock_calls": 9,
+        "calculations": 2,
+        "sha256": "625bebfb171fae5266535218392af0f01972a07072177bb8598f28837c6c8ba9"
+      },
+      {
+        "page": "sampler-sandbox",
+        "mock_calls": 0,
+        "calculations": 2,
+        "sha256": "c5122b365a032affda75a39231a27777b88e85905d962da5925909e28c84b864"
+      },
+      {
+        "page": "tictactoe",
+        "mock_calls": 14,
+        "calculations": 2,
+        "sha256": "924078d6486c7941f490ba0c89b598bac3c8c0070c0e9bee4eebd7733936e581"
+      },
+      {
+        "page": "chess",
+        "mock_calls": 7,
+        "calculations": 2,
+        "sha256": "26c6bfb48cf2c357608d8a47610e8f1e72a17bc9572dd252e2101d4f4f282361"
+      },
+      {
+        "page": "poker",
+        "mock_calls": 9,
+        "calculations": 2,
+        "sha256": "7904cfd46efaece01c7a55ce1d75abd11b347343d34dfdeecb51fd5a5e938eea"
+      },
+      {
+        "page": "thermal",
+        "mock_calls": 24,
+        "calculations": 2,
+        "sha256": "f0900247c45bb95aa40b44443ef7b6165e7b602bf30862aedfbd03f5563b5576"
+      },
+      {
+        "page": "scheduler",
+        "mock_calls": 12,
+        "calculations": 2,
+        "sha256": "ad00106d5d6dad12f0bbab175359faac602245319dfea66613dca1f7c8dc843e"
+      },
+      {
+        "page": "context",
+        "mock_calls": 8,
+        "calculations": 2,
+        "sha256": "96b61dd2d2c5e28d822a2ba3db40512a12da2da00017bb5ba49a62818184303e"
+      },
+      {
+        "page": "observer",
+        "mock_calls": 18,
+        "calculations": 2,
+        "sha256": "4ffd67f5aebb3af7b7bd8c23bad0c44ce47cf1fce36c1caa1eb082ae99c9fed6"
+      },
+      {
+        "page": "calibration",
+        "mock_calls": 14,
+        "calculations": 2,
+        "sha256": "508bb6984077f1fb0af99bd1c785f7f258770b1b2c5617e953e84f1b2e698f9a"
+      },
+      {
+        "page": "information",
+        "mock_calls": 4,
+        "calculations": 2,
+        "sha256": "5f62c4bd555e0aafd767063a1f2ad8e7f89140cceca22fda4969b6e5835097c0"
+      },
+      {
+        "page": "search",
+        "mock_calls": 10,
+        "calculations": 2,
+        "sha256": "2cb95602a57c33a335c70b573f08810cb5c90438ee2ce9db94e1d3cae88bf870"
+      },
+      {
+        "page": "frontier",
+        "mock_calls": 0,
+        "calculations": 2,
+        "sha256": "5e907b4a42bd9beeef0ddb8c357f9f01bbec8160a38b6865a34664f8df9fb326"
+      },
+      {
+        "page": "research-map",
+        "mock_calls": 0,
+        "calculations": 2,
+        "sha256": "361303c24dc2628865504779da39cc0dca3df3c761ff9d860669c84d4f8e8c63"
+      },
+      {
+        "page": "circuit",
+        "mock_calls": 7,
+        "calculations": 2,
+        "sha256": "672b2f3144c8e759647c81f390a0583e57a2a1b5e0aa18f6b2d7cfe25902e59a"
+      },
+      {
+        "page": "control",
+        "mock_calls": 6,
+        "calculations": 2,
+        "sha256": "d9ef480832429b67c4c963d7a5a0bab6dd2ebbc29e7c9d82b13a10813173e832"
+      },
+      {
+        "page": "counterexamples",
+        "mock_calls": 25,
+        "calculations": 2,
+        "sha256": "df4bd08c62fef8ed72cee45fafedcfdf3477cb7c9771bbdb0ceea2f61f44a2d2"
+      },
+      {
+        "page": "future",
+        "mock_calls": 7,
+        "calculations": 2,
+        "sha256": "caf01d04e371b2feed16f213b9abd1fce825cfea1875e202e8601087bba92138"
+      },
+      {
+        "page": "pressure",
+        "mock_calls": 4,
+        "calculations": 2,
+        "sha256": "3d8837311e6f75a0a0cab042514bab153af53f38dfe33b29ca7e17b6f7078f68"
+      },
+      {
+        "page": "sensitivity",
+        "mock_calls": 21,
+        "calculations": 2,
+        "sha256": "7188d799bb8f4dec07aac8a1253df78f108d1cb3ec10f427c16fb496b766af65"
+      },
+      {
+        "page": "adversary",
+        "mock_calls": 6,
+        "calculations": 2,
+        "sha256": "a036f7611dd3e0fc2b91dc04502b001c46ee28adb104f2e765cc43504a60adbb"
+      },
+      {
+        "page": "budget",
+        "mock_calls": 6,
+        "calculations": 2,
+        "sha256": "6e3cab43e6c25e1e23d2c58c7fc235c7c21a90609b62ef4440ca95aebda1f4cb"
+      },
+      {
+        "page": "camouflage",
+        "mock_calls": 6,
+        "calculations": 2,
+        "sha256": "33cd766ce90f3fc224549c6e0a88451e9663bf65436e9903ab4363f426bbf5ca"
+      },
+      {
+        "page": "compiler",
+        "mock_calls": 4,
+        "calculations": 2,
+        "sha256": "9b169189e795e0bc2affcc989602d5fb62133c690aaa6a2696ccb59bc0936235"
+      },
+      {
+        "page": "divider",
+        "mock_calls": 6,
+        "calculations": 2,
+        "sha256": "9d9bb24e53e722cbd49d3b30b12d93ce5645ae85e36408ee3a2df6c64f42b2d0"
+      },
+      {
+        "page": "music",
+        "mock_calls": 4,
+        "calculations": 2,
+        "sha256": "dd5bdd7bfd22b9145f226174323ea37f9e0504697b1105170fc91a2bf3bc0557"
+      },
+      {
+        "page": "proof",
+        "mock_calls": 6,
+        "calculations": 2,
+        "sha256": "30f8958d49bb508765a50484a1ceb02c29739345b9e220fb909ee3bcbc11fd1e"
+      },
+      {
+        "page": "transaction",
+        "mock_calls": 4,
+        "calculations": 2,
+        "sha256": "464c7e4861e457c6a36778331f3bee6fb744a513e9cf31a3fd84a93ca7e107e4"
+      }
+    ]
+  },
+  "exports": {
+    "assembled_files_unchanged": 39,
+    "user_text_markers_not_replaced": true,
+    "python_ast_literal_round_trip": true,
+    "archive_http_download_sha256": "45ea2d4879781bbfbb70dd50e0f3ed8885a09f559b538790a9260c6727ddf109"
+  },
+  "installed_wheel": {
+    "pages": 39,
+    "recordings": 342,
+    "network_blocked": true,
+    "assets_match_source": true,
+    "sha256": "1c375b54fdb061ef44454e718075b9e46490019e039b065bb89228d9d319feed"
+  },
+  "preserved_original_files": 383,
+  "native_inference_run": false
+}

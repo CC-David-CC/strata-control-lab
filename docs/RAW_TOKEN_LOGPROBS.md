@@ -1,5 +1,13 @@
 # Raw token log-probabilities and decision weights
 
+Every one of the 39 pages has a visible **Raw layer / Derived view** explanation,
+including the automatic tour and fresh Python exports. The raw-source panel lets
+you select every request and its tokens, preserving the original prefix and
+linking that selection to the exact request panel. It explains the page's own
+normalization, sampler weight, semantic feature, utility or code result.
+Synthetic, timing and research views do not receive invented native scores;
+the speculation page labels its retained diagnostic token IDs separately.
+
 The native Strata contribution already puts the raw target score on the token
 itself: `choices[0].logprobs.content[i].logprob`. The lab now displays that value
 on each token chip in the token inspector, finite grammar paths, native sampler
@@ -8,6 +16,30 @@ original `token`, `bytes`, `logprob` and `top_logprobs`; it does not retokenize 
 or replace a raw score with a normalized decision weight. Chips round to six
 significant digits for display; the tooltip, `data-logprob` and JSON receipt
 retain the original value.
+
+Chips also display raw probability `p = exp(logprob)`, using the same vocabulary
+denominator. This is a representation change, not an extra model measurement.
+The pure temperature-1 grammar instruments use a complete legal-set distribution
+q and surviving mass Z to reconstruct raw label probabilities `p = q * Z` in
+their semantic rows. Their raw-source panel separately shows the directly returned
+selected-token logprob. Other sampler operators invalidate this pure-mask
+reconstruction; those instruments enforce that contract.
+
+![Compiler example distinguishes original raw p from final native selection q](images/raw-derived-compiler.png)
+
+In this recorded forced-commit request, B has raw p about `0.0271322` while native
+selection q is `1`. The grammar commits the code-owned choice; it does not make
+the original model preference certain. The request selector exposes that exact
+prompt instead of mixing it with the earlier measurement requests.
+
+The [updated 39-example ZIP](../control_lab/static/strata-control-lab-39-raw-score-examples.zip)
+prints these page-specific explanations and supports `--tokens` for full raw
+logprobs/probabilities and returned native selection weights. The
+[original qualified ZIP](../control_lab/static/strata-control-lab-39-offline-examples.zip)
+remains unchanged. Both retain the original native request/response pairs.
+
+The [all-example coverage report](SCORE_VIEW_COVERAGE.md) lists the raw source,
+captured request count and checked scores for each of the 39 pages.
 
 ## Which source supplies which behavior?
 

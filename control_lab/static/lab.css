@@ -4,3 +4,6 @@
 .token-strip .token,.token-strip .instrument-token{display:inline-flex;flex-direction:column;align-items:flex-start;gap:5px;max-width:100%;vertical-align:top;text-align:left}
 .token-text{white-space:pre-wrap;overflow-wrap:anywhere}
 .token-logprob{display:block;font:10px/1.4 var(--mono);white-space:nowrap;color:inherit;opacity:.82;font-variant-numeric:tabular-nums}
+
+.score-panel{margin:24px 0}.score-explanations{display:grid;grid-template-columns:1fr 1fr;gap:24px}.score-explanations h3{font-size:14px}.score-explanations p{font-size:13px;line-height:1.7}.score-availability{padding:14px;background:#f1f5e8;border-radius:6px;line-height:1.6}.token-probability{display:block;font:10px/1.4 var(--mono);white-space:nowrap;color:inherit;opacity:.82;font-variant-numeric:tabular-nums}
+@media(max-width:700px){.score-explanations{grid-template-columns:1fr;gap:8px}}

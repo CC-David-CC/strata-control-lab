@@ -48,7 +48,8 @@ and connecting your own model.
 
 ## Try the examples without the website
 
-[Download the ZIP of all 39 self-contained Python examples](control_lab/static/strata-control-lab-39-offline-examples.zip).
+[Download all 39 examples with raw/derived score explanations](control_lab/static/strata-control-lab-39-raw-score-examples.zip).
+The [original qualified ZIP](control_lab/static/strata-control-lab-39-offline-examples.zip) remains available, unchanged.
 On its GitHub file page, use **Download raw file**, then extract it.
 
 ```sh
@@ -56,6 +57,7 @@ python strata-choice-example.py
 python strata-samplers-example.py --all
 python strata-pressure-example.py --lesson-only --value 1
 python strata-scene-example.py --request 1 --show
+python strata-choice-example.py --tokens
 ```
 
 Use `py` on Windows or `python3` on Linux if `python` is unavailable. These files
@@ -65,8 +67,14 @@ requests, constraints and recorded replies. Network use requires an explicit
 
 ## Read raw scores on the tokens
 
-The token inspector, grammar paths, native sampler and grammar-pressure views
-show **raw ln p** on each token chip. Click a chip for its original bytes and
+Every page now starts with **Raw layer / Derived view**, explaining that example's
+source and transformations. Model-backed pages expose every captured request and
+its native tokens; diagnostic token IDs are labeled separately, and synthetic,
+timing and research pages explicitly state when no native token row exists.
+The automatic tour visits these explanations on all 39 pages. Fresh Python
+downloads include them and use `--tokens` to print every original token score.
+
+Token chips show **raw ln p** and **raw p = exp(ln p)**. Click a chip for its original bytes and
 alternatives. The full value remains in the exported token's `logprob` field;
 the chip rounds only its display. Streaming shows incoming scores as they arrive.
 
@@ -80,8 +88,11 @@ python tools/inspect_raw_logprobs.py --case stream --json
 
 These replay existing native recordings. Add `--live-url http://127.0.0.1:8080`
 to explicitly call a compatible Strata server. The original 39 examples, ZIP
-and 342 recordings are preserved. See [raw scores versus decision weights](docs/RAW_TOKEN_LOGPROBS.md)
+and 342 recordings are preserved; the added raw-score ZIP keeps their original
+native request/response pairs. See [raw scores versus decision weights](docs/RAW_TOKEN_LOGPROBS.md)
 for the measured A/B comparison and the source branch required by issue #675.
+The [39-page coverage report](docs/SCORE_VIEW_COVERAGE.md) records the browser,
+tour, exported-example and installed-wheel checks for this distinction.
 
 ## What is inside?
 
