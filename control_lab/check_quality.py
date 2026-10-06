@@ -65,10 +65,13 @@ def main():
                     if step in (0,1) or (catalog[index].get('applied') and any(c in target for c in ('applied-stage','applied-meaning','research-stats'))):
                         p.screenshot(path=str(out/(name+'-'+label+'-'+str(step)+'.png')),animations='disabled')
                     visible.append(dict(viewport=label,target_height=round(box['height']),visible_height=round(shown)))
-                phases.append(dict(step=step,caption=p.locator('#tour-caption').inner_text(),views=visible))
-                p.set_viewport_size(dict(width=1500,height=1060));p.clock.fast_forward(9000)
+                delay=int(p.locator('#tour-bar').get_attribute('data-delay-ms'));assert 4000<=delay<=6500
+                phases.append(dict(step=step,caption=p.locator('#tour-caption').inner_text(),layer=p.locator('#tour-bar').get_attribute('data-layer'),hold_ms=delay,views=visible))
+                p.set_viewport_size(dict(width=1500,height=1060));p.clock.fast_forward(delay+20)
                 if p.url.endswith('/lab/'+name):
                     expect(p.locator('#tour-bar')).not_to_have_attribute('data-step',str(step))
+            assert any(x['layer']=='derived' for x in phases),name
+            assert phases[0]['layer'] in ('raw','synthetic','inputs'),name
             assert {x['step'] for x in phases}==set(range(total)),(name,[x['step'] for x in phases],total)
             next_name=ids[(index+1)%len(ids)];expect(p).to_have_url(args.base_url+'/lab/'+next_name)
             rows.append(dict(page=name,phase_count=total,phases=phases,portable_calculations=2,
