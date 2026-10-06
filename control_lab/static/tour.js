@@ -1,11 +1,23 @@
 // A page owns only its short demonstration and one ordinary next-page link.
 const $=s=>document.querySelector(s), all=s=>[...document.querySelectorAll(s)];
-const point=(target,text)=>({target,text});
-const select=(target,value,text,focus=target)=>({target:focus,text,do(){const e=$(target);if(!e)throw Error('Missing tour control '+target);e.value=String(value);e.dispatchEvent(new Event('change'));}});
+const point=(target,text,layer='example')=>({target,text,layer});
+const select=(target,value,text,focus=target,layer='example')=>({target:focus,text,layer,do(){const e=$(target);if(!e)throw Error('Missing tour control '+target);e.value=String(value);e.dispatchEvent(new Event('change'));}});
 const range=(target,value,text,focus=target)=>({target:focus,text,do(){const e=$(target);if(!e)throw Error('Missing tour dial '+target);e.value=String(value);e.dispatchEvent(new Event('input'));}});
 const click=(target,text)=>({target,text,do(){const e=$(target);if(!e)throw Error('Missing tour step '+target);e.click();}});
 const trace=text=>[point('#trace-frame',text),range('#trace-cursor',1,'The state changes. Code rebuilds what is legal before the next decision.'),{target:'#trace-frame',text:'Now the final recorded state. Replay reveals the outcome, including mistakes.',do(){const e=$('#trace-cursor');e.value=e.max;e.dispatchEvent(new Event('input'));}}];
 const lenses=(rows)=>rows.map(([value,text])=>select('#lens',value,text));
+
+// Shorter holds keep the tour moving; explanatory panels and pause remain available.
+export const phaseDelay=text=>Math.max(4000,Math.min(6500,text.length*34));
+export function comparisonSteps(page){
+ const kind=page.score_view.raw_kind,steps=[];
+ if($('#score-panel .token-strip'))steps.push(point('#score-panel .token-strip','Original token scores: raw ln p and raw p = exp(ln p). These use the full target vocabulary, before grammar or sampling.','raw'));
+ else if(kind==='synthetic'&&$('#sandbox-output .distribution-split'))steps.push(point('#sandbox-output .distribution-split > div:first-child','The before distribution uses disclosed synthetic logits. These are teaching probabilities, not a native model measurement.','synthetic'));
+ else steps.push(point('#score-raw-meaning','Start with the actual source and its units. This page has no native Chat probability row to invent.','inputs'));
+ if($('#score-token-details .score-selection-weight'))steps.push(point('#score-token-details .score-selection-weight','Now compare the final native selection weight q. Grammar and sampling change q; the original raw p above keeps its meaning.','sampling'));
+ steps.push(point('#score-derived-meaning','This page explains what it builds from the measurements: candidate weights, semantic features or code-owned results. Read the changed denominator and units.','derived'));
+ return steps;
+}
 
 export const LESSONS={
  music:[point('.applied-stage','The staff is a four-note sketch. Native weights and the explicit surprise model are separate ingredients.'),select('#lens',1,'At the cadence, the application admits chord tones C, E and G. D is rejected by the checker.','.context-tape'),range('#dial',1,'This D candidate has a model score but no permission to be emitted here.','.applied-meaning'),point('.applied-baseline','Uniform legal notes and the supplied Markov model are honest simple baselines. No listener-quality claim follows from surprise.')],
@@ -16,9 +28,9 @@ export const LESSONS={
  camouflage:[select('#lens',1,'A heroic description changes wording while the structured unfinished state stays fixed.','.context-tape'),select('#lens',2,'The calm description is another measurement of the same facts. Compare drift and the direct code baseline.','.research-stats'),point('.applied-baseline','These three examples stayed on the correct greedy action. That is evidence for these fixtures, not universal robustness.')],
  adversary:[select('#lens',1,'A confident manager’s claim does not change the failed-test fact.','.context-tape'),select('#lens',2,'This finite search did not fool the greedy controller. Keep that outcome instead of inventing an attack.','.research-stats'),range('#dial',2,'Declaring success fits the grammar but carries exact toy regret two. Legal syntax is not good judgment.','.applied-meaning')],
  budget:[point('.applied-stage','The sensor likelihood is supplied by code. The model’s answer weight does not replace it.'),select('#lens',2,'At inspection cost 0.5, acting now has greater expected reward. The recorded model still chose inspection.','.research-stats'),point('.applied-baseline','This error costs 0.15 reward units in the toy. A real compute budget needs measured time and validated observation models.')],
- choice:[select('#score-view','raw_probability','First: how likely are these answer tokens in the whole vocabulary?'),select('#score-view','weight','Now divide by the mass on our answer set. The same scores become a distribution over declared meanings.')],
- boolean:[select('#score-view','raw_probability','A yes/no probe is a small measurement. These are the original token probabilities.'),select('#score-view','weight','Condition on the two meanings. Your program can use this number; it is not a truth guarantee.')],
- score:[point('#distribution-bars','Each answer describes a severity level. The bars retain disagreement.'),point('.stats','The rating is the weighted average of those levels, not a mysterious extra confidence signal.')],
+ choice:[select('#score-view','raw_probability','First: how likely are these answer tokens in the whole vocabulary?','#distribution-bars','raw'),select('#score-view','weight','Now divide by the mass on our answer set. The same scores become a distribution over declared meanings.','#distribution-bars','derived')],
+ boolean:[select('#score-view','raw_probability','A yes/no probe is a small measurement. These are the original token probabilities.','#distribution-bars','raw'),select('#score-view','weight','Condition on the two meanings. Your program can use this number; it is not a truth guarantee.','#distribution-bars','derived')],
+ score:[select('#score-view','raw_probability','Start with the raw probability of each declared level. Those scores keep their full-vocabulary denominator.','#distribution-bars','raw'),select('#score-view','weight','Condition on the declared levels to obtain rubric weights. These are a derived distribution.','#distribution-bars','derived'),point('.stats','The rating is the weighted average of those levels, not an extra confidence signal.','derived')],
  candidates:[select('#path-select',1,'A phrase spans several tokens. Its score follows its own exact prefix.'),click('#path-tokens .token-strip button:last-child','Conditional token scores multiply along the path; log scores add.'),select('#path-select',2,'A different branch can win globally even when greedy next-token choices prefer another path.')],
  controller:[point('.decision-path','Only a legal next action can leave this state.'),{target:'.decision-path',text:'Apply the simulated action, then obtain the next recorded decision.',async do(api){$('#apply-step').click();await api.run();}},{target:'.decision-path',text:'The grammar changes again after the edit. Tests come before finishing.',async do(api){$('#apply-step').click();await api.run();}},{target:'.decision-path',text:'The final legal step completes this toy task. No shell command was executed.',async do(api){$('#apply-step').click();await api.run();}}],
  rerank:[point('.source-card:nth-of-type(1)','Each source keeps its text. A narrow question supplies a relevance distribution.'),point('.source-card:nth-of-type(3)','An unrelated source provides a useful comparison. HTTP concurrency does not create GPU batching.')],
@@ -53,7 +65,7 @@ export function createTour(api){
  let version=0,playing=false,timer=null,wake=null,current=null,next=null;
  const bar=$('#tour-bar'),toggle=$('#tour-toggle'),caption=$('#tour-caption'),label=$('#tour-phase');
  function wait(ms){return new Promise(resolve=>{wake=resolve;timer=setTimeout(()=>{timer=null;wake=null;resolve();},ms);});}
- function clear(){clearTimeout(timer);timer=null;wake?.();wake=null;all('.tour-focus').forEach(e=>e.classList.remove('tour-focus'));}
+ function clear(){clearTimeout(timer);timer=null;wake?.();wake=null;all('.tour-focus').forEach(e=>e.classList.remove('tour-focus'));delete document.body.dataset.tourLayer;delete bar.dataset.layer;}
  function pause(text='Paused. Explore freely, or restart the recorded tour.'){
   version++;playing=false;clear();document.body.classList.remove('tour-playing');toggle.textContent='Restart recorded tour';toggle.setAttribute('aria-pressed','false');caption.textContent=text;label.textContent='TAKE CONTROL';bar.dataset.state='paused';
  }
@@ -74,14 +86,17 @@ export function createTour(api){
   try{
    await api.run();if(mine!==version)return;
    if($('#status').textContent!=='Completed')throw Error('The recorded example did not complete. Inspect its visible error.');
-   const steps=[point('#lesson-panel',page.simple),{target:'#lesson-state',text:'Change one setting and watch the calculation respond. These are saved measurements; the comparison makes no hidden model call.',do(){api.showLesson(1);}},point('#result','Now open the full experiment. Its controls expose the measurements behind the compact calculation above.'),...LESSONS[page.id],{target:'#request-body',text:'This is the exact first request, or the disclosed inputs when this example makes no model call. The selector above exposes every saved request.',do(){api.showRequest(0);}},point('#constraint-body','Read the actual GBNF, JSON format and sampler settings here. When a feature was not used, the panel says so.'),point('#request-panel .panel-heading','Download the selected question/rule/result calculation and every mock in one Python file. It works offline and accepts a changed setting with --value.'),point('#next','The next research gate stays explicit. This page will now open the next experiment.')];
+   const steps=[...comparisonSteps(page),point('#lesson-bars','Now the calculated chart. Read its units: these values use this example’s rules, rather than automatically being raw token probabilities.','derived'),{target:'#lesson-state',layer:'derived',text:'Change one setting and watch the calculation respond. These are saved measurements; the comparison makes no hidden model call.',do(){api.showLesson(1);}},point('#result','Now open the full experiment. Its controls expose the measurements behind the compact calculation above.'),...LESSONS[page.id],{target:'#request-body',text:'This is the exact first request, or the disclosed inputs when this example makes no model call. The selector above exposes every saved request.',do(){api.showRequest(0);}},point('#constraint-body','Read the actual GBNF, JSON format and sampler settings here. When a feature was not used, the panel says so.'),point('#request-panel .panel-heading','Download the selected question/rule/result calculation and every mock in one Python file. It works offline and accepts a changed setting with --value.'),point('#next','The next research gate stays explicit. This page will now open the next experiment.')];
    for(let i=0;i<steps.length;i++){
     if(mine!==version)return;
     while(document.hidden){await wait(1000);if(mine!==version)return;}
-    bar.dataset.step=String(i);bar.dataset.total=String(steps.length);label.textContent=`${String(i+1).padStart(2,'0')} / ${steps.length} · ${page.name||page.id}`;
+    const layer=steps[i].layer||'example',duration=phaseDelay(steps[i].text);
+    bar.dataset.step=String(i);bar.dataset.total=String(steps.length);bar.dataset.layer=layer;bar.dataset.delayMs=String(duration);document.body.dataset.tourLayer=layer;
+    const labels={raw:'RAW PROBABILITY',sampling:'NATIVE SAMPLING WEIGHT',derived:'DERIVED VIEW',synthetic:'SYNTHETIC INPUTS',inputs:'SOURCE & UNITS',example:'EXPERIMENT'};
+    label.textContent=`${labels[layer]} · ${String(i+1).padStart(2,'0')} / ${steps.length} · ${page.name||page.id}`;
     caption.textContent=steps[i].text;await steps[i].do?.(api);if(mine!==version)return;
     highlight(steps[i].target);$('#tour-progress').style.width=`${100*(i+1)/steps.length}%`;
-    await wait(Math.max(5000,Math.min(8500,steps[i].text.length*45)));
+    await wait(duration);
    }
    while(document.hidden&&mine===version)await wait(1000);
    if(mine===version)location.assign('/lab/'+next.id); // Full navigation; no state or query passed.

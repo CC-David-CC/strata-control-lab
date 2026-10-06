@@ -31,6 +31,11 @@ the earlier [GBNF / Codex work](https://github.com/CC-David-CC/Strata-a5500/tree
 are engine contributions with their own scope. The lab does not require a
 Responses endpoint or run Codex.
 
+For issue #675's one-token client, see [raw token scores](RAW_TOKEN_LOGPROBS.md):
+the foundation branch already supplies `logprob` on each selected token.
+The updated lab displays this original value on token chips and provides a
+standard-library replay/live example comparing raw scores with A/B weights.
+
 The native ordered selector is a CPU reference implementation after the existing
 GPU forward pass. Min-P, sigma, top-k, top-p, XTC and temperature have explicit
 ordering. DRY-like and other feedback demonstrations in the sandbox are labeled

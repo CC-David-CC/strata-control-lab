@@ -71,7 +71,7 @@ PAGES = [
          dict(state='A blue circle is left of a gold square, and they do not overlap.'),
          ['JSON Schema', 'logprobs', 'GBNF', 'semantic vector'], 'Scale to a bounded proposal/search loop and compare with human image judgments. Text probes cannot stand in for visual evaluation.'),
     page('wire', 'Open the engine’s answer.', '09 / INSPECT',
-         'Watch tokens arrive. Click a token to see the alternatives. Open the exact request and response.',
+         'Watch tokens arrive with raw ln p on each chip. Click a token to see its bytes and alternatives. Open the exact request and response.',
          'The ten original contract examples cover plain scores, streaming, constraints, native JSON, reasoning and client-owned tools. Reasoning and tool envelopes are distinct from scored answer content. No incoming tool output is grammar-constrained.',
          dict(case='stream'), ['logprobs', 'GBNF', 'JSON', 'SSE', 'reasoning', 'tools'],
          'Test additional tokenizers and parser boundaries. Mixed visible/hidden token fragments fail explicitly instead of receiving invented substring scores.'),
@@ -90,4 +90,9 @@ from .research_catalog import PAGES as RESEARCH_PAGES
 PAGES += RESEARCH_PAGES
 from .instrument_registry import PAGES as INSTRUMENT_PAGES
 PAGES += INSTRUMENT_PAGES
+from .score_views import SCORE_VIEWS
+if set(SCORE_VIEWS) != {p['id'] for p in PAGES}:
+    raise ValueError('Every lab page needs an explicit raw/derived score explanation')
+for p in PAGES:
+    p['score_view'] = SCORE_VIEWS[p['id']]
 BY_ID = {p['id']: p for p in PAGES}

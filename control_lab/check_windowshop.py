@@ -70,7 +70,7 @@ def main():
             for _ in range(total+8):
                 if page.url!=expected:break
                 assert page.locator('#tour-bar').get_attribute('data-state')=='playing',(name,page.locator('#tour-caption').inner_text())
-                page.clock.fast_forward(9000)
+                page.clock.fast_forward(int(page.locator('#tour-bar').get_attribute('data-delay-ms'))+20)
                 if page.url!=expected:break
                 expect(page.locator('#status')).to_have_text('Completed',timeout=30000)
                 state=page.locator('#tour-bar').get_attribute('data-state')

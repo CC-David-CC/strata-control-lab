@@ -37,8 +37,9 @@ def main():
         tree=ast.parse(result)
         actual=next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='CAPTURED' for t in n.targets))
         assert actual==captured
-        with page.expect_download() as dl:page.locator('a[download]').click()
         expected=json.loads(Path(args.manifest).read_text(encoding='utf-8'))
+        archive=Path(expected['archive']).name
+        with page.expect_download() as dl:page.locator(f'a[download][href="/static/{archive}"]').click()
         assert hashlib.sha256(Path(dl.value.path()).read_bytes()).hexdigest()==expected['sha256']
         browser.close()
     result=dict(assembled_files_unchanged=len(checks['pages']),user_text_markers_not_replaced=True,

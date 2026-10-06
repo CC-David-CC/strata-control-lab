@@ -1,3 +1,5 @@
+import {rawTokenMarkup} from './token-chip.js';
+import {clearScorePanel,renderScorePanel} from './score-panel.js';
 import {renderResearch,stopResearch} from './research.js';
 import {clearRequests,setRequests,showRequest} from './request-panel.js';
 import {createTour} from './tour.js';
@@ -58,6 +60,7 @@ function navigate(name, replace=false) {
   sourceNote();
   clearRequests();
   clearLesson();
+  clearScorePanel($('score-panel'));
   const nextPage=catalog.pages[(catalog.pages.findIndex(p=>p.id===name)+1)%catalog.pages.length];
   tour.start({...page,name:page.name||names[page.id]},{...nextPage,name:nextPage.name||names[nextPage.id]},manualTour||$('mode').value!=='recorded');
 }
@@ -127,7 +130,7 @@ function tokenView(entries, target) {
   if (!entries.length) { target.innerHTML='<p class="subtle">No scored answer content in this response. Inspect its tool or reasoning fields below.</p>'; return; }
   target.innerHTML='<span class="field-label">Select a generated token</span><div class="token-strip"></div><div class="token-readout"></div>';
   const strip=target.querySelector('.token-strip'), readout=target.querySelector('.token-readout');
-  entries.forEach((e,i)=>{const button=document.createElement('button');button.type='button';button.className='token';button.textContent=e.token.replace(/\n/g,'↵').replace(/\t/g,'⇥');button.title=`Token ${i}: raw logprob ${e.logprob}`;button.addEventListener('click',()=>{strip.querySelectorAll('button').forEach(b=>b.classList.remove('selected'));button.classList.add('selected');readout.innerHTML=`<p class="subtle">Token ${i} · bytes [${e.bytes.join(', ')}] · raw logprob ${number(e.logprob,8)}</p>${bar('Selected '+JSON.stringify(e.token),Math.exp(e.logprob))}<div class="bars">${e.top_logprobs.map(t=>bar(JSON.stringify(t.token),Math.exp(t.logprob))).join('')}</div><p class="subtle">Alternatives are conditioned on this exact preceding token path. They need not satisfy the grammar. ↵ marks a newline.</p>`;});strip.append(button);});
+  entries.forEach((e,i)=>{const button=document.createElement('button');button.type='button';button.className='token';button.innerHTML=rawTokenMarkup(e);button.title=`Token ${i}: raw logprob ${e.logprob}`;button.addEventListener('click',()=>{strip.querySelectorAll('button').forEach(b=>b.classList.remove('selected'));button.classList.add('selected');readout.innerHTML=`<p class="subtle">Token ${i} · bytes [${e.bytes.join(', ')}] · raw logprob ${number(e.logprob,8)}</p>${bar('Selected '+JSON.stringify(e.token),Math.exp(e.logprob))}<div class="bars">${e.top_logprobs.map(t=>bar(JSON.stringify(t.token),Math.exp(t.logprob))).join('')}</div><p class="subtle">Alternatives are conditioned on this exact preceding token path. They need not satisfy the grammar. ↵ marks a newline.</p>`;});strip.append(button);});
   strip.querySelector('button').click();
 }
 
@@ -203,6 +206,7 @@ async function run(event) {
   aborter=new AbortController(); last=null;steps=[];
   clearRequests();
   $('download').disabled=true;
+  clearScorePanel($('score-panel'));
   $('timeline').innerHTML='<li class="subtle">Preparing the first request…</li>';
   $('result').innerHTML='<div class="request-progress"><span class="spinner"></span>Preparing experiment…</div>';
   status('Running','running');busy(true);
@@ -214,10 +218,15 @@ async function run(event) {
     while(true){const {value,done}=await reader.read();pending+=decoder.decode(value||new Uint8Array(),{stream:!done});let boundary;
       while((boundary=pending.indexOf('\n\n'))>=0){const block=pending.slice(0,boundary);pending=pending.slice(boundary+2);const line=block.split('\n').filter(l=>l.startsWith('data: ')).map(l=>l.slice(6)).join('\n');if(!line)continue;const data=JSON.parse(line);if(runId!==generation)return;
         if(data.type==='step')addStep(data);
-        if(data.type==='token'){const deltas=(data.chunk.choices||[]).map(c=>c.delta?.content||'').join('');if(deltas){let stream=$('live-text');if(!stream){stream=document.createElement('pre');stream.id='live-text';$('result').append(stream);}stream.append(document.createTextNode(deltas));}}
+        if(data.type==='token'){
+          const choices=data.chunk.choices||[],deltas=choices.map(c=>c.delta?.content||'').join('');
+          if(deltas){let stream=$('live-text');if(!stream){stream=document.createElement('pre');stream.id='live-text';$('result').append(stream);}stream.append(document.createTextNode(deltas));}
+          const scores=choices.flatMap(c=>c.logprobs?.content||[]);
+          if(scores.length){let strip=$('live-scores');if(!strip){strip=document.createElement('div');strip.id='live-scores';strip.className='token-strip';strip.setAttribute('aria-label','Streamed native tokens and raw log-probabilities');$('result').append(strip);}for(const score of scores){const chip=document.createElement('span');chip.className='token';chip.innerHTML=rawTokenMarkup(score);strip.append(chip);}}
+        }
         if(data.type==='error'){sawTerminal=true;throw new Error(data.message);}
         if(data.type==='result'){
-          last={experiment:page.id,...data};await render(data.result);if(runId!==generation)return;renderLesson(data.lesson);setRequests(last,steps);status('Completed','completed');
+          last={experiment:page.id,score_view:structuredClone(page.score_view),...data};await render(data.result);if(runId!==generation)return;renderLesson(data.lesson);setRequests(last,steps);renderScorePanel(page,last,$('score-panel'),showRequest);status('Completed','completed');
           $('download').disabled=false;sawTerminal=true;
           if(!steps.length)$('timeline').innerHTML='';
           const li=document.createElement('li');
