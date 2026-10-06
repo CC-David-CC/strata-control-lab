@@ -63,6 +63,26 @@ use only the standard library. They contain the actual calculations, exact
 requests, constraints and recorded replies. Network use requires an explicit
 `--live-url`; replay is the default.
 
+## Read raw scores on the tokens
+
+The token inspector, grammar paths, native sampler and grammar-pressure views
+show **raw ln p** on each token chip. Click a chip for its original bytes and
+alternatives. The full value remains in the exported token's `logprob` field;
+the chip rounds only its display. Streaming shows incoming scores as they arrive.
+
+From this source checkout, try the additional standard-library example:
+
+```sh
+python tools/inspect_raw_logprobs.py --case decision
+python tools/inspect_raw_logprobs.py --case grammar
+python tools/inspect_raw_logprobs.py --case stream --json
+```
+
+These replay existing native recordings. Add `--live-url http://127.0.0.1:8080`
+to explicitly call a compatible Strata server. The original 39 examples, ZIP
+and 342 recordings are preserved. See [raw scores versus decision weights](docs/RAW_TOKEN_LOGPROBS.md)
+for the measured A/B comparison and the source branch required by issue #675.
+
 ## What is inside?
 
 | Start here | Then explore | Inspect the limits |

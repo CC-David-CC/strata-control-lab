@@ -71,7 +71,7 @@ PAGES = [
          dict(state='A blue circle is left of a gold square, and they do not overlap.'),
          ['JSON Schema', 'logprobs', 'GBNF', 'semantic vector'], 'Scale to a bounded proposal/search loop and compare with human image judgments. Text probes cannot stand in for visual evaluation.'),
     page('wire', 'Open the engine’s answer.', '09 / INSPECT',
-         'Watch tokens arrive. Click a token to see the alternatives. Open the exact request and response.',
+         'Watch tokens arrive with raw ln p on each chip. Click a token to see its bytes and alternatives. Open the exact request and response.',
          'The ten original contract examples cover plain scores, streaming, constraints, native JSON, reasoning and client-owned tools. Reasoning and tool envelopes are distinct from scored answer content. No incoming tool output is grammar-constrained.',
          dict(case='stream'), ['logprobs', 'GBNF', 'JSON', 'SSE', 'reasoning', 'tools'],
          'Test additional tokenizers and parser boundaries. Mixed visible/hidden token fragments fail explicitly instead of receiving invented substring scores.'),
